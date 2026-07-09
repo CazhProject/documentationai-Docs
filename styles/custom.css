@@ -12,8 +12,8 @@
   --footer-border: #dce9ee;
   --toc-text: #64808c;
   --toc-active-text: #01718f;
-  --cards-brand-soft: #e3f2f7;
-  --cards-brand-border: #b8dbe6;
+  --cards-brand-soft: rgba(1, 113, 143, 0.08);
+  --cards-brand-border: rgba(1, 113, 143, 0.28);
 }
 
 .dark {
@@ -27,32 +27,62 @@
   --footer-border: #1c3a44;
   --toc-text: #6f929e;
   --toc-active-text: #4dbcd9;
-  --cards-brand-soft: #0f2c36;
-  --cards-brand-border: #1d4653;
+  --cards-brand-soft: rgba(77, 188, 217, 0.10);
+  --cards-brand-border: rgba(77, 188, 217, 0.32);
 }
 
 /* ===== Typography ===== */
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif !important;
   font-weight: 700;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
 }
 
-h1 { font-weight: 800; }
+h1 {
+  font-weight: 800;
+  font-size: 2.35rem;
+}
+
+/* Accent bar di bawah H1 */
+article h1::after,
+main h1::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 4px;
+  margin-top: 14px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--brand), transparent 140%);
+}
+
+h2 {
+  letter-spacing: -0.015em;
+  margin-top: 2.5rem;
+}
 
 /* ===== Links ===== */
 a {
   transition: color 150ms ease;
 }
 
+/* ===== Callouts: aksen border kiri brand ===== */
+[class*='dai-callout'] {
+  border-left: 3px solid var(--brand);
+  border-radius: 10px;
+}
+
+.dai-callout-body {
+  line-height: 1.6;
+}
+
 /* ===== Cards ===== */
 .dai-card-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
   font-weight: 700;
 }
 
@@ -60,27 +90,50 @@ a {
   transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
 
+a[class*='dai-card']:hover,
+[class*='dai-card']:hover {
+  border-color: var(--cards-brand-border);
+}
+
 /* ===== Steps ===== */
 .dai-step-number {
-  background: var(--brand);
-  color: var(--brand-text);
+  background: var(--cards-brand-soft) !important;
+  color: var(--brand) !important;
+  border: 1.5px solid var(--cards-brand-border) !important;
   font-weight: 700;
-  border-radius: 9999px;
-  box-shadow: 0 2px 8px rgba(1, 113, 143, 0.25);
+  border-radius: 9999px !important;
+}
+
+.dai-step-number svg {
+  color: var(--brand) !important;
+  stroke: var(--brand) !important;
 }
 
 .dai-step-connector {
-  background: var(--cards-brand-border);
-  width: 2px;
+  background: var(--cards-brand-border) !important;
+  width: 2px !important;
 }
 
 .dai-step-content {
   line-height: 1.65;
 }
 
-/* ===== Callouts ===== */
-.dai-callout-body {
-  line-height: 1.6;
+.dai-step-content > p:first-child,
+.dai-step-content [class*='title'] {
+  font-weight: 600;
+  color: var(--heading);
+}
+
+/* ===== Table ===== */
+table th {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 600;
+  background: var(--cards-brand-soft);
+}
+
+table {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* ===== Code ===== */
@@ -88,10 +141,11 @@ a {
   transition: opacity 150ms ease;
 }
 
-/* ===== Tables ===== */
-table th {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 600;
+/* ===== Gambar konten: rounded + border halus ===== */
+article img,
+main img {
+  border-radius: 12px;
+  border: 1px solid var(--footer-border);
 }
 
 /* ===== Reduced motion ===== */
