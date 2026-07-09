@@ -87,6 +87,28 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "history",
+        "pages": [
+          {
+            "title": "Changelog",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      },
+      {
+        "tab": "Roadmap",
+        "icon": "map",
+        "pages": [
+          {
+            "title": "Roadmap",
+            "path": "roadmap",
+            "icon": "map"
+          }
+        ]
       }
     ]
   }
