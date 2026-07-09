@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+/* ===== Design tokens ===== */
+:root {
+  --brand: #01718f;
+  --brand-text: #ffffff;
+  --heading: #0c2d38;
+  --body: #3d5560;
+  --navbar-bg: #ffffff;
+  --sidebar-bg: #f4f9fb;
+  --content-bg: #ffffff;
+  --footer-border: #dce9ee;
+  --toc-text: #64808c;
+  --toc-active-text: #01718f;
+  --cards-brand-soft: #e3f2f7;
+  --cards-brand-border: #b8dbe6;
+}
+
+.dark {
+  --brand: #4dbcd9;
+  --brand-text: #04252e;
+  --heading: #eaf6fa;
+  --body: #a8c2cb;
+  --navbar-bg: #0a1competent4;
+  --navbar-bg: #0a1a20;
+  --sidebar-bg: #0d2027;
+  --content-bg: #0a1a20;
+  --footer-border: #1c3a44;
+  --toc-text: #6f929e;
+  --toc-active-text: #4dbcd9;
+  --cards-brand-soft: #0f2c36;
+  --cards-brand-border: #1d4653;
+}
+
+/* ===== Typography ===== */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+h1 { font-weight: 800; }
+
+/* ===== Links ===== */
+a {
+  transition: color 150ms ease;
+}
+
+/* ===== Cards ===== */
+.dai-card-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+}
+
+[class*='dai-card'] {
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+/* ===== Steps ===== */
+.dai-step-number {
+  background: var(--brand);
+  color: var(--brand-text);
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(1, 113, 143, 0.25);
+}
+
+.dai-step-connector {
+  background: var(--cards-brand-border);
+  width: 2px;
+}
+
+.dai-step-content {
+  line-height: 1.65;
+}
+
+/* ===== Callouts ===== */
+.dai-callout-body {
+  line-height: 1.6;
+}
+
+/* ===== Code ===== */
+.dai-code-copy {
+  transition: opacity 150ms ease;
+}
+
+/* ===== Tables ===== */
+table th {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+}
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
