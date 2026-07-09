@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
-  <rect width="1200" height="675" rx="12" fill="#f4f6f5"/>
+  <rect width="1200" height="675" rx="12" fill="#f4f7f8"/>
   <!-- sidebar -->
-  <rect x="0" y="0" width="260" height="675" fill="#0f6e56"/>
+  <rect x="0" y="0" width="260" height="675" fill="#01718f"/>
   <rect x="24" y="28" width="120" height="22" rx="6" fill="#ffffff" opacity="0.9"/>
   <rect x="24" y="96" width="212" height="36" rx="8" fill="#ffffff" opacity="0.12"/>
-  <text x="44" y="120" fill="#d7efe7" font-size="16">Dashboard</text>
+  <text x="44" y="120" fill="#cfeaf2" font-size="16">Dashboard</text>
   <rect x="24" y="144" width="212" height="36" rx="8" fill="#ffffff" opacity="0.28"/>
   <text x="44" y="168" fill="#ffffff" font-size="16" font-weight="600">Absensi › Rekap</text>
   <circle cx="250" cy="162" r="16" fill="#ffb020"/>
   <text x="250" y="168" fill="#1a1a1a" font-size="16" font-weight="700" text-anchor="middle">1</text>
   <!-- filters -->
-  <text x="300" y="70" fill="#1f2a27" font-size="24" font-weight="700">Rekap Kehadiran</text>
-  <rect x="300" y="96" width="260" height="44" rx="10" fill="#ffffff" stroke="#c8d4d0"/>
-  <text x="320" y="124" fill="#41504b" font-size="15">01 Jul – 08 Jul 2026</text>
-  <rect x="576" y="96" width="180" height="44" rx="10" fill="#ffffff" stroke="#c8d4d0"/>
-  <text x="596" y="124" fill="#41504b" font-size="15">Kelas 7A</text>
+  <text x="300" y="70" fill="#1f2a2e" font-size="24" font-weight="700">Rekap Kehadiran</text>
+  <rect x="300" y="96" width="260" height="44" rx="10" fill="#ffffff" stroke="#c6d6dc"/>
+  <text x="320" y="124" fill="#41505b" font-size="15">01 Jul – 08 Jul 2026</text>
+  <rect x="576" y="96" width="180" height="44" rx="10" fill="#ffffff" stroke="#c6d6dc"/>
+  <text x="596" y="124" fill="#41505b" font-size="15">Kelas 7A</text>
   <circle cx="776" cy="96" r="16" fill="#ffb020"/>
   <text x="776" y="102" fill="#1a1a1a" font-size="16" font-weight="700" text-anchor="middle">2</text>
   <!-- table -->
-  <rect x="300" y="170" width="840" height="48" rx="10" fill="#0f6e56"/>
+  <rect x="300" y="170" width="840" height="48" rx="10" fill="#01718f"/>
   <g fill="#ffffff" font-size="15" font-weight="600">
     <text x="324" y="200">Nama</text>
     <text x="640" y="200">Hadir</text>
@@ -27,20 +27,20 @@
     <text x="960" y="200">Alpa</text>
     <text x="1050" y="200">%</text>
   </g>
-  <g fill="#ffffff" stroke="#dde5e2">
+  <g fill="#ffffff" stroke="#dde5e8">
     <rect x="300" y="226" width="840" height="52" rx="10"/>
     <rect x="300" y="290" width="840" height="52" rx="10"/>
     <rect x="300" y="354" width="840" height="52" rx="10"/>
   </g>
-  <g fill="#33413c" font-size="15">
-    <text x="324" y="258">Aisyah Putri</text><text x="648" y="258">6</text><text x="768" y="258">0</text><text x="874" y="258">0</text><text x="966" y="258">0</text><text x="1040" y="258" fill="#0f6e56" font-weight="700">100%</text>
-    <text x="324" y="322">Bima Saputra</text><text x="648" y="322">5</text><text x="768" y="322">1</text><text x="874" y="322">0</text><text x="966" y="322">0</text><text x="1040" y="322" fill="#0f6e56" font-weight="700">83%</text>
-    <text x="324" y="386">Citra Lestari</text><text x="648" y="386">4</text><text x="768" y="386">0</text><text x="874" y="386">1</text><text x="966" y="386">1</text><text x="1040" y="386" fill="#0f6e56" font-weight="700">67%</text>
+  <g fill="#33414c" font-size="15">
+    <text x="324" y="258">Aisyah Putri</text><text x="648" y="258">6</text><text x="768" y="258">0</text><text x="874" y="258">0</text><text x="966" y="258">0</text><text x="1040" y="258" fill="#01718f" font-weight="700">100%</text>
+    <text x="324" y="322">Bima Saputra</text><text x="648" y="322">5</text><text x="768" y="322">1</text><text x="874" y="322">0</text><text x="966" y="322">0</text><text x="1040" y="322" fill="#01718f" font-weight="700">83%</text>
+    <text x="324" y="386">Citra Lestari</text><text x="648" y="386">4</text><text x="768" y="386">0</text><text x="874" y="386">1</text><text x="966" y="386">1</text><text x="1040" y="386" fill="#01718f" font-weight="700">67%</text>
   </g>
   <circle cx="1160" cy="252" r="16" fill="#ffb020"/>
   <text x="1160" y="258" fill="#1a1a1a" font-size="16" font-weight="700" text-anchor="middle">3</text>
   <!-- download button -->
-  <rect x="960" y="586" width="180" height="48" rx="10" fill="#ffffff" stroke="#0f6e56"/>
-  <text x="1050" y="616" fill="#0f6e56" font-size="16" font-weight="600" text-anchor="middle">Unduh Excel</text>
-  <text x="300" y="620" fill="#8aa39b" font-size="14">Ilustrasi placeholder — akan diganti screenshot asli</text>
+  <rect x="960" y="586" width="180" height="48" rx="10" fill="#ffffff" stroke="#01718f"/>
+  <text x="1050" y="616" fill="#01718f" font-size="16" font-weight="600" text-anchor="middle">Unduh Excel</text>
+  <text x="300" y="620" fill="#8aa0a8" font-size="14">Ilustrasi placeholder — akan diganti screenshot asli</text>
 </svg>
