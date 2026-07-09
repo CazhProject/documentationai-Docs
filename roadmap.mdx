@@ -1,23 +1,31 @@
 ---
 title: "Roadmap"
-description: "Rencana pengembangan fitur CARDS — apa yang sedang digarap dan apa yang akan datang."
+description: "Lihat apa yang akan datang di CARDS — dari backlog sampai fitur yang sudah rilis."
 ---
 
-Gambaran besar arah pengembangan CARDS. Urutan bisa berubah mengikuti masukan sekolah.
+Lihat apa yang sedang kami garap untuk CARDS. Urutan bisa berubah mengikuti masukan sekolah.
+
+<Board title="">
+  <BoardColumn title="Backlog" color="0" icon="inbox">
+    <BoardCard title="Ekspor rekap absensi otomatis" description="Kirim rekap bulanan ke email wali kelas secara terjadwal." icon="mail" />
+    <BoardCard title="Absensi via kartu/QR" description="Presensi kedatangan dengan tap kartu atau scan QR." icon="qr-code" />
+    <BoardCard title="Rekap semester" description="Ringkasan kehadiran per semester untuk rapor." icon="file-text" />
+  </BoardColumn>
+  <BoardColumn title="Next Up" color="2" icon="circle-dot">
+    <BoardCard title="Notifikasi keterlambatan" description="Orang tua mendapat notifikasi saat anak terlambat, bukan hanya alpa." icon="bell" />
+    <BoardCard title="Izin online dari CARDS Parent" description="Orang tua mengajukan izin/sakit langsung dari aplikasi, admin tinggal approve." icon="send" />
+  </BoardColumn>
+  <BoardColumn title="In Progress" color="5" icon="play-circle">
+    <BoardCard title="Manual produk" description="Dokumentasi lengkap CARDS School & Parent — sedang diperluas ke modul keuangan." icon="book-open" />
+  </BoardColumn>
+  <BoardColumn title="Done" color="4" icon="check-circle">
+    <BoardCard title="Absensi harian & terjadwal" description="Presensi sekali sehari atau per mata pelajaran." icon="calendar-check" />
+    <BoardCard title="Sinkronisasi CARDS Parent" description="Hasil absensi otomatis tampil di aplikasi orang tua." icon="smartphone" />
+    <BoardCard title="Notifikasi alpa harian" description="Orang tua diberi tahu otomatis saat anak alpa." icon="bell-ring" />
+    <BoardCard title="Rekap & ekspor Excel" description="Unduh rekap kehadiran per kelas dan rentang tanggal." icon="table" />
+  </BoardColumn>
+</Board>
 
 <Callout kind="info">
   Punya usulan fitur? Sampaikan lewat admin sekolah atau tim support CARDS — semua masukan kami tinjau.
 </Callout>
-
-<Board title="Roadmap CARDS">
-  <BoardColumn title="Direncanakan" color="3" icon="lightbulb">
-    <BoardCard title="Segera diumumkan" description="Fitur yang sedang dalam tahap perencanaan akan muncul di sini." icon="clock" />
-  </BoardColumn>
-  <BoardColumn title="Sedang dikerjakan" color="5" icon="play-circle">
-    <BoardCard title="Manual produk" description="Dokumentasi lengkap CARDS School & Parent." icon="book-open" />
-  </BoardColumn>
-  <BoardColumn title="Sudah rilis" color="4" icon="rocket">
-    <BoardCard title="Absensi harian & terjadwal" description="Presensi sekali sehari atau per mata pelajaran." icon="calendar-check" />
-    <BoardCard title="Sinkronisasi ke CARDS Parent" description="Hasil absensi otomatis tampil di aplikasi orang tua." icon="smartphone" />
-  </BoardColumn>
-</Board>
