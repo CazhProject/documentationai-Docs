@@ -202,8 +202,37 @@
             "pages": []
           },
           {
-            "group": "Kartu",
+            "group": "Flexycazh",
             "pages": []
+          },
+          {
+            "group": "Kartu",
+            "pages": [
+              {
+                "title": "Limit Harian Kartu",
+                "path": "limit-harian-kartu-"
+              },
+              {
+                "title": "Isi Saldo",
+                "path": "isi-saldo"
+              },
+              {
+                "title": "Riwayat Isi Saldo",
+                "path": "riwayat-isi-saldo"
+              },
+              {
+                "title": "Penarikan Saldo",
+                "path": "penarikan-saldo"
+              },
+              {
+                "title": "Riwayat Penarikan Saldo",
+                "path": "riwayat-penarikan-saldo"
+              },
+              {
+                "title": "Kehilangan Kartu",
+                "path": "kehilangan-kartu-"
+              }
+            ]
           },
           {
             "group": "Presensi Mata Pelajaran",
