@@ -171,6 +171,42 @@
           {
             "group": "Kalender Akademik",
             "pages": []
+          },
+          {
+            "group": "Progres Kegiatan",
+            "pages": []
+          },
+          {
+            "group": "Prestasi",
+            "pages": []
+          },
+          {
+            "group": "Pelanggaran",
+            "pages": []
+          },
+          {
+            "group": "Perizinan",
+            "pages": []
+          },
+          {
+            "group": "Kesehatan",
+            "pages": []
+          },
+          {
+            "group": "Kunjungan",
+            "pages": []
+          },
+          {
+            "group": "Perundungan",
+            "pages": []
+          },
+          {
+            "group": "Tahfidz",
+            "pages": []
+          },
+          {
+            "group": "Pengaturan",
+            "pages": []
           }
         ]
       },
