@@ -78,11 +78,21 @@
           },
           {
             "group": "Anggota Guru",
-            "pages": []
+            "pages": [
+              {
+                "title": "Pengaturan Jenis Guru",
+                "path": "pengaturan-jenis-guru"
+              }
+            ]
           },
           {
             "group": "Anggota Staff",
-            "pages": []
+            "pages": [
+              {
+                "title": "Pengaturan Jenis Staff",
+                "path": "pengaturan-jenis-staff"
+              }
+            ]
           },
           {
             "group": "Anggota Alumni",
@@ -163,6 +173,23 @@
           {
             "group": "Tagihan",
             "pages": [
+              {
+                "group": "Pengaturan Tagihan",
+                "pages": [
+                  {
+                    "title": "Jenis Tagihan",
+                    "path": "jenis-tagihan"
+                  },
+                  {
+                    "title": "Pengingat Tagihan",
+                    "path": "pengingat-tagihan"
+                  },
+                  {
+                    "title": "Legalitas Bukti Bayar",
+                    "path": "legalitas-bukti-bayar"
+                  }
+                ]
+              },
               {
                 "title": "Data Tagihan",
                 "path": "data-tagihan"
