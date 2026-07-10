@@ -79,6 +79,30 @@
           {
             "group": "Anggota Guru",
             "pages": []
+          },
+          {
+            "group": "Anggota Staff",
+            "pages": []
+          },
+          {
+            "group": "Anggota Alumni",
+            "pages": []
+          },
+          {
+            "group": "Pendaftaran Peserta Didik",
+            "pages": []
+          },
+          {
+            "group": "Pengkinian Data",
+            "pages": []
+          },
+          {
+            "group": "Tagihan",
+            "pages": []
+          },
+          {
+            "group": "Inventaris",
+            "pages": []
           }
         ]
       },
