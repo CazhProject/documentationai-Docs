@@ -136,6 +136,10 @@
             "group": "Inventaris",
             "pages": [
               {
+                "title": "Pengaturan Inventaris",
+                "path": "pengaturan-inventaris"
+              },
+              {
                 "title": "Riwayat Inventaris",
                 "path": "riwayat-inventaris"
               },
@@ -148,6 +152,10 @@
           {
             "group": "Pengumuman",
             "pages": [
+              {
+                "title": "Pengaturan Kategori Pengumuman",
+                "path": "pengaturan-kategori-pengumuman"
+              },
               {
                 "title": "Template Pengumuman",
                 "path": "template-pengumuman"
@@ -411,11 +419,21 @@
           },
           {
             "group": "Pelanggaran",
-            "pages": []
+            "pages": [
+              {
+                "title": "Pengaturan Tipe Pelanggaran",
+                "path": "pengaturan-tipe-pelanggaran"
+              }
+            ]
           },
           {
             "group": "Perizinan",
-            "pages": []
+            "pages": [
+              {
+                "title": "Pengaturan Batas Waktu Perizinan",
+                "path": "pengaturan-batas-waktu-perizinan"
+              }
+            ]
           },
           {
             "group": "Kesehatan",
