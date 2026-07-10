@@ -354,7 +354,25 @@
           },
           {
             "group": "Kalender Akademik",
-            "pages": []
+            "pages": [
+              {
+                "group": "Pengaturan Kalender Akademik",
+                "pages": [
+                  {
+                    "title": "Data Kalender Akademik",
+                    "path": "data-kalender-akademik"
+                  },
+                  {
+                    "title": "Kategori Event",
+                    "path": "kategori-event"
+                  }
+                ]
+              },
+              {
+                "title": "Lihat Kalender Akademik",
+                "path": "lihat-kalender-akademik"
+              }
+            ]
           },
           {
             "group": "Progres Kegiatan",
