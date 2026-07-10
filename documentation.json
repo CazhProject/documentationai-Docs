@@ -124,11 +124,29 @@
           },
           {
             "group": "Inventaris",
-            "pages": []
+            "pages": [
+              {
+                "title": "Riwayat Inventaris",
+                "path": "riwayat-inventaris"
+              },
+              {
+                "title": "Barang Inventaris",
+                "path": "barang-inventaris"
+              }
+            ]
           },
           {
             "group": "Pengumuman",
-            "pages": []
+            "pages": [
+              {
+                "title": "Template Pengumuman",
+                "path": "template-pengumuman"
+              },
+              {
+                "title": "Daftar Pengumuman",
+                "path": "daftar-pengumuman"
+              }
+            ]
           },
           {
             "group": "Donasi",
@@ -144,7 +162,28 @@
           },
           {
             "group": "Tagihan",
-            "pages": []
+            "pages": [
+              {
+                "title": "Data Tagihan",
+                "path": "data-tagihan"
+              },
+              {
+                "title": "Buat/Import Tagihan",
+                "path": "buat/import-tagihan"
+              },
+              {
+                "title": "Laporan Pembayaran",
+                "path": "laporan-pembayaran"
+              },
+              {
+                "title": "Rekap Pembayaran",
+                "path": "rekap-pembayaran"
+              },
+              {
+                "title": "Tunggakan",
+                "path": "tunggakan"
+              }
+            ]
           },
           {
             "group": "Transaksi Tagihan",
