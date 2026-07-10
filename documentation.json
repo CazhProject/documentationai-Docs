@@ -442,6 +442,23 @@
                 "path": "voice-over-presensi"
               }
             ]
+          },
+          {
+            "group": "Pengaturan Pengguna",
+            "pages": [
+              {
+                "title": "Jenis Pengguna",
+                "path": "jenis-pengguna"
+              },
+              {
+                "title": "Akun Pengguna",
+                "path": "akun-pengguna"
+              }
+            ]
+          },
+          {
+            "group": "Pengaturan Lembaga",
+            "pages": []
           }
         ]
       },
