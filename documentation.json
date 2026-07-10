@@ -305,6 +305,19 @@
             "group": "Presensi Wajah",
             "pages": [
               {
+                "group": "Pengaturan Presensi Wajah",
+                "pages": [
+                  {
+                    "title": "Data Device Presensi",
+                    "path": "data-device-presensi"
+                  },
+                  {
+                    "title": "Data Sync Wajah",
+                    "path": "data-sync-wajah"
+                  }
+                ]
+              },
+              {
                 "title": "Log Presensi Perangkat Wajah",
                 "path": "log-presensi-perangkat-wajah"
               }
@@ -376,8 +389,13 @@
             "pages": []
           },
           {
-            "group": "Pengaturan",
-            "pages": []
+            "group": "Pengaturan Akademik",
+            "pages": [
+              {
+                "title": "Voice Over Presensi",
+                "path": "voice-over-presensi"
+              }
+            ]
           }
         ]
       },
