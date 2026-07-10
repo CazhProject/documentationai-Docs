@@ -155,6 +155,22 @@
           {
             "group": "Presensi Wajah",
             "pages": []
+          },
+          {
+            "group": "Rapor Siswa",
+            "pages": []
+          },
+          {
+            "group": "Tugas",
+            "pages": []
+          },
+          {
+            "group": "Kuis AI",
+            "pages": []
+          },
+          {
+            "group": "Kalender Akademik",
+            "pages": []
           }
         ]
       },
