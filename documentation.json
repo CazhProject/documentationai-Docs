@@ -238,8 +238,8 @@
             "group": "Presensi Mata Pelajaran",
             "pages": [
               {
-                "title": "Input Presensi",
-                "path": "input-presensi"
+                "title": "Input Presensi Mapel",
+                "path": "input-presensi-mapel"
               },
               {
                 "title": "Rekap Siswa",
@@ -253,11 +253,37 @@
           },
           {
             "group": "Presensi Harian",
-            "pages": []
+            "pages": [
+              {
+                "title": "Log Presensi Harian",
+                "path": "log-presensi-harian"
+              },
+              {
+                "title": "Presensi Harian Terlambat",
+                "path": "presensi-harian-terlambat"
+              },
+              {
+                "title": "Rekap Presensi Harian Guru & Staff",
+                "path": "rekap-presensi-harian-guru-staff"
+              },
+              {
+                "title": "Rekap Presensi Harian Siswa",
+                "path": "rekap-presensi-harian-siswa"
+              },
+              {
+                "title": "Pengaturan Presensi Harian",
+                "path": "pengaturan-presensi-harian"
+              }
+            ]
           },
           {
             "group": "Presensi Kegiatan",
-            "pages": []
+            "pages": [
+              {
+                "title": "Pengaturan Presensi Kegiatan",
+                "path": "pengaturan-presensi-kegiatan"
+              }
+            ]
           },
           {
             "group": "Presensi Wajah",
