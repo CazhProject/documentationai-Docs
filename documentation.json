@@ -230,11 +230,62 @@
           },
           {
             "group": "Pembukuan",
-            "pages": []
+            "pages": [
+              {
+                "group": "Pengaturan Pembukuan",
+                "pages": []
+              },
+              {
+                "title": "Jurnal",
+                "path": "jurnal"
+              },
+              {
+                "title": "Riwayat Jurnal",
+                "path": "riwayat-jurnal"
+              },
+              {
+                "title": "Laporan Posisi Keuangan",
+                "path": "laporan-posisi-keuangan"
+              },
+              {
+                "title": "Laporan Laba Rugi",
+                "path": "laporan-laba-rugi"
+              },
+              {
+                "group": "Bagi Hasil",
+                "pages": [
+                  {
+                    "title": "Laporan Bagi Hasil",
+                    "path": "laporan-bagi-hasil"
+                  },
+                  {
+                    "title": "Pengaturan Bagi Hasil",
+                    "path": "pengaturan-bagi-hasil"
+                  }
+                ]
+              },
+              {
+                "title": "Migrasi Akun",
+                "path": "migrasi-akun"
+              }
+            ]
           },
           {
             "group": "Tabungan",
-            "pages": []
+            "pages": [
+              {
+                "title": "Produk Tabungan",
+                "path": "produk-tabungan"
+              },
+              {
+                "title": "Rekening Tabungan",
+                "path": "rekening-tabungan"
+              },
+              {
+                "title": "Transaksi Tabungan",
+                "path": "transaksi-tabungan"
+              }
+            ]
           },
           {
             "group": "Flexycazh",
@@ -503,6 +554,10 @@
           },
           {
             "group": "Pengaturan Lembaga",
+            "pages": []
+          },
+          {
+            "group": "Pengaturan Aplikasi",
             "pages": []
           }
         ]
