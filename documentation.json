@@ -233,7 +233,32 @@
             "pages": [
               {
                 "group": "Pengaturan Pembukuan",
-                "pages": []
+                "pages": [
+                  {
+                    "title": "Pos Akun",
+                    "path": "pos-akun"
+                  },
+                  {
+                    "title": "Master Buku Besar",
+                    "path": "master-buku-besar"
+                  },
+                  {
+                    "title": "Buku Besar Umum",
+                    "path": "buku-besar-umum"
+                  },
+                  {
+                    "title": "Akun GL",
+                    "path": "akun-gl"
+                  },
+                  {
+                    "title": "Template Jurnal Transaksi",
+                    "path": "template-jurnal-transaksi"
+                  },
+                  {
+                    "title": "Template Jurnal Sistem",
+                    "path": "template-jurnal-sistem"
+                  }
+                ]
               },
               {
                 "title": "Jurnal",
