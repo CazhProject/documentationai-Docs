@@ -236,7 +236,20 @@
           },
           {
             "group": "Presensi Mata Pelajaran",
-            "pages": []
+            "pages": [
+              {
+                "title": "Input Presensi",
+                "path": "input-presensi"
+              },
+              {
+                "title": "Rekap Siswa",
+                "path": "rekap-siswa"
+              },
+              {
+                "title": "Rekap Guru",
+                "path": "rekap-guru"
+              }
+            ]
           },
           {
             "group": "Presensi Harian",
