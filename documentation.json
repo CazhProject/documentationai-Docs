@@ -65,6 +65,16 @@
                 "icon": "smartphone"
               }
             ]
+          },
+          {
+            "group": "Anggota",
+            "pages": [
+              {
+                "title": "Tambah Siswa",
+                "path": "tambah_soswa",
+                "icon": "a-arrow-up-icon"
+              }
+            ]
           }
         ]
       },
