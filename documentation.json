@@ -86,11 +86,37 @@
           },
           {
             "group": "Anggota Alumni",
-            "pages": []
+            "pages": [
+              {
+                "title": "Log Aktivasi",
+                "path": "log-aktivasi"
+              },
+              {
+                "title": "Alumni Guru",
+                "path": "alumni-guru"
+              },
+              {
+                "title": "Alumni Siswa",
+                "path": "alumni-siswa"
+              }
+            ]
           },
           {
             "group": "Pendaftaran Peserta Didik",
-            "pages": []
+            "pages": [
+              {
+                "title": "Pengaturan Web",
+                "path": "pengaturan-web"
+              },
+              {
+                "title": "Data Pendaftar",
+                "path": "data-pendaftar"
+              },
+              {
+                "title": "Pembayaran",
+                "path": "pembayaran-pendaftaran"
+              }
+            ]
           },
           {
             "group": "Pengkinian Data",
