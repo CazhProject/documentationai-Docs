@@ -280,6 +280,22 @@
             "group": "Presensi Kegiatan",
             "pages": [
               {
+                "title": "Log Presensi Kegiatan",
+                "path": "log-presensi-kegiatan"
+              },
+              {
+                "title": "Rekap Presensi per Kegiatan",
+                "path": "rekap-per-kegiatan"
+              },
+              {
+                "title": "Rekap Presensi Kegiatan Siswa",
+                "path": "rekap-presensi-kegiatan-siswa"
+              },
+              {
+                "title": "Rekap Presensi Kegiatan Guru & Staff",
+                "path": "rekap-presensi-kegiatan-guru-staff"
+              },
+              {
                 "title": "Pengaturan Presensi Kegiatan",
                 "path": "pengaturan-presensi-kegiatan"
               }
