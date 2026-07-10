@@ -97,11 +97,31 @@
             "pages": []
           },
           {
+            "group": "Inventaris",
+            "pages": []
+          },
+          {
+            "group": "Pengumuman",
+            "pages": []
+          },
+          {
+            "group": "Donasi",
+            "pages": []
+          },
+          {
+            "group": "WhatsApp",
+            "pages": []
+          },
+          {
+            "group": "Buku Tamu",
+            "pages": []
+          },
+          {
             "group": "Tagihan",
             "pages": []
           },
           {
-            "group": "Inventaris",
+            "group": "Transaksi Tagihan",
             "pages": []
           }
         ]
