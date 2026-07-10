@@ -303,7 +303,12 @@
           },
           {
             "group": "Presensi Wajah",
-            "pages": []
+            "pages": [
+              {
+                "title": "Log Presensi Perangkat Wajah",
+                "path": "log-presensi-perangkat-wajah"
+              }
+            ]
           },
           {
             "group": "Rapor Siswa",
@@ -315,7 +320,24 @@
           },
           {
             "group": "Kuis AI",
-            "pages": []
+            "pages": [
+              {
+                "title": "Buat Kuis",
+                "path": "buat-kuis"
+              },
+              {
+                "title": "Koleksi Kuis",
+                "path": "koleksi-kuis"
+              },
+              {
+                "title": "Jadwal Kuis",
+                "path": "jadwal-kuis"
+              },
+              {
+                "title": "Rekap Kuis",
+                "path": "rekap-kuis"
+              }
+            ]
           },
           {
             "group": "Kalender Akademik",
