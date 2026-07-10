@@ -410,6 +410,34 @@
             "group": "Pengaturan Akademik",
             "pages": [
               {
+                "title": "Tahun Ajaran",
+                "path": "tahun-ajaran"
+              },
+              {
+                "title": "Tingkat",
+                "path": "tingkat"
+              },
+              {
+                "title": "Kelas",
+                "path": "kelas"
+              },
+              {
+                "title": "Jurusan",
+                "path": "jurusan"
+              },
+              {
+                "title": "Mata Pelajaran",
+                "path": "mata-pelajaran"
+              },
+              {
+                "title": "Jadwal Pelajaran",
+                "path": "jadwal-pelajaran"
+              },
+              {
+                "title": "Tag",
+                "path": "tag"
+              },
+              {
                 "title": "Voice Over Presensi",
                 "path": "voice-over-presensi"
               }
