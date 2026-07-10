@@ -123,6 +123,38 @@
           {
             "group": "Transaksi Tagihan",
             "pages": []
+          },
+          {
+            "group": "CazhBox",
+            "pages": []
+          },
+          {
+            "group": "Pembukuan",
+            "pages": []
+          },
+          {
+            "group": "Tabungan",
+            "pages": []
+          },
+          {
+            "group": "Kartu",
+            "pages": []
+          },
+          {
+            "group": "Presensi Mata Pelajaran",
+            "pages": []
+          },
+          {
+            "group": "Presensi Harian",
+            "pages": []
+          },
+          {
+            "group": "Presensi Kegiatan",
+            "pages": []
+          },
+          {
+            "group": "Presensi Wajah",
+            "pages": []
           }
         ]
       },
