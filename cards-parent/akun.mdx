@@ -1,9 +1,11 @@
 ---
 title: Akun Pengguna Aplikasi
-description: Mengelola akun CARDS Parents — edit akun, ubah/reset PIN Aplikasi, refresh aplikasi, akun terhubung, riwayat pengajuan limit CazhPOIN, riwayat perubahan data, serta biometrik dan bantuan.
+description: Mengelola akun CARDS Parents — edit akun, ubah/reset PIN Aplikasi, refresh aplikasi, akun terhubung, pengajuan limit CazhPOIN (KYC), riwayat perubahan data, serta biometrik dan bantuan.
 ---
 
 Halaman ini membantu orang tua/wali mengelola akun CARDS Parents — mulai dari mengganti email/nomor HP, mengatur PIN Aplikasi, hingga menghubungkan akun lain. Seluruh pengaturan diakses dari halaman profil: pada Beranda, tekan foto profil di kiri atas layar.
+
+Menu profil dikelompokkan menjadi: **Akun** (Edit Akun, Riwayat Perubahan Data, Pengajuan Limit CazhPOIN, Undangan Kelola Akses), **Pengaturan** (Ubah PIN Aplikasi, Reset PIN Aplikasi, Akun Terhubung), **Bantuan** (Hubungi CS, Panduan Pengguna, Syarat & Ketentuan, Kebijakan Privasi, Akses Dukungan), dan **Lainnya** (Mode Terang/Gelap, Versi Aplikasi, Keluar).
 
 ## Edit Akun (Ganti Email / Ganti Nomor HP)
 
@@ -27,6 +29,10 @@ Setelah langkah ini, pengajuan pergantian email atau nomor HP yang tertaut pada 
   </Step>
 </Steps>
 
+<Callout kind="info">
+  Pada halaman Edit Akun Anda juga dapat mengganti **Foto Profil** dan **Nama Lengkap** (langsung tersimpan tanpa pengajuan). Foto KTP untuk pengajuan berformat JPG/JPEG/PNG maksimal **5 MB** — pastikan nama di KTP sesuai nama lengkap akun. Jika akun tertaut Google/Apple, pergantian email mengharuskan pelepasan tautan tersebut terlebih dahulu. Di halaman ini juga tersedia **Pengajuan Hapus Akun** (ikon di kanan atas) — perhatikan bahwa penghapusan akun menghapus seluruh transaksi, CazhPOIN, dan saldo kartu.
+</Callout>
+
 ## Ubah PIN Aplikasi
 
 Setelah langkah ini, PIN Aplikasi Anda berganti ke PIN yang baru.
@@ -42,6 +48,10 @@ Setelah langkah ini, PIN Aplikasi Anda berganti ke PIN yang baru.
     Masukkan PIN lama dan PIN baru, lalu tekan **Simpan**.
   </Step>
 </Steps>
+
+<Callout kind="info">
+  PIN Aplikasi terdiri dari **6 digit**. PIN yang mudah ditebak (angka berurutan seperti 123456 atau identik seperti 000000) akan ditolak. Aplikasi otomatis terkunci setelah tidak aktif beberapa menit, dan salah memasukkan PIN **3 kali** memblokir sementara akses selama 15 menit.
+</Callout>
 
 ## Reset PIN Aplikasi
 
@@ -62,6 +72,10 @@ Jika Anda lupa PIN Aplikasi, setelah langkah ini Anda menerima kode untuk membua
   </Step>
 </Steps>
 
+<Callout kind="info">
+  Tautan reset yang dikirim akan membuka halaman **Buat PIN Baru** di aplikasi — masukkan **PIN Baru** dan **Konfirmasi PIN Baru** (6 digit), lalu tekan **Simpan PIN Baru**. Tautan memiliki masa berlaku; jika kadaluarsa, ajukan reset ulang.
+</Callout>
+
 ## Refresh Aplikasi
 
 Setelah langkah ini, data yang ditampilkan pada halaman aplikasi diperbarui tanpa perlu menutup atau membuka ulang halaman.
@@ -79,10 +93,10 @@ Akun yang dapat dihubungkan:
 | --- | --- |
 | **Google** | Akun Google untuk login |
 | **Apple ID** | Akun Apple untuk login (pengguna iOS) |
-| **Blu** | blu by BCA, untuk transaksi dan PPOB |
+| **Blu** | blu by BCA, untuk transaksi dan PPOB (tampil bila diaktifkan) |
 | **Dana** | E-wallet Dana |
 
-1. Tekan salah satu akun.
+1. Tekan salah satu akun, lalu tekan **Hubungkan** (atau **Lepaskan** untuk memutus tautan).
 2. Lanjutkan proses menghubungkan akun dengan mengikuti langkah selanjutnya.
 
 ### Akses Blu dari CARDS Parents
@@ -93,12 +107,31 @@ Pengguna dapat mengakses blu by BCA dari aplikasi CARDS Parents untuk melakukan 
 2. Scroll ke paling bawah.
 3. Menu **Blu** akan tampil.
 
+## Pengajuan Limit CazhPOIN (KYC)
+
+Untuk menaikkan limit saldo CazhPOIN, Anda mengisi formulir KYC **Upgrade Limit CazhPOIN** yang terdiri dari 4 langkah:
+
+| Langkah | Isian |
+| --- | --- |
+| 1. Data Diri | **Nomor Kartu Identitas (KTP/SIM/Passport)** |
+| 2. Foto Identitas | **Foto Kartu Identitas** — diambil langsung dari kamera dengan panduan foto |
+| 3. Selfie | **Foto Selfie Dengan Kartu Identitas** |
+| 4. Data Bank | Pilih **Bank** (BCA, BNI, BRI, CIMB, Mandiri, BTPN, BTN, Bank Jateng, Bank Jatim, BJB, BSI), **Nama Rekening**, **Nomor Rekening**, dan **Foto Cover Buku Tabungan** |
+
+<Callout kind="info">
+  Foto buku tabungan harus menampilkan nomor rekening dan nama, serta sesuai dengan bank yang dipilih. Setiap langkah foto dilengkapi panduan contoh foto benar/salah.
+</Callout>
+
 ## Riwayat Pengajuan Limit CazhPOIN
 
 Setelah langkah ini, Anda melihat detail riwayat pengajuan limit [CazhPOIN](/referensi/glosarium#cazhpoin).
 
 1. Pada halaman profil, tekan menu **Pengajuan Limit CazhPOIN**.
 2. Sistem akan menampilkan detail dari riwayat pengajuan limit CazhPOIN.
+
+<Callout kind="info">
+  Status pengajuan: **Menunggu Persetujuan**, **Disetujui**, atau **Ditolak** (disertai *Alasan Penolakan*). Halaman riwayat menampilkan bagian **Detail Pengajuan** (status, tanggal pengajuan, tanggal diproses), **Data Diri**, **Data Bank**, dan **Riwayat Pengajuan**.
+</Callout>
 
 ## Riwayat Perubahan Data
 
@@ -107,10 +140,15 @@ Setelah langkah ini, Anda melihat daftar pengajuan perubahan data email dan nomo
 1. Pada halaman profil, tekan menu **Perubahan Data**.
 2. Sistem akan menampilkan daftar pengajuan perubahan data email dan nomor HP.
 
+<Callout kind="info">
+  Setiap pengajuan berlabel **Perubahan Email** atau **Perubahan Nomor HP**, dengan status **Pengajuan**, **Disetujui**, atau **Ditolak**.
+</Callout>
+
 ## Biometrik dan Bantuan
 
 Pada halaman profil juga tersedia menu tambahan:
 
 - **Biometrik** — mengaktifkan autentikasi biometrik pada perangkat.
 - **Bantuan** — berisi **Hubungi CS**, **Panduan Pengguna**, **Syarat dan Ketentuan**, serta **Kebijakan Privasi**.
-- **Akses Dukungan** — mengizinkan akses sementara untuk membantu menyelesaikan masalah Anda.
+- **Akses Dukungan** — mengizinkan akses sementara akun kepada Tim CARDS untuk membantu menyelesaikan masalah Anda; saat aktif, aplikasi menampilkan batas waktu berlakunya akses tersebut.
+</Callout>

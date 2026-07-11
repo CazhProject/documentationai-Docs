@@ -1,9 +1,25 @@
 ---
 title: Keuangan
-description: Fitur keuangan CARDS Parents — pembayaran tagihan, tabungan sekolah (lihat, isi saldo, buka rekening baru), dan donasi.
+description: Fitur keuangan CARDS Parents — pembayaran tagihan, tabungan sekolah (lihat, isi saldo, buka rekening baru), donasi, PPOB, dan rekap keuangan.
 ---
 
 Halaman ini untuk orang tua/wali yang ingin mengurus keuangan sekolah anak dari aplikasi CARDS Parents. Pada menu Keuangan tersedia beberapa menu terkait transaksi seperti Tagihan, Top Up [Kartu](/referensi/glosarium#kartu), Riwayat Kartu, Rekap Keuangan, Tabungan Sekolah, Donasi, dan Pindah Saldo.
+
+## Metode Pembayaran yang Tersedia
+
+Saat memproses pembayaran (tagihan, top up, tabungan, donasi, hutang), aplikasi menampilkan metode pembayaran yang dikelompokkan sebagai berikut (ketersediaannya tergantung pengaturan lembaga):
+
+| Kelompok | Pilihan |
+| --- | --- |
+| **Cazh** | CazhPOIN, Kartu |
+| **Virtual Account Bank** | BRI, BNI, Mandiri, BCA, BSI, BJB, CIMB, BNC, Permata, Muamalat, Hana, Danamon, Sampoerna |
+| **Transfer Bank** | Transfer bank |
+| **e-Wallet** | QRIS, DANA (perlu akun DANA tertaut) |
+| **Retail** | Indomaret, Alfamart |
+
+<Callout kind="info">
+  Setiap metode menampilkan **Service Fee**-nya. Biaya dapat gratis bila nominal mencapai batas minimum tertentu atau ditanggung lembaga — kecuali **QRIS** yang selalu dikenakan biaya layanan. Metode CazhPOIN/DANA otomatis nonaktif bila saldonya tidak mencukupi.
+</Callout>
 
 ## Pembayaran Tagihan
 
@@ -28,6 +44,21 @@ Setelah itu:
   </Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Halaman Tagihan memiliki dua tab: **Belum Terbayar** dan **Sudah Terbayar**, dengan filter jenis tagihan. Status tagihan: **Belum Terbayar**, **Terbayar Sebagian**, dan **Terbayar**.
+
+- Beberapa tagihan dapat dipilih sekaligus lewat **Pilih Semua**, lalu dibayar dalam satu transaksi dengan tombol **Bayar** / **Bayar Semua**.
+- Detail riwayat tagihan menampilkan: status, **Instansi**, **Nomor Kartu**, nama tagihan, **Nomor Invoice**, serta rincian pembayaran per transaksi (nominal, tanggal, metode). Untuk tagihan terbayar sebagian juga ditampilkan **Total Pembayaran**, total tagihan, dan **Sisa** tagihan. Detail dapat dibagikan sebagai gambar.
+
+### Menunggu Pembayaran
+
+Transaksi yang belum diselesaikan tampil di halaman **Menunggu Pembayaran**, dengan filter kategori: Semua, Tagihan, Isi Kartu, Isi POIN, Tabungan, dan Donasi. Setiap transaksi menampilkan batas waktu **Bayar Sebelum** dengan hitung mundur, **ID Transaksi** (dapat disalin), **Total Pembayaran**, serta nomor Virtual Account/kode pembayaran dengan tombol **Salin**. Transaksi tertunda dapat dibatalkan melalui menu titik tiga → **Batalkan Transaksi**.
+
+<Callout kind="info">
+  Untuk pembayaran **QRIS**, aplikasi menampilkan kode QR dengan masa kadaluarsa (dalam menit), tombol **Download** untuk menyimpan QR ke galeri, dan **Petunjuk Pembayaran**. Satu kode QRIS hanya berlaku untuk satu kali transaksi.
+</Callout>
+
 ## Tabungan
 
 ### Melihat Tabungan
@@ -46,12 +77,19 @@ Setelah langkah ini, Anda melihat saldo dan detail tabungan sekolah anak.
   </Step>
 </Steps>
 
+#### Informasi yang ditampilkan
+
+- Halaman detail menampilkan **Total Tabungan Anda** (dapat disembunyikan/ditampilkan dengan ikon mata) dan **nomor rekening** yang dapat disalin.
+- Riwayat tabungan dapat difilter per jenis: Setoran, Penarikan, Biaya Penarikan, Biaya Admin Tabungan, Bagi Hasil Tabungan, dan Pajak Tabungan.
+- Detail riwayat berisi: **Dilakukan Oleh**, **No. Referensi**, **Waktu Transaksi**, **Metode Pembayaran**, **Tipe Transaksi** (Online/Tunai), dan **Nominal Transaksi** — nota dapat diunduh ke galeri atau dibagikan.
+- Daftar rekening dapat difilter status: **Aktif**, **Diblokir**, **Tidak Aktif**.
+
 ### Pengisian Saldo Tabungan
 
 Setelah langkah ini, saldo tabungan bertambah sesuai nominal yang dibayarkan.
 
 1. Tekan pada jenis tabungan yang akan diisi.
-2. Masukkan nominal pengisian.
+2. Masukkan nominal pengisian (minimal setoran mengikuti ketentuan produk tabungan).
 3. Pilih metode pembayarannya.
 
 ### Pembuatan Rekening Tabungan Baru
@@ -77,7 +115,7 @@ Setelah langkah ini, rekening tabungan baru atas nama anak Anda terbuat.
 </Steps>
 
 <Callout kind="info">
-  Pembukaan rekening baru hanya dapat dilakukan jika pihak sekolah mengaktifkan fitur pembukaan rekening baru secara online.
+  Pembukaan rekening baru hanya dapat dilakukan jika pihak sekolah mengaktifkan fitur pembukaan rekening baru secara online. Halaman detail produk menampilkan **Informasi Tabungan**: Bagi Hasil (%), Pajak Bagi Hasil (%), Biaya Admin per bulan, Biaya Penarikan, Minimal Saldo, dan Minimal Setoran.
 </Callout>
 
 ## Donasi
@@ -98,6 +136,10 @@ Setelah langkah ini, Anda melihat daftar dan detail program donasi yang tersedia
   </Step>
 </Steps>
 
+#### Informasi yang ditampilkan
+
+Terdapat tiga tipe donasi: **Donasi Umum**, **Penggalangan Dana**, dan **Program Khusus**. Halaman detail menampilkan: nominal terkumpul, target (untuk penggalangan dana, dengan progress bar), jumlah donatur, sisa hari, kuota (untuk program khusus), **Informasi Donasi** (penyelenggara), **Deskripsi Donasi**, daftar **Donatur**, dan **Doa-doa #Donatur**.
+
 ### Pengisian Donasi
 
 Setelah langkah ini, donasi Anda tersalurkan melalui metode pembayaran yang dipilih.
@@ -116,3 +158,38 @@ Setelah langkah ini, donasi Anda tersalurkan melalui metode pembayaran yang dipi
     Setujui syarat, lalu pilih metode pembayaran.
   </Step>
 </Steps>
+
+<Callout kind="info">
+  Formulir donasi berisi: **Nama** (dengan opsi *Sembunyikan nama sebagai Donatur* untuk berdonasi anonim), **No. Handphone**, **Email**, **Nominal Donasi** (minimal **Rp10.000**), dan **Pesan / Doa** (opsional). Untuk Program Khusus, Anda memilih **Jumlah Kuota** dan mengisi nama tiap donatur — nominalnya otomatis mengikuti kuota. Riwayat donasi dapat difilter per tipe, dengan status pembayaran **Sukses**, **Pending**, atau **Gagal**.
+</Callout>
+
+## PPOB
+
+CARDS Parents juga menyediakan pembelian dan pembayaran PPOB yang dibayar menggunakan saldo **CazhPOIN** (saldo dipotong sesuai nominal tagihan). Produk yang tersedia:
+
+| Produk | Cara kerja |
+| --- | --- |
+| **Pulsa** | Isi nomor HP, pilih nominal, **Beli Pulsa** |
+| **Paket Data** | Isi nomor HP, pilih paket, **Beli Paket Data** |
+| **E-Wallet** | Top up OVO, ShopeePay, DANA, atau GoPay |
+| **PLN** | Token PLN prabayar atau cek tagihan pascabayar |
+| **PDAM** | Cek dan bayar tagihan air |
+| **BPJS** | Cek dan bayar iuran (dengan periode tagihan) |
+| **Telkom** | Cek dan bayar tagihan |
+| **Multifinance** | Cek dan bayar angsuran |
+
+<Callout kind="info">
+  Pembelian pulsa/paket data/e-wallet dikonfirmasi dengan **PIN Aplikasi**. Untuk produk tagihan, aplikasi menampilkan halaman pengecekan berisi subtotal, biaya admin, dan total sebelum pembayaran. Tersedia juga menu **DANA** untuk top up saldo DANA dari CazhPOIN dengan pilihan nominal cepat (25 rb–500 rb) dan service fee.
+</Callout>
+
+## Rekap Keuangan
+
+Menu **Rekap** menampilkan ringkasan keuangan kartu per periode (filter bulan dan tahun):
+
+- **Uang Masuk**, **Uang Keluar**, dan **Selisih** dalam bentuk ringkasan dan grafik batang.
+- **Rincian Kategori** berupa diagram donat yang dapat ditekan per kategori: TopUp Kartu, Dari Kartu Lain, Pindah Uang Saku, Penarikan, Pembayaran Tagihan, Pembayaran Donasi, Setoran Tabungan, dan Belanja — masing-masing dengan total nominal, jumlah transaksi, dan persentase.
+- Menekan kategori membuka daftar **Transaksi Kartu** pada kategori dan periode tersebut.
+
+<Callout kind="info">
+  Rekap dihitung per kantong/wallet kartu, sehingga Anda dapat memantau pola jajan dan pemasukan uang saku anak setiap bulan.
+</Callout>
