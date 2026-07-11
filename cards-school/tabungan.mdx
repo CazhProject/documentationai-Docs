@@ -22,7 +22,7 @@ Tabel Produk Tabungan menampilkan kolom: **Nama Produk**, **Nama Instansi**, **B
 
 ## Tambah Produk Tabungan
 
-Membuat produk tabungan baru.
+Membuat produk tabungan baru — semacam "jenis tabungan" yang menentukan aturan main rekening di dalamnya: bagi hasil, biaya admin, biaya penarikan, saldo dan setoran minimum, serta boleh-tidaknya setor/tarik via aplikasi. Rekening siswa dibuka berdasarkan produk ini.
 
 <Steps>
   <Step title="Buka Produk">Login ke website, klik menu **Keuangan**, klik submenu **Tabungan**, lalu klik submenu **Produk**.</Step>
@@ -52,7 +52,7 @@ Membuat produk tabungan baru.
 
 ## Edit Produk Tabungan
 
-Mengubah produk tabungan yang sudah ada — mengganti instansi, mengubah biaya penarikan, mengubah status produk tabungan, dan lainnya.
+Mengubah produk tabungan yang sudah ada — mengganti instansi, mengubah biaya penarikan, mengubah status produk tabungan, dan lainnya. Aturan baru pada produk berlaku bagi rekening-rekening yang menggunakan produk tersebut.
 
 <Steps>
   <Step title="Buka Produk">Login ke website, klik menu **Keuangan**, klik submenu **Tabungan**, lalu klik submenu **Produk**.</Step>
@@ -68,6 +68,8 @@ Mengelola Rekening Tabungan siswa: menambah, mengedit, melihat detail, mencari, 
   <Step title="Buka Rekening">Login ke website, klik menu **Keuangan**, klik submenu **Tabungan**, lalu klik submenu **Rekening**.</Step>
   <Step title="Kelola rekening">Halaman Daftar Rekening menampilkan rekening yang dimiliki oleh para siswa.</Step>
 </Steps>
+
+<Callout kind="alert">Penghapusan rekening bersifat permanen — rekening yang dihapus berstatus **Hapus Permanen**. Pastikan rekening yang dipilih sudah benar dan saldonya telah diselesaikan sebelum menghapus.</Callout>
 
 ### Informasi yang ditampilkan
 
@@ -149,7 +151,7 @@ Status transaksi tabungan: **Berhasil**, **Gagal**, atau **Pembatalan**. Cetak s
 
 ## Setoran Massal
 
-Melakukan transaksi setor tabungan secara massal. Setoran massal dibuat dengan cara upload data Excel setoran yang diambil dari template sesuai filter yang diatur.
+Melakukan transaksi setor tabungan secara massal — menambah saldo banyak rekening siswa sekaligus. Setoran massal dibuat dengan cara upload data Excel setoran yang diambil dari template sesuai filter yang diatur.
 
 <Steps>
   <Step title="Buka Transaksi">Login ke website, klik menu **Keuangan**, klik submenu **Tabungan**, lalu klik submenu **Transaksi**.</Step>
@@ -164,7 +166,7 @@ Template anggota diunduh sesuai filter (instansi, jenis anggota, tingkat/kelas/j
 
 ## Penarikan Massal
 
-Melakukan transaksi tarik tabungan secara massal. Penarikan massal dibuat dengan cara upload data Excel penarikan yang diambil dari template sesuai filter yang diatur.
+Melakukan transaksi tarik tabungan secara massal — mengurangi saldo banyak rekening siswa sekaligus. Penarikan massal dibuat dengan cara upload data Excel penarikan yang diambil dari template sesuai filter yang diatur.
 
 <Steps>
   <Step title="Buka Transaksi">Login ke website, klik menu **Keuangan**, klik submenu **Tabungan**, lalu klik submenu **Transaksi**.</Step>
