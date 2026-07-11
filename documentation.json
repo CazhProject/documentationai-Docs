@@ -1,6 +1,6 @@
 {
   "name": "Manual CARDS",
-  "initialRoute": "cards-school/memulai/login",
+  "initialRoute": "cards-school/mulai-dari-sini",
   "colors": {
     "light": { "brand": "#01718f", "heading": "#0c2d38", "text": "#3d5560" },
     "dark": { "brand": "#4dbcd9", "heading": "#eaf6fa", "text": "#a8c2cb" }
@@ -16,6 +16,7 @@
             "group": "Memulai",
             "icon": "rocket",
             "pages": [
+              { "title": "Mulai dari Sini", "path": "cards-school/mulai-dari-sini", "icon": "flag" },
               { "title": "Login", "path": "cards-school/memulai/login", "icon": "log-in" },
               { "title": "Dashboard", "path": "cards-school/memulai/dashboard", "icon": "layout-dashboard" },
               { "title": "Video Training", "path": "cards-school/training", "icon": "play-circle" }
@@ -159,6 +160,7 @@
             "group": "Memulai",
             "icon": "rocket",
             "pages": [
+              { "title": "Mulai dari Sini", "path": "cards-parent/mulai-dari-sini", "icon": "flag" },
               { "title": "Tentang CARDS Parent", "path": "cards-parent/tentang-cards-parent", "icon": "info" },
               { "title": "Instalasi & Daftar Akun", "path": "cards-parent/tentang", "icon": "download" },
               { "title": "Kelola Akun", "path": "cards-parent/akun", "icon": "user-cog" }
@@ -187,6 +189,7 @@
             "group": "Memulai",
             "icon": "rocket",
             "pages": [
+              { "title": "Mulai dari Sini", "path": "cards-edu/mulai-dari-sini", "icon": "flag" },
               { "title": "Tentang Cards Edu", "path": "cards-edu/tentang", "icon": "info" },
               { "title": "Kelola Akun", "path": "cards-edu/akun", "icon": "user-cog" }
             ]
@@ -215,6 +218,7 @@
             "group": "Memulai",
             "icon": "rocket",
             "pages": [
+              { "title": "Mulai dari Sini", "path": "cazhpos/mulai-dari-sini", "icon": "flag" },
               { "title": "Tentang CazhPOS", "path": "cazhpos/tentang", "icon": "info" },
               { "title": "Registrasi & Login", "path": "cazhpos/memulai", "icon": "log-in" }
             ]
@@ -244,14 +248,15 @@
         ]
       },
       {
-        "tab": "Partner Dashboard",
+        "tab": "Cazhpos Dashboard",
         "icon": "layout-dashboard",
         "groups": [
           {
             "group": "Panduan",
             "icon": "book",
             "pages": [
-              { "title": "Tentang Partner Dashboard", "path": "partner-dashboard/tentang", "icon": "info" },
+              { "title": "Mulai dari Sini", "path": "partner-dashboard/mulai-dari-sini", "icon": "flag" },
+              { "title": "Tentang Cazhpos Dashboard", "path": "partner-dashboard/tentang", "icon": "info" },
               { "title": "Toko", "path": "partner-dashboard/toko", "icon": "store" },
               { "title": "Produk", "path": "partner-dashboard/produk", "icon": "package" },
               { "title": "Pelanggan", "path": "partner-dashboard/pelanggan", "icon": "users" },
