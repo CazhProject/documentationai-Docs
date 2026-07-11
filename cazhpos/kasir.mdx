@@ -5,6 +5,32 @@ description: "Panduan lengkap operasional kasir CazhPOS: transaksi pesanan manua
 
 Halaman ini memandu kasir dalam operasional penjualan harian di CazhPOS: membuat transaksi (manual maupun dari katalog produk), memproses pembayaran, menyimpan pesanan, mengelola riwayat dan struk, hingga memeriksa kartu pelanggan.
 
+## Metode Pembayaran yang Tersedia
+
+Saat memproses pembayaran, kasir dapat memilih salah satu metode berikut:
+
+| Metode | Kelompok | Keterangan |
+| --- | --- | --- |
+| Tunai | Cash | Tersedia tombol nominal cepat (Rp100.000, Rp50.000, Rp20.000, Rp10.000, Rp5.000, Rp2.000, Rp1.000, Rp500, Rp100) dan tombol **Uang Pas**. Sistem menghitung **Kembalian** otomatis dari uang yang diterima. |
+| Hutang | Cash | Penjualan dengan pembayaran tertunda; tercatat sebagai piutang pelanggan. |
+| Debit/Kredit | Cash | Kasir mengisi Nama Bank, Jenis Kartu (debit/kredit), Nomor Kartu, dan Nama pada Kartu. |
+| Transfer Bank | Cash | Pembayaran melalui transfer bank. |
+| Pre Order | Cash | Pesanan dengan pembayaran tertunda (paylater); lihat [Pre Order](/cazhpos/pre-order). |
+| QR Cazh | Cash | Pembayaran QR statis; nominal terkunci sesuai total transaksi (tidak dapat diubah). |
+| Go Food / Grab Food / Shopee Food | Cash | Pencatatan penjualan dari platform food delivery (khusus Indonesia). |
+| CARDS | Non Tunai | Pembayaran dengan [kartu CARDS](/referensi/glosarium#kartu-kartu-cards) (khusus Indonesia). |
+| QRIS | Non Tunai | Pembayaran QRIS (khusus Indonesia). |
+
+<Callout kind="info">
+Pada pembayaran **Debit/Kredit**, merchant dikenakan komisi transaksi yang dipotong dari saldo. Metode **Pre Order** tidak tersedia jika pesanan berisi produk custom (pesanan manual).
+</Callout>
+
+### Diskon, Pajak, dan Pembulatan
+
+- **Diskon** dapat berupa persentase (**Diskon %**) atau **Jumlah Tetap** (nominal), dan dapat diterapkan untuk semua produk, per produk, atau per kategori.
+- **Pajak** mengikuti pengaturan pajak toko (nama dan persentase pajak toko) bila diaktifkan; jika tidak, mengikuti pengaturan pajak partner. Pajak dihitung dari subtotal setelah dikurangi diskon.
+- **Pembulatan** total mengikuti pengaturan toko: ke atas, ke bawah, atau tanpa pembulatan.
+
 ## Transaksi Pesanan Manual
 
 Buat transaksi tanpa memilih produk: masukkan nominal transaksi, tambahkan diskon, pilih metode pembayaran, lalu selesaikan pembayaran hingga transaksi berhasil.
@@ -63,6 +89,10 @@ Kelola pesanan sebelum transaksi diproses: tambah produk, beri diskon, tambahkan
   <Step title="Bayar">Tekan tombol **Bayar**. Sistem memproses transaksi.</Step>
 </Steps>
 
+<Callout kind="info">
+Pada halaman Pembayaran, kasir juga dapat menambahkan **catatan per produk**, **Voucher**, serta memanfaatkan poin loyalitas pelanggan (redeem poin, reward produk gratis, dan reward diskon) bila pelanggan terhubung ke transaksi. Selain itu tersedia fitur **Split Bill** untuk memecah satu pesanan menjadi beberapa tagihan terpisah.
+</Callout>
+
 ## Detail Transaksi
 
 Lihat informasi transaksi yang telah berhasil diproses beserta rincian pembayaran dan struk transaksi.
@@ -93,6 +123,10 @@ Cetak ulang struk dari transaksi yang sudah tercatat di riwayat.
   <Step title="Cetak">Pada halaman detail, tekan tombol **Cetak Struk**. Sistem mencetak struk riwayat.</Step>
 </Steps>
 
+<Callout kind="info">
+Halaman **Riwayat** memiliki empat tab: **Pesanan**, **Pre Order**, **Hutang**, dan **Pengeluaran**. Riwayat dapat difilter berdasarkan rentang tanggal (**Interval maksimal 31 hari**, hingga satu tahun ke belakang), metode pembayaran, dan pelanggan.
+</Callout>
+
 ## Detail Riwayat Pesanan
 
 Lihat informasi terperinci pesanan yang telah selesai diproses: kode struk, tanggal, nama staf, metode pembayaran, hingga rincian menu dan total biaya. Dari sini Anda juga dapat melakukan tindakan lanjutan seperti mencetak struk fisik, mengirim struk digital ke pelanggan, atau membatalkan transaksi jika terjadi kesalahan input.
@@ -110,6 +144,16 @@ Tampilkan pratinjau nota digital dari transaksi yang sukses diproses. Anda dapat
   <Step title="Buka detail pesanan">Buka menu **Riwayat**, pilih salah satu pesanan. Sistem menampilkan **Detail Pesanan**.</Step>
   <Step title="Lihat struk">Tekan tombol **Lihat Struk**. Sistem menampilkan struk.</Step>
 </Steps>
+
+#### Informasi yang ditampilkan pada struk
+
+- **Kepala struk** — logo toko (bila diatur), nama toko, alamat toko, dan nomor telepon toko.
+- **Informasi transaksi** — ID pesanan (Ref ID), tanggal dan jam transaksi, status transaksi, nama **Karyawan** (kasir), **Tipe Pembayaran** (untuk debit/kredit menampilkan jenis kartu), **Nomor Kartu** (bila ada), **Pelanggan** beserta perubahan poin, **Tenggat Waktu** dan **Pembayaran Terakhir** (untuk hutang), serta **Catatan**.
+- **Rincian item** — nama produk, jumlah, dan harga per item.
+- **Ringkasan** — Sub Total, Diskon, pajak (sesuai nama pajak toko/partner), Biaya Layanan (bila ada), Pembulatan, Redeem Points (bila ada), dan Total. Untuk pembayaran tunai ditampilkan **Tunai** dan **Kembalian**; untuk hutang ditampilkan **Terbayar** dan **Belum Terbayar**.
+- **Kaki struk** — baris catatan struk toko (dapat diatur di pengaturan toko), tanda **"Salinan"** bila struk dicetak ulang, jenis cetakan (Pelanggan/Merchant), dan tanda "Didukung oleh Cazh ID".
+
+Struk dapat **diunduh** sebagai gambar ke galeri atau **dibagikan** langsung dari aplikasi.
 
 ### Kirim Struk
 
@@ -147,6 +191,10 @@ Batalkan transaksi yang sudah berhasil diproses (khusus metode pembayaran tunai)
 Pembatalan transaksi bersifat permanen dan hanya berlaku untuk transaksi dengan metode pembayaran tunai. Pastikan transaksi yang dipilih memang perlu dibatalkan.
 </Callout>
 
+<Callout kind="info">
+Pembatalan berlaku untuk **seluruh pesanan** (bukan per item) dan memerlukan **Alasan Pembatalan** serta konfirmasi **PIN kasir**. Tombol Batalkan Transaksi tidak tersedia untuk transaksi dengan metode Pre Order, QRIS, dan QR Cazh, transaksi yang sudah berstatus dibatalkan, serta untuk pengguna dengan peran Investor.
+</Callout>
+
 <Steps>
   <Step title="Buka halaman Cetak Struk">Buka menu **Riwayat**, pilih salah satu pesanan hingga tampil **Detail Pesanan**, lalu tekan tombol **Cetak Struk**. Sistem menampilkan halaman **Cetak Struk**.</Step>
   <Step title="Batalkan transaksi">Tekan tombol **Batalkan Transaksi**. Sistem menampilkan pop-up **Batalkan Transaksi**.</Step>
@@ -161,3 +209,7 @@ Periksa data dan saldo terakhir sebuah [kartu CARDS](/referensi/glosarium#kartu-
   <Step title="Buka Cek Kartu">Tekan menu **Lainnya** pada halaman katalog, lalu tekan **Cek Kartu**. Sistem menampilkan halaman cek kartu.</Step>
   <Step title="Cek kartu">Isi nomor kartu, kemudian tekan tombol **Cek Kartu**. Sistem menampilkan data kartu serta saldo terakhir kartu.</Step>
 </Steps>
+
+<Callout kind="info">
+Nomor kartu terdiri dari **16 digit**. Selain input manual, kartu dapat dipindai melalui QR code kartu atau pemindai NFC/RFID eksternal. Hasil cek menampilkan saldo tiap dompet kartu beserta sisa limit harian dan limit penarikan (jika toko menerapkan limit).
+</Callout>
