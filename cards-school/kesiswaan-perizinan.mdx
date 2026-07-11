@@ -25,6 +25,19 @@ Kelola dan pantau data perizinan yang tersimpan dalam sistem.
   </Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel Perizinan menampilkan kolom: **Tanggal Izin**, **Nama Anggota**, **Kelas**, **Diajukan Oleh**, **Tipe Izin**, **Nama Izin** (keperluan), **Periode Izin**, **Catatan**, dan **Status**. Filter tersedia untuk **Instansi**, **Tipe Anggota** (Siswa/Guru/Staff), rentang **Tanggal Mulai**–**Tanggal Selesai**, **Tingkat**, **Kelas**, **Jurusan**, **Tipe Izin**, dan **Status**. Export Excel menghasilkan sheet **Daftar Perizinan**.
+
+Nilai tipe dan status izin:
+
+| Tipe Izin | Status Izin |
+| --- | --- |
+| **Sakit** | **Disetujui** |
+| **Keperluan lain** | **Ditolak** |
+|  | **Dipertimbangkan** |
+|  | **Dibatalkan** |
+
 ## Edit Perizinan
 
 Perbarui atau ubah informasi perizinan yang telah tercatat.
@@ -34,6 +47,28 @@ Perbarui atau ubah informasi perizinan yang telah tercatat.
   <Step title="Cari aksi Edit">Geser tabel ke sebelah kanan tabel, kemudian pilih **Edit**.</Step>
   <Step title="Ubah dan simpan">Edit data perizinan dengan sesuai, lalu klik **Simpan Perubahan**.</Step>
 </Steps>
+
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Anggota | Wajib. |
+| Tanggal | Wajib, format tanggal. |
+| Tipe Izin | Wajib: Sakit atau Keperluan lain. |
+| Keperluan (Nama Izin) | Wajib, maksimal 255 karakter. |
+| Lama Izin | Wajib: **Satu hari** atau **Lebih dari satu hari**. |
+| Tanggal Mulai Izin | Wajib; tidak boleh sebelum hari ini. |
+| Tanggal Berakhir Izin | Wajib jika lama izin lebih dari satu hari; harus setelah tanggal mulai. |
+| Waktu Mulai & Waktu Selesai | Wajib jika izin satu hari; waktu selesai setelah waktu mulai. |
+| Foto | Wajib, gambar png/jpg/jpeg/heic/heif, maksimal 10 MB. |
+| Status | Wajib: Disetujui / Ditolak / Dipertimbangkan / Dibatalkan. |
+| Alasan Penolakan | Diisi saat status Ditolak. |
+| Alasan Pembatalan | Wajib saat status Dibatalkan, maksimal 500 karakter. |
+| Catatan | Opsional, maksimal 255 karakter. |
+
+<Callout kind="info">
+Aturan sistem: izin berstatus **Dipertimbangkan** yang periodenya sudah lewat otomatis diubah menjadi **Disetujui**. Pembatalan hanya dapat dilakukan jika tanggal mulai izin masih di masa depan. Saat izin disetujui, catatan presensi (harian, pelajaran, kegiatan) pada rentang tanggal izin otomatis ditandai **Sakit** (untuk tipe Sakit) atau **Izin**. Jika instansi mengaktifkan batas waktu pengajuan, izin yang dimulai hari ini dan diajukan melewati batas waktu ditolak sistem dengan pesan "Pengajuan perizinan melewati batas waktu maksimal".
+</Callout>
 
 ## Hapus Perizinan
 

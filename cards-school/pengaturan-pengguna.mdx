@@ -27,6 +27,17 @@ Buat jenis pengguna baru.
   <Step title="Isi dan simpan">Isi form, lalu klik **Simpan**. Jenis pengguna baru muncul pada List Jenis Pengguna.</Step>
 </Steps>
 
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Nama Jenis Pengguna | Wajib, maksimal 255 karakter. |
+| Akses Menu | Wajib, minimal satu menu dipilih. |
+
+<Callout kind="info">
+Hak akses disusun dua tingkat: menu utama (Anggota, Administrasi, Keuangan, Kartu, Akademik, Pengaturan, LMS) dan submenu di bawahnya (misalnya Administrasi memiliki submenu Tagihan, Inventaris, dan Pengumuman; Keuangan memiliki submenu Pembukuan dan Tabungan). Mencentang menu induk otomatis memilih seluruh submenunya.
+</Callout>
+
 ### Edit Jenis Pengguna
 
 Ubah jenis pengguna yang sudah ada.
@@ -77,6 +88,10 @@ Ubah data akun pengguna.
   <Step title="Ubah dan simpan">Edit data akun sesuai data akun pengguna, lalu klik **Simpan**.</Step>
 </Steps>
 
+<Callout kind="info">
+Pada edit akun, **email dan nomor HP tidak dapat diubah**; status akun wajib dipilih.
+</Callout>
+
 ### Hapus Akun Pengguna
 
 Hapus akun pengguna dari sistem.
@@ -87,7 +102,7 @@ Hapus akun pengguna dari sistem.
 </Steps>
 
 <Callout kind="alert">
-Penghapusan akun pengguna bersifat permanen. Pastikan akun memang sudah tidak digunakan sebelum menghapus.
+Penghapusan akun pengguna bersifat permanen. Pastikan akun memang sudah tidak digunakan sebelum menghapus. Pengguna tidak dapat menghapus akunnya sendiri.
 </Callout>
 
 ### Tambah Akun Pengguna
@@ -99,3 +114,19 @@ Buat akun pengguna baru.
   <Step title="Buka form tambah">Klik **Tambah Pengguna**.</Step>
   <Step title="Isi dan simpan">Isi form sesuai data siswa, lalu klik **Simpan**.</Step>
 </Steps>
+
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Instansi | Wajib, dapat memilih lebih dari satu. |
+| Nama | Wajib, maksimal 255 karakter. |
+| Email | Wajib, format email, unik. |
+| Nomor HP | Wajib, angka 8–15 digit, unik. |
+| Alamat | Opsional, maksimal 255 karakter. |
+| Jenis Pengguna (Role) | Wajib. |
+| Jenis Akun | Opsional (penanda akun partner/pusat). |
+
+<Callout kind="info">
+Saat akun dibuat, sistem otomatis membuat kata sandi acak (12 karakter) dan PIN 6 digit, lalu mendaftarkan akun ke layanan autentikasi Cazh.
+</Callout>

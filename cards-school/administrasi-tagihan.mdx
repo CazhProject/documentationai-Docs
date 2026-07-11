@@ -16,6 +16,17 @@ Memonitor data tagihan seluruh anggota.
   <Step title="Kelola data">Memonitor data tagihan seluruh anggota, melihat ringkasan nominal tagihan terbayar dan belum terbayar, serta export data tagihan.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel Data Tagihan menampilkan kolom: **Status**, **Nama**, **Ref ID**, **Jenis Tagihan**, **Catatan**, **Jumlah Tagihan**, **Terbayar**, dan **Sisa Tagihan** (kolom Nomor Kartu tersembunyi secara default). Data dapat difilter berdasarkan **Instansi**, **Jenis Tagihan**, **Tingkat**, **Kelas**, **Status**, serta rentang **Dari Tanggal** dan **Sampai Tanggal**; jumlah baris per halaman dapat dipilih 10/50/100/500/1000/2000. Status tagihan terdiri dari:
+
+| Status | Keterangan |
+| --- | --- |
+| **Lunas** | Tagihan telah dibayar penuh. |
+| **Terbayar Sebagian** | Tagihan baru dibayar sebagian. |
+| **Belum Terbayar** | Belum ada pembayaran. |
+| **Menunggu Pembayaran** | Invoice sudah dibuat dan menunggu pembayaran. |
+
 ## Edit Data Tagihan
 
 Memperbarui data tagihan anggota.
@@ -26,6 +37,10 @@ Memperbarui data tagihan anggota.
   <Step title="Buka detail">Klik pada **Nama** atau klik ikon **Edit** pada baris data tagihan yang dipilih. Sistem akan menampilkan halaman detail tagihan yang dipilih.</Step>
   <Step title="Edit data">Pada halaman detail data tagihan, Admin dapat edit total tagihan, edit catatan, melihat riwayat pembayaran tagihan, dan edit nominal total terbayar untuk metode pembayaran tunai.</Step>
 </Steps>
+
+<Callout kind="info">
+Aturan sistem: jika tagihan berstatus **Belum Terbayar**, hanya nominal tagihan yang dapat diubah. Untuk tagihan yang sudah memiliki pembayaran, perubahan dilakukan melalui alur penyesuaian (adjustment) per pembayaran beserta catatannya.
+</Callout>
 
 ## Hapus Data Tagihan
 
@@ -48,6 +63,16 @@ Membuat data tagihan anggota secara satuan.
   <Step title="Lengkapi formulir">Cari data anggota berdasarkan Nama atau Nomor Kartu, buat tagihan berdasarkan Jenis Tagihan, isi nominal Jumlah Tagihan sesuai kebutuhan, dan pilih jenis Statis VA maupun Dinamis VA.</Step>
 </Steps>
 
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Instansi | Wajib. |
+| Anggota (Nama/Nomor Kartu) | Wajib; dipilih dari daftar anggota. |
+| Jenis Tagihan | Wajib. |
+| Jumlah Tagihan | Wajib, angka. |
+| Catatan | Opsional. |
+
 ## Buat Tagihan Massal
 
 Membuat data tagihan anggota secara massal.
@@ -58,6 +83,10 @@ Membuat data tagihan anggota secara massal.
   <Step title="Lengkapi formulir">Pilih penerima tagihan berdasarkan Jenis Anggota (siswa, guru, dan staf) atau secara spesifik berdasarkan Tag, buat tagihan berdasarkan Jenis Tagihan, isi nominal Jumlah Tagihan sesuai kebutuhan, dan pilih jenis Statis VA maupun Dinamis VA.</Step>
 </Steps>
 
+<Callout kind="info">
+Pada mode massal, penerima dapat dipersempit: untuk **Siswa** berdasarkan Tingkat, Kelas, dan Jurusan; untuk **Guru** berdasarkan jenis guru; untuk **Staf** berdasarkan jenis staf; serta berdasarkan **Tag** (dapat memilih lebih dari satu).
+</Callout>
+
 ## Import Data Tagihan
 
 Membuat tagihan melalui import file.
@@ -67,6 +96,10 @@ Membuat tagihan melalui import file.
   <Step title="Buka tab Import">Klik tab **Import**. Sistem akan menampilkan halaman Formulir Import Tagihan.</Step>
   <Step title="Lengkapi formulir">Unduh template import tagihan, input nominal tagihan untuk masing-masing anggota penerima tagihan pada file template, lalu unggah file import tagihan.</Step>
 </Steps>
+
+<Callout kind="info">
+Aturan import: file wajib berformat **.xls** dengan ukuran maksimal **4 MB (4096 KB)**. Template yang diunduh sudah terisi anggota **aktif** sesuai filter (instansi, jenis anggota, tag). Kolom template: **Nama** (opsional), **Nomor Kartu** (wajib, divalidasi terhadap instansi), **Jumlah** (wajib, angka, minimal 1), dan **Catatan** (opsional). Untuk jenis anggota Guru/Staf, jenis guru/staf wajib dipilih sebelum import; setiap import tercatat pada halaman **Log Import**, dan anggota menerima notifikasi tagihan baru.
+</Callout>
 
 ## Laporan Pembayaran Tagihan
 
@@ -85,6 +118,10 @@ Memonitor rekap pembayaran setiap jenis tagihan.
   <Step title="Buka Rekap Pembayaran">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Rekap Pembayaran**. Sistem akan menampilkan halaman Daftar Rekap Pembayaran.</Step>
   <Step title="Monitor rekap">Pada halaman tersebut, Admin dapat memonitor daftar rekap pembayaran dan total penerimaan setiap jenis tagihan.</Step>
 </Steps>
+
+### Informasi yang ditampilkan
+
+Rekap dikelompokkan per **jenis tagihan** dan **instansi**, menampilkan total pembayaran diterima, total tagihan, dan **persentase penerimaan**. Filter tersedia untuk instansi, operator, dan rentang tanggal (default: bulan berjalan). Export Excel menghasilkan file **Rekap Pembayaran.xlsx**.
 
 ## Detail Rekap Pembayaran Tagihan
 

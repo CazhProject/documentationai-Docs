@@ -24,6 +24,10 @@ Lihat, cari, dan ekspor data prestasi siswa.
   </Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel Prestasi menampilkan kolom: **Tanggal Kejadian**, **Siswa**, **Kategori Prestasi**, **Deskripsi**, **Apresiasi**, **Poin**, **Foto**, dan **Dibuat Oleh**. Export Excel menghasilkan sheet **Prestasi**.
+
 ## Tambah Prestasi
 
 Catat prestasi siswa baru ke dalam sistem.
@@ -34,6 +38,22 @@ Catat prestasi siswa baru ke dalam sistem.
   <Step title="Isi formulir">Lengkapi formulir prestasi siswa sesuai kebutuhan.</Step>
   <Step title="Simpan">Klik tombol **Simpan** untuk menyimpan data prestasi siswa.</Step>
 </Steps>
+
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Anggota (siswa) | Wajib. |
+| Tanggal | Wajib, format tanggal. |
+| Kategori | Wajib, teks bebas, maksimal 255 karakter. |
+| Deskripsi/Kronologi | Wajib. |
+| Apresiasi | Wajib, maksimal 255 karakter. |
+| Poin | Wajib, angka. |
+| Foto | Opsional, gambar png/jpg/jpeg/heic/heif, maksimal 10 MB. |
+
+<Callout kind="info">
+Setiap pencatatan prestasi otomatis menambahkan catatan poin (point log) pada siswa sesuai kategori dan poin yang diisi.
+</Callout>
 
 ## Edit Prestasi
 
