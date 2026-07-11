@@ -16,6 +16,10 @@ Memantau saldo dan riwayat transaksi Cazhbox setiap instansi.
   <Step title="Kelola saldo">Di halaman ini, Anda dapat melihat riwayat transaksi, melakukan penarikan dan penambahan saldo Cazhbox ke instansi pusat, serta melakukan penarikan saldo ke rekening instansi.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Panel kiri menampilkan daftar **Instansi Terkait** beserta saldo Cazhbox masing-masing; panel utama menampilkan **CazhBox Tersedia** untuk instansi aktif. Tabel riwayat transaksi menampilkan kolom: **Status**, **Tgl Transaksi**, **Instansi**, **Ref ID**, **Jenis Transaksi**, **Deskripsi**, **Saldo Awal**, **Jumlah**, dan **Saldo Akhir**. Filter tersedia untuk jumlah baris per halaman (100/500/1000), rentang tanggal (default bulan berjalan), dan **Jenis Transaksi**: **Topup** atau **Redeem** (penarikan). Export Excel menghasilkan file **Riwayat Transaksi Cazhbox.xlsx**.
+
 ## Topup Saldo dari Cazhbox Pusat
 
 Mengisi Cazhbox instansi dengan sumber dana dari Cazhbox pusat.
@@ -36,6 +40,10 @@ Menarik saldo dari Cazhbox instansi ke akun Cazhbox pusat.
   <Step title="Tarik saldo">Input nominal, klik tombol **Tarik ke Pusat**.</Step>
 </Steps>
 
+<Callout kind="info">
+Nominal transfer antara Cazhbox pusat dan instansi wajib berupa angka dengan nilai minimal Rp 1. Menu perpindahan saldo antar-instansi ini hanya tersedia untuk akun instansi pusat (partner).
+</Callout>
+
 ## Topup Saldo via Virtual Account
 
 Mengisi Cazhbox instansi menggunakan nomor VA dari berbagai bank.
@@ -46,6 +54,10 @@ Mengisi Cazhbox instansi menggunakan nomor VA dari berbagai bank.
   <Step title="Pilih VA">Pilih nomor VA yang akan digunakan.</Step>
   <Step title="Transfer">Isi saldo pada nomor VA tersebut menggunakan ATM atau mobile banking.</Step>
 </Steps>
+
+<Callout kind="info">
+Panduan transfer tersedia untuk bank **BRI**, **Mandiri**, **BNI**, dan **BSI**. Top-up di bawah nominal minimum yang ditetapkan instansi dikenakan biaya tambahan yang dipotong saat top-up.
+</Callout>
 
 ## Tarik Saldo ke Rekening Instansi
 
@@ -58,4 +70,14 @@ Menarik saldo Cazhbox ke nomor rekening instansi.
   <Step title="Tarik saldo">Klik tombol **Tarik Saldo**.</Step>
 </Steps>
 
-<Callout kind="info">Penarikan saldo ke rekening instansi dikenakan biaya tertentu.</Callout>
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Rekening Penerima | Wajib; Bank, Nama Pada Rekening, dan Rekening Tujuan terisi otomatis. |
+| Biaya Bank | Terisi otomatis sesuai pengaturan biaya penarikan. |
+| Jumlah Penarikan | Wajib; minimal sesuai nominal penarikan minimum instansi. |
+
+<Callout kind="info">
+Aturan penarikan: penarikan dikenakan biaya bank; sebagian bank memproses pencairan dalam 2–3 hari kerja; transaksi di atas Rp 100 juta yang diajukan setelah pukul 14.00 pada hari kerja — atau diajukan pada hari libur — diproses pada hari kerja berikutnya, mengikuti jam operasional bank.
+</Callout>

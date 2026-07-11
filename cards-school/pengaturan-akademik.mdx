@@ -32,6 +32,22 @@ Submenu berikut dikelola dengan langkah yang sama.
   <Step title="Kelola data">Pada halaman tersebut admin dapat mengelola **Tambah**, **Edit**, dan **Hapus** data.</Step>
 </Steps>
 
+### Isian formulir
+
+Semua data master bersifat per instansi dan memiliki status **Aktif**/**Tidak Aktif**. Isian tiap submenu:
+
+| Submenu | Isian |
+| :--- | :--- |
+| Tahun Ajaran, Semester, Tingkat, Kelas, Jurusan | Instansi (wajib), Nama (wajib, maks. 255 karakter, unik per instansi), Status. |
+| Mata Pelajaran | Instansi, Nama, Kode, Status. |
+| Kamar | Instansi, Nama, PIC (dipilih dari anggota non-siswa), Lokasi, Status. |
+| Tag | Instansi, Nama, Kode, Jenis Anggota (Semua / Siswa / Guru & Staff), Status. |
+| Kalender Akademik | Instansi, Hari Awal Pekan, Nama Pekan, Gambar Header (jpg/png/jpeg/heic/heif, maks. 10 MB), pilihan Sabtu libur. |
+
+<Callout kind="info">
+Aturan sistem: hanya boleh ada **satu Tahun Ajaran aktif** per instansi — mengaktifkan satu tahun ajaran otomatis menonaktifkan tahun ajaran lainnya pada instansi yang sama.
+</Callout>
+
 ## Jadwal Pelajaran
 
 Kelola jadwal pelajaran aplikasi.
@@ -41,6 +57,19 @@ Kelola jadwal pelajaran aplikasi.
   <Step title="Buka Jadwal Pelajaran">Klik submenu **Akademik**, lalu klik submenu **Jadwal Pelajaran**. Sistem menampilkan halaman Jadwal Pelajaran.</Step>
   <Step title="Kelola data">Pada halaman Jadwal Pelajaran admin dapat mengelola **Tambah**, **Edit**, dan **Hapus** data.</Step>
 </Steps>
+
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Instansi | Wajib. |
+| Tahun Ajaran & Semester | Wajib; hanya tahun ajaran dan semester **aktif** yang dapat dipilih. |
+| Tingkat, Kelas, Jurusan | Menentukan kelas sasaran; mendukung **multi-kelas** dan pemilihan berdasarkan **Tag** siswa. |
+| Jadwal per hari (Senin–Minggu) | Tiap hari dapat diaktifkan/dinonaktifkan dan berisi daftar jam: waktu mulai, waktu selesai, mata pelajaran (atau **Jam Istirahat**), dan guru pengampu. |
+
+<Callout kind="info">
+Jadwal pelajaran yang sudah ada dapat diduplikasi sebagai dasar jadwal baru.
+</Callout>
 
 ### Pengaturan Jam Pelajaran
 

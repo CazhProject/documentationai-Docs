@@ -25,6 +25,10 @@ Halaman daftar tahfidz menjadi pusat pengelolaan program tahfidz siswa.
   </Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel daftar tahfidz menampilkan kolom: **Nama Program**, **Target**, **Deskripsi**, **Instansi**, **Kelas**, **Jurusan**, **Anggota** (jumlah), **Dibuat Oleh**, dan **Tanggal Dibuat**. Filter tersedia untuk **Tipe Program** (Juz/Surah), **Instansi**, **Tingkat**, **Kelas**, dan **Jurusan**.
+
 ## Detail Tahfidz
 
 Lihat detail data tahfidz beserta anggota dan riwayat progressnya.
@@ -34,6 +38,14 @@ Lihat detail data tahfidz beserta anggota dan riwayat progressnya.
   <Step title="Buka detail">Klik **Detail**; sistem menampilkan halaman detail tahfidz.</Step>
   <Step title="Kelola detail">Pada halaman ini admin dapat melihat data anggota tahfidz, menambah anggota, dan menambah riwayat progress tahfidz masing-masing anggota.</Step>
 </Steps>
+
+### Informasi yang ditampilkan
+
+Daftar anggota program menampilkan kolom: **Nama**, **No Kartu**, **Pencapaian**, dan **Terakhir Update** — hanya anggota bertipe **Siswa** yang dapat ditambahkan ke program. Riwayat progress per anggota menampilkan kolom: **Tanggal Dibuat**, **Tanggal Riwayat**, **Deskripsi**, **Surah**, **Ayat Terakhir**, **Pencapaian**, dan **Dibuat Oleh**, dengan filter rentang tanggal dan surah tercatat. Export tersedia untuk daftar anggota (sheet **Anggota Tahfidz**) dan riwayat progress (sheet **Riwayat Progress Tahfidz**).
+
+<Callout kind="info">
+Isian riwayat progress: Tanggal Kegiatan (wajib, tidak boleh melebihi hari ini), Deskripsi (wajib, maks. 2048 karakter), Surah (wajib, 1–114), dan Ayat Terakhir (wajib, minimal 1). Memilih satu ayat otomatis memilih seluruh ayat dari ayat 1 sampai ayat tersebut (hafalan kumulatif). Persentase pencapaian dihitung dari jumlah ayat terhafal dibagi total ayat target program (per juz atau per surah) dan ditampilkan sebagai grafik perkembangan.
+</Callout>
 
 ## Tambah Tahfidz
 
@@ -45,6 +57,23 @@ Tambahkan data program tahfidz baru.
   <Step title="Isi data">Pada form tambah, masukkan data dengan benar dan sesuai.</Step>
   <Step title="Simpan">Klik tombol **Simpan**.</Step>
 </Steps>
+
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Tipe | Wajib: **Satuan** (satu siswa) atau **Masal** (berdasarkan kriteria). |
+| Instansi | Wajib. |
+| Nama Progress Tahfidz | Wajib, maksimal 255 karakter. |
+| Jenis Tahfidz | Wajib: **Juz** atau **Surah**. |
+| Target Tahfidz | Wajib; daftar nomor juz atau surah target (dapat lebih dari satu). |
+| Deskripsi | Opsional, maksimal 2048 karakter. |
+| Tingkat / Kelas / Jurusan / Tag | Opsional (untuk tipe Masal). |
+| Anggota | Untuk tipe Satuan. |
+
+<Callout kind="info">
+Pada tipe **Masal** tanpa kriteria apa pun (tingkat/kelas/jurusan/tag), sistem menampilkan konfirmasi bahwa program akan dibuat untuk **seluruh siswa** di instansi. Setelah program dibuat, edit hanya dapat mengubah **Nama** dan **Deskripsi** program.
+</Callout>
 
 ## Edit Tahfidz
 
@@ -63,5 +92,5 @@ Unduh data tahfidz dalam format file Excel.
 <Steps>
   <Step title="Buka Tahfidz">Login ke website, klik menu **Kesiswaan**, lalu klik submenu **Tahfidz**. Sistem menampilkan halaman Tahfidz.</Step>
   <Step title="Export">Klik ikon **Excel**.</Step>
-  <Step title="Buka file">Data tahfidz tersimpan pada perangkat pengguna dalam file Excel.</Step>
+  <Step title="Buka file">Data tahfidz tersimpan pada perangkat pengguna dalam file Excel (sheet **Tahfidz**).</Step>
 </Steps>

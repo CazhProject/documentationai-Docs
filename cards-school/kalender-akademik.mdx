@@ -15,6 +15,29 @@ Lihat list data event kalender akademik yang telah ditambahkan.
   <Step title="Kelola event">Pada halaman ini pengguna dapat mengelola **Tambah**, **Edit**, dan **Hapus** data event.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel event memuat kolom: **Instansi**, **Tahun Ajaran**, **Judul**, **Kategori**, **Mulai**, **Selesai**, **Deskripsi**, dan **Status**.
+
+Data dapat disaring dengan filter: **Instansi**, **Tahun Ajaran**, **Status**, **Dari Tanggal**, dan **Sampai Tanggal**.
+
+### Isian formulir Tambah/Edit Event
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Instansi | Ya | Instansi tempat event berlaku |
+| Tahun Ajaran | Ya | Pilihan mengikuti instansi yang dipilih |
+| Nama Event | Ya | Maksimal 255 karakter |
+| Tanggal Mulai | Ya | Format tanggal |
+| Tanggal Selesai | Ya | Tidak boleh sebelum tanggal mulai |
+| Deskripsi | Tidak | Teks bebas |
+| Kategori Event | Ya | Pilih dari kategori event yang tersedia |
+| Status | Tidak (hanya saat edit) | Status aktif/tidak aktif event |
+
+<Callout kind="info">
+Saat event dibuat, sistem otomatis mengirim notifikasi "Ada Event Hari Ini" ke anggota instansi terkait pada hari berlangsungnya event. Jika deskripsi kosong, isi notifikasi menggunakan rentang tanggal event.
+</Callout>
+
 ## Hapus Event
 
 Hapus event akademik yang tidak digunakan.
@@ -46,6 +69,10 @@ Tampilkan kalender akademik lengkap dengan hari libur nasional dan event yang te
 <Steps>
   <Step title="Buka Kalender Akademik">Login ke website, klik tab **Akademik**, lalu klik **Kalender Akademik**.</Step>
   <Step title="Buka tampilan kalender">Klik **Lihat Kalender Akademik**.</Step>
-  <Step title="Pilih tampilan">Pengguna dapat menampilkan kalender akademik berdasarkan **Instansi** dan **Tahun Ajaran**.</Step>
+  <Step title="Pilih tampilan">Pengguna dapat menampilkan kalender akademik berdasarkan **Instansi** dan **Tahun Ajaran** (keduanya wajib dipilih).</Step>
   <Step title="Lihat kalender">Sistem menampilkan kalender akademik yang memuat informasi hari libur nasional dan event yang telah ditambahkan.</Step>
 </Steps>
+
+<Callout kind="info">
+Tampilan kalender membutuhkan pengaturan kalender (termasuk awal minggu) yang sudah diatur untuk instansi tersebut — jika belum, sistem menampilkan pesan "Pengaturan kalender belum diatur untuk instansi ini". Kalender hanya menampilkan event yang kategorinya berstatus aktif.
+</Callout>

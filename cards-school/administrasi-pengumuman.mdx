@@ -14,6 +14,10 @@ Melihat dan mencari daftar pengumuman yang telah dibuat.
   <Step title="Kelola daftar">Pada halaman tersebut, Admin dapat melihat daftar data pengumuman dan mencari data pengumuman.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel List Pengumuman menampilkan kolom: **Tanggal Buat**, **Judul**, **Diumumkan Pada**, **Tampil** (instansi), dan **Status**.
+
 ## Tambah Pengumuman
 
 Membuat pengumuman baru dan menentukan platform tujuannya.
@@ -24,6 +28,23 @@ Membuat pengumuman baru dan menentukan platform tujuannya.
   <Step title="Pilih platform">Pada bagian Platform, pilih satu atau lebih platform tujuan pengumuman: Cards Edu, Cards Parents, atau Landing Page Sekolah. Pengumuman akan ditampilkan sesuai platform yang dipilih.</Step>
   <Step title="Simpan">Klik tombol **Simpan** untuk menyimpan data pengumuman.</Step>
 </Steps>
+
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Judul | Wajib, 3–100 karakter. |
+| Deskripsi | Wajib, minimal 10 karakter (rich text editor). |
+| Thumbnail | Gambar jpg/png/jpeg, maksimal 2 MB; wajib kecuali menggunakan thumbnail dari template. |
+| Kategori | Wajib (dikelola di Pengaturan → Kategori Pengumuman; nama kategori wajib unik). |
+| Prioritas | Wajib: **Penting (IMPORTANT)** atau **Normal** (default Normal). |
+| Waktu Publikasi | Wajib: diumumkan sekarang atau dijadwalkan pada tanggal tertentu. |
+| Instansi | Wajib (satu, beberapa, atau semua instansi). |
+| Penerima | Wajib: **Semua** atau **Spesifik**. |
+
+<Callout kind="info">
+Jika penerima **Spesifik**, minimal satu peran penerima wajib dipilih: **Siswa** atau **Guru/Staff**. Penerima Siswa dapat difilter berdasarkan Jurusan, Tingkat, Kelas, dan Tag; penerima Guru/Staff berdasarkan Jenis Guru dan Tag. Notifikasi pengumuman dikirim sebagai push notification (terjadwal otomatis jika waktu publikasi di masa depan). Formulir juga dapat diisi otomatis dari **Template Pengumuman** (judul, konten, thumbnail, kategori).
+</Callout>
 
 ## Edit Pengumuman
 

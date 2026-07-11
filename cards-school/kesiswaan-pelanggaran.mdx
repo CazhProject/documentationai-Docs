@@ -24,6 +24,10 @@ Lihat, cari, dan ekspor daftar data pelanggaran siswa.
   </Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel Pelanggaran menampilkan kolom: **Tanggal Kejadian**, **Siswa**, **Tipe** (tipe pelanggaran), **Kategori**, **Deskripsi**, **Sanksi**, **Poin**, **Foto**, dan **Dibuat Oleh**. Export Excel menghasilkan sheet **Daftar Pelanggaran**.
+
 ## Tambah Pelanggaran
 
 Catat data pelanggaran siswa baru ke dalam sistem.
@@ -34,6 +38,23 @@ Catat data pelanggaran siswa baru ke dalam sistem.
   <Step title="Isi data">Isi data pelanggaran sesuai kebutuhan.</Step>
   <Step title="Simpan">Klik tombol **Simpan** untuk menyimpan data pelanggaran siswa.</Step>
 </Steps>
+
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Anggota (siswa) | Wajib. |
+| Tanggal | Wajib, format tanggal. |
+| Tipe Pelanggaran | Wajib (dari daftar Tipe Pelanggaran di Pengaturan). |
+| Kategori | Wajib, teks bebas, maksimal 255 karakter. |
+| Deskripsi/Kronologi | Wajib. |
+| Sanksi/Peringatan | Wajib, maksimal 255 karakter. |
+| Poin | Wajib, angka. |
+| Foto | Opsional, gambar png/jpg/jpeg/heic/heif, maksimal 10 MB. |
+
+<Callout kind="info">
+Aturan sistem: jika tipe pelanggaran memiliki rentang poin, poin yang diisi harus berada dalam rentang tersebut — sistem menolak dengan pesan seperti "Poin pelanggaran untuk tipe (nama) harus berada di antara (min) dan (maks)." Pada pengaturan Tipe Pelanggaran, nama tipe wajib unik per instansi, poin minimum/maksimum bernilai 1–999, dan rentang poin antar tipe dalam satu instansi tidak boleh saling tumpang tindih.
+</Callout>
 
 ## Edit Pelanggaran
 

@@ -15,6 +15,36 @@ Menulis jurnal pembukuan keuangan baru.
   <Step title="Simpan">Klik **Simpan** untuk menyimpan data pembukuan. Setelah berhasil disimpan, data akan tersimpan di riwayat jurnal.</Step>
 </Steps>
 
+### Isian formulir
+
+| Isian | Keterangan |
+| --- | --- |
+| Kantor | Kantor/instansi tempat jurnal dicatat. |
+| Jenis Transaksi | Menentukan label akun asal/tujuan (lihat tabel di bawah). |
+| Akun Asal & Akun Tujuan | Dipilih dari daftar akun; pilihan menyesuaikan jenis transaksi. |
+| Jumlah | Nominal jurnal. |
+| Tanggal Entri | Default hari ini (zona waktu Asia/Jakarta). |
+| Catatan | Keterangan tambahan. |
+| Lampiran | Upload file bukti transaksi. |
+
+Jenis transaksi jurnal yang tersedia:
+
+| Jenis Transaksi | Label akun asal → tujuan |
+| --- | --- |
+| Pemasukan | Diambil Dari → Simpan Ke |
+| Pengeluaran | Diambil Dari → Simpan Ke |
+| Hutang | Hutang Dari → Simpan Ke |
+| Bayar Hutang | Dibayar Menggunakan → Pembayaran Untuk |
+| Piutang | Diberikan Dari → Untuk |
+| Dibayar Piutang | Dibayar Dari → Simpan Ke |
+| Tambah Modal | Penambahan Untuk → Modal Berupa |
+| Tarik Modal | Penarikan Berupa → Dari |
+| Penyesuaian | Saldo Yang Berkurang → Saldo Yang Bertambah |
+
+<Callout kind="info">
+Bagan akun sistem terbagi lima kategori: **Aset** (antara lain 101 Kas, 102 Tabungan Pada Bank, 103 Saldo CazhBox, 105 Piutang Usaha, 108 Aset Tetap & Inventaris, 111 Kas Tunai Tabungan), **Liabilitas** (201 Hutang Usaha, 202 Hutang Bank, 203 Hutang Pajak, 205 Simpanan Anggota), **Ekuitas** (301 Modal, 302 Hibah, 303 Prive, 304 Cadangan, 305 Saldo Laba/Rugi), **Pendapatan** (420 Pendapatan Produk/Jasa, 430 Pendapatan Lainnya, 440 Penerimaan Pembayaran Tagihan, 450 Pendapatan Pendaftaran Anggota, 460 Pendapatan Transaksi Tabungan), dan **Beban** (630 Tenaga Kerja, 640 Akomodasi & Transportasi, 650 Operasional, 660 Non Operasional, 670 Perlengkapan & ATK, 680 Sewa, 690 Penyusutan & Amortisasi, 611 Pajak, 612 Lain-lain).
+</Callout>
+
 ## Riwayat Jurnal
 
 Melihat data jurnal pembukuan yang sudah pernah dibuat.
@@ -24,18 +54,9 @@ Melihat data jurnal pembukuan yang sudah pernah dibuat.
   <Step title="Lihat riwayat">Sistem akan menampilkan halaman Riwayat Jurnal.</Step>
 </Steps>
 
-Halaman riwayat jurnal terdiri dari informasi kolom:
+### Informasi yang ditampilkan
 
-| Kolom | Keterangan |
-| --- | --- |
-| Tanggal | Tanggal entri jurnal. |
-| No. Referensi | Nomor referensi jurnal. |
-| Keterangan | Keterangan jurnal. |
-| Akun Debit | Akun sisi debit. |
-| Akun Kredit | Akun sisi kredit. |
-| Nominal | Jumlah nominal jurnal. |
-| Status | Status jurnal. |
-| Kantor | Kantor terkait jurnal. |
+Tabel Riwayat Jurnal menampilkan kolom: **Tanggal Entri**, **Instansi**, **Operator**, **Jenis Transaksi**, **Keterangan Transaksi**, **Nominal**, **Catatan**, dan **Lampiran** — diurutkan dari tanggal entri terbaru, default menampilkan bulan berjalan. Filter tersedia untuk **Instansi**, **Jenis Transaksi**, serta rentang tanggal **Awal Entri** dan **Akhir Entri**. Export Excel menghasilkan file **Riwayat Transaksi**; detail riwayat per akun dapat diekspor dengan nama file **Riwayat Transaksi (kode akun)**.
 
 ## Laporan Posisi Keuangan
 
@@ -46,6 +67,10 @@ Melihat laporan posisi keuangan pada setiap kantor.
   <Step title="Lihat laporan">Sistem akan menampilkan halaman Laporan Posisi Keuangan, dengan posisi keuangan pada posisi aktiva dan pasiva.</Step>
 </Steps>
 
+<Callout kind="info">
+Laporan difilter berdasarkan **Kantor**, **Tahun** (wajib), dan **Bulan** (wajib) — default tahun dan bulan berjalan. Laporan terdiri dari bagian **Aset**, **Liabilitas**, **Ekuitas**, dan total **Liabilitas + Ekuitas**. Export Excel menghasilkan file **Laporan Posisi Keuangan.xlsx**.
+</Callout>
+
 ## Laporan Laba Rugi
 
 Melihat laporan laba rugi pada setiap kantor.
@@ -54,6 +79,10 @@ Melihat laporan laba rugi pada setiap kantor.
   <Step title="Buka Laporan Laba Rugi">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, lalu klik submenu **Laporan Laba Rugi**.</Step>
   <Step title="Lihat laporan">Sistem akan menampilkan halaman Laporan Laba Rugi, dengan laporan keuangan pada setiap kantor.</Step>
 </Steps>
+
+<Callout kind="info">
+Laporan difilter berdasarkan **Kantor**, **Tahun**, dan **Bulan**, dan terdiri dari bagian **Pendapatan** dan **Beban** beserta totalnya. Export Excel menghasilkan file **Laporan Laba Rugi.xlsx**.
+</Callout>
 
 ## List Pengaturan Bagi Hasil
 
@@ -93,6 +122,10 @@ Melihat laporan data bagi hasil.
   <Step title="Lihat laporan">Sistem akan menampilkan Laporan Bagi Hasil.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Laporan Bagi Hasil difilter berdasarkan **Kantor**, **Tahun**, dan **Bulan**, dan menampilkan kolom: **Instansi**, **Penerima**, **% Bagi Hasil**, dan **Jumlah Bagi Hasil** — dihitung dari total pendapatan dan beban tiap kantor pada periode tersebut.
+
 ## Migrasi Akun
 
 Memindahkan saldo dari sistem keuangan sebelumnya ke sistem CARDS School.
@@ -101,5 +134,9 @@ Memindahkan saldo dari sistem keuangan sebelumnya ke sistem CARDS School.
   <Step title="Buka Migrasi Akun">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, lalu klik submenu **Migrasi Akun**.</Step>
   <Step title="Isi form migrasi">Sistem akan menampilkan form untuk Migrasi Akun; isi semua form untuk migrasi akun.</Step>
 </Steps>
+
+<Callout kind="info">
+Migrasi akun hanya menampilkan akun internal sistem (akun eksternal seperti Saldo CazhBox dan Saldo Laba/Rugi dihitung otomatis), dan penyimpanan saldo awal memerlukan verifikasi **PIN**.
+</Callout>
 
 <Callout kind="alert">Migrasi akun memindahkan saldo dari sistem keuangan sebelumnya. Pastikan seluruh data yang diisi sudah benar sebelum menjalankan migrasi.</Callout>

@@ -19,6 +19,10 @@ Lihat list nama siswa; sistem menampilkan pelajaran yang diikuti siswa tersebut 
   <Step title="Buka Rekap Siswa">Klik submenu **Rekap Siswa**. Sistem menampilkan **List Siswa**.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel rekap siswa memuat kolom: **Instansi**, **Nama**, **No Kartu**, **Tingkat**, dan **Kelas**. Data dapat disaring dengan filter **Instansi**, **Tingkat**, dan **Kelas**.
+
 ## Input Presensi Mata Pelajaran
 
 Catat kehadiran siswa pada suatu mata pelajaran.
@@ -28,6 +32,25 @@ Catat kehadiran siswa pada suatu mata pelajaran.
   <Step title="Buka Presensi Mata Pelajaran">Klik submenu **Presensi Mata Pelajaran**. Sistem menampilkan kolom untuk input nama atau nomor kartu guru.</Step>
   <Step title="Input data guru">Input nama atau nomor kartu guru.</Step>
 </Steps>
+
+### Isian formulir input presensi
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Tanggal presensi | Ya | Default hari ini |
+| Status per siswa | Ya | Hadir / Izin / Sakit / Alfa / Terlambat / Belum Absen |
+| Catatan per siswa | Tidak | Maksimal 100 karakter |
+| Keterangan pertemuan | Tidak | Catatan pertemuan/materi |
+| Deskripsi tugas | Tidak | Teks bebas |
+| Lampiran materi | Tidak | Format: zip, rar, pdf, jpg, jpeg, png, heic, heif, mp4, mov; maksimal 20 MB per file; dapat lebih dari satu file |
+
+<Callout kind="info">
+Status awal setiap siswa adalah **Belum Absen**. Jika siswa memiliki pengajuan izin/sakit yang sudah disetujui untuk tanggal tersebut, statusnya terisi otomatis sesuai izin beserta catatannya. Guru juga dapat mengubah status beberapa siswa sekaligus (batch) dan menyalin catatan, lampiran, serta deskripsi tugas dari presensi yang diinput dalam 7 hari terakhir.
+</Callout>
+
+### Riwayat presensi guru
+
+Setelah presensi disimpan, sistem menampilkan riwayat presensi per guru dengan kolom: **Tanggal Presensi**, **Tanggal Input**, **Dibuat Oleh**, **Instansi**, **Mata Pelajaran**, **Jadwal**, **Semester**, **Tingkat**, **Kelas**, **Jurusan**, jumlah **Belum Absen**, **Hadir**, **Izin**, **Sakit**, **Alfa**, **Keterangan**, dan **Status Jadwal Pelajaran**. Data dapat disaring dengan filter **Instansi**, **Mata Pelajaran**, **Semester**, **Tingkat**, **Kelas**, serta rentang tanggal, dan dapat diexport ke Excel.
 
 <Callout kind="tip">
 Siswa juga dapat melakukan presensi menggunakan QR di aplikasi — lihat [QR Presensi di CARDS Edu](/cards-edu/qr).

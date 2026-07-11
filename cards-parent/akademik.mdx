@@ -1,6 +1,6 @@
 ---
 title: Akademik
-description: Memantau data akademik siswa di CARDS Parents — presensi harian, presensi kegiatan, jadwal pelajaran, dan rapor siswa.
+description: Memantau data akademik siswa di CARDS Parents — presensi harian, presensi kegiatan, jadwal pelajaran, kalender akademik, dan rapor siswa.
 ---
 
 Menu Akademik membantu orang tua memantau jadwal, presensi, hingga rapor siswa secara online dari aplikasi CARDS Parents.
@@ -15,6 +15,24 @@ Setelah langkah ini, Anda melihat presensi harian siswa.
 
 1. Tekan menu **Akademik**.
 2. Tekan sub menu **Presensi Harian**, maka akan terlihat presensi harian siswa.
+
+### Informasi yang ditampilkan
+
+Halaman Presensi menampilkan kalender bulanan dengan warna per status kehadiran, serta bagian **Presensi Harian** yang menunjukkan **Jam Masuk** dan **Jam Keluar** pada tanggal yang dipilih. Status kehadiran yang dikenal aplikasi:
+
+| Status | Keterangan |
+| --- | --- |
+| **Hadir** | Siswa hadir |
+| **Terlambat** | Hadir namun terlambat |
+| **Izin** | Tidak hadir dengan izin |
+| **Sakit** | Tidak hadir karena sakit |
+| **Alpa** | Tidak hadir tanpa keterangan |
+| **Libur** | Hari libur (dari kalender akademik) |
+
+Tersedia dua tombol lanjutan:
+
+- **Rekap Presensi** — daftar presensi per bulan/tahun dengan filter status (Semua, Hadir, Alpa, Izin, Sakit, Terlambat); setiap catatan menampilkan tanggal, badge status, Jam Masuk/Jam Keluar, dan keterangan.
+- **Presensi Pelajaran** — rekap kehadiran per mata pelajaran dalam bentuk diagram donat beserta jumlah Hadir, Alpa, Sakit, Izin, dan Terlambat, dengan filter bulan dan mata pelajaran.
 
 ## Presensi Kegiatan
 
@@ -48,6 +66,20 @@ Setelah langkah ini, Anda melihat jadwal pelajaran siswa per hari beserta materi
   </Step>
 </Steps>
 
+<Callout kind="info">
+  Halaman **Detail Mapel** menampilkan bagian *Informasi Mata Pelajaran*: **Mata Pelajaran**, **Waktu Pelajaran**, **Materi Pelajaran**, dan **Tugas Pelajaran** (dapat dibuka-tutup).
+</Callout>
+
+## Kalender Akademik
+
+Menu **Kalender Akademik** menampilkan kalender bulanan berisi event dan hari libur sekolah, lengkap dengan pencarian event per bulan dan daftar event di bawah kalender (menu **List Event** untuk daftar lengkap).
+
+Halaman **Detail Event** menampilkan nama event, **Instansi**, **Tanggal Event**, dan **Deskripsi Event**. Untuk event non-libur tersedia tombol **Tambahkan ke Kalender** yang menyimpan event ke aplikasi kalender di HP Anda (memerlukan izin akses kalender).
+
+<Callout kind="info">
+  Tampilan kalender mengikuti pengaturan lembaga — misalnya awal pekan (Senin/Ahad) dan hari Sabtu libur atau tidak.
+</Callout>
+
 ## Rapor Siswa
 
 Setelah langkah ini, Anda melihat file rapor siswa yang diunggah oleh Guru.
@@ -64,6 +96,14 @@ Setelah langkah ini, Anda melihat file rapor siswa yang diunggah oleh Guru.
   </Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Setiap rapor pada **List Rapor** menampilkan kelas (mis. *Rapor Kelas VII - A*), tanggal unggah, badge **semester**, dan **Tahun Ajaran**. Menekan rapor akan membuka file rapor dalam bentuk **PDF** di dalam aplikasi.
+
 <Callout kind="info">
   Jika masih kosong, berarti rapor belum diunggah oleh Guru/Wali Kelas terkait — pengelolaan rapor dilakukan oleh pihak sekolah melalui [CARDS School](/cards-school/tentang).
+</Callout>
+
+<Callout kind="alert">
+  Akses rapor dapat **dibatasi sementara** oleh sekolah. Jika demikian, aplikasi menampilkan pesan *Akses rapor sementara dibatasi* — umumnya karena tagihan belum lunas: *"Mohon lunasi tagihan terlebih dahulu untuk melihat rapor, silahkan hubungi Admin."*
 </Callout>

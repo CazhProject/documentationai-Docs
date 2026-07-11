@@ -17,6 +17,17 @@ Memonitor transaksi tagihan terbaru pada instansi.
   <Step title="Cari anggota">Untuk menampilkan daftar transaksi tagihan milik anggota tertentu, gunakan fitur pencarian berdasarkan **Nomor Kartu** atau **Nama**; sistem akan menampilkan data tagihan anggota tersebut.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel tagihan anggota menampilkan kolom: **Status**, **Deskripsi** (jenis tagihan), **Sisa Tagihan**, **Terbayar**, dan **Jumlah Tagihan** (kolom **Ref ID** dan **Catatan** tersembunyi secara default dan dapat ditampilkan). Data dapat difilter berdasarkan Status dan diekspor ke Excel dengan nama file **Daftar Tagihan**. Status tagihan terdiri dari:
+
+| Status | Keterangan |
+| --- | --- |
+| **Lunas** | Tagihan telah dibayar penuh. |
+| **Terbayar Sebagian** | Tagihan baru dibayar sebagian (cicilan). |
+| **Belum Terbayar** | Belum ada pembayaran. |
+| **Menunggu Pembayaran** | Invoice sudah dibuat dan menunggu pembayaran. |
+
 ## Bayar Tagihan Satuan
 
 Membayar satu tagihan anggota, penuh maupun cicilan.
@@ -36,6 +47,10 @@ Membayar satu tagihan anggota, penuh maupun cicilan.
 | **Tunai** | Pembayaran tunai. |
 | **Kartu** | Memerlukan verifikasi PIN [Kartu](/referensi/glosarium#kartu). |
 
+<Callout kind="info">
+Aturan sistem: pembayaran tunai hanya tersedia jika pengaturan pembayaran tunai tagihan diaktifkan pada instansi. Untuk pembayaran Kartu, nominal minimal Rp 1, catatan pembayaran opsional (maksimal 255 karakter), saldo wallet kartu harus mencukupi nominal ditambah biaya admin, dan prosesnya melalui dua langkah (input lalu konfirmasi PIN). Kanal Virtual Account yang tersedia antara lain BNI, BRI, Mandiri, dan BSI.
+</Callout>
+
 ## Bayar Tagihan Massal
 
 Membayar beberapa tagihan anggota sekaligus.
@@ -49,7 +64,7 @@ Membayar beberapa tagihan anggota sekaligus.
   <Step title="Simpan">Klik **Simpan**; sistem akan memproses pembayaran tagihan.</Step>
 </Steps>
 
-<Callout kind="info">Pembayaran massal hanya dapat dilakukan dengan nominal penuh (lunas), tidak dapat dicicil.</Callout>
+<Callout kind="info">Pembayaran massal hanya dapat dilakukan dengan nominal penuh (lunas), tidak dapat dicicil. Maksimal **50 tagihan** dapat dibayar sekaligus dalam satu proses. Pada pembayaran massal via Kartu, saldo wallet harus mencukupi total sisa tagihan ditambah biaya admin.</Callout>
 
 ## Detail Pembayaran Tagihan
 

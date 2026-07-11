@@ -23,6 +23,15 @@ Setelah langkah ini, kartu siswa terhubung dengan akun CARDS Parents Anda.
   </Step>
 </Steps>
 
+## Lihat Kartu
+
+Melalui menu **Lihat Kartu**, kartu ditampilkan secara digital dan dapat dibolak-balik:
+
+- **Sisi depan** — gambar kartu, nama pemegang kartu, nomor kartu, dan nama lembaga.
+- **Sisi belakang** — kode **QR** kartu yang dapat ditukar tampilannya menjadi **Barcode** (tombol *Lihat Barcode*/*Lihat QRCode*), serta nomor kartu yang dapat disalin.
+
+Tersedia tombol **Download Kartu** untuk menyimpan tampilan kartu ke galeri foto HP.
+
 ## Ubah PIN Kartu
 
 Setelah langkah ini, PIN kartu siswa berganti ke PIN yang baru.
@@ -42,6 +51,10 @@ Setelah langkah ini, PIN kartu siswa berganti ke PIN yang baru.
   </Step>
 </Steps>
 
+<Callout kind="info">
+  PIN kartu terdiri dari maksimal 6 digit. Aplikasi menolak PIN yang mudah ditebak — hindari angka berurutan (misal 123456), angka identik (misal 000000), atau pola yang mudah ditebak.
+</Callout>
+
 ## Limit Harian
 
 Setelah langkah ini, batas transaksi kartu per hari sudah diatur sesuai keinginan Anda.
@@ -54,12 +67,20 @@ Setelah langkah ini, batas transaksi kartu per hari sudah diatur sesuai keingina
     Pilih **Limit Harian**.
   </Step>
   <Step title="Atur limit transaksi">
-    Isi **Nominal** untuk mengatur limit transaksi harian.
+    Isi **Nominal Limit Transaksi Harian** untuk mengatur limit transaksi harian.
   </Step>
   <Step title="Atur limit penarikan">
-    Isi **Limit Penarikan** untuk mengatur limit penarikan kartu.
+    Isi **Nominal Limit Penarikan** untuk mengatur limit penarikan kartu, lalu tekan **Simpan**.
   </Step>
 </Steps>
+
+<Callout kind="info">
+  Limit **0 = tidak terbatas**. Nominal limit berlaku setiap hari (24 jam) dan dapat diubah kapan saja. Aplikasi juga menampilkan kapan dan oleh siapa limit terakhir diubah.
+</Callout>
+
+### Notifikasi Limit Saldo
+
+Pada pengaturan kartu juga tersedia menu **Notifikasi Limit** (*Atur Notifikasi*). Aktifkan toggle **Kirim notifikasi**, lalu isi nominal batas saldo — notifikasi dikirim melalui WhatsApp ketika saldo uang jajan anak turun di bawah nominal yang diatur.
 
 ## Reset PIN Kartu
 
@@ -73,7 +94,7 @@ Setelah langkah ini, PIN kartu kembali ke PIN awal saat kartu dibagikan oleh lem
     Pilih **Reset PIN Kartu**.
   </Step>
   <Step title="Pilih metode reset">
-    Pilih metode reset PIN Kartu.
+    Pilih metode reset PIN Kartu — PIN dikirim melalui **WhatsApp** atau **Email** yang tertaut pada akun.
   </Step>
 </Steps>
 
@@ -99,6 +120,20 @@ Setelah langkah ini, akun Cards lain ikut memiliki akses untuk mengelola kartu.
   </Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Pada daftar **List Kelola Akses**, setiap anggota akses ditampilkan dengan foto, nama, nomor HP, dan tanggal ditambahkan, beserta statusnya:
+
+| Status | Keterangan |
+| --- | --- |
+| **Menunggu Konfirmasi** | Undangan sudah dikirim, menunggu diterima/ditolak oleh pemilik akun yang diundang |
+| **Akun Utama** | Pemilik utama kartu (role *main*) |
+| Aktif | Akses sudah berjalan; akun utama dapat menghapusnya melalui tombol **Hapus** |
+
+<Callout kind="info">
+  Nomor yang dimasukkan harus nomor akun CARDS — nomor dari aplikasi lain tidak diterima. Akun yang diundang akan menerima **Undangan Kelola Akses** (dapat dilihat di menu profil) berisi informasi kartu, dengan pilihan **Terima** atau **Tolak**. Hanya akun utama yang dapat menambah atau menghapus akses, termasuk menghapus beberapa akses sekaligus lewat mode **Atur**.
+</Callout>
+
 ## Top Up Kartu
 
 Setelah langkah ini, saldo kartu siswa bertambah sesuai nominal yang dibayarkan.
@@ -121,24 +156,35 @@ Setelah langkah ini, saldo kartu siswa bertambah sesuai nominal yang dibayarkan.
   </Step>
 </Steps>
 
+<Callout kind="info">
+  Minimal top up kartu **Rp15.000** dan maksimal **Rp20.000.000** per transaksi. Jika memilih metode **CazhPOIN**, pembayaran dikonfirmasi dengan **PIN Aplikasi** (bukan PIN Kartu).
+</Callout>
+
 ## Pindah Saldo Kartu
 
-Setelah langkah ini, saldo berpindah dari kartu Anda ke kartu tujuan.
+Setelah langkah ini, saldo berpindah dari kartu Anda ke tujuan yang dipilih. Terdapat dua tujuan pemindahan pada menu **Pindah**:
+
+- **CazhPOIN** — memindahkan saldo kartu menjadi saldo CazhPOIN.
+- **Kartu Lain** — memindahkan saldo ke kartu CARDS lain.
 
 <Steps>
   <Step title="Mulai pindah saldo">
-    Tekan tombol **Pindah** pada halaman detail kartu.
+    Tekan tombol **Pindah** pada halaman detail kartu, lalu pilih tujuan **Pindah Ke**.
   </Step>
   <Step title="Pilih kartu tujuan">
-    Pilih **Kartu Lain**, dan isi **No Kartu** tujuan.
+    Untuk **Kartu Lain**: isi **Nomor Kartu** tujuan (16 digit) lalu tekan **Periksa**, atau pindai kode QR kartu tujuan. Nama pemilik kartu tujuan akan tampil.
   </Step>
   <Step title="Isi nominal">
-    Isi nominal yang akan dikirimkan, lalu tekan **Lanjut**.
+    Isi nominal dan pilih **Sumber Dana** (wallet), lalu tekan **Lanjut**.
   </Step>
   <Step title="Konfirmasi PIN">
     Masukkan **PIN Kartu**, dan selesai.
   </Step>
 </Steps>
+
+<Callout kind="info">
+  Minimal pindah saldo **Rp10.000**. Saldo tidak dapat dipindahkan ke kartu sendiri, dan total nominal beserta biaya layanan tidak boleh melebihi saldo sumber dana.
+</Callout>
 
 ## Melihat Riwayat Kartu
 
@@ -147,8 +193,23 @@ Setelah langkah ini, Anda melihat seluruh riwayat transaksi kartu.
 1. Tekan tombol **Riwayat**.
 2. Riwayat transaksi kartu akan muncul.
 
+### Informasi yang ditampilkan
+
+Setiap baris riwayat menampilkan deskripsi transaksi, tanggal, ID transaksi, **Total Pembayaran** (merah untuk pengeluaran, hijau untuk pemasukan), dan badge status. Tekan salah satu transaksi untuk membuka **Detail Transaksi Kartu** yang berisi:
+
+| Informasi | Keterangan |
+| --- | --- |
+| Status &amp; waktu transaksi | Tanggal dan jam transaksi |
+| **ID Pembayaran** | Nomor referensi transaksi, dapat disalin |
+| **Nama Akun** / **Nama Kasir** | Pemilik akun dan kasir kantin (untuk transaksi kasir) |
+| **Transaksi** | Jenis transaksi (Pembelian, Pengisian, Transfer, Pembayaran tagihan, Tabungan, Donasi, dll.) |
+| **Metode Pembayaran** | Logo metode/bank yang digunakan |
+| **Catatan** | Catatan transaksi |
+| **List Transaksi** | Rincian item jajan: `nama item - jumlah x harga` per item, beserta **Total** |
+| **Service Fee** | Biaya layanan (jika dibebankan ke pengguna) |
+
 <Callout kind="info">
-  Pada setiap riwayat kartu, detail jajan anak dapat dilihat dengan menekan per nota transaksi — termasuk transaksi di [kantin/kasir sekolah](/cazhpos/saldo-dan-kartu).
+  Detail transaksi dapat dibagikan sebagai gambar nota melalui tombol bagikan di kanan atas — termasuk transaksi di [kantin/kasir sekolah](/cazhpos/saldo-dan-kartu).
 </Callout>
 
 ## Blokir Kartu
@@ -156,5 +217,5 @@ Setelah langkah ini, Anda melihat seluruh riwayat transaksi kartu.
 Pada halaman **Setting Kartu** tersedia tombol **Blokir Kartu** untuk memblokir kartu (misalnya saat kartu hilang), beserta opsi kelola lainnya seperti **Hapus Kartu** dan pengaturan **Notifikasi**.
 
 <Callout kind="alert">
-  Pastikan Anda memblokir kartu yang benar. Kartu yang diblokir dapat dibuka kembali blokirnya melalui menu yang sama, namun **Hapus Kartu** akan melepas kartu dari akun Anda.
+  Pastikan Anda memblokir kartu yang benar. Kartu yang diblokir dapat dibuka kembali blokirnya melalui menu yang sama (**Buka Blokir**), namun **Hapus Kartu** akan melepas kartu dari akun Anda — penghapusan kartu memerlukan konfirmasi PIN Kartu.
 </Callout>

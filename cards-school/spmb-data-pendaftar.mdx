@@ -14,6 +14,18 @@ Melihat dan mengelola daftar seluruh pendaftar SPMB.
   <Step title="Kelola daftar">Pada halaman Data Pendaftar, Admin dapat melihat daftar data pendaftar SPMB, import, export, search, dan filter data pendaftar.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel data pendaftar menampilkan kolom: **No Pendaftar**, **Status**, **Pembayaran** (status invoice), **Menyelesaikan Pendaftaran**, **Nama**, **Alamat**, **Instansi**, **Tahun Ajaran**, **Jalur Penerimaan**, **Jurusan**, dan **Kelas**. Bagian atas halaman menampilkan statistik: total pendaftar, rincian pembayaran (Lunas / Terbayar Sebagian / Belum Bayar), serta jumlah pendaftar per status.
+
+Filter yang tersedia: **Instansi**, **Tahun Ajaran**, **Jurusan**, **Tingkat**, **Kelas**, **Status**, **Status Lainnya** (status kustom aktif), **Jalur Penerimaan**, dan **Metode Bayar**. Jumlah baris per halaman: 10, 50, 100, 500, 1000, atau 2000.
+
+<Callout kind="info">Nilai status pendaftaran bawaan sistem: **Daftar Baru**, **Tahap Administrasi**, **Tahap Seleksi**, **Daftar Ulang**, **Diterima**, **Tidak Diterima**, dan **Mengundurkan Diri** — ditambah status kustom yang dibuat lembaga. Pada aksi Ubah Status massal, pilihan yang tersedia: Diterima, Tidak Diterima, Mengundurkan Diri, atau Status Lainnya (status kustom).</Callout>
+
+Aksi per baris (menu titik tiga): **Daftar Ulang**, **Edit**, **Detail**, **Cetak** (PDF A4), **Lihat Invoice**, dan **Buat Invoice**. Aksi massal via checkbox: **Import**, **Konfirmasi Pembayaran**, **Ubah Status**, **Ganti Metode Pembayaran**, dan **Hapus**.
+
+Import pendaftar memerlukan isian: instansi, jadwal (gelombang), jurusan, jalur penerimaan, sistem pendidikan, dan file Excel; kesalahan validasi ditampilkan per baris.
+
 ## Edit Pendaftaran
 
 Memperbarui data pendaftaran calon peserta didik.
@@ -23,6 +35,8 @@ Memperbarui data pendaftaran calon peserta didik.
   <Step title="Buka form edit">Klik tanda titik tiga pada baris data pendaftar yang ingin diedit, lalu klik **Edit**. Sistem akan menampilkan detail data pendaftar.</Step>
   <Step title="Edit dan simpan">Edit formulir sesuai kebutuhan, lalu klik **Simpan** untuk menyimpan data yang telah diperbarui.</Step>
 </Steps>
+
+Form edit terbagi dalam bagian: **Data Diri**, **Kesehatan**, **Data Ayah**, **Data Ibu**, **Dokumen**, **Prestasi**, dan **Informasi Lain**. Field yang dapat diedit antara lain: jurusan, jalur penerimaan, sistem pendidikan; identitas lengkap (NIK, NISN, NPSN, nama, nama panggilan, tempat/tanggal lahir, jenis kelamin, anak ke-, asal sekolah, kontak, alamat, kewarganegaraan, agama, bahasa keseharian, status tinggal, status orang tua, ijazah, KIP, transportasi/jarak/waktu tempuh, tanggal diterima); data kesehatan (riwayat, tinggi/berat badan, golongan darah, disabilitas); data Ayah dan Ibu (nama, NIK, pendidikan, pekerjaan, status pernikahan, HP, tempat/tanggal lahir, kewarganegaraan, agama) plus penghasilan orang tua; serta dokumen (Kartu Keluarga, Ijazah), daftar prestasi, dan catatan.
 
 ## Detail
 
@@ -53,6 +67,8 @@ Mengelola data pembayaran SPMB per pendaftar.
   <Step title="Buka invoice">Pilih submenu **Aksi** pada nama siswa, lalu klik **Lihat Invoice**. Sistem akan menampilkan Data Pembayaran.</Step>
   <Step title="Kelola pembayaran">Pada halaman tersebut, Admin dapat memonitor ringkasan pembayaran, memonitor daftar riwayat pembayaran, cetak bukti pembayaran, konfirmasi pembayaran tunai, dan ubah metode pembayaran.</Step>
 </Steps>
+
+<Callout kind="info">Status invoice pembayaran: **PAID** (Lunas) dan **UNPAID** (Belum Bayar); status pembayaran keseluruhan pendaftar dapat bernilai **PAID**, **PARTIALLY_PAID** (Terbayar Sebagian), atau **UNPAID**. Pembuatan invoice baru diblokir jika pendaftar sudah daftar ulang, sudah lunas, atau masih memiliki invoice tertunda. Pembayaran mendukung cicilan (dengan batas minimum pembayaran dari pengaturan jadwal); metode **Tunai** langsung dikonfirmasi admin, sedangkan metode virtual account diarahkan ke detail invoice. Notifikasi invoice dapat dikirim via WhatsApp.</Callout>
 
 ## Konfirmasi Pembayaran
 

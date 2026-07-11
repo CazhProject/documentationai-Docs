@@ -14,6 +14,10 @@ Melihat dan mengelola daftar barang inventaris.
   <Step title="Kelola daftar">Pada halaman tersebut, Admin dapat melakukan filter data barang, mencari data barang, dan mengekspor data barang.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel Barang menampilkan kolom: **Instansi**, **Dibuat oleh**, **Kategori**, **Nama**, **Foto**, **Barcode**, **Masuk**, **Keluar**, **Harga**, dan **Total Harga**. Filter tersedia untuk **Instansi**, **Operator**, dan **Kategori**. Export Excel menghasilkan file **Daftar Barang Inventaris**. Kategori barang dikelola melalui menu **Pengaturan** → **Inventaris** (isian: Instansi dan Nama Kategori).
+
 ## Tambah Barang
 
 Menambahkan barang inventaris baru.
@@ -24,6 +28,21 @@ Menambahkan barang inventaris baru.
   <Step title="Isi dan simpan">Isi form tambah barang sesuai kebutuhan, lalu klik **Simpan**. Sistem otomatis akan menampilkan data barang yang ditambahkan.</Step>
 </Steps>
 
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Instansi | Wajib. |
+| Foto | Opsional, gambar jpeg/jpg/png/heic/heif, maksimal 10 MB. |
+| Kategori | Wajib. |
+| Nama Barang | Wajib, maksimal 255 karakter. |
+| Harga | Wajib, angka, minimal 0. |
+| Lokasi | Opsional, maksimal 255 karakter. |
+| Kode Barang | Opsional. |
+| No. Registrasi | Opsional. |
+| PIC | Opsional (dipilih dari anggota). |
+| Tipe Mesin, Nomor Mesin/Rangka, Tahun Pembuatan, Merk | Opsional (untuk barang bermesin). |
+
 ## Edit Barang
 
 Memperbarui data barang inventaris.
@@ -33,6 +52,10 @@ Memperbarui data barang inventaris.
   <Step title="Buka form edit">Klik opsi **Edit Barang** pada data barang yang ingin diedit. Sistem akan menampilkan form edit barang.</Step>
   <Step title="Isi dan simpan">Isi form edit barang sesuai kebutuhan, lalu klik **Simpan**. Sistem otomatis akan memperbarui data barang yang diedit.</Step>
 </Steps>
+
+<Callout kind="info">
+Pada form edit, kondisi barang dicatat dalam empat kategori jumlah: **Digunakan**, **Tidak Digunakan**, **Rusak**, dan **Hilang** (masing-masing wajib, angka, minimal 0). Total keempat kondisi tidak boleh melebihi stok tersedia — jika melebihi, sistem menolak dengan pesan "Kondisi barang melebihi stock tersedia!".
+</Callout>
 
 ## Hapus Barang
 
@@ -54,6 +77,14 @@ Memonitor seluruh riwayat inventaris.
   <Step title="Buka halaman Riwayat">Login ke website, klik menu **Administrasi**, klik submenu **Inventaris**, lalu klik submenu **Riwayat**. Sistem akan menampilkan halaman Riwayat Inventaris.</Step>
   <Step title="Kelola riwayat">Lihat daftar riwayat inventaris yang telah tercatat, lakukan pencarian menggunakan fitur Search, penyaringan menggunakan fitur Filter, dan export data riwayat inventaris menggunakan fitur Export.</Step>
 </Steps>
+
+### Informasi yang ditampilkan
+
+Tabel Riwayat Inventaris menampilkan kolom: **Instansi**, **Tanggal**, **Barang**, **Stok**, **Keterangan** (jenis riwayat), dan **Status** — dengan detail tambahan Catatan dan Info Lain. Filter tersedia untuk **Instansi**, **Status**, **Keterangan**, dan **Barang**. Export menghasilkan file **Riwayat Inventaris**.
+
+<Callout kind="info">
+Riwayat inventaris berbasis pergerakan stok dengan dua status: **Masuk** (stok bertambah) dan **Keluar** (stok berkurang).
+</Callout>
 
 ## Tambah Riwayat Inventaris
 

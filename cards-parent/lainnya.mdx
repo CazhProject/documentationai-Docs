@@ -1,6 +1,6 @@
 ---
 title: Fitur Lainnya
-description: Fitur pelengkap CARDS Parents — informasi dan promosi, toko online yang terhubung dengan kantin sekolah, serta notifikasi hutang.
+description: Fitur pelengkap CARDS Parents — informasi dan promosi, toko online yang terhubung dengan kantin sekolah, notifikasi hutang, dan pembayaran hutang.
 ---
 
 Selain fitur utama, CARDS Parents menyediakan beberapa fitur pelengkap yang membantu orang tua tetap terhubung dengan sekolah dan Cazh.
@@ -44,6 +44,20 @@ Setelah langkah ini, pesanan Anda terkirim ke kantin sekolah dan tinggal menungg
   </Step>
 </Steps>
 
+### Pengiriman, pembayaran, dan alamat
+
+- **Metode Pengiriman**: **Kurir** atau **Take Away (diambil customer)** — sesuai yang diaktifkan toko.
+- **Metode Pembayaran**: **COD** (bayar ke kurir, jika toko mengaktifkan), **CazhPOIN** (saldo tampil saat memilih), atau **Kartu**.
+- **Alamat pengiriman** dipilih lewat peta (titik lokasi), dengan kolom: Alamat, Detail (RT/RW/No. Rumah), Label (Rumah/Kantor), Nama Penerima, dan No. HP Penerima.
+
+### Riwayat Pesanan
+
+Halaman **Riwayat Pesanan** menampilkan status transaksi: **Pesanan**, **Dikemas**, **Dikirim**, **Selesai**, dan **Batal**, beserta status pembayaran (*Sudah Dibayar*/*Belum Dibayar*), rincian item, **Biaya Pengiriman**, dan **Total Pembayaran**.
+
+<Callout kind="info">
+  Pesanan berstatus *Pesanan* masih dapat dibatalkan melalui tombol **Batalkan Pesanan** (wajib mengisi alasan pembatalan). Setelah pesanan sampai, konfirmasi dengan tombol **Pesanan Diterima**.
+</Callout>
+
 ## Notifikasi Hutang
 
 Ketika siswa melakukan transaksi [hutang](/referensi/glosarium#hutang) di [kantin](/cazhpos/tentang), CARDS Parents akan menerima notifikasi hutang yang dilakukan oleh siswa.
@@ -57,3 +71,36 @@ Notifikasi juga tampil pada halaman notifikasi aplikasi CARDS Parents:
 1. Tekan ikon **Notifikasi**.
 2. Halaman notifikasi akan tampil.
 3. Notifikasi hutang akan tampil.
+
+## Membayar Hutang
+
+Selain notifikasi, tersedia menu **Hutang** untuk melihat dan melunasi hutang jajan anak langsung dari aplikasi.
+
+### Informasi yang ditampilkan
+
+Halaman Hutang memiliki dua tab: **Belum Terbayar** dan **Sudah Terbayar**. Setiap hutang menampilkan:
+
+| Informasi | Keterangan |
+| --- | --- |
+| Nama toko/kantin | Tempat transaksi hutang |
+| Ringkasan produk | Nama-nama item yang dihutang |
+| Tanggal & ID transaksi | Waktu transaksi dan nomor referensi |
+| **Jatuh tempo** | Tanggal jatuh tempo (berwarna merah bila lewat) |
+| Status | **Belum Terbayar**, **Terbayar Sebagian**, atau **Lunas** |
+| **Sisa Hutang** | Nominal yang masih harus dibayar |
+
+Menekan hutang membuka **Detail Produk** berisi rincian per item (nama, jumlah x harga, diskon), Subtotal, Diskon, Total, **Terbayar**, dan **Sisa Hutang**.
+
+### Cara membayar
+
+<Steps>
+  <Step title="Pilih hutang">
+    Tekan **Bayar** pada satu hutang, atau centang beberapa hutang / **Pilih Semua** lalu tekan **Bayar Semua**.
+  </Step>
+  <Step title="Pilih metode pembayaran">
+    Pilih metode pembayaran (CazhPOIN, Kartu, Virtual Account bank, transfer bank, e-wallet, atau retail — sesuai yang aktif), lalu tekan **Proses**.
+  </Step>
+  <Step title="Selesaikan pembayaran">
+    Selesaikan pembayaran; bukti transaksi dapat dilihat dan dibagikan dari halaman detail.
+  </Step>
+</Steps>

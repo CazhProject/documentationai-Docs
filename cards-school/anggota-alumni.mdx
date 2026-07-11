@@ -7,6 +7,12 @@ Menu Alumni digunakan admin sekolah untuk mengelola anggota yang sudah tidak akt
 
 <Callout kind="info">Anggota aktif dipindahkan ke alumni melalui aksi **Pindah Alumni** di halaman [Siswa](/cards-school/anggota-siswa#pindah-data-siswa) atau [Guru](/cards-school/anggota-guru#pindah-guru-ke-alumni).</Callout>
 
+## Informasi yang ditampilkan
+
+**Alumni Siswa** — tabel menampilkan kolom: **Nama**, **Nomor Kartu**, **Kelas**, **Tahun Ajaran**, **Instansi**, dan **Status**. Filter: **Instansi**, **Tahun Ajaran**, **Tingkat**, **Kelas**, **Jurusan**, dan **Status** dengan nilai **GRADUATED** (Lulus) atau **INACTIVE** (Tidak Aktif). Export menghasilkan file `Alumni.xlsx` dengan kolom: ID, Nomor Kartu, Nomor Induk, Nama Lengkap, NISN, Tempat Lahir, Tanggal Lahir, Jenis Kelamin, Alamat, Instansi, Kelas, No Telp, dan Status.
+
+**Alumni Guru** — tabel menampilkan kolom: **Nama**, **Nomor Kartu**, **Jenis** (jenis guru), **Instansi**, dan **Status**, dengan filter **Instansi** dan **Jenis**, serta export ke file `Alumni Guru`.
+
 ## Pengelolaan Data Alumni Siswa
 
 Melihat dan mengelola data alumni siswa, termasuk mengubah status mereka menjadi siswa aktif kembali.
@@ -26,6 +32,8 @@ Mengembalikan alumni menjadi siswa aktif.
   <Step title="Pilih siswa">Pilih siswa yang akan diaktifkan.</Step>
   <Step title="Aktifkan">Pilih **Ubah ke Siswa Aktif** → **Simpan**. Status siswa alumni akan berubah menjadi siswa aktif.</Step>
 </Steps>
+
+<Callout kind="info">Pengaktifan kembali alumni berjalan melalui **pengajuan aktivasi** yang wajib menyertakan catatan dan menunggu persetujuan. Riwayatnya tercatat di halaman **Log Aktivasi Alumni** dengan kolom: Tanggal Pengajuan, Pengaju, Tipe Anggota (Guru/Siswa/Campuran), Jumlah Anggota, Catatan Pengajuan, Status, Tanggal Keputusan, dan Catatan Keputusan. Status pengajuan: **Menunggu Approval**, **Disetujui**, atau **Ditolak**; hasil per anggota: **Diaktifkan** atau **Dilewati (Duplikat)**.</Callout>
 
 ## Pengelolaan Data Alumni Guru
 
