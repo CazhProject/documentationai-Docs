@@ -16,6 +16,10 @@ Melihat dan mengatur Produk Tabungan yang dibuat oleh admin sekolah — menambah
   <Step title="Kelola produk">Halaman ini menampilkan list Produk Tabungan; Admin dapat mengatur Produk Tabungan sesuai kebutuhan sekolah.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel Produk Tabungan menampilkan kolom: **Nama Produk**, **Nama Instansi**, **Bagi Hasil**, **Pajak Bagi Hasil**, **Tanggal**, dan **Status**. Data dapat difilter berdasarkan Status: **Aktif**, **Tidak Aktif**, atau **Lulus**.
+
 ## Tambah Produk Tabungan
 
 Membuat produk tabungan baru.
@@ -25,6 +29,26 @@ Membuat produk tabungan baru.
   <Step title="Buka formulir">Klik tombol **Tambah Produk**. Halaman ini menampilkan formulir yang harus diisi untuk menambah Produk Tabungan.</Step>
   <Step title="Selesai">Setelah Produk Tabungan ditambahkan, produk akan muncul pada list Produk Tabungan.</Step>
 </Steps>
+
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Gambar Produk | Opsional, gambar (jpg/png/jpeg/heic/heif). |
+| Instansi | Wajib. |
+| Nama Produk | Wajib, maksimal 255 karakter. |
+| Kode Produk | Wajib, maksimal 99 karakter. |
+| Batas Rekening per Anggota | Wajib (aktif/nonaktif); jika diaktifkan, jumlah rekening 1–100. |
+| Bisa Setor via Aplikasi | Wajib (ya/tidak). |
+| Bisa Tarik via Aplikasi | Wajib (ya/tidak). |
+| Bagi Hasil per Tahun | Wajib, persentase 0–100. |
+| Pajak Bagi Hasil | Wajib, persentase 0–100. |
+| Biaya Admin per Bulan | Wajib, angka, minimal 0. |
+| Biaya Penarikan | Wajib, angka, minimal 0. |
+| Saldo Minimum | Wajib, angka, minimal 0. |
+| Setoran Minimum | Wajib, angka, minimal 0. |
+| Tanggal Pembukuan Bagi Hasil | Wajib, angka (tanggal dalam bulan). |
+| Deskripsi Produk | Wajib. |
 
 ## Edit Produk Tabungan
 
@@ -45,6 +69,10 @@ Mengelola Rekening Tabungan siswa: menambah, mengedit, melihat detail, mencari, 
   <Step title="Kelola rekening">Halaman Daftar Rekening menampilkan rekening yang dimiliki oleh para siswa.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel Daftar Rekening menampilkan kolom: **Nama Penabung**, **Nomor Kartu**, **Nomor Rekening**, **Saldo**, **Produk**, **Instansi**, **Dibuat oleh**, **Tanggal Buat**, dan **Status**. Data dapat difilter berdasarkan **Instansi**, **Produk**, dan **Status** rekening: **Aktif**, **Tidak Aktif**, **Blokir**, atau **Hapus Permanen**. Data dapat diekspor ke Excel dengan nama file **Daftar Rekening**.
+
 ## Detail Rekening Tabungan
 
 Mengelola detail rekening per siswa: membuat transaksi tabungan, menonaktifkan rekening, mencetak transaksi, memblokir rekening, dan mengekspor data transaksi rekening.
@@ -53,6 +81,10 @@ Mengelola detail rekening per siswa: membuat transaksi tabungan, menonaktifkan r
   <Step title="Buka Rekening">Login ke website, klik menu **Keuangan**, klik submenu **Tabungan**, lalu klik submenu **Rekening**.</Step>
   <Step title="Buka detail">Pilih salah satu rekening, klik **Detail Rekening**.</Step>
 </Steps>
+
+<Callout kind="info">
+Transaksi dari detail rekening terdiri dari **Setoran Tabungan** dan **Penarikan Tabungan**, melalui dua langkah dan diakhiri verifikasi **PIN**. Sumber setoran dapat berupa **Tunai** atau **Kartu** (setoran via Kartu dibuat sebagai invoice pembayaran kartu tanpa PIN); tujuan penarikan dapat berupa **Tunai** atau **Kartu**. Jika pembayaran via Kartu, saldo wallet kartu harus mencukupi nominal transaksi.
+</Callout>
 
 ## Tambah Rekening Tabungan Satuan
 
@@ -64,6 +96,14 @@ Menambah rekening baru untuk masing-masing siswa, sesuai dengan instansi dan Pro
   <Step title="Isi dan simpan">Isi formulir Tambah Rekening Satuan, klik **Simpan**.</Step>
 </Steps>
 
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Instansi | Wajib. |
+| Nomor Kartu Anggota | Wajib (mode satuan), anggota harus terdaftar. |
+| Produk Tabungan | Wajib. |
+
 ## Tambah Rekening Tabungan Massal
 
 Menambah rekening baru secara massal untuk siswa dalam satu instansi dan tipe anggota yang sama.
@@ -74,6 +114,10 @@ Menambah rekening baru secara massal untuk siswa dalam satu instansi dan tipe an
   <Step title="Isi dan simpan">Isi formulir Tambah Rekening Massal, klik **Simpan**.</Step>
 </Steps>
 
+<Callout kind="info">
+Pada mode massal, penerima ditentukan berdasarkan **Jenis Anggota** (Siswa/Guru/Staf). Untuk Siswa dapat dipersempit berdasarkan **Tingkat**, **Kelas**, dan **Jurusan**; untuk Guru berdasarkan tipe guru; untuk Staf berdasarkan tipe staf.
+</Callout>
+
 ## Transaksi dan Riwayat Transaksi
 
 Melihat Riwayat Transaksi Tabungan dari seluruh siswa dan seluruh Produk Tabungan. Admin dapat melihat total setoran tunai, setoran non-tunai, dan penarikan tunai, serta mencari, memfilter, dan mengekspor data Transaksi Tabungan.
@@ -82,6 +126,26 @@ Melihat Riwayat Transaksi Tabungan dari seluruh siswa dan seluruh Produk Tabunga
   <Step title="Buka Transaksi">Login ke website, klik menu **Keuangan**, klik submenu **Tabungan**, lalu klik submenu **Transaksi**.</Step>
   <Step title="Kelola riwayat">Sistem menampilkan riwayat transaksi tabungan seluruh siswa untuk dicari, difilter, atau diekspor.</Step>
 </Steps>
+
+### Informasi yang ditampilkan
+
+Halaman menampilkan ringkasan per instansi: **Total Saldo**, **Penarikan**, **Setoran Tunai**, dan **Setoran Non-Tunai**. Tabel transaksi menampilkan kolom: **ID**, **Tanggal**, **Tipe** (kanal pembayaran), **Oleh**, **Tipe Transaksi**, **Saldo Awal**, **Debit**, **Kredit**, **Saldo Akhir**, **Status**, dan **Keterangan**. Filter tersedia untuk **Jenis Transaksi** (kanal pembayaran), **Tipe Transaksi**, serta rentang **Dari Tanggal** dan **Sampai Tanggal**. Export Excel menghasilkan file **Daftar Transaksi**.
+
+Tipe transaksi tabungan yang tercatat sistem:
+
+| Tipe Transaksi | Arah |
+| --- | --- |
+| Setoran Tabungan | Pemasukan |
+| Penarikan Tabungan | Pengeluaran |
+| Biaya Setoran Tabungan | Pemasukan |
+| Biaya Penarikan Tabungan | Pemasukan |
+| Biaya Admin Tabungan | Pengeluaran |
+| Bagi Hasil Tabungan | Pemasukan |
+| Pajak Tabungan | Penyesuaian |
+
+<Callout kind="info">
+Status transaksi tabungan: **Berhasil**, **Gagal**, atau **Pembatalan**. Cetak struk transaksi tersedia berdasarkan durasi: **Transaksi Kemarin** (1 hari), **7 Hari Terakhir**, atau **30 Hari Terakhir**.
+</Callout>
 
 ## Setoran Massal
 
@@ -94,6 +158,10 @@ Melakukan transaksi setor tabungan secara massal. Setoran massal dibuat dengan c
   <Step title="Unggah template">Unggah template kembali pada formulir Transaksi Masal.</Step>
 </Steps>
 
+<Callout kind="info">
+Template anggota diunduh sesuai filter (instansi, jenis anggota, tingkat/kelas/jurusan, produk). File import wajib berformat **.xls** dengan ukuran maksimal **4 MB (4096 KB)**, dan proses diakhiri verifikasi **PIN**. Baris yang gagal divalidasi ditampilkan dalam modal error.
+</Callout>
+
 ## Penarikan Massal
 
 Melakukan transaksi tarik tabungan secara massal. Penarikan massal dibuat dengan cara upload data Excel penarikan yang diambil dari template sesuai filter yang diatur.
@@ -104,5 +172,9 @@ Melakukan transaksi tarik tabungan secara massal. Penarikan massal dibuat dengan
   <Step title="Unduh template">Isi formulir dan unduh template, lalu isi template dengan data yang diinginkan.</Step>
   <Step title="Unggah template">Unggah template kembali pada formulir Transaksi Masal.</Step>
 </Steps>
+
+<Callout kind="info">
+Pada penarikan massal, **Tujuan Penarikan** wajib dipilih: **Tunai** atau **Kartu**.
+</Callout>
 
 <Callout kind="alert">Penarikan massal memotong saldo tabungan banyak siswa sekaligus. Periksa kembali isi template sebelum diunggah.</Callout>

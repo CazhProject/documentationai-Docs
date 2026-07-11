@@ -9,7 +9,7 @@ Menu Donasi digunakan admin sekolah untuk mengelola program donasi instansi — 
 | --- | --- | --- |
 | **Donasi Umum** | Donasi tanpa target dana. | **Donasi Umum** |
 | **Donasi Penggalangan Dana** | Donasi dengan target dana. | **Penggalangan Dana** |
-| **Donasi Khusus** | Donasi berbasis kuota dan nominal. | **Donasi Khusus** |
+| **Donasi Khusus** (Program Khusus) | Donasi berbasis kuota dan nominal. | **Donasi Khusus** |
 
 ## Daftar Donasi
 
@@ -21,6 +21,18 @@ Melihat dan mengelola daftar program donasi per jenis.
   <Step title="Kelola daftar">Tampilkan daftar donasi secara spesifik menggunakan pencarian, export daftar donasi, tambah program donasi, perbarui program donasi, hapus program donasi, dan tampilkan setiap detail donasi.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Kolom daftar donasi menyesuaikan jenis program:
+
+| Tab | Kolom |
+| --- | --- |
+| Umum | Instansi, Program, Cakupan, Terkumpul, Mulai, Selesai |
+| Penggalangan Dana | Instansi, Program, Cakupan, Dana Target, Terkumpul, Mulai, Selesai |
+| Khusus | Instansi, Program, Cakupan, Dana Target, Terkumpul, Kuota, Nominal, Mulai, Selesai |
+
+Daftar diurutkan berdasarkan tanggal selesai terbaru. Export Excel menghasilkan file **Donasi - Umum**, **Donasi - Penggalangan Dana**, atau **Donasi - Program Khusus** sesuai tab aktif.
+
 ## Tambah Donasi
 
 Membuat program donasi baru.
@@ -31,6 +43,21 @@ Membuat program donasi baru.
   <Step title="Isi formulir">Pilih jangkauan donasi (internal instansi, eksternal, maupun keduanya), pilih program donasi (Umum, Penggalangan Dana, atau Khusus — lihat tabel di atas), lalu lengkapi seluruh formulir donasi.</Step>
   <Step title="Simpan">Klik **Simpan**; sistem akan menampilkan donasi sesuai dengan jenis program, periode, dan jangkauan donasi.</Step>
 </Steps>
+
+### Isian formulir
+
+| Isian | Ketentuan |
+| --- | --- |
+| Instansi | Wajib. |
+| Judul Program | Wajib (contoh: "Pembangunan Masjid"). |
+| Jenis Program | Wajib: Umum, Penggalangan Dana, atau Program Khusus. |
+| Cakupan Donasi | Wajib, dapat memilih lebih dari satu: **Internal** dan/atau **Eksternal**. |
+| Dana Target | Khusus jenis Penggalangan Dana; minimal Rp 10.000. |
+| Kuota | Khusus jenis Program Khusus; wajib, angka. |
+| Nominal | Khusus jenis Program Khusus; wajib, minimal Rp 10.000. Total target = nominal × kuota. |
+| Periode (Mulai & Selesai) | Wajib; tanggal selesai harus setelah tanggal mulai. |
+| Deskripsi | Wajib. |
+| Thumbnail | Opsional, gambar jpg/png/jpeg/heic/heif, maksimal 10 MB. |
 
 ## Edit Donasi
 
@@ -65,6 +92,14 @@ Memonitor data donatur pada donasi umum.
   <Step title="Pilih donasi">Pilih salah satu data donasi umum; gunakan fitur pencarian untuk menemukan donasi secara spesifik. Klik ikon **Detail** pada baris data donasi yang dipilih.</Step>
   <Step title="Kelola detail">Sistem akan menampilkan halaman detail donasi umum. Admin dapat melihat informasi donasi, melihat total dana yang telah terkumpul, melihat daftar donatur, export daftar donatur, serta melihat dan mencetak bukti pembayaran dari setiap donatur.</Step>
 </Steps>
+
+### Informasi yang ditampilkan
+
+Daftar donatur menampilkan kolom: **Nama Donatur**, **Email**, **No HP**, **Alamat**, **Jumlah Donasi**, **Tanggal**, dan **Catatan**, diurutkan dari pembayaran terbaru. Export Excel menghasilkan file **Daftar Donatur**.
+
+<Callout kind="info">
+Daftar donatur hanya menampilkan donasi yang sudah berstatus **Lunas (terbayar)**; struk donatur juga hanya dapat dibuka untuk pembayaran yang sudah lunas.
+</Callout>
 
 ## Detail Donasi Penggalangan Dana
 
