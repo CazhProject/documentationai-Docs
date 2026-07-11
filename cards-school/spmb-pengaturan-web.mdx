@@ -3,7 +3,7 @@ title: "SPMB — Pengaturan Web"
 description: "Panduan lengkap pengaturan website SPMB di CARDS School: profil, beranda, jadwal, status kustom, formulir standar dan kustom, program khusus, persyaratan, informasi, daftar ulang, kunjungi website, dan analytic."
 ---
 
-Menu Pengaturan Web digunakan admin sekolah untuk mengelola tampilan dan konfigurasi website [SPMB](/referensi/glosarium#spmb) (Sistem Penerimaan Murid Baru) lembaga. Seluruh pengaturan diakses melalui menu **Anggota** → submenu **SPMB** → menu **Pengaturan Web**, lalu pilih tab yang sesuai.
+Menu Pengaturan Web digunakan admin sekolah untuk mengelola tampilan dan konfigurasi website [SPMB](/referensi/glosarium#spmb) (Sistem Penerimaan Murid Baru) lembaga. Seluruh pengaturan diakses melalui menu **Anggota** → submenu **SPMB** → menu **Pengaturan Web**, lalu pilih tab yang sesuai. Pengaturan berlaku per instansi (pilih instansi terlebih dahulu).
 
 ## Profil
 
@@ -15,6 +15,22 @@ Mengedit profil yang tampil pada landing page SPMB.
   <Step title="Ubah profil">Pada halaman tersebut, Admin dapat mengubah informasi profil.</Step>
 </Steps>
 
+### Isian formulir Profil
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Judul Web | Ya | Judul yang tampil pada landing page SPMB. |
+| Status SPMB | Ya | Aktif / Tidak Aktif — mengaktifkan atau menonaktifkan website SPMB. |
+| Nama PIC | Tidak | Penanggung jawab SPMB. |
+| No HP PIC | Tidak | — |
+| Tahun Ajaran SPMB | Tidak | Tahun ajaran tujuan pendaftaran. |
+| Nomor Urut Pendaftaran | Tidak | Awal penomoran nomor pendaftar. |
+| Notifikasi WhatsApp | Tidak | Aktif/nonaktif pengiriman notifikasi WhatsApp. |
+| Telepon, Alamat, Email instansi | Tidak | Kontak yang tampil di landing page. |
+| Logo | Tidak | jpg/png/jpeg/heic/heif, maksimal 10 MB. |
+
+Halaman ini juga menampilkan **URL website SPMB** lembaga (berdasarkan slug instansi).
+
 ## Beranda
 
 Mengedit tampilan alur pendaftaran pada landing page SPMB.
@@ -24,6 +40,10 @@ Mengedit tampilan alur pendaftaran pada landing page SPMB.
   <Step title="Buka tab Beranda">Klik tab **Beranda**.</Step>
   <Step title="Atur beranda">Setting alur pendaftaran menggunakan template yang telah disediakan, serta setting deskripsi dan animasi alur pendaftaran sesuai kebutuhan.</Step>
 </Steps>
+
+Daftar tahapan alur pendaftaran ditampilkan dalam tabel dengan kolom: **Urutan**, **Nama Tahapan**, **Deskripsi**, **Ilustrasi**, dan **Tampilkan** (toggle). Setiap tahapan dapat diedit dengan isian: deskripsi (wajib, maksimal 255 karakter), jenis ilustrasi (**gambar** jpg/jpeg/png maksimal 2 MB, atau **animasi Lottie** via URL), serta visibilitas.
+
+<Callout kind="info">Tahapan alur otomatis disinkronkan dengan daftar status pendaftaran (termasuk status kustom) dan posisi pembayaran pada jadwal (Setelah Pendaftaran / Setelah Pengumuman).</Callout>
 
 ## Jadwal
 
@@ -35,12 +55,22 @@ Mengelola jadwal SPMB beserta kuota dan biayanya.
   <Step title="Kelola jadwal">Lihat daftar jadwal SPMB yang telah dibuat, buat jadwal SPMB baru, hapus jadwal, atau edit jadwal SPMB.</Step>
 </Steps>
 
-Pada edit jadwal SPMB, Admin dapat:
+Daftar jadwal menampilkan kolom: **Nama Jadwal**, **Satu Harga**, **Tanggal**, **Kuota**, dan **Status**.
 
-- Setting kuota penerimaan.
-- Setting biaya SPMB.
-- Setting harga coret.
-- Setting minimum pembayaran.
+### Isian formulir Jadwal
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Nama Jadwal | Ya | — |
+| Tanggal Mulai & Selesai | Ya | Periode gelombang pendaftaran. |
+| Jenis Kuota | Ya | **Global** (satu kuota untuk semua) atau **Per Jalur Penerimaan** (kuota per jalur). |
+| Kuota | Tidak | Jumlah kuota penerimaan (global atau per jalur). |
+| Satu Harga | Tidak | Jika aktif, satu harga untuk semua jurusan; jika tidak, harga diatur per jurusan. |
+| Jenis Tagihan | Tidak | Jenis invoice untuk biaya pendaftaran. |
+| Harga | Tidak | Biaya SPMB. |
+| Harga Coret | Tidak | Harga sebelum diskon (tampilan). |
+| Minimum Pembayaran | Tidak | Minimum bayar (cicilan); pada lembaga non-finansial otomatis sama dengan harga. |
+| Posisi Pembayaran | Ya | **Setelah Pendaftaran** atau **Setelah Pengumuman**. |
 
 ## Status Kustom
 
@@ -52,6 +82,8 @@ Mengelola status kustom untuk proses SPMB.
   <Step title="Kelola status">Lihat daftar status kustom, tambah, edit, atau hapus status kustom.</Step>
 </Steps>
 
+Daftar status kustom menampilkan kolom: **Instansi**, **Nama Status**, **Urutan**, **Status**, **Total Pendaftar**, dan **Dibuat Pada**. Isian saat menambah/mengedit: nama status, urutan (menentukan posisi dalam alur), dan status aktif.
+
 ## Formulir Standar
 
 Mengelola formulir standar yang ditampilkan pada calon peserta didik.
@@ -62,6 +94,18 @@ Mengelola formulir standar yang ditampilkan pada calon peserta didik.
   <Step title="Atur formulir">Edit data formulir standar untuk ditampilkan atau disembunyikan, setting data formulir wajib diisi atau tidak, dan setting data formulir ditampilkan pada semua jalur atau jalur tertentu.</Step>
 </Steps>
 
+Formulir standar terdiri dari ±54 field bawaan sistem yang terbagi dalam 5 kategori:
+
+| Kategori | Contoh field |
+| --- | --- |
+| **Data Pendidikan** | Jurusan, Jalur Penerimaan, Sistem Pendidikan. |
+| **Data Diri Calon Siswa** | Email, NIK/KIA, NISN, NPSN, Asal Sekolah, Masa belajar pendidikan sebelumnya, Tanggal dan Nomor Ijazah, KIP, Pas Foto 3x4, Saudara kandung yang sudah sekolah disini, Status dalam keluarga, Jumlah saudara, Moda transportasi, Jarak menuju sekolah (KM), Waktu tempuh, Nama panggilan, Kewarganegaraan, Agama, Status orang tua, Bahasa keseharian, Status tinggal. |
+| **Data Kesehatan** | Riwayat kesehatan, Disabilitas, Tinggi badan, Berat badan, Tes buta warna, Golongan darah. |
+| **Data Orang Tua** | Nama, NIK, Pendidikan, Pekerjaan, Status pernikahan, Nomor HP, Tempat & tanggal lahir, Agama, Kewarganegaraan (untuk Ayah dan Ibu), Penghasilan orang tua. |
+| **Data Dokumen/File** | Kartu Keluarga, Ijazah/Keterangan Lulus, File lainnya. |
+
+Setiap field memiliki toggle **Ditampilkan** dan **Wajib diisi** (beberapa field inti tidak dapat diubah), serta dapat dibatasi hanya tampil pada jalur penerimaan tertentu.
+
 ## Formulir Kustom
 
 Mengelola formulir kustom yang ditampilkan pada calon peserta didik.
@@ -71,6 +115,21 @@ Mengelola formulir kustom yang ditampilkan pada calon peserta didik.
   <Step title="Buka tab Formulir Kustom">Pilih menu navbar **Formulir Kustom**.</Step>
   <Step title="Kelola formulir">Lihat daftar formulir kustom yang telah dibuat, tambah, edit, atau hapus data formulir kustom.</Step>
 </Steps>
+
+Daftar formulir kustom menampilkan kolom: **Label**, **Kategori**, **Jenis Input**, **Ditampilkan?**, **Diwajibkan?**, dan **Jalur Penerimaan**.
+
+### Isian formulir Kustom
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Label | Ya | Nama field yang tampil pada formulir. |
+| Deskripsi | Tidak | Keterangan tambahan. |
+| Kategori | Ya | Data Diri Calon Siswa / Data Kesehatan / Data Orang Tua / Data Dokumen (File). |
+| Jenis Input | Ya | Teks, Tanggal, Textarea (teks panjang), atau Dropdown; kategori Dokumen otomatis berjenis **File**. |
+| Opsi | — | Daftar pilihan, hanya untuk jenis Dropdown. |
+| Wajib diisi | Tidak | Default: ya. |
+| Ditampilkan | Tidak | Default: ya. |
+| Jalur Penerimaan | Tidak | Batasi field untuk jalur tertentu. |
 
 ## Program Khusus
 
@@ -87,6 +146,8 @@ Mengelola jalur penerimaan dan sistem pendidikan.
 | **Jalur Penerimaan** | Melihat list jalur penerimaan, edit, hapus, dan tambah jalur penerimaan. |
 | **Sistem Pendidikan** | Melihat daftar sistem pendidikan, edit, hapus, dan tambah daftar sistem pendidikan. |
 
+Isian jalur penerimaan: **Nama** jalur, **Tipe potongan** (Nominal atau Persentase), dan **Nominal potongan** — potongan biaya pendaftaran untuk pendaftar jalur tersebut. Isian sistem pendidikan: nama program saja.
+
 ## Persyaratan
 
 Mengelola persyaratan yang ditampilkan pada landing page SPMB.
@@ -94,7 +155,7 @@ Mengelola persyaratan yang ditampilkan pada landing page SPMB.
 <Steps>
   <Step title="Buka Pengaturan Web">Login ke website, klik menu **Anggota**, pilih submenu **SPMB**, lalu pilih menu **Pengaturan Web**.</Step>
   <Step title="Buka menu Persyaratan">Pilih submenu **Lainnya**, lalu pilih menu **Persyaratan**.</Step>
-  <Step title="Kelola persyaratan">Pada halaman Persyaratan, Admin dapat menambahkan dan mengedit persyaratan.</Step>
+  <Step title="Kelola persyaratan">Pada halaman Persyaratan, Admin dapat menambahkan dan mengedit persyaratan (editor teks kaya/rich text).</Step>
 </Steps>
 
 ## Informasi
@@ -104,7 +165,7 @@ Mengelola informasi yang ditampilkan pada landing page SPMB.
 <Steps>
   <Step title="Buka Pengaturan Web">Login ke website, klik menu **Anggota**, pilih submenu **SPMB**, lalu pilih menu **Pengaturan Web**.</Step>
   <Step title="Buka menu Informasi">Pilih submenu **Lainnya**, lalu pilih menu **Informasi**.</Step>
-  <Step title="Kelola informasi">Pada halaman Informasi, Admin dapat menambahkan dan mengedit informasi.</Step>
+  <Step title="Kelola informasi">Pada halaman Informasi, Admin dapat menambahkan dan mengedit informasi (editor teks kaya/rich text).</Step>
 </Steps>
 
 ## Daftar Ulang
@@ -117,7 +178,9 @@ Mengelola [tagihan](/referensi/glosarium#tagihan) daftar ulang.
   <Step title="Kelola tagihan">Lihat daftar tagihan daftar ulang, tambah, edit, atau hapus tagihan daftar ulang.</Step>
 </Steps>
 
-<Callout kind="info">Tagihan akan ditambahkan otomatis kepada siswa yang dinyatakan **Diterima**.</Callout>
+Tersedia dua daftar tagihan: **daftar ulang siswa baru** dan **daftar ulang siswa lama**, keduanya dengan kolom: **Nama Jurusan**, **Jenis**, **Jumlah**, dan **Catatan**. Isian tagihan: jurusan, jenis tagihan (invoice type), jumlah nominal, dan catatan.
+
+<Callout kind="info">Tagihan akan ditambahkan otomatis kepada siswa yang dinyatakan **Diterima**. Tab Daftar Ulang hanya tampil jika fitur keuangan lembaga aktif.</Callout>
 
 ## Kunjungi Website
 
@@ -136,5 +199,5 @@ Memonitor jumlah pengunjung website SPMB.
 <Steps>
   <Step title="Buka Pengaturan Web">Login ke website, klik menu **Anggota**, pilih submenu **SPMB**, lalu pilih menu **Pengaturan Web**.</Step>
   <Step title="Buka menu Analytic">Pilih submenu **Lainnya**, lalu pilih menu **Analytic**.</Step>
-  <Step title="Lihat statistik">Pada halaman Analytic, Admin dapat melihat jumlah pengunjung website.</Step>
+  <Step title="Lihat statistik">Pada halaman Analytic, Admin dapat melihat jumlah pengunjung website berikut grafik tren kunjungan, dengan rentang tanggal yang dapat diatur (default 30 hari terakhir).</Step>
 </Steps>

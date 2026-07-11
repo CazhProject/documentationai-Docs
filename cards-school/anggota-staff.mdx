@@ -12,6 +12,36 @@ Pada halaman daftar Staff, admin dapat:
 - Export data staff: seluruh data yang ada pada halaman, atau berdasarkan data yang dipilih melalui checkbox.
 - Melihat dan mengubah detail data staff.
 
+## Informasi yang ditampilkan
+
+Tabel daftar staff menampilkan kolom: **Nama**, **Nomor Kartu**, **Staff** (jenis staff), **Instansi**, dan **Status**. Filter yang tersedia: **Instansi**, **Jenis** (daftar jenis staff), dan **Status** (Aktif / Tidak Aktif — status Lulus tidak berlaku untuk staff).
+
+**Export** menghasilkan file Excel (`Staff.xlsx`) dengan kolom: ID, Nomor Kartu, Nomor Induk, Kode QR, Nama Lengkap, Tempat Lahir, Tanggal Lahir, Jenis Kelamin, Alamat, No Telp, Instansi, Keterangan (jenis staff), Tanggal Mulai Tugas, Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional, Pendidikan, NUPTK, dan Status.
+
+Aksi massal via checkbox: **Ubah Jenis Staff**, **Ubah Status**, **Pindah Instansi**, **Download Kartu**, **Pindah Shift**, dan **Download Surat**. Toolbar menyediakan **Import Staff**, **Export**, dan **Tambah Staff**.
+
+### Isian formulir Tambah Staff
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Instansi | Ya | — |
+| Nama Lengkap | Ya | — |
+| Jenis Kelamin | Ya | Laki - laki / Perempuan. |
+| Email | Ya | Harus unik antar anggota. |
+| No HP | Ya | Angka, divalidasi format nomor telepon. |
+| No Induk | Ya | Nomor induk anggota. |
+| Nomor Kartu | Ya | Angka. |
+| Jenis Staff | Ya | Dari daftar jenis staff instansi. |
+| Tempat/Tanggal Lahir, Alamat | Tidak | — |
+| No Identitas (NIK) | Tidak | Angka 16 digit. |
+| UID Kartu | Tidak | Harus unik. |
+| Tanggal Mulai Tugas | Tidak | — |
+| Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional | Tidak | — |
+| Pendidikan, NUPTK | Tidak | — |
+| Foto | Tidak | jpg/png/jpeg/heic/heif, maksimal 10 MB. |
+
+<Callout kind="info">Import staff menggunakan template Excel (`template-member-v8.xls`) dengan kolom antara lain: nama_lengkap (wajib), jenis_kelamin (wajib: L/P), email (wajib, unik), nomor_induk_member (wajib), nomor_kartu (wajib), tanggal_mulai_tugas (d/m/Y), pangkat/golongan, jabatan, serta kolom opsional identitas lainnya.</Callout>
+
 ## Pindah Shift
 
 Mengubah shift presensi staff, secara massal maupun satuan.
@@ -60,6 +90,8 @@ Mengubah status staff, secara massal maupun satuan.
 2. Sistem akan menampilkan halaman detail staff yang dipilih.
 3. Pada tab **Data Diri**, ubah status staff melalui field **Status**.
 
+<Callout kind="info">Nilai status staff yang dikenal sistem: **ACTIVE** (Aktif) dan **INACTIVE** (Tidak Aktif).</Callout>
+
 ## Pindah Instansi
 
 Memindahkan staff ke instansi lain, secara massal maupun satuan.
@@ -99,6 +131,8 @@ Mengunduh surat panduan penggunaan aplikasi mobile untuk staff terpilih.
 ## Detail Staff
 
 Untuk mengakses detail staff: menu **Anggota** → submenu **Staff** → pilih salah satu staff (gunakan fitur pencarian atau filter). Sistem akan menampilkan halaman detail staff yang dipilih, lalu klik tab yang diperlukan.
+
+<Callout kind="info">Tab yang tampil untuk staff: **Data Diri**, **Kartu**, **Tagihan**, dan **Dokumen**.</Callout>
 
 ### Data Staff
 

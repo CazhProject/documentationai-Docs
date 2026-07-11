@@ -5,6 +5,8 @@ description: "Panduan pengaturan pengkinian data di CARDS School: melihat list, 
 
 Fitur Pengkinian Data memungkinkan admin sekolah membuka jalur pengajuan perubahan atau pembaruan data oleh pengguna — misalnya orang tua melalui aplikasi [CARDS Parents](/cards-parent/akun). Pengaturannya dikelola melalui menu **Anggota** → submenu **Pengkinian Data**.
 
+Setiap pengaturan menghasilkan tautan publik berformat `{alamat-website}/pd/{link}` yang dapat dibagikan; anggota membuka tautan tersebut untuk memperbarui datanya sendiri selama periode yang ditentukan.
+
 ## List Pengaturan
 
 Melihat dan mengelola pengaturan pengkinian data yang telah dibuat.
@@ -14,6 +16,10 @@ Melihat dan mengelola pengaturan pengkinian data yang telah dibuat.
   <Step title="Lihat daftar">Sistem akan menampilkan list data pengaturan pengkinian data yang telah dibuat.</Step>
   <Step title="Cari data">Gunakan **Search** untuk menemukan data pengkinian data yang diinginkan.</Step>
 </Steps>
+
+### Informasi yang ditampilkan
+
+Tabel pengaturan menampilkan kolom: **Instansi**, **Link** (ditampilkan sebagai `pd/{link}` dengan tombol salin ke clipboard), **Mulai**, **Selesai**, dan aksi **Edit**.
 
 ## Tambah Pengaturan
 
@@ -25,6 +31,19 @@ Menambahkan pengaturan pengkinian data baru yang dapat digunakan pengguna untuk 
   <Step title="Isi dan simpan">Input data, lalu klik tombol **Simpan**.</Step>
 </Steps>
 
+### Isian formulir
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Instansi | Ya | Satu instansi hanya dapat memiliki satu pengaturan pengkinian data. |
+| Link | Ya | Slug tautan publik; harus unik, maksimal 255 karakter, format slug (huruf/angka/tanda hubung). |
+| Tanggal Mulai | Ya | Format Y-m-d. |
+| Tanggal Selesai | Ya | Harus setelah tanggal mulai. |
+
+<Callout kind="info">Instansi dan Link yang sudah dibuat tidak dapat diedit — saat mengedit, hanya tanggal mulai dan tanggal selesai yang dapat diubah.</Callout>
+
+<Callout kind="info">Data yang dapat diperbarui anggota melalui tautan pengkinian data mencakup: foto, nomor HP, nomor KIP, anak ke-, data disabilitas, riwayat kesehatan, golongan darah, nama panggilan, masa belajar sebelumnya, jumlah saudara, tanggal ijazah lama, saudara yang bersekolah di lembaga yang sama, moda transportasi, jarak dan waktu tempuh ke sekolah, serta data orang tua (nama, tempat lahir, agama, kewarganegaraan Ayah/Ibu, dan penghasilan orang tua).</Callout>
+
 ## Edit Pengaturan
 
 Mengubah pengaturan pengkinian data yang telah dibuat sesuai kebutuhan.
@@ -32,5 +51,5 @@ Mengubah pengaturan pengkinian data yang telah dibuat sesuai kebutuhan.
 <Steps>
   <Step title="Buka Pengkinian Data">Login ke website, klik menu **Anggota**, lalu klik submenu **Pengkinian Data**. Sistem akan menampilkan list data pengaturan yang telah dibuat.</Step>
   <Step title="Buka form edit">Klik tombol aksi **Edit**.</Step>
-  <Step title="Ubah dan simpan">Ubah data yang sudah ada, lalu klik tombol **Simpan**.</Step>
+  <Step title="Ubah dan simpan">Ubah data yang sudah ada (periode tanggal), lalu klik tombol **Simpan**.</Step>
 </Steps>

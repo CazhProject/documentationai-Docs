@@ -7,6 +7,36 @@ Modul Guru membantu admin sekolah mengelola seluruh data guru — menambah, meng
 
 Pada halaman Guru, admin dapat mengelola **Tambah**, **Edit** detail data guru, dan mengubah guru menjadi **Alumni**.
 
+## Informasi yang ditampilkan
+
+Tabel daftar guru menampilkan kolom: **Nama**, **Nomor Kartu**, **Jenis** (jenis guru), **Instansi**, dan **Status**. Filter yang tersedia: **Instansi**, **Jenis** (daftar jenis guru yang dibuat pada pengaturan), dan **Status** (Aktif / Tidak Aktif / Lulus).
+
+**Export** menghasilkan file Excel (`Guru.xlsx`) dengan kolom: ID, Nomor Kartu, Nomor Induk, Kode QR, Nama Lengkap, Tempat Lahir, Tanggal Lahir, Jenis Kelamin, Alamat, No Telp, Instansi, Keterangan, Tanggal Mulai Tugas, Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional, Pendidikan, NUPTK, dan Status.
+
+Aksi massal via checkbox: **Ubah Jenis Guru**, **Ubah Status**, **Pindah ke Alumni**, **Pindah Instansi**, **Download Kartu**, dan **Download Surat**. Toolbar menyediakan **Import Guru**, **Export**, dan **Tambah Guru**.
+
+### Isian formulir Tambah Guru
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Instansi | Ya | — |
+| Nama Lengkap | Ya | — |
+| Jenis Kelamin | Ya | Laki - laki / Perempuan. |
+| Email | Ya | Harus unik antar anggota. |
+| No HP | Ya | Angka, divalidasi format nomor telepon. |
+| No Induk | Ya | Nomor induk anggota. |
+| Nomor Kartu | Ya | Angka. |
+| Jenis Guru | Ya | Dari daftar jenis guru instansi. |
+| Tempat/Tanggal Lahir, Alamat | Tidak | — |
+| No Identitas (NIK) | Tidak | Angka 16 digit. |
+| UID Kartu | Tidak | Harus unik. |
+| Tanggal Mulai Tugas | Tidak | — |
+| Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional | Tidak | — |
+| Pendidikan, NUPTK | Tidak | — |
+| Foto | Tidak | jpg/png/jpeg/heic/heif, maksimal 10 MB. |
+
+<Callout kind="info">Import guru menggunakan template Excel (`template-member-v8.xls`) dengan kolom antara lain: nama_lengkap (wajib), jenis_kelamin (wajib: L/P), email (wajib, unik), nomor_induk_member (wajib), nomor_kartu (wajib), tanggal_mulai_tugas (d/m/Y), pangkat/golongan, jabatan, serta kolom opsional identitas lainnya.</Callout>
+
 ## Ubah Jenis Guru
 
 Mengubah jenis guru berdasarkan jenis guru yang dibuat pada pengaturan — bisa dilakukan secara satuan maupun massal.
@@ -49,6 +79,8 @@ Mengubah status guru terpilih.
   <Step title="Simpan">Pilih status sesuai kebutuhan, lalu klik **Simpan** untuk menyimpan perubahan.</Step>
 </Steps>
 
+<Callout kind="info">Nilai status yang dikenal sistem: **ACTIVE** (Aktif), **INACTIVE** (Tidak Aktif), dan **GRADUATED** (Lulus).</Callout>
+
 ## Pindah Instansi
 
 Memindahkan guru ke instansi lain.
@@ -90,6 +122,8 @@ Pada data diri guru, Admin dapat:
 ## Detail Guru
 
 Untuk mengakses detail guru: menu **Anggota** → submenu **Guru** → pilih salah satu guru (gunakan fitur pencarian atau filter untuk menemukan data guru secara spesifik). Sistem akan menampilkan halaman detail guru yang dipilih, lalu klik tab yang diperlukan.
+
+<Callout kind="info">Tab yang tampil untuk guru: **Data Diri**, **Kartu**, **Tagihan**, **Dokumen**, **Mata Pelajaran**, dan **Perizinan**.</Callout>
 
 ### Kartu
 
