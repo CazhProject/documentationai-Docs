@@ -27,6 +27,10 @@ Tambahkan kategori produk baru agar pengelolaan produk menjadi lebih terstruktur
   <Step title="Simpan">Tekan tombol **Tambah Data**. Sistem memvalidasi data; jika valid, kategori baru tersimpan, notifikasi sukses tampil, dan Anda diarahkan kembali ke halaman List Kategori dengan kategori yang baru ditambahkan.</Step>
 </Steps>
 
+<Callout kind="info">
+**Nama Kategori** wajib diisi dan tidak boleh sama dengan kategori yang sudah ada (pengecekan duplikat tidak membedakan huruf besar/kecil). Kategori memiliki status **Aktif/Tidak Aktif** (default: Aktif), dan wajib tersedia sebelum menambah produk.
+</Callout>
+
 ### Detail Kategori
 
 Lihat dan perbarui informasi kategori produk yang telah terdaftar agar tetap sesuai kebutuhan pengelolaan produk.
@@ -74,6 +78,25 @@ Tambahkan produk baru ke dalam sistem: isi informasi produk yang akan dijual, at
   <Step title="Simpan">Tekan tombol **+Tambah**. Sistem memvalidasi seluruh data: jika tidak valid, pesan kesalahan tampil; jika berhasil, notifikasi "Produk berhasil ditambahkan" tampil.</Step>
 </Steps>
 
+#### Isian formulir produk
+
+| Field | Wajib | Ketentuan |
+| --- | --- | --- |
+| Foto Produk | Tidak | Gambar produk. |
+| Nama Produk | Ya | Maksimal 100 karakter. |
+| Toko | Ya | Terisi otomatis bila akun hanya memiliki satu toko; tidak dapat diubah oleh Manager. |
+| Kategori | Ya | Terisi otomatis bila hanya ada satu kategori aktif. |
+| Supplier | Tidak | Pilihan dari daftar supplier. |
+| Unit | Ya | Satuan produk, contoh: pcs, kg, gram. Maksimal 20 karakter. |
+| Harga Beli (HPP) | Ya | Minimal 0. |
+| Harga Jual | Ya | Harus lebih dari 0 dan **tidak boleh lebih kecil dari Harga Beli**. |
+| SKU | Tidak | Maksimal 20 karakter, harus unik per toko. |
+| Barcode | Tidak | Angka saja, 8–13 digit, harus unik per toko; mendukung scan barcode. |
+| Berat Produk | Tidak | Dalam gram, 0 sampai 1.000.000 gram. |
+| Status | — | Aktif/Tidak Aktif (default: Aktif). |
+
+**Pengaturan persediaan** (halaman Perhitungan Stok): toggle **Perhitungan Stok** — bila aktif, isi **Stok Awal** (saat tambah) atau lihat **Stok Saat Ini** (saat ubah); toggle **Notifikasi Stok Minimal** — bila aktif, isi jumlah **Stok Minimal** untuk pemberitahuan stok menipis.
+
 ### Detail Produk (Info Produk)
 
 Lihat informasi detail suatu produk yang telah terdaftar: informasi produk, status produk, serta pengaturan produk online.
@@ -93,6 +116,25 @@ Kelola varian pada setiap produk.
   <Step title="Buka tab varian">Tekan tab **Varian Produk**. Sistem menampilkan list setiap varian.</Step>
   <Step title="Kelola varian">Tekan salah satu **Varian Produk**. Sistem menampilkan halaman detail varian produk; Anda dapat mengelola data varian produk tersebut.</Step>
 </Steps>
+
+#### Isian formulir varian
+
+| Field | Wajib | Ketentuan |
+| --- | --- | --- |
+| Status | — | Toggle Aktif/Tidak Aktif. |
+| Nama Varian | Ya | Maksimal 100 karakter. |
+| Harga Beli (HPP) | Ya | Ditampilkan sesuai pengaturan toko "Tampilkan Harga Beli". |
+| Harga Jual | Ya | Tidak boleh lebih kecil dari Harga Beli. |
+| Unit | Ya | Maksimal 20 karakter. |
+| Supplier | Tidak | Pilihan dari daftar supplier. |
+| SKU | Tidak | Maksimal 20 karakter, unik per toko. |
+| Barcode | Tidak | Angka 8–13 digit, unik per toko, mendukung scan. |
+| Berat Varian | Tidak | Dalam gram, maksimal 1.000.000 gram. |
+| Perhitungan Stok | Tidak | Melalui halaman Perhitungan Stok (stok awal, stok minimal). |
+
+<Callout kind="info">
+Setiap produk minimal memiliki **satu varian** sebagai produk dasar. Varian hanya dapat dihapus jika produk memiliki lebih dari satu varian.
+</Callout>
 
 ### Hapus Produk
 
@@ -129,6 +171,10 @@ Lihat daftar seluruh barang yang tersedia: informasi stok barang, jumlah keterse
   <Step title="Buka list stok">Pilih submenu **Stok**, lalu lihat daftar barang yang tersedia.</Step>
   <Step title="Cek informasi stok">Cek informasi stok (Nama, Toko, Tanggal, Waktu, Stok Akhir), lalu pilih barang jika ingin melihat detail stok.</Step>
 </Steps>
+
+<Callout kind="info">
+Daftar stok dapat dicari berdasarkan nama produk atau **scan barcode**, dan difilter berdasarkan **toko** dan **rentang tanggal**.
+</Callout>
 
 ### Detail Stok
 
@@ -179,3 +225,18 @@ Kelola data supplier yang digunakan dalam operasional bisnis, termasuk memilih s
   <Step title="Cari dan pilih supplier">Gunakan fitur pencarian untuk mencari supplier tertentu, lalu pilih supplier yang diinginkan. Sistem mengisi data supplier pada form sebelumnya.</Step>
   <Step title="Lanjutkan penyimpanan">Lanjutkan proses penyimpanan data.</Step>
 </Steps>
+
+### Isian formulir supplier
+
+| Field | Wajib | Ketentuan |
+| --- | --- | --- |
+| Nama Supplier | Ya | 3–100 karakter. |
+| Alamat | Tidak | Maksimal 500 karakter. |
+| Email | Tidak | Format email valid. |
+| Penanggung Jawab (PIC) | Tidak | Maksimal 100 karakter; huruf, spasi, titik, dan koma. |
+| No. Telepon PIC | Tidak | Angka, 10–15 digit. |
+| Status | — | Aktif/Tidak Aktif (default: Aktif). |
+
+<Callout kind="info">
+Setiap supplier memiliki halaman **riwayat pembelian** yang menampilkan histori transaksi terkait supplier tersebut.
+</Callout>
