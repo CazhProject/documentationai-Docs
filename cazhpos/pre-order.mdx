@@ -1,20 +1,75 @@
 ---
-title: Pre-Order
-description: Pesanan di muka — riwayat, pembayaran, struk.
+title: "Pre Order"
+description: "Panduan pengelolaan transaksi pre-order di CazhPOS: melihat detail, mengelola struk, mengatur printer, menambah pesanan baru, hingga pelunasan pembayaran."
 ---
 
-[Pre-Order](/referensi/glosarium#pre-order) memungkinkan pelanggan memesan lebih dulu dan membayar kemudian.
+Fitur [pre-order](/referensi/glosarium#pre-order) dipakai kasir untuk mengelola pesanan pelanggan yang pembayarannya masih tertunda (pending): memantau detail pesanan, menambahkan item baru ke pesanan berjalan, hingga memproses pelunasan.
 
-## Riwayat Pre-Order
+## Lihat Detail Pre Order
 
-Dari menu Riwayat Pre-Order, klik pesanan untuk detail. Tersedia aksi:
+Lihat rincian transaksi pre-order yang status pembayarannya masih pending.
 
-- **Lihat / Kirim / Cetak struk** dan **Atur printer**
-- **Tambah Pesanan Baru** ke pre-order berjalan
+<Steps>
+  <Step title="Buka Riwayat">Buka menu **Riwayat**.</Step>
+  <Step title="Pilih pesanan pre-order">Pilih salah satu pesanan dengan tipe pembayaran **Pre Order**. Sistem menampilkan halaman **Detail Pre Order**.</Step>
+</Steps>
 
-## Bayar Pre-Order
+## Lihat Struk
 
-Pembayaran dilakukan dari detail pre-order:
+Tampilkan pratinjau nota digital dari transaksi pre-order yang masih pending. Anda dapat memvalidasi kembali item pesanan konsumen sebelum pelunasan serta mengunduh atau membagikan invoice digitalnya.
 
-1. Klik **Bayar** pada pre-order
-2. Pilih metode pembayaran dan selesaikan — pembayaran bisa dilakukan bertahap (bagian 1 dan 2)
+<Steps>
+  <Step title="Buka Detail Pre Order">Buka menu **Riwayat**, pilih salah satu pesanan dengan tipe pembayaran **Pre Order**. Sistem menampilkan halaman **Detail Pre Order**.</Step>
+  <Step title="Lihat struk">Tekan fitur **Lihat Struk**. Sistem menampilkan pop-up **Lihat Struk** berisi tampilan nota digital pre-order.</Step>
+</Steps>
+
+## Kirim Struk
+
+Kirim nota tagihan digital pesanan pre-order kepada pelanggan secara paperless, langsung ke inbox email konsumen sebelum pesanan dilunasi.
+
+<Steps>
+  <Step title="Buka Detail Pre Order">Buka menu **Riwayat**, pilih salah satu pesanan dengan tipe pembayaran **Pre Order**. Sistem menampilkan halaman **Detail Pre Order**.</Step>
+  <Step title="Buka Kirim Struk">Tekan fitur **Kirim Struk**. Sistem menampilkan pop-up **Kirim Struk**.</Step>
+  <Step title="Kirim">Masukkan alamat email pelanggan pada kolom **Email**, lalu tekan tombol **Kirim** untuk memproses pengiriman nota digital.</Step>
+</Steps>
+
+## Cetak Struk
+
+Cetak nota fisik transaksi pre-order menggunakan printer thermal yang terhubung. Anda dapat memilih mencetak bukti pemesanan khusus untuk pembeli (Cetak Pelanggan) atau cetakan untuk arsip internal (Cetak Toko/Merchant).
+
+<Steps>
+  <Step title="Buka Detail Pre Order">Buka menu **Riwayat**, pilih salah satu pesanan dengan tipe pembayaran **Pre Order**. Sistem menampilkan halaman **Detail Pre Order**.</Step>
+  <Step title="Cetak struk">Tekan tombol **Cetak Struk**. Sistem menampilkan pop-up **Printers** untuk cetak struk.</Step>
+  <Step title="Pilih jenis cetakan">Pilih jenis cetakan yang diinginkan (**Cetak Pelanggan** atau **Cetak Toko/Merchant**).</Step>
+</Steps>
+
+## Atur Printer
+
+Konfigurasikan dan hubungkan perangkat printer kasir ke sistem dari halaman pre-order. Anda dapat mengaktifkan status printer serta menambahkan printer thermal baru via koneksi wireless (Bluetooth, WiFi, atau USB). Panduan lengkap koneksi printer ada di halaman [Perangkat dan Pengaturan](/cazhpos/perangkat-dan-pengaturan).
+
+<Steps>
+  <Step title="Buka pengaturan printer">Tekan tombol **Atur Printer** pada halaman Detail Pre Order. Sistem menampilkan halaman **Printer**.</Step>
+  <Step title="Aktifkan status">Pastikan toggle **Status** dalam kondisi Aktif.</Step>
+  <Step title="Tambah printer">Tekan tombol **+Tambah Printer** untuk mulai mencari atau menambahkan perangkat printer thermal baru.</Step>
+</Steps>
+
+## Tambah Pesanan Baru
+
+Tambahkan item yang diinginkan pelanggan ke dalam pesanan pre-order berjalan melalui katalog produk yang terhubung langsung dengan nomor kode transaksi pre-order aktif, sebelum dilakukan proses pembayaran akhir.
+
+<Steps>
+  <Step title="Buka katalog dari pesanan aktif">Tekan tombol **Tambah Pesanan Baru** pada halaman Detail Pre Order. Sistem mengalihkan (redirect) Anda ke halaman katalog produk dengan bar notifikasi transaksi aktif di bagian atas (contoh: 'Anda masih dalam pesanan: "F3XTZQ4ASC"').</Step>
+  <Step title="Cari produk">Cari produk melalui kolom **Cari** atau saring produk berdasarkan kategori (Semua Produk, Makanan, Minuman).</Step>
+</Steps>
+
+## Bayar Pre Order
+
+Tambahkan menu atau produk baru ke dalam transaksi pre-order berjalan, tinjau kalkulasi biayanya, lalu proses hingga status transaksi diperbarui.
+
+<Steps>
+  <Step title="Tambahkan item">Tekan **Tambah** pada item yang dipilih di halaman katalog produk. Sistem memunculkan floating bar keranjang belanja di bagian bawah layar; tekan bar tersebut untuk melanjutkan.</Step>
+  <Step title="Tinjau pembayaran">Sistem mengalihkan Anda ke halaman **Pembayaran** yang menampilkan rincian produk, subtotal, pajak, dan total tagihan baru secara otomatis.</Step>
+  <Step title="Proses pesanan">Pastikan metode pembayaran adalah **Pre Order**, lalu tekan tombol **Total Biaya** di pojok kanan bawah untuk memproses pesanan.</Step>
+  <Step title="Lihat status transaksi">Sistem menampilkan halaman **Status Transaksi** yang bernilai **Pending** beserta nominal total tagihan terbaru.</Step>
+  <Step title="Opsi lanjutan">Anda dapat memilih opsi lanjutan seperti **Lihat Struk**, mengirim struk digital via **Email**, melakukan **Cetak Struk**, atau kembali ke katalog lewat tombol **Tambah Pesanan Baru**.</Step>
+</Steps>

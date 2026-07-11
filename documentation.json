@@ -2,22 +2,10 @@
   "name": "Manual CARDS",
   "initialRoute": "cards-school/memulai/login",
   "colors": {
-    "light": {
-      "brand": "#01718f",
-      "heading": "#0c2d38",
-      "text": "#3d5560"
-    },
-    "dark": {
-      "brand": "#4dbcd9",
-      "heading": "#eaf6fa",
-      "text": "#a8c2cb"
-    }
+    "light": { "brand": "#01718f", "heading": "#0c2d38", "text": "#3d5560" },
+    "dark": { "brand": "#4dbcd9", "heading": "#eaf6fa", "text": "#a8c2cb" }
   },
-  "css": [
-    {
-      "src": "styles/custom.css"
-    }
-  ],
+  "css": [ { "src": "styles/custom.css" } ],
   "navigation": {
     "tabs": [
       {
@@ -29,7 +17,8 @@
             "icon": "rocket",
             "pages": [
               { "title": "Login", "path": "cards-school/memulai/login", "icon": "log-in" },
-              { "title": "Dashboard", "path": "cards-school/memulai/dashboard", "icon": "layout-dashboard" }
+              { "title": "Dashboard", "path": "cards-school/memulai/dashboard", "icon": "layout-dashboard" },
+              { "title": "Video Training", "path": "cards-school/training", "icon": "play-circle" }
             ]
           },
           {
@@ -43,82 +32,44 @@
             ]
           },
           {
-            "group": "Anggota Siswa",
+            "group": "Anggota",
+            "icon": "users",
             "pages": [
-              { "title": "Tambah Siswa", "path": "tambah_soswa", "icon": "a-arrow-up-icon" }
+              { "title": "Pengelolaan Siswa", "path": "cards-school/anggota-siswa" },
+              { "title": "Pengelolaan Guru", "path": "cards-school/anggota-guru" },
+              { "title": "Pengelolaan Staff", "path": "cards-school/anggota-staff" },
+              { "title": "Pengelolaan Alumni", "path": "cards-school/anggota-alumni" },
+              { "title": "Pengkinian Data", "path": "cards-school/pengkinian-data" }
             ]
           },
           {
-            "group": "Anggota Guru",
+            "group": "Pendaftaran Peserta Didik (SPMB)",
+            "icon": "user-plus",
             "pages": [
-              { "title": "Pengaturan Jenis Guru", "path": "pengaturan-jenis-guru" }
+              { "title": "Pengaturan Web SPMB", "path": "cards-school/spmb-pengaturan-web" },
+              { "title": "Data Pendaftar", "path": "cards-school/spmb-data-pendaftar" },
+              { "title": "Pembayaran SPMB", "path": "cards-school/spmb-pembayaran" }
             ]
           },
           {
-            "group": "Anggota Staff",
+            "group": "Administrasi",
+            "icon": "folder",
             "pages": [
-              { "title": "Pengaturan Jenis Staff", "path": "pengaturan-jenis-staff" }
-            ]
-          },
-          {
-            "group": "Anggota Alumni",
-            "pages": [
-              { "title": "Log Aktivasi", "path": "log-aktivasi" },
-              { "title": "Alumni Guru", "path": "alumni-guru" },
-              { "title": "Alumni Siswa", "path": "alumni-siswa" }
-            ]
-          },
-          {
-            "group": "Pendaftaran Peserta Didik",
-            "pages": [
-              { "title": "Pengaturan Web", "path": "pengaturan-web" },
-              { "title": "Data Pendaftar", "path": "data-pendaftar" },
-              { "title": "Pembayaran", "path": "pembayaran-pendaftaran" }
-            ]
-          },
-          { "group": "Pengkinian Data", "pages": [] },
-          {
-            "group": "Inventaris",
-            "pages": [
-              { "title": "Pengaturan Inventaris", "path": "pengaturan-inventaris" },
-              { "title": "Riwayat Inventaris", "path": "riwayat-inventaris" },
-              { "title": "Barang Inventaris", "path": "barang-inventaris" }
-            ]
-          },
-          {
-            "group": "Pengumuman",
-            "pages": [
-              { "title": "Pengaturan Kategori Pengumuman", "path": "pengaturan-kategori-pengumuman" },
+              { "title": "Tagihan", "path": "cards-school/administrasi-tagihan" },
+              { "title": "Inventaris", "path": "cards-school/administrasi-inventaris" },
+              { "title": "Pengumuman", "path": "cards-school/administrasi-pengumuman" },
               { "title": "Template Pengumuman", "path": "template-pengumuman" },
-              { "title": "Daftar Pengumuman", "path": "daftar-pengumuman" }
+              { "title": "Buku Tamu", "path": "cards-school/administrasi-buku-tamu" }
             ]
           },
-          { "group": "Donasi", "pages": [] },
-          { "group": "WhatsApp", "pages": [] },
-          { "group": "Buku Tamu", "pages": [] },
           {
-            "group": "Tagihan",
+            "group": "Keuangan",
+            "icon": "wallet",
             "pages": [
-              {
-                "group": "Pengaturan Tagihan",
-                "pages": [
-                  { "title": "Jenis Tagihan", "path": "jenis-tagihan" },
-                  { "title": "Pengingat Tagihan", "path": "pengingat-tagihan" },
-                  { "title": "Legalitas Bukti Bayar", "path": "legalitas-bukti-bayar" }
-                ]
-              },
-              { "title": "Data Tagihan", "path": "data-tagihan" },
-              { "title": "Buat/Import Tagihan", "path": "buat/import-tagihan" },
-              { "title": "Laporan Pembayaran", "path": "laporan-pembayaran" },
-              { "title": "Rekap Pembayaran", "path": "rekap-pembayaran" },
-              { "title": "Tunggakan", "path": "tunggakan" }
-            ]
-          },
-          { "group": "Transaksi Tagihan", "pages": [] },
-          { "group": "CazhBox", "pages": [] },
-          {
-            "group": "Pembukuan",
-            "pages": [
+              { "title": "Transaksi & Pembayaran", "path": "cards-school/keuangan-transaksi" },
+              { "title": "Donasi", "path": "cards-school/keuangan-donasi" },
+              { "title": "CazhBox", "path": "cards-school/keuangan-cazhbox" },
+              { "title": "Pembukuan", "path": "cards-school/keuangan-pembukuan" },
               {
                 "group": "Pengaturan Pembukuan",
                 "pages": [
@@ -129,146 +80,75 @@
                   { "title": "Template Jurnal Transaksi", "path": "template-jurnal-transaksi" },
                   { "title": "Template Jurnal Sistem", "path": "template-jurnal-sistem" }
                 ]
-              },
-              { "title": "Jurnal", "path": "jurnal" },
-              { "title": "Riwayat Jurnal", "path": "riwayat-jurnal" },
-              { "title": "Laporan Posisi Keuangan", "path": "laporan-posisi-keuangan" },
-              { "title": "Laporan Laba Rugi", "path": "laporan-laba-rugi" },
+              }
+            ]
+          },
+          {
+            "group": "Kartu & Tabungan",
+            "icon": "credit-card",
+            "pages": [
+              { "title": "Pengelolaan Kartu", "path": "cards-school/kartu" },
+              { "title": "Tabungan", "path": "cards-school/tabungan" }
+            ]
+          },
+          {
+            "group": "Presensi",
+            "icon": "calendar-check",
+            "pages": [
+              { "title": "Presensi Harian", "path": "cards-school/presensi-harian" },
+              { "title": "Presensi Kegiatan", "path": "cards-school/presensi-kegiatan" },
+              { "title": "Presensi Mata Pelajaran", "path": "cards-school/presensi-mapel" },
               {
-                "group": "Bagi Hasil",
-                "pages": [
-                  { "title": "Laporan Bagi Hasil", "path": "laporan-bagi-hasil" },
-                  { "title": "Pengaturan Bagi Hasil", "path": "pengaturan-bagi-hasil" }
-                ]
-              },
-              { "title": "Migrasi Akun", "path": "migrasi-akun" }
-            ]
-          },
-          {
-            "group": "Tabungan",
-            "pages": [
-              { "title": "Produk Tabungan", "path": "produk-tabungan" },
-              { "title": "Rekening Tabungan", "path": "rekening-tabungan" },
-              { "title": "Transaksi Tabungan", "path": "transaksi-tabungan" }
-            ]
-          },
-          { "group": "Flexycazh", "pages": [] },
-          {
-            "group": "Kartu",
-            "pages": [
-              { "title": "Limit Harian Kartu", "path": "limit-harian-kartu-" },
-              { "title": "Isi Saldo", "path": "isi-saldo" },
-              { "title": "Riwayat Isi Saldo", "path": "riwayat-isi-saldo" },
-              { "title": "Penarikan Saldo", "path": "penarikan-saldo" },
-              { "title": "Riwayat Penarikan Saldo", "path": "riwayat-penarikan-saldo" },
-              { "title": "Kehilangan Kartu", "path": "kehilangan-kartu-" }
-            ]
-          },
-          {
-            "group": "Presensi Mata Pelajaran",
-            "pages": [
-              { "title": "Input Presensi Mapel", "path": "input-presensi-mapel" },
-              { "title": "Rekap Siswa", "path": "rekap-siswa" },
-              { "title": "Rekap Guru", "path": "rekap-guru" }
-            ]
-          },
-          {
-            "group": "Presensi Harian",
-            "pages": [
-              { "title": "Log Presensi Harian", "path": "log-presensi-harian" },
-              { "title": "Presensi Harian Terlambat", "path": "presensi-harian-terlambat" },
-              { "title": "Rekap Presensi Harian Guru & Staff", "path": "rekap-presensi-harian-guru-staff" },
-              { "title": "Rekap Presensi Harian Siswa", "path": "rekap-presensi-harian-siswa" },
-              { "title": "Pengaturan Presensi Harian", "path": "pengaturan-presensi-harian" }
-            ]
-          },
-          {
-            "group": "Presensi Kegiatan",
-            "pages": [
-              { "title": "Log Presensi Kegiatan", "path": "log-presensi-kegiatan" },
-              { "title": "Rekap Presensi per Kegiatan", "path": "rekap-per-kegiatan" },
-              { "title": "Rekap Presensi Kegiatan Siswa", "path": "rekap-presensi-kegiatan-siswa" },
-              { "title": "Rekap Presensi Kegiatan Guru & Staff", "path": "rekap-presensi-kegiatan-guru-staff" },
-              { "title": "Pengaturan Presensi Kegiatan", "path": "pengaturan-presensi-kegiatan" }
-            ]
-          },
-          {
-            "group": "Presensi Wajah",
-            "pages": [
-              {
-                "group": "Pengaturan Presensi Wajah",
+                "group": "Presensi Wajah",
                 "pages": [
                   { "title": "Data Device Presensi", "path": "data-device-presensi" },
-                  { "title": "Data Sync Wajah", "path": "data-sync-wajah" }
+                  { "title": "Data Sync Wajah", "path": "data-sync-wajah" },
+                  { "title": "Log Presensi Perangkat Wajah", "path": "log-presensi-perangkat-wajah" }
                 ]
-              },
-              { "title": "Log Presensi Perangkat Wajah", "path": "log-presensi-perangkat-wajah" }
-            ]
-          },
-          { "group": "Rapor Siswa", "pages": [] },
-          { "group": "Tugas", "pages": [] },
-          {
-            "group": "Kuis AI",
-            "pages": [
-              { "title": "Buat Kuis", "path": "buat-kuis" },
-              { "title": "Koleksi Kuis", "path": "koleksi-kuis" },
-              { "title": "Jadwal Kuis", "path": "jadwal-kuis" },
-              { "title": "Rekap Kuis", "path": "rekap-kuis" }
+              }
             ]
           },
           {
-            "group": "Kalender Akademik",
+            "group": "Akademik",
+            "icon": "graduation-cap",
             "pages": [
+              { "title": "Rapor Siswa", "path": "cards-school/rapor" },
+              { "title": "Tugas", "path": "cards-school/tugas" },
+              { "title": "Kalender Akademik", "path": "cards-school/kalender-akademik" },
               {
-                "group": "Pengaturan Kalender Akademik",
+                "group": "Kuis AI",
                 "pages": [
-                  { "title": "Data Kalender Akademik", "path": "data-kalender-akademik" },
-                  { "title": "Kategori Event", "path": "kategori-event" }
+                  { "title": "Buat Kuis", "path": "buat-kuis" },
+                  { "title": "Koleksi Kuis", "path": "koleksi-kuis" },
+                  { "title": "Jadwal Kuis", "path": "jadwal-kuis" },
+                  { "title": "Rekap Kuis", "path": "rekap-kuis" }
                 ]
-              },
-              { "title": "Lihat Kalender Akademik", "path": "lihat-kalender-akademik" }
-            ]
-          },
-          { "group": "Progres Kegiatan", "pages": [] },
-          { "group": "Prestasi", "pages": [] },
-          {
-            "group": "Pelanggaran",
-            "pages": [
-              { "title": "Pengaturan Tipe Pelanggaran", "path": "pengaturan-tipe-pelanggaran" }
+              }
             ]
           },
           {
-            "group": "Perizinan",
+            "group": "Kesiswaan",
+            "icon": "heart-handshake",
             "pages": [
-              { "title": "Pengaturan Batas Waktu Perizinan", "path": "pengaturan-batas-waktu-perizinan" }
-            ]
-          },
-          { "group": "Kesehatan", "pages": [] },
-          { "group": "Kunjungan", "pages": [] },
-          { "group": "Perundungan", "pages": [] },
-          { "group": "Tahfidz", "pages": [] },
-          {
-            "group": "Pengaturan Akademik",
-            "pages": [
-              { "title": "Tahun Ajaran", "path": "tahun-ajaran" },
-              { "title": "Tingkat", "path": "tingkat" },
-              { "title": "Kelas", "path": "kelas" },
-              { "title": "Jurusan", "path": "jurusan" },
-              { "title": "Mata Pelajaran", "path": "mata-pelajaran" },
-              { "title": "Jadwal Pelajaran", "path": "jadwal-pelajaran" },
-              { "title": "Tag", "path": "tag" },
-              { "title": "Voice Over Presensi", "path": "voice-over-presensi" }
+              { "title": "Prestasi", "path": "cards-school/kesiswaan-prestasi" },
+              { "title": "Pelanggaran", "path": "cards-school/kesiswaan-pelanggaran" },
+              { "title": "Perizinan", "path": "cards-school/kesiswaan-perizinan" },
+              { "title": "Progress Kegiatan", "path": "cards-school/kesiswaan-progress" },
+              { "title": "Kesehatan", "path": "cards-school/kesiswaan-kesehatan" },
+              { "title": "Kunjungan", "path": "cards-school/kesiswaan-kunjungan" },
+              { "title": "Perundungan", "path": "cards-school/kesiswaan-perundungan" },
+              { "title": "Tahfidz", "path": "cards-school/kesiswaan-tahfidz" }
             ]
           },
           {
-            "group": "Pengaturan Pengguna",
+            "group": "Pengaturan",
+            "icon": "settings",
             "pages": [
-              { "title": "Jenis Pengguna", "path": "jenis-pengguna" },
-              { "title": "Akun Pengguna", "path": "akun-pengguna" }
+              { "title": "Pengaturan Akademik", "path": "cards-school/pengaturan-akademik" },
+              { "title": "Pengaturan Pengguna", "path": "cards-school/pengaturan-pengguna" },
+              { "title": "Lembaga, Kepegawaian & Lainnya", "path": "cards-school/pengaturan-lainnya" }
             ]
-          },
-          { "group": "Pengaturan Lembaga", "pages": [] },
-          { "group": "Pengaturan Aplikasi", "pages": [] }
+          }
         ]
       },
       {
@@ -276,11 +156,25 @@
         "icon": "heart",
         "groups": [
           {
-            "group": "Panduan",
-            "icon": "book",
+            "group": "Memulai",
+            "icon": "rocket",
             "pages": [
               { "title": "Tentang CARDS Parent", "path": "cards-parent/tentang-cards-parent", "icon": "info" },
-              { "title": "Cek absensi anak", "path": "cards-parent/cek-absensi", "icon": "user-check" }
+              { "title": "Instalasi & Daftar Akun", "path": "cards-parent/tentang", "icon": "download" },
+              { "title": "Kelola Akun", "path": "cards-parent/akun", "icon": "user-cog" }
+            ]
+          },
+          {
+            "group": "Panduan Fitur",
+            "icon": "book",
+            "pages": [
+              { "title": "Kartu", "path": "cards-parent/kartu", "icon": "credit-card" },
+              { "title": "CazhPOIN", "path": "cards-parent/cazhpoin", "icon": "coins" },
+              { "title": "Keuangan", "path": "cards-parent/keuangan", "icon": "wallet" },
+              { "title": "Akademik", "path": "cards-parent/akademik", "icon": "graduation-cap" },
+              { "title": "Cek absensi anak", "path": "cards-parent/cek-absensi", "icon": "user-check" },
+              { "title": "Kesiswaan", "path": "cards-parent/kesiswaan", "icon": "users" },
+              { "title": "Toko Online & Lainnya", "path": "cards-parent/lainnya", "icon": "shopping-bag" }
             ]
           }
         ]
@@ -298,7 +192,7 @@
             ]
           },
           {
-            "group": "Fitur Utama",
+            "group": "Panduan Fitur",
             "icon": "star",
             "pages": [
               { "title": "QR — Presensi & Bayar", "path": "cards-edu/qr", "icon": "qr-code" },
@@ -322,7 +216,7 @@
             "icon": "rocket",
             "pages": [
               { "title": "Tentang CazhPOS", "path": "cazhpos/tentang", "icon": "info" },
-              { "title": "Memulai", "path": "cazhpos/memulai", "icon": "log-in" }
+              { "title": "Registrasi & Login", "path": "cazhpos/memulai", "icon": "log-in" }
             ]
           },
           {
@@ -377,24 +271,16 @@
       {
         "tab": "Changelog",
         "icon": "history",
-        "pages": [
-          { "title": "Changelog", "path": "changelog", "icon": "history" }
-        ]
+        "pages": [ { "title": "Changelog", "path": "changelog", "icon": "history" } ]
       },
       {
         "tab": "Roadmap",
         "icon": "map",
         "pages": [
           {
-            "title": "Roadmap",
-            "path": "roadmap",
-            "icon": "map",
-            "show-sidebar": false,
-            "show-toc": false,
-            "show-parent-label": false,
-            "show-page-navigation": false,
-            "ask-feedback": false,
-            "content-width": "wide"
+            "title": "Roadmap", "path": "roadmap", "icon": "map",
+            "show-sidebar": false, "show-toc": false, "show-parent-label": false,
+            "show-page-navigation": false, "ask-feedback": false, "content-width": "wide"
           }
         ]
       }

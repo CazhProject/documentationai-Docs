@@ -1,34 +1,102 @@
 ---
-title: Memulai
-description: Registrasi, login, lupa password, dan login back office.
+title: "Memulai CazhPOS"
+description: "Panduan registrasi akun, login, atur ulang kata sandi, logout, halaman dashboard, edit akun, login back office, serta pengaturan password dan PIN."
 ---
+
+Halaman ini memandu pengguna baru maupun kasir yang sudah terdaftar untuk mulai menggunakan CazhPOS: membuat akun, masuk ke aplikasi, mengelola keamanan akun (password dan PIN), hingga mengakses back office.
 
 ## Registrasi
 
-1. Klik tombol **Daftar**
-2. Isi data: **Nama Perusahaan, Nama Pemilik, Email, Nomor Telepon**
-3. Klik **Daftar** — sistem mengirim email verifikasi
-4. Verifikasi akun lewat email
-5. Buat **PIN** keamanan akun
-6. Registrasi berhasil
+Buat akun baru agar dapat mengakses seluruh fitur aplikasi.
+
+<Steps>
+  <Step title="Mulai pendaftaran">Tekan tombol **Daftar**.</Step>
+  <Step title="Isi data registrasi">Lengkapi Nama Perusahaan, Nama Pemilik, Email, dan Nomor Telepon.</Step>
+  <Step title="Kirim pendaftaran">Tekan tombol **Daftar** untuk melanjutkan. Sistem mengirimkan email verifikasi ke alamat email yang didaftarkan.</Step>
+  <Step title="Verifikasi akun">Lakukan verifikasi akun melalui email tersebut.</Step>
+  <Step title="Buat PIN">Setelah verifikasi berhasil, buat PIN untuk keamanan akun. Sistem menampilkan halaman notifikasi registrasi berhasil.</Step>
+</Steps>
 
 ## Login
 
-1. Buka halaman **Login**
-2. Masukkan email dan password, klik **Masuk**
-3. Jika valid, dashboard utama tampil. Jika salah, muncul pesan *"Incorrect email or password"*
+Masuk ke aplikasi secara aman untuk mengakses fitur dan dashboard utama.
 
-## Lupa Password
+<Steps>
+  <Step title="Buka halaman Login">Buka halaman **Login** pada aplikasi.</Step>
+  <Step title="Masukkan kredensial">Masukkan email dan password pada field yang tersedia.</Step>
+  <Step title="Masuk">Tekan tombol **Masuk/Login**. Sistem memvalidasi email dan password. Jika valid, Anda diarahkan ke halaman **Dashboard/Home**.</Step>
+</Steps>
 
-1. Di halaman Login, klik **Forget Password**
-2. Masukkan email terdaftar
-3. Password baru dikirim melalui email
+<Callout kind="info">
+Jika data tidak valid, sistem menampilkan pesan error "Incorrect email or password". Pilih menu **Lupa Password** apabila tidak mengingat kata sandi akun.
+</Callout>
+
+## Lupa Password (Forget Password)
+
+Atur ulang password akun ketika lupa kata sandi agar tetap dapat mengakses aplikasi.
+
+<Steps>
+  <Step title="Buka halaman Login">Buka halaman **Login/Masuk**.</Step>
+  <Step title="Pilih Lupa Password">Pilih menu **Lupa Password / Atur Ulang Kata Sandi**. Sistem menampilkan pop-up konfirmasi reset password.</Step>
+  <Step title="Konfirmasi reset">Tekan tombol **Atur Ulang**. Sistem memproses permintaan reset password akun.</Step>
+  <Step title="Cek email">Jika berhasil, sistem menampilkan notifikasi "Password telah berhasil dikirim melalui Email". Anda dapat login kembali menggunakan password baru.</Step>
+</Steps>
+
+## Logout
+
+Keluar dari akun aplikasi secara aman untuk mengakhiri sesi dan menjaga keamanan data akun.
+
+<Steps>
+  <Step title="Buka menu Profile">Buka menu **Profile/Menu** pada aplikasi.</Step>
+  <Step title="Pilih Logout">Pilih opsi **Logout/Keluar**. Sistem menampilkan pop-up konfirmasi "Yakin ingin keluar?".</Step>
+  <Step title="Konfirmasi">Pilih tombol **Ya** untuk melanjutkan logout, atau **Tidak** untuk membatalkan. Jika memilih **Ya**, sistem menghapus sesi login aktif dan mengarahkan Anda kembali ke halaman Login/Welcome Screen.</Step>
+</Steps>
+
+## Dashboard/Home
+
+Setelah login berhasil, sistem menampilkan halaman Dashboard/Home yang menjadi pusat navigasi aplikasi. Dari halaman ini Anda dapat:
+
+- Mengakses menu utama seperti **Order**, **Riwayat**, **Rekap**, **Kelola Toko**, **Kelola Produk**, **Karyawan**, **Pelanggan**, **Laporan**, dan **Lainnya**.
+- Melihat status [paket berlangganan](/referensi/glosarium#paket--billing) serta tombol **Perpanjang Paket** dan **Ubah Paket**.
+- Membuka daftar **Notifikasi** melalui ikon di bagian atas halaman.
+- Mengakses menu **Profil** melalui navigation menu untuk pengaturan akun dan perangkat.
+
+## Edit Akun
+
+Perbarui profil akun agar data tetap akurat dan terbaru.
+
+<Steps>
+  <Step title="Buka Edit Akun">Buka menu **Profile**, lalu pilih menu **Edit Akun**. Sistem menampilkan halaman edit profil berisi data akun saat ini.</Step>
+  <Step title="Ubah data">Ubah data yang diperlukan: Foto Profil, Nama Lengkap, Nomor Handphone, dan Email.</Step>
+  <Step title="Simpan">Tekan tombol **Simpan**. Sistem memvalidasi data yang diinput. Jika valid, perubahan tersimpan dan notifikasi sukses tampil.</Step>
+</Steps>
 
 ## Login Back Office
 
-Akses back office (pengelolaan) dilindungi dua lapis: **password** atau **PIN**. Masukkan kredensial saat berpindah dari mode kasir ke back office.
+Akses sistem [Back Office / Cazh Partner Admin](/partner-dashboard/tentang) untuk mengelola data bisnis, memantau transaksi, dan melihat laporan penjualan melalui website admin.
 
-## Edit Akun & Saldo Toko
+<Steps>
+  <Step title="Buka Login Back Office">Buka menu **Profile**, lalu pilih menu **Login Back Office**. Sistem mengarahkan Anda ke halaman Cazh Partner Admin melalui browser.</Step>
+  <Step title="Masukkan kredensial">Masukkan kredensial akun pada halaman login Back Office, lalu tekan tombol **Login**.</Step>
+  <Step title="Masuk ke dashboard">Sistem memvalidasi akun. Jika login berhasil, Anda diarahkan ke halaman dashboard Back Office yang menampilkan informasi bisnis dan statistik penjualan.</Step>
+</Steps>
 
-- **Edit Akun**: menu Profil → Edit Akun
-- **Saldo Toko**: lihat [Saldo & Kartu](/cazhpos/saldo-dan-kartu)
+## Ubah Password
+
+Ubah kata sandi akun untuk meningkatkan keamanan dan menjaga akses akun tetap terlindungi.
+
+<Steps>
+  <Step title="Buka menu Password">Buka menu **Profile**, lalu pilih menu **Password**. Sistem menampilkan halaman ubah password.</Step>
+  <Step title="Isi data password">Isi Kata Sandi Lama, Kata Sandi Baru, dan Konfirmasi Kata Sandi Baru.</Step>
+  <Step title="Simpan">Tekan tombol **Simpan**. Sistem memvalidasi data yang diinput. Jika berhasil, password baru tersimpan dan notifikasi sukses tampil.</Step>
+</Steps>
+
+## Ubah PIN
+
+Ubah PIN akun yang menjadi lapisan keamanan tambahan saat mengakses fitur tertentu dalam aplikasi (misalnya transaksi kartu dan pembayaran dengan saldo toko).
+
+<Steps>
+  <Step title="Buka menu PIN">Buka menu **Profile**, lalu pilih menu **PIN**. Sistem menampilkan halaman ubah PIN.</Step>
+  <Step title="Isi data PIN">Isi PIN Lama, PIN Baru, dan Konfirmasi PIN Baru.</Step>
+  <Step title="Simpan">Tekan tombol **Simpan**. Sistem memvalidasi data PIN yang diinput. Jika berhasil, PIN baru tersimpan dan notifikasi "PIN berhasil diubah" tampil.</Step>
+</Steps>

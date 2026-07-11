@@ -1,18 +1,64 @@
 ---
-title: Rekap Kasir
-description: Uang kas awal, mulai rekap, dan riwayat rekap.
+title: "Rekap Kasir"
+description: "Panduan rekap kasir CazhPOS: memantau aktivitas shift, mengatur uang kas awal, memulai rekap (tutup kasir), serta melihat dan mencetak riwayat rekap."
 ---
 
-[Rekap kasir](/referensi/glosarium#rekap-kasir) adalah proses tutup kasir per shift.
+[Rekap Kasir](/referensi/glosarium#rekap-kasir) membantu kasir memantau seluruh aktivitas penjualan dan arus keuangan selama giliran kerja (shift), lalu menutup kasir dengan pencatatan yang cocok antara uang fisik di laci dan catatan sistem.
+
+## Lihat Rekap Kasir
+
+Pantau akumulasi omzet penjualan, rincian transaksi tunai (termasuk modal awal, pengeluaran, dan pembatalan), serta transaksi non-tunai sebelum melakukan penutupan kasir.
+
+1. Tekan tombol **Rekap** di halaman Dashboard.
+2. Sistem menampilkan halaman **Rekap**.
 
 ## Atur Uang Kas Awal
 
-Sebelum mulai berjualan, catat uang kas awal di menu **Rekap Kasir → Atur Uang Kas Awal**.
+Masukkan nominal uang modal awal kasir sebelum memulai sesi penjualan atau giliran kerja, agar jumlah uang fisik di laci kasir selaras dengan pencatatan otomatis sistem saat penutupan rekap kas.
 
-## Mulai Rekap
+<Steps>
+  <Step title="Buka halaman Rekap">Tekan tombol **Rekap** di halaman Dashboard. Sistem menampilkan halaman **Rekap**.</Step>
+  <Step title="Buka Atur Kas Awal">Tekan tombol **Atur Kas Awal**. Sistem menampilkan pop-up **Atur Kas Awal**.</Step>
+  <Step title="Masukkan modal awal">Masukkan nominal uang modal pada kolom **Jumlah Tunai**, lalu tekan tombol **Atur** untuk menyimpan data kas awal.</Step>
+</Steps>
 
-Di akhir shift, klik **Mulai Rekap** — sistem merangkum seluruh transaksi shift tersebut.
+## Mulai Rekap (Tutup Kasir)
+
+Tutup kasir dan validasi total pendapatan di akhir giliran kerja (shift): cocokkan jumlah uang fisik di laci dengan pencatatan sistem, serta tambahkan catatan penutup operasional.
+
+<Steps>
+  <Step title="Buka halaman Rekap">Tekan tombol **Rekap** di halaman Dashboard. Sistem menampilkan halaman **Rekap**.</Step>
+  <Step title="Mulai rekap">Tekan tombol **Mulai Rekap**. Sistem menampilkan pop-up **Mulai Rekap** yang menginformasikan akumulasi pendapatan pada kolom **Jumlah Non Tunai**.</Step>
+  <Step title="Isi jumlah tunai">Masukkan nominal total uang fisik yang ada di laci kasir pada kolom **Jumlah Tunai**, dan keterangan tambahan pada kolom **Catatan** (opsional).</Step>
+  <Step title="Proses">Tekan tombol **Proses** untuk mengakhiri shift dan membukukan laporan rekap kasir.</Step>
+</Steps>
 
 ## Riwayat Rekap
 
-Menu **Rekap → Riwayat Rekap**: lihat detail tiap rekap dan **cetak** hasilnya.
+Lihat daftar riwayat rekap kas yang telah dilakukan beserta ringkasannya.
+
+<Steps>
+  <Step title="Buka Rekap">Buka menu **Rekap** pada aplikasi.</Step>
+  <Step title="Buka tab riwayat">Pilih tab **Riwayat Rekap**. Sistem menampilkan daftar riwayat rekap yang tersedia.</Step>
+  <Step title="Tinjau ringkasan">Lihat informasi ringkasan pada setiap riwayat rekap; pilih salah satu data untuk melihat detailnya.</Step>
+</Steps>
+
+### Detail Riwayat Rekap
+
+Lihat rincian hasil rekap kas: informasi penjualan, transaksi tunai, transaksi non-tunai, serta ringkasan transaksi lainnya.
+
+<Steps>
+  <Step title="Buka Detail Rekap">Buka halaman **Detail Rekap**. Sistem menampilkan informasi detail rekap.</Step>
+  <Step title="Tinjau informasi">Lihat informasi periode rekap, kasir, dan catatan, serta ringkasan penjualan yang terdiri dari **Total Penjualan** dan **Qty Penjualan**.</Step>
+  <Step title="Tinjau rincian transaksi">Lihat rincian transaksi tunai dan transaksi non-tunai.</Step>
+</Steps>
+
+### Cetak Riwayat Rekap
+
+Cetak hasil rekap kas dengan memilih pengaturan printer terlebih dahulu.
+
+<Steps>
+  <Step title="Mulai cetak">Tekan tombol **Cetak Rekap**. Sistem menampilkan halaman **Printers**.</Step>
+  <Step title="Atur printer">Pilih pengaturan pencetakan yang diperlukan, lalu tekan tombol **Atur Printer**. Sistem menampilkan daftar printer yang tersedia.</Step>
+  <Step title="Pilih printer">Pilih printer yang akan digunakan. Sistem mencetak hasil rekap menggunakan printer tersebut.</Step>
+</Steps>

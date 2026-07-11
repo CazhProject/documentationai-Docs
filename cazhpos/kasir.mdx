@@ -1,31 +1,163 @@
 ---
-title: Kasir & Transaksi
-description: Transaksi pesanan manual, pembayaran, struk, simpan/batalkan pesanan.
+title: "Kasir dan Transaksi"
+description: "Panduan lengkap operasional kasir CazhPOS: transaksi pesanan manual, daftar produk, buat pesanan, pembayaran, simpan pesanan, riwayat transaksi, pengelolaan struk, hingga cek kartu."
 ---
+
+Halaman ini memandu kasir dalam operasional penjualan harian di CazhPOS: membuat transaksi (manual maupun dari katalog produk), memproses pembayaran, menyimpan pesanan, mengelola riwayat dan struk, hingga memeriksa kartu pelanggan.
 
 ## Transaksi Pesanan Manual
 
-1. Pilih produk dari **Daftar Produk** pada halaman katalog
-2. Tambahkan **Catatan** pada pesanan bila perlu
-3. Lanjut ke **Pembayaran** — pilih metode (tunai, [kartu CARDS](/cazhpos/saldo-dan-kartu), QRIS, dll.)
-4. **Detail Transaksi** tampil setelah pembayaran
+Buat transaksi tanpa memilih produk: masukkan nominal transaksi, tambahkan diskon, pilih metode pembayaran, lalu selesaikan pembayaran hingga transaksi berhasil.
+
+<Steps>
+  <Step title="Buka Pesanan Manual">Buka menu **Order**, lalu tekan ikon **Kalkulator/Pesanan Manual**. Sistem menampilkan halaman **Transaksi**.</Step>
+  <Step title="Masukkan nominal">Masukkan **Nominal Transaksi**. Sistem menghitung **Subtotal** secara otomatis.</Step>
+  <Step title="Tambahkan diskon dan catatan (opsional)">Tambahkan **Diskon** bila diperlukan — sistem menghitung kembali total transaksi. Isi **Catatan Transaksi** bila diperlukan.</Step>
+  <Step title="Pilih metode pembayaran">Tekan menu **Metode Pembayaran**. Sistem menampilkan daftar metode pembayaran; pilih salah satu, dan sistem menampilkan metode yang dipilih.</Step>
+  <Step title="Bayar">Tekan tombol **Bayar Sekarang**.</Step>
+</Steps>
+
+### Detail Transaksi Pesanan Manual
+
+Selesaikan pembayaran transaksi manual dan lihat hasil transaksi yang berhasil dilakukan.
+
+<Steps>
+  <Step title="Selesaikan pembayaran">Sistem menampilkan halaman **Pembayaran** sesuai metode yang dipilih. Anda dapat menambahkan **Pelanggan** pada transaksi. Selesaikan proses pembayaran sesuai metode tersebut.</Step>
+  <Step title="Lihat status transaksi">Sistem memproses transaksi lalu menampilkan halaman **Status Transaksi**.</Step>
+  <Step title="Kelola struk (opsional)">Tekan tombol **Lihat Struk** untuk melihat detail transaksi. Anda dapat mengunduh atau membagikan struk, menekan tombol **Cetak Struk**, atau membuka menu **Atur Printer**.</Step>
+  <Step title="Transaksi berikutnya">Tekan tombol **Tambah Pesanan Baru** untuk membuat transaksi berikutnya.</Step>
+</Steps>
+
+## Daftar Produk
+
+Lihat seluruh produk yang tersedia: cari produk berdasarkan nama, pindai barcode, serta ubah tampilan daftar menjadi mode daftar (list) atau grid.
+
+<Steps>
+  <Step title="Buka menu Order">Buka menu **Order**. Sistem menampilkan halaman **Daftar Produk**.</Step>
+  <Step title="Cari produk">Pilih kategori produk bila diperlukan, lalu cari produk dengan fitur **Cari** atau lakukan **Scan Barcode**. Sistem menampilkan produk yang sesuai.</Step>
+  <Step title="Atur tampilan dan pilih produk">Ubah tampilan **List** atau **Grid** sesuai preferensi, lalu tekan tombol **Tambah** pada produk yang dipilih.</Step>
+</Steps>
+
+<Callout kind="info">
+Produk dapat ditampilkan dalam mode **List** atau **Grid**, pencarian dapat dilakukan berdasarkan nama produk atau barcode, dan daftar produk dapat difilter berdasarkan kategori yang tersedia.
+</Callout>
+
+## Buat Pesanan
+
+Buat transaksi penjualan dengan memilih produk, mengatur jumlah pesanan, memberikan diskon, menambahkan catatan, memilih metode pembayaran, serta menyelesaikan pembayaran.
+
+<Steps>
+  <Step title="Buka menu Order">Buka menu **Order**. Sistem menampilkan halaman **Daftar Produk**.</Step>
+  <Step title="Pilih produk">Pilih satu atau lebih produk, lalu tambah atau kurangi jumlahnya sesuai pesanan. Sistem memperbarui jumlah item dan total sementara.</Step>
+  <Step title="Lanjut ke pembayaran">Tekan **Ringkasan Pesanan** untuk melanjutkan ke halaman **Pembayaran**.</Step>
+</Steps>
+
+## Pembayaran
+
+Kelola pesanan sebelum transaksi diproses: tambah produk, beri diskon, tambahkan catatan, pilih metode pembayaran, serta pilih pelanggan.
+
+<Steps>
+  <Step title="Tinjau detail pesanan">Sistem menampilkan halaman **Pembayaran** beserta detail pesanan. Anda dapat menambahkan produk lain ke dalam pesanan.</Step>
+  <Step title="Lengkapi pesanan">Tambahkan **Diskon** pada produk atau transaksi serta catatan transaksi bila perlu. Sistem menghitung subtotal, diskon, pajak/service charge, dan total pembayaran secara otomatis.</Step>
+  <Step title="Pilih metode dan pelanggan">Pilih **Metode Pembayaran** yang tersedia, lalu tambahkan atau pilih **Data Pelanggan** bila diperlukan.</Step>
+  <Step title="Bayar">Tekan tombol **Bayar**. Sistem memproses transaksi.</Step>
+</Steps>
+
+## Detail Transaksi
+
+Lihat informasi transaksi yang telah berhasil diproses beserta rincian pembayaran dan struk transaksi.
+
+<Steps>
+  <Step title="Lihat status transaksi">Sistem menampilkan halaman **Status Transaksi** setelah pembayaran berhasil. Lihat informasi status transaksi, metode pembayaran, total pembayaran, dan poin pelanggan (jika tersedia).</Step>
+  <Step title="Lihat struk">Tekan tombol **Lihat Struk**. Sistem menampilkan detail struk transaksi; Anda dapat mengunduh, membagikan, atau mencetak struk.</Step>
+  <Step title="Transaksi berikutnya">Tekan tombol **Tambah Pesanan Baru** untuk membuat transaksi berikutnya.</Step>
+</Steps>
 
 ## Simpan Pesanan
 
-Pesanan yang belum dibayar bisa disimpan dulu dan dilanjutkan kemudian dari daftar pesanan tersimpan.
+Simpan pesanan yang belum dibayar sehingga dapat diproses kembali di lain waktu.
 
-## Riwayat Pesanan
+<Steps>
+  <Step title="Simpan dari halaman Pembayaran">Buat pesanan pada halaman **Pembayaran**, lalu tekan ikon **Simpan Pesanan**. Sistem menampilkan form **Simpan Pesanan**.</Step>
+  <Step title="Isi data pesanan">Isi **Nama Pesanan** dan **Catatan Pesanan** bila diperlukan (opsional).</Step>
+  <Step title="Simpan">Tekan tombol **Simpan**. Sistem menyimpan pesanan dengan status **Pending** dan menampilkannya pada halaman **Order** sehingga dapat dipilih kembali untuk diproses atau dibayar.</Step>
+</Steps>
 
-Dari **Riwayat** di halaman katalog, klik transaksi untuk melihat detail. Dari detail, kasir dapat:
+## Riwayat Transaksi Penjualan — Cetak Struk
 
-- **Lihat struk**
-- **Kirim struk** (digital)
-- **Cetak struk** — lihat [Printer](/cazhpos/perangkat-dan-pengaturan) untuk setup
-- **Atur printer**
-- **Batalkan transaksi**
+Cetak ulang struk dari transaksi yang sudah tercatat di riwayat.
+
+<Steps>
+  <Step title="Buka Riwayat">Tekan menu **Riwayat** pada halaman katalog.</Step>
+  <Step title="Pilih transaksi">Tekan salah satu transaksi. Sistem menampilkan halaman detail.</Step>
+  <Step title="Cetak">Pada halaman detail, tekan tombol **Cetak Struk**. Sistem mencetak struk riwayat.</Step>
+</Steps>
+
+## Detail Riwayat Pesanan
+
+Lihat informasi terperinci pesanan yang telah selesai diproses: kode struk, tanggal, nama staf, metode pembayaran, hingga rincian menu dan total biaya. Dari sini Anda juga dapat melakukan tindakan lanjutan seperti mencetak struk fisik, mengirim struk digital ke pelanggan, atau membatalkan transaksi jika terjadi kesalahan input.
+
+<Steps>
+  <Step title="Buka Riwayat">Buka menu **Riwayat**.</Step>
+  <Step title="Pilih pesanan">Pilih salah satu pesanan. Sistem menampilkan **Detail Pesanan**.</Step>
+</Steps>
+
+### Lihat Struk
+
+Tampilkan pratinjau nota digital dari transaksi yang sukses diproses. Anda dapat memeriksa tampilan akhir struk konsumen (termasuk logo toko dan nama pelanggan) serta langsung mengunduh atau membagikannya ke pelanggan.
+
+<Steps>
+  <Step title="Buka detail pesanan">Buka menu **Riwayat**, pilih salah satu pesanan. Sistem menampilkan **Detail Pesanan**.</Step>
+  <Step title="Lihat struk">Tekan tombol **Lihat Struk**. Sistem menampilkan struk.</Step>
+</Steps>
+
+### Kirim Struk
+
+Kirim nota belanja digital kepada pelanggan secara paperless, langsung ke inbox email mereka.
+
+<Steps>
+  <Step title="Buka detail pesanan">Buka menu **Riwayat**, pilih salah satu pesanan. Sistem menampilkan **Detail Pesanan**.</Step>
+  <Step title="Kirim struk">Tekan tombol **Kirim Struk**, lalu isi email yang akan dituju. Sistem mengirim struk ke email tersebut.</Step>
+</Steps>
+
+### Cetak Struk
+
+Cetak nota fisik transaksi menggunakan printer thermal yang terhubung. Anda dapat memilih mencetak nota khusus untuk pembeli (Cetak Pelanggan) atau cetakan untuk arsip internal (Cetak Toko/Merchant).
+
+<Steps>
+  <Step title="Buka detail pesanan">Buka menu **Riwayat**, pilih salah satu pesanan. Sistem menampilkan **Detail Pesanan**.</Step>
+  <Step title="Cetak struk">Tekan tombol **Cetak Struk**. Sistem menampilkan halaman **Cetak Struk**.</Step>
+</Steps>
+
+### Atur Printer
+
+Konfigurasikan dan hubungkan perangkat printer kasir ke sistem. Anda dapat mengaktifkan status printer serta menambahkan printer thermal baru, baik melalui koneksi Bluetooth Printer maupun WIFI/LAN Printer. Panduan lengkap koneksi printer ada di halaman [Perangkat dan Pengaturan](/cazhpos/perangkat-dan-pengaturan).
+
+<Steps>
+  <Step title="Buka halaman Cetak Struk">Buka menu **Riwayat**, pilih salah satu pesanan hingga tampil **Detail Pesanan**, lalu tekan tombol **Cetak Struk**. Sistem menampilkan halaman **Cetak Struk**.</Step>
+  <Step title="Buka pengaturan printer">Tekan tombol **Atur Printer**. Sistem menampilkan halaman **Printer**. Pastikan toggle **Status** dalam kondisi Aktif.</Step>
+  <Step title="Tambah printer">Tekan tombol **+Tambah Printer**. Sistem menampilkan pilihan tipe koneksi (**Bluetooth Printer** atau **WIFI/LAN Printer**); pilih jenis koneksi yang sesuai dengan printer thermal yang digunakan.</Step>
+</Steps>
+
+### Batalkan Transaksi
+
+Batalkan transaksi yang sudah berhasil diproses (khusus metode pembayaran tunai) dan catat alasan pembatalan di dalam sistem agar pembukuan tetap akurat dan kesalahan input operasional kasir terminimalkan.
+
+<Callout kind="alert">
+Pembatalan transaksi bersifat permanen dan hanya berlaku untuk transaksi dengan metode pembayaran tunai. Pastikan transaksi yang dipilih memang perlu dibatalkan.
+</Callout>
+
+<Steps>
+  <Step title="Buka halaman Cetak Struk">Buka menu **Riwayat**, pilih salah satu pesanan hingga tampil **Detail Pesanan**, lalu tekan tombol **Cetak Struk**. Sistem menampilkan halaman **Cetak Struk**.</Step>
+  <Step title="Batalkan transaksi">Tekan tombol **Batalkan Transaksi**. Sistem menampilkan pop-up **Batalkan Transaksi**.</Step>
+  <Step title="Isi alasan dan proses">Masukkan alasan pembatalan, lalu tekan tombol **Proses**. Sistem memproses pembatalan transaksi tersebut.</Step>
+</Steps>
 
 ## Cek Kartu
 
-1. Klik menu **Lainnya** → **Cek Kartu**
-2. Isi nomor kartu, klik **Cek Kartu**
-3. Data kartu dan saldo terakhir tampil
+Periksa data dan saldo terakhir sebuah [kartu CARDS](/referensi/glosarium#kartu-kartu-cards).
+
+<Steps>
+  <Step title="Buka Cek Kartu">Tekan menu **Lainnya** pada halaman katalog, lalu tekan **Cek Kartu**. Sistem menampilkan halaman cek kartu.</Step>
+  <Step title="Cek kartu">Isi nomor kartu, kemudian tekan tombol **Cek Kartu**. Sistem menampilkan data kartu serta saldo terakhir kartu.</Step>
+</Steps>

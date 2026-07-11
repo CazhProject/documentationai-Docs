@@ -1,22 +1,99 @@
 ---
-title: Toko & Karyawan
-description: Kelola toko/cabang dan data karyawan.
+title: "Toko dan Karyawan"
+description: "Panduan mengelola daftar toko (lihat, tambah, hapus, detail) serta data karyawan (lihat, tambah, hapus, detail) di CazhPOS."
 ---
+
+Halaman ini memandu pemilik usaha dan admin mengelola data toko dan karyawan di CazhPOS: melihat daftar, menambah data baru, memperbarui detail, hingga menghapus data yang tidak lagi digunakan.
 
 ## Toko
 
-Dari **Beranda → Kelola Toko**:
+### Lihat List Toko
 
-- **List Toko** — semua toko/cabang partner
-- **Detail Toko** — klik salah satu toko untuk mengelola datanya
-- **Tambah Toko** dan **Hapus Toko**
+Lihat dan kelola daftar toko yang terdaftar pada akun, termasuk memantau status toko dan menghapus toko yang tidak digunakan.
 
-Pengaturan lanjutan toko (jam operasional, dsb.) juga tersedia di [Partner Dashboard — Toko](/partner-dashboard/toko).
+<Steps>
+  <Step title="Buka Kelola Toko">Buka menu **Kelola Toko** pada aplikasi. Sistem menampilkan daftar seluruh toko yang terdaftar pada akun.</Step>
+  <Step title="Tinjau informasi toko">Lihat informasi setiap toko: Nama Toko dan Status Toko. Pilih salah satu toko untuk melihat informasi lebih lanjut.</Step>
+  <Step title="Hapus toko (bila perlu)">Pilih aksi **Hapus** pada toko yang dipilih. Sistem menampilkan konfirmasi penghapusan; setelah dikonfirmasi, sistem menghapus toko dari daftar dan memperbarui data yang ditampilkan.</Step>
+</Steps>
+
+### Tambah Toko
+
+Tambahkan data toko baru yang akan digunakan dalam operasional transaksi dan pengelolaan bisnis.
+
+<Steps>
+  <Step title="Buka form tambah">Buka menu **Kelola Toko** hingga tampil daftar toko, lalu tekan tombol **Tambah Toko (+)**. Sistem menampilkan halaman **Form Tambah Toko**.</Step>
+  <Step title="Isi data toko">Lengkapi data yang diperlukan: Unggah Media, Nama Toko, Kategori Toko, Alamat Toko, Nomor Telepon Toko, Penanggung Jawab, dan No. Telepon Penanggung Jawab.</Step>
+  <Step title="Atur pemesanan manual">Atur fitur **Pemesanan Manual** sesuai kebutuhan, termasuk **Info Catatan Struk**.</Step>
+  <Step title="Simpan">Tekan tombol **Tambah Baru**. Sistem memvalidasi data; jika berhasil, notifikasi bahwa toko berhasil ditambahkan tampil.</Step>
+</Steps>
+
+### Detail Toko
+
+Kelola data detail toko yang sudah terdaftar.
+
+<Steps>
+  <Step title="Buka Kelola Toko">Tekan menu **Beranda**, lalu tekan menu **Kelola Toko**.</Step>
+  <Step title="Buka detail">Tekan salah satu **Toko**. Sistem menampilkan halaman detail toko yang dipilih.</Step>
+  <Step title="Kelola data">Anda dapat mengelola data toko tersebut.</Step>
+</Steps>
+
+### Hapus Toko
+
+Konfirmasi tindakan penghapusan toko yang dipilih. Sistem meminta persetujuan sebelum toko dihapus dari daftar toko.
+
+<Callout kind="alert">
+Toko yang dihapus akan hilang secara permanen dari akun. Pastikan toko memang sudah tidak digunakan sebelum mengonfirmasi.
+</Callout>
+
+<Steps>
+  <Step title="Pilih toko">Buka menu **Kelola Toko** hingga tampil daftar seluruh toko, lalu pilih **Nama Toko** yang ingin dihapus.</Step>
+  <Step title="Hapus">Tekan tombol **Hapus Toko**. Sistem menampilkan pesan konfirmasi "Yakin ingin menghapus toko ini?".</Step>
+  <Step title="Konfirmasi">Jika memilih **Konfirmasi Hapus**, sistem menghapus data toko dari akun, memperbarui daftar toko, menampilkan notifikasi bahwa toko berhasil dihapus, lalu mengarahkan kembali ke halaman **Daftar Toko**.</Step>
+</Steps>
 
 ## Karyawan
 
-Menu **Karyawan**:
+### Lihat List Karyawan
 
-- **List Karyawan** dan **Detail Karyawan**
-- **Tambah Karyawan** — isi form data karyawan
-- **Hapus Karyawan**
+Lihat daftar seluruh karyawan yang terdaftar pada toko: informasi karyawan, pencarian karyawan tertentu, serta akses ke pengelolaan data lebih lanjut.
+
+<Steps>
+  <Step title="Buka List Karyawan">Pilih menu **Karyawan** pada halaman dashboard. Sistem menampilkan halaman **List Karyawan** berisi seluruh data karyawan yang terdaftar pada toko.</Step>
+  <Step title="Cari karyawan">Gunakan fitur **Pencarian** untuk menemukan karyawan tertentu. Sistem menampilkan hasil sesuai kata kunci yang dimasukkan.</Step>
+  <Step title="Buka detail">Pilih salah satu karyawan dari daftar. Sistem membuka halaman detail karyawan untuk proses pengelolaan lebih lanjut.</Step>
+</Steps>
+
+### Tambah Karyawan
+
+Tambahkan data karyawan baru agar karyawan terdaftar dan memperoleh akses sesuai peran yang diberikan.
+
+<Steps>
+  <Step title="Buka form tambah">Pilih menu **Karyawan** pada dashboard hingga tampil halaman **List Karyawan**, lalu tekan tombol **Tambah Karyawan (+)**. Sistem menampilkan halaman **Tambah Karyawan Baru**.</Step>
+  <Step title="Isi data karyawan">Lengkapi data yang diperlukan: Nama Karyawan, Nomor Telepon, Email, Tambah ke Toko, dan Judul Pekerjaan.</Step>
+  <Step title="Simpan">Tekan tombol **Tambah Karyawan**. Sistem memvalidasi data; jika valid, data karyawan baru tersimpan, notifikasi berhasil tampil, dan Anda diarahkan kembali ke daftar karyawan dengan data baru muncul pada **List Karyawan**.</Step>
+</Steps>
+
+### Detail Karyawan
+
+Lihat dan kelola informasi detail karyawan yang telah terdaftar dalam sistem.
+
+<Steps>
+  <Step title="Buka detail karyawan">Buka halaman **List Karyawan**, lalu pilih salah satu data karyawan. Sistem menampilkan halaman **Detail Karyawan**.</Step>
+  <Step title="Tinjau dan ubah data">Lihat informasi lengkap karyawan (Nama Karyawan, Nomor Telepon, Email, Tambah ke Toko, Posisi), lalu lakukan perubahan data apabila diperlukan.</Step>
+  <Step title="Simpan">Tekan tombol **Simpan**. Sistem memvalidasi data; jika berhasil, perubahan tersimpan, notifikasi sukses tampil, dan Anda diarahkan kembali ke daftar karyawan dengan data yang telah diperbarui.</Step>
+</Steps>
+
+### Hapus Karyawan
+
+Hapus data karyawan yang sudah tidak aktif atau tidak lagi bekerja pada toko, agar data karyawan tetap akurat dan terkelola dengan baik.
+
+<Callout kind="alert">
+Data karyawan yang dihapus akan hilang dari daftar secara permanen.
+</Callout>
+
+<Steps>
+  <Step title="Buka detail karyawan">Pilih menu **Karyawan** pada dashboard hingga tampil halaman **List Karyawan**, lalu pilih salah satu data karyawan. Sistem menampilkan halaman **Detail Karyawan**.</Step>
+  <Step title="Hapus">Tekan ikon **Hapus** pada halaman detail karyawan. Sistem menampilkan pop-up konfirmasi penghapusan karyawan.</Step>
+  <Step title="Konfirmasi">Pilih **Konfirmasi Hapus** untuk melanjutkan. Sistem menghapus data karyawan, mengarahkan Anda kembali ke halaman List Karyawan, dan memperbarui data yang ditampilkan.</Step>
+</Steps>

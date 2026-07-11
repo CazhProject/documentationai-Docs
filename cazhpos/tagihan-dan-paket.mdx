@@ -1,24 +1,105 @@
 ---
-title: Tagihan & Paket
-description: Tagihan langganan, metode pembayaran, dan billing paket.
+title: "Tagihan dan Paket"
+description: "Panduan mengecek dan membayar tagihan anggota (saldo toko, VA, QRIS, retail, invoice) serta mengelola paket berlangganan CazhPOS (perpanjang dan ganti paket)."
 ---
+
+Halaman ini memandu kasir mengecek dan membayar tagihan anggota melalui berbagai metode pembayaran, serta memandu pemilik usaha mengelola [paket berlangganan](/referensi/glosarium#paket--billing) CazhPOS (perpanjang dan ganti paket).
 
 ## Tagihan
 
-Menu **Tagihan** menampilkan tagihan langganan CazhPOS:
+### Cek Tagihan
 
-1. Klik tagihan untuk **Detail Tagihan**
-2. **Konfirmasi Pembayaran** setelah membayar
-3. Pilih **Metode Pembayaran**:
-   - **Saldo Toko** — langsung terpotong dari [saldo toko](/cazhpos/saldo-dan-kartu)
-   - **Virtual Account, QRIS, atau Retail** — ikuti instruksi pembayaran channel terpilih
-4. **Invoice Pembayaran** tersedia setelah lunas
+Cari data tagihan anggota berdasarkan mitra dan nomor kartu anggota. Anda dapat mencari kartu secara manual, melalui pencarian nama/nomor kartu, scan barcode, maupun scan QR Code sebelum melihat daftar tagihan yang dimiliki anggota. Tagihan siswa juga dapat dibayarkan oleh orang tua melalui [aplikasi CARDS Parent](/cards-parent/lainnya).
 
-## Billing Paket
+<Steps>
+  <Step title="Buka Tagihan">Buka menu **Lainnya**, lalu pilih menu **Tagihan**. Sistem menampilkan halaman **Cek Tagihan**.</Step>
+  <Step title="Cari kartu anggota">Pilih **Mitra**, lalu masukkan **Nomor Kartu**, atau cari menggunakan scan barcode, scan QR Code, maupun pencarian nama/nomor kartu.</Step>
+  <Step title="Cek tagihan">Tekan tombol **Cek Tagihan**. Sistem menampilkan halaman **Detail Tagihan**.</Step>
+</Steps>
 
-- **Ganti Paket** — pindah ke paket lain
-- **Perpanjang Paket** — perpanjang masa aktif
+### Detail Tagihan
 
-Perpanjangan juga bisa dari [Partner Dashboard — Billing](/partner-dashboard/billing).
+Tampilkan seluruh tagihan anggota berdasarkan status pembayaran: cari tagihan, filter status, pilih satu atau beberapa tagihan untuk dibayarkan, serta lihat daftar tagihan yang telah dibayar.
 
-> Saat paket expired, fitur kelola produk/toko/karyawan/pelanggan/riwayat/laporan terkunci. Lihat [Glosarium — Paket](/referensi/glosarium#paket--billing).
+<Steps>
+  <Step title="Tinjau daftar tagihan">Sistem menampilkan halaman **Detail Tagihan**. Lihat daftar tagihan pada tab **Belum Bayar** atau **Terbayar**.</Step>
+  <Step title="Cari dan filter (opsional)">Cari tagihan melalui kolom **Cari**, atau tekan tombol **Filter** dan pilih status tagihan. Sistem menampilkan daftar tagihan sesuai filter yang dipilih.</Step>
+  <Step title="Pilih tagihan">Pilih satu atau beberapa tagihan menggunakan checkbox atau **Pilih Semua**. Sistem menampilkan total tagihan yang dipilih.</Step>
+  <Step title="Bayar">Tekan tombol **Bayar**. Sistem menampilkan halaman **Konfirmasi Pembayaran**.</Step>
+</Steps>
+
+### Konfirmasi Pembayaran
+
+Tinjau kembali informasi tagihan sebelum pembayaran dilakukan: lihat detail tagihan, tentukan metode pembayaran, atau batalkan transaksi.
+
+<Steps>
+  <Step title="Tinjau informasi">Sistem menampilkan halaman **Konfirmasi Pembayaran**. Lihat informasi anggota dan rincian tagihan; tampilkan atau sembunyikan **Detail Tagihan** sesuai kebutuhan.</Step>
+  <Step title="Pilih metode pembayaran">Pilih menu **Metode Pembayaran**. Sistem menampilkan daftar metode pembayaran; pilih salah satu, lalu tekan tombol **Konfirmasi**. Sistem kembali ke halaman Konfirmasi Pembayaran dengan metode yang dipilih.</Step>
+  <Step title="Bayar">Tekan tombol **Bayar**. Sistem memproses pembayaran sesuai metode yang dipilih. Anda dapat menekan tombol **Batal** untuk membatalkan proses pembayaran.</Step>
+</Steps>
+
+### Metode Pembayaran
+
+Pilih metode pembayaran tagihan; sistem menyesuaikan proses selanjutnya berdasarkan metode yang dipilih.
+
+| Metode | Proses selanjutnya |
+| --- | --- |
+| [Saldo Toko](/referensi/glosarium#saldo-toko) | Verifikasi PIN, lalu notifikasi **Pembayaran Berhasil** |
+| Virtual Account (VA) | Halaman **Invoice Pembayaran** |
+| QRIS | Halaman **Invoice Pembayaran** |
+| Retail | Halaman **Invoice Pembayaran** |
+
+1. Sistem menampilkan daftar **Metode Pembayaran**.
+2. Pilih salah satu metode pembayaran.
+3. Tekan tombol **Konfirmasi**.
+
+<Callout kind="info">
+Apabila memilih **Saldo Toko**: sistem menampilkan halaman **Masukkan PIN**; masukkan **PIN**, sistem memverifikasinya, lalu menampilkan notifikasi **Pembayaran Berhasil**. Apabila memilih **Virtual Account, QRIS, atau Retail**: sistem menampilkan halaman **Invoice Pembayaran**.
+</Callout>
+
+### Invoice Pembayaran
+
+Tampilkan informasi pembayaran setelah metode pembayaran dipilih: lihat detail pembayaran, bagikan invoice, atau unduh invoice.
+
+<Steps>
+  <Step title="Tinjau invoice">Sistem menampilkan halaman **Invoice Pembayaran**. Lihat informasi pembayaran: Nomor Referensi (Ref ID), nominal pembayaran, biaya admin (jika ada), total pembayaran, metode pembayaran, Nomor Virtual Account / QRIS / Retail (sesuai metode), dan batas waktu pembayaran (untuk Virtual Account).</Step>
+  <Step title="Bagikan atau unduh">Tekan tombol **Bagikan Invoice** untuk membagikan invoice, atau **Unduh Invoice** untuk mengunduhnya.</Step>
+</Steps>
+
+## Paket
+
+### Perpanjang Paket
+
+Perpanjang masa aktif [paket berlangganan](/referensi/glosarium#paket--billing) dengan memilih jumlah paket yang diinginkan dan menyelesaikan pembayaran melalui metode yang tersedia.
+
+<Steps>
+  <Step title="Buka Detail Paket">Buka halaman **Dashboard** aplikasi, lalu tekan tombol **Perpanjang Paket**. Sistem menampilkan halaman **Detail Paket** berisi informasi paket aktif.</Step>
+  <Step title="Pilih jumlah paket">Pilih **Jumlah Paket** yang ingin dibeli atau diperpanjang. Sistem menghitung dan menampilkan **Total Bayar** berdasarkan jumlah paket yang dipilih.</Step>
+  <Step title="Pilih metode dan proses">Pilih **Metode Pembayaran** yang tersedia, lalu tekan tombol **Perpanjang Paket**. Sistem memproses transaksi dan membuat tagihan pembayaran.</Step>
+  <Step title="Selesai">Setelah pembayaran berhasil, sistem memperpanjang masa aktif paket dan mengirimkan informasi tagihan ke email pengguna.</Step>
+</Steps>
+
+### Ganti Paket (Billing)
+
+Ganti paket berlangganan sesuai kebutuhan outlet dan durasi berlangganan yang diinginkan.
+
+<Steps>
+  <Step title="Buka Pilih Paket">Buka menu **Dashboard**, lalu tekan tombol **Ubah Paket**. Sistem menampilkan halaman **Pilih Paket** berisi daftar paket yang tersedia.</Step>
+  <Step title="Pilih paket">Pilih paket sesuai kebutuhan, lalu tentukan Kebutuhan Outlet dan Lama Berlangganan. Sistem menampilkan harga paket sesuai pilihan Anda.</Step>
+  <Step title="Proses">Tekan tombol **Pilih Paket**. Sistem memproses perubahan paket dan menampilkan konfirmasi bahwa paket berhasil diperbarui.</Step>
+</Steps>
+
+### Perpanjang Paket (Billing)
+
+Perpanjang masa aktif paket berlangganan dengan memilih jumlah paket, mengisi email tagihan, dan menentukan metode pembayaran yang akan digunakan.
+
+<Steps>
+  <Step title="Buka Perpanjang Paket">Buka menu **Dashboard**, lalu tekan tombol **Perpanjang Paket**. Sistem menampilkan halaman **Perpanjang Paket** berisi **Detail Paket** yang sedang digunakan.</Step>
+  <Step title="Pilih jumlah paket">Pilih **Jumlah Paket** yang ingin diperpanjang. Sistem menghitung dan menampilkan total tagihan.</Step>
+  <Step title="Lengkapi pembayaran">Isi atau konfirmasi **Email Tagihan**, lalu pilih **Metode Pembayaran** yang tersedia.</Step>
+  <Step title="Proses">Tekan tombol **Perpanjang Paket**. Sistem memproses transaksi, membuat tagihan pembayaran, dan menampilkan konfirmasi bahwa permintaan perpanjangan paket berhasil dibuat.</Step>
+</Steps>
+
+<Callout kind="alert">
+Jika paket berlangganan tidak diperpanjang hingga berakhir (expired), sejumlah fitur akan terkunci. Lihat daftarnya di [Tentang CazhPOS](/cazhpos/tentang#fitur-terkunci-saat-paket-expired).
+</Callout>
