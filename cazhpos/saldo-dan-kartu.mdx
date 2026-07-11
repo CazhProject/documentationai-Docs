@@ -1,6 +1,6 @@
 ---
 title: "Saldo dan Kartu"
-description: "Panduan pengelolaan saldo toko dan Cazhbox (top up, pindah saldo, tarik saldo, riwayat transaksi) serta transaksi kartu anggota (aktivasi, isi kartu, tarik saldo kartu) di CazhPOS."
+description: "Panduan pengelolaan saldo toko dan Cazhbox (top up, pindah saldo, tarik saldo, riwayat transaksi), verifikasi data (KYC), serta transaksi kartu anggota (aktivasi, isi kartu, tarik saldo kartu) di CazhPOS."
 ---
 
 Halaman ini memandu kasir dan pemilik usaha mengelola keuangan toko di CazhPOS: memantau dan mengisi [saldo toko](/referensi/glosarium#saldo-toko), memindahkan dan menarik saldo [Cazhbox](/referensi/glosarium#cazhbox), hingga melayani transaksi kartu anggota (aktivasi, isi, dan tarik saldo).
@@ -17,6 +17,10 @@ Lihat informasi saldo toko yang tersedia serta pantau riwayat transaksi saldo un
   <Step title="Telusuri riwayat">Lihat daftar riwayat transaksi saldo dan scroll untuk melihat riwayat lainnya. Sistem menampilkan detail transaksi seperti tanggal, jenis transaksi, dan nominal transaksi.</Step>
 </Steps>
 
+<Callout kind="info">
+Terdapat dua jenis saldo: **Saldo Toko (Cazhbox toko)** per masing-masing toko, dan **Saldo Cazhbox Partner** milik pemilik usaha. Saldo toko dapat diisi dari saldo Cazhbox Partner atau melalui transfer bank Virtual Account.
+</Callout>
+
 ### Isi Saldo (Top Up)
 
 Pilih metode pembayaran dan lakukan top up saldo toko sehingga saldo dapat digunakan untuk kebutuhan transaksi dan operasional bisnis.
@@ -28,6 +32,10 @@ Pilih metode pembayaran dan lakukan top up saldo toko sehingga saldo dapat digun
   <Step title="Bayar">Lakukan pembayaran sesuai nominal top up dan ikuti instruksi pembayaran. Sistem memproses transaksi top up.</Step>
   <Step title="Saldo bertambah">Setelah pembayaran berhasil diverifikasi, saldo toko bertambah secara otomatis.</Step>
 </Steps>
+
+<Callout kind="info">
+Top up melalui Virtual Account dengan nominal **di bawah minimum top up VA** yang berlaku akan dikenakan **biaya tambahan** yang langsung dipotong dari nominal top up. Nilai minimum dan biaya mengikuti pengaturan yang berlaku pada akun.
+</Callout>
 
 ### Pindah ke Cazhbox
 
@@ -64,6 +72,10 @@ Tarik saldo dari Cazhbox Partner ke rekening bank yang telah terdaftar untuk keb
 </Steps>
 
 <Callout kind="info">
+Aturan penarikan saldo: nominal harus memenuhi **minimum penarikan** yang berlaku dan tidak boleh melebihi saldo; setiap penarikan dikenakan **biaya admin bank** (Total = nominal + biaya admin); **rekening bank tujuan wajib terdaftar**; dan penarikan hanya dapat dilakukan setelah **verifikasi data (KYC) berstatus disetujui**. Dana diproses maksimal **2×24 jam**.
+</Callout>
+
+<Callout kind="info">
 Rekening yang terdaftar pada menu **Rekening** digunakan sebagai tujuan transfer saat Anda melakukan penarikan saldo dari Cazhbox.
 </Callout>
 
@@ -77,6 +89,15 @@ Menu **Rekening** pada Saldo Toko digunakan untuk menampilkan dan mengelola reke
   <Step title="Rekening siap digunakan">Rekening siap digunakan sebagai tujuan transfer dana hasil penarikan dari Cazhbox Partner.</Step>
 </Steps>
 
+##### Isian formulir rekening bank
+
+| Field | Wajib | Ketentuan |
+| --- | --- | --- |
+| Nama Bank | Ya | Dipilih dari daftar bank. |
+| Nama Pemilik Rekening | Ya | Maksimal 100 karakter. |
+| Nomor Rekening | Ya | Angka saja, maksimal 20 digit. |
+| Foto Sampul Buku Tabungan | Ya | Unggah gambar buku tabungan. |
+
 ### Riwayat Transaksi Cazhbox
 
 Lihat daftar riwayat transaksi Cazhbox yang terkait dengan saldo toko: pemasukan, pengeluaran, transfer saldo, serta perubahan saldo yang terjadi pada akun toko.
@@ -86,6 +107,23 @@ Lihat daftar riwayat transaksi Cazhbox yang terkait dengan saldo toko: pemasukan
   <Step title="Buka riwayat">Pilih menu **Riwayat Transaksi Cazhbox**. Sistem mengambil data transaksi Cazhbox yang terkait dengan toko dan menampilkannya secara kronologis (transaksi terbaru ditampilkan terlebih dahulu).</Step>
   <Step title="Telusuri riwayat">Scroll ke bawah untuk melihat riwayat transaksi lainnya.</Step>
 </Steps>
+
+## Verifikasi Data (KYC)
+
+Verifikasi identitas (KYC) diperlukan sebelum menambahkan rekening bank tujuan pencairan dan untuk aktivasi pembayaran QR.
+
+### Isian formulir KYC
+
+| Field | Wajib | Ketentuan |
+| --- | --- | --- |
+| Nomor KTP | Ya | Angka, maksimal 16 digit. |
+| Foto KTP | Ya | Diambil langsung dari kamera. |
+| Selfie dengan KTP | Ya | Diambil langsung dari kamera depan. |
+| Data Rekening Bank | Ya | Nama bank, nama pemilik rekening, nomor rekening, dan foto buku tabungan. |
+
+<Callout kind="info">
+Status verifikasi terdiri dari: **Perlu Verifikasi**, **Menunggu Persetujuan**, dan **Disetujui**. Proses peninjauan memakan waktu **1–2 hari kerja**. Untuk bantuan, hubungi **hello@cazh.id**.
+</Callout>
 
 ## Kartu Anggota
 
@@ -100,6 +138,15 @@ Aktifkan [kartu anggota (CARDS)](/referensi/glosarium#kartu-kartu-cards) milik p
   <Step title="Aktivasi">Tekan tombol **Aktivasi**. Sistem memproses aktivasi dan menampilkan notifikasi bahwa kartu berhasil diaktifkan.</Step>
 </Steps>
 
+#### Isian formulir aktivasi kartu
+
+| Field | Wajib | Ketentuan |
+| --- | --- | --- |
+| Nomor Kartu | Ya | 16 digit; dapat diinput manual atau scan QR/NFC/RFID. |
+| Nomor Telepon Anggota | Ya | Nomor telepon valid, 10–13 digit. |
+| Nama Anggota | Tidak | Maksimal 100 karakter. |
+| Email Anggota | Tidak | Format email valid. |
+
 ### Isi Kartu
 
 Lakukan pengisian saldo pada kartu anggota: masukkan nomor kartu, pilih dompet, tentukan nominal, lalu konfirmasi transaksi menggunakan PIN.
@@ -111,6 +158,10 @@ Lakukan pengisian saldo pada kartu anggota: masukkan nomor kartu, pilih dompet, 
   <Step title="Konfirmasi dengan PIN">Tekan tombol **Isi Kartu**. Sistem menampilkan halaman **Masukkan PIN Anda**; masukkan **PIN**. Sistem memproses transaksi dan menampilkan notifikasi bahwa isi kartu berhasil.</Step>
 </Steps>
 
+<Callout kind="info">
+Nominal isi kartu harus memenuhi **minimum top up kartu** yang berlaku, dan jumlah nominal beserta biayanya tidak boleh melebihi **saldo Cazhbox toko**. Konfirmasi menggunakan **PIN kasir**. Satu kartu dapat memiliki beberapa **dompet** (wallet) dengan saldo dan masa berlaku masing-masing.
+</Callout>
+
 ### Tarik Saldo Kartu
 
 Lakukan penarikan saldo dari kartu anggota: masukkan nomor kartu, pilih dompet, tentukan nominal penarikan, lalu konfirmasi transaksi menggunakan PIN.
@@ -121,3 +172,7 @@ Lakukan penarikan saldo dari kartu anggota: masukkan nomor kartu, pilih dompet, 
   <Step title="Isi nominal penarikan">Pilih **Dompet** yang akan digunakan, isi **Jumlah Penarikan**, dan isi **Catatan Penarikan** (opsional).</Step>
   <Step title="Konfirmasi dengan PIN">Tekan tombol **Tarik Saldo Kartu**. Sistem menampilkan halaman **Masukkan PIN Anda**; masukkan **PIN**. Sistem memproses transaksi dan menampilkan notifikasi bahwa tarik saldo kartu berhasil.</Step>
 </Steps>
+
+<Callout kind="info">
+Berbeda dengan isi kartu, konfirmasi tarik saldo kartu menggunakan **PIN kartu anggota** (bukan PIN kasir). Halaman ini juga menyediakan opsi **Tampilkan Sisa Limit Penarikan**. Isi kartu dan tarik saldo kartu masing-masing dapat dikenakan biaya transaksi sesuai pengaturan partner.
+</Callout>
