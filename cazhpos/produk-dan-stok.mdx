@@ -1,30 +1,222 @@
 ---
-title: Produk & Stok
-description: Kategori, produk, varian, stok (riwayat/opname/transfer), dan supplier.
+title: "Produk dan Stok"
+description: "Panduan pengelolaan kategori, produk, varian produk, stok (riwayat, opname, transfer, filter), dan supplier di CazhPOS."
 ---
 
-## Kategori
+## Kategori - List Kategori
 
-Menu **Kategori**: list, tambah, detail, dan hapus kategori produk.
+Halaman ini digunakan untuk melihat dan mengelola daftar kategori produk yang digunakan untuk mengelompokkan produk agar lebih mudah dicari dan dikelola.
 
-## Produk
+1. Buka menu **Kategori** pada aplikasi.
+2. Sistem menampilkan halaman **List Kategori**.
+3. Lihat seluruh kategori yang telah terdaftar.
+4. Sistem menampilkan informasi setiap kategori, meliputi:
+   - Nama Kategori
+   - Total Produk
+   - Status Kategori
+5. Pilih kategori untuk melihat detail atau mengelola data kategori.
 
-Menu **Produk**: list, tambah, detail (info produk), dan hapus.
+## Kategori - Hapus Kategori
 
-### Varian Produk
+Halaman ini digunakan untuk menghapus kategori produk yang sudah tidak digunakan agar data kategori tetap terorganisir dan relevan.
 
-1. Klik salah satu produk → tab **Varian Produk**
-2. Klik varian untuk melihat/mengelola detailnya
+1. Buka menu **Kategori** pada aplikasi.
+2. Pilih salah satu kategori dari daftar kategori.
+3. Sistem menampilkan halaman **Detail Kategori**.
+4. Tekan tombol **Hapus**.
+5. Sistem menampilkan pop-up **Konfirmasi Hapus Kategori**.
+6. Pilih **Konfirmasi Hapus** untuk melanjutkan proses penghapusan, atau **Batal** untuk membatalkan.
+7. Sistem menghapus kategori yang dipilih.
+8. Sistem mengarahkan Anda kembali ke halaman **List Kategori**.
+9. Daftar kategori diperbarui dan kategori yang dihapus tidak lagi ditampilkan.
 
-## Stok
+## Kategori - Tambah Kategori
 
-Menu **Produk → Stok**:
+Halaman ini digunakan untuk menambahkan kategori produk baru guna mengelompokkan produk sehingga pengelolaan produk menjadi lebih terstruktur dan mudah dicari.
 
-- **Riwayat Stok** — list dan detail perubahan stok
-- **Filter Stok** — klik tombol filter, isi form, **Apply Filter**
-- **Kelola Stok ([Opname](/referensi/glosarium#opname-stock-opname))** — sesuaikan stok fisik vs sistem
-- **Kelola Stok (Transfer)** — pindahkan stok antar toko/cabang
+1. Buka menu **Kategori** pada aplikasi.
+2. Sistem menampilkan halaman **List Kategori**.
+3. Tekan tombol **Tambah Kategori (+)**.
+4. Sistem menampilkan **Form Tambah Kategori**.
+5. Isi **Nama Kategori** pada field yang tersedia.
+6. Tekan tombol **Tambah Data**.
+7. Sistem melakukan validasi data yang diinput.
+8. Jika data valid, sistem menyimpan kategori baru.
+9. Sistem menampilkan notifikasi sukses.
+10. Sistem mengarahkan Anda kembali ke halaman List Kategori dan menampilkan kategori yang baru ditambahkan.
 
-## Supplier
+## Kategori - Detail Kategori
 
-Menu **Supplier**: kelola data pemasok produk.
+Halaman ini digunakan untuk melihat dan memperbarui informasi kategori produk yang telah terdaftar agar data kategori tetap sesuai dengan kebutuhan pengelolaan produk.
+
+1. Buka menu **Kategori** pada aplikasi.
+2. Sistem menampilkan halaman **List Kategori**.
+3. Pilih salah satu kategori dari daftar kategori.
+4. Sistem menampilkan halaman **Detail Kategori**.
+5. Lihat dan ubah informasi kategori, meliputi:
+   - Nama Kategori
+   - Status
+6. Tekan tombol **Simpan** untuk menyimpan perubahan.
+7. Sistem melakukan validasi data yang diinput.
+8. Jika validasi berhasil, sistem menyimpan perubahan kategori.
+9. Sistem menampilkan notifikasi sukses.
+10. Sistem mengarahkan Anda kembali ke daftar kategori dengan data yang telah diperbarui.
+
+## Produk - List Produk
+
+Halaman ini menampilkan daftar produk yang terdaftar pada toko. Anda dapat melihat informasi produk, melakukan pencarian berdasarkan nama atau kategori, serta menghapus produk yang sudah tidak digunakan.
+
+1. Pilih **Kelola Produk** pada dashboard.
+2. Pilih menu **Semua Produk**.
+3. Sistem menampilkan halaman **List Produk**.
+4. Lihat informasi produk yang ditampilkan.
+5. Masukkan kata kunci pada kolom **Search** bila diperlukan.
+6. Sistem melakukan pencarian berdasarkan nama atau kategori produk.
+7. Sistem menampilkan hasil pencarian yang sesuai.
+8. Pilih produk untuk melihat detail produk.
+9. Tekan tombol **Hapus** pada produk yang dipilih bila ingin menghapusnya.
+
+## Produk - Hapus Produk
+
+Halaman ini digunakan untuk mengonfirmasi tindakan penghapusan produk yang dipilih. Sistem akan meminta persetujuan sebelum produk dihapus dari daftar produk.
+
+1. Buka menu **Produk** pada aplikasi.
+2. Sistem menampilkan halaman **List Produk**.
+3. Pilih produk yang akan dihapus.
+4. Sistem menampilkan halaman **Detail Produk**.
+5. Tekan tombol **Hapus Produk**.
+6. Sistem menampilkan pop-up "Hapus Produk ini?".
+7. Pilih salah satu opsi:
+   - **Batal** — sistem menutup pop-up dan kembali ke halaman detail produk.
+   - **Konfirmasi Hapus** — sistem melanjutkan proses penghapusan produk.
+8. Jika memilih **Konfirmasi Hapus**:
+   - Sistem menghapus data produk dari sistem.
+   - Sistem menampilkan notifikasi "Produk berhasil dihapus".
+   - Sistem memperbarui daftar produk.
+
+## Produk - Tambah Produk
+
+Halaman ini digunakan untuk menambahkan produk baru ke dalam sistem. Anda dapat mengisi informasi produk yang akan dijual, mengatur stok, serta menentukan apakah produk akan ditampilkan pada penjualan online.
+
+1. Buka menu **Produk** pada aplikasi.
+2. Sistem menampilkan halaman **List Produk**.
+3. Tekan tombol **Tambah Produk (+)**.
+4. Sistem menampilkan halaman **Form Tambah Produk**.
+5. Unggah **Foto Produk** (opsional).
+6. Pilih **Toko** tempat produk akan dijual.
+7. Isi informasi produk, antara lain: Nama Produk, Kategori, Supplier, Unit, Harga Beli, Harga Jual, Stock Keeping Unit (SKU), Barcode, dan Berat Produk.
+8. Atur informasi persediaan.
+9. Aktifkan atau nonaktifkan fitur **Atur Produk Online** sesuai kebutuhan.
+10. Tekan tombol **+Tambah**.
+11. Sistem melakukan validasi seluruh data yang diinput:
+    - Jika data tidak valid, sistem menampilkan pesan kesalahan.
+    - Jika validasi berhasil, sistem menampilkan notifikasi "Produk berhasil ditambahkan".
+
+## Produk - Detail Produk (Info Produk)
+
+Halaman ini menampilkan informasi detail suatu produk yang telah terdaftar dalam sistem. Anda dapat melihat informasi produk, status produk, serta pengaturan produk online.
+
+1. Buka menu **Produk** pada aplikasi.
+2. Sistem menampilkan halaman **List Produk**.
+3. Pilih salah satu produk dari daftar.
+4. Sistem mengambil data produk yang dipilih.
+5. Sistem menampilkan halaman **Detail Produk**.
+6. Lihat informasi produk yang tersedia.
+7. Tinjau informasi produk tanpa melakukan perubahan data.
+8. Kembali ke halaman List Produk setelah selesai melihat informasi.
+
+## Produk - Detail Variant Produk
+
+Fitur untuk mengelola varian pada setiap produk. Langkahnya sebagai berikut:
+
+1. Klik menu **Produk**.
+2. Klik salah satu **Produk**, maka akan menampilkan halaman detail produk.
+3. Klik tab **Varian Produk**, maka akan menampilkan list setiap varian.
+4. Klik salah satu **varian Produk**, maka akan menampilkan halaman detail varian produk.
+5. Anda dapat mengelola data varian produk.
+
+## Stok - List Riwayat Stok
+
+Halaman ini menampilkan daftar riwayat perubahan stok produk. Anda dapat melihat seluruh aktivitas yang memengaruhi jumlah stok, seperti penambahan stok, pengurangan stok, penjualan, maupun penyesuaian stok.
+
+1. Buka menu **Kelola Produk** pada aplikasi.
+2. Pilih menu **Stok**.
+3. Sistem menampilkan menu pengelolaan stok.
+4. Pilih submenu **Riwayat Stok**.
+5. Sistem mengambil data riwayat stok dari database.
+6. Sistem menampilkan daftar riwayat perubahan stok secara kronologis.
+7. Scroll ke bawah untuk melihat riwayat stok lainnya.
+
+## Stok - List Stok
+
+Halaman ini menampilkan daftar seluruh barang yang tersedia dalam sistem. Anda dapat melihat informasi stok barang, jumlah ketersediaan, serta status stok untuk membantu proses monitoring dan pengelolaan persediaan.
+
+1. Buka menu **Kelola Produk** pada aplikasi.
+2. Pilih menu **Stok**.
+3. Sistem menampilkan menu pengelolaan stok.
+4. Pilih submenu **Stok**.
+5. Lihat daftar barang yang tersedia.
+6. Cek informasi stok (Nama, Toko, Tanggal, Waktu, Stok Akhir).
+7. Pilih barang jika ingin melihat detail stok.
+
+## Stok - Detail Stok
+
+Halaman ini digunakan untuk melihat dan mengelola informasi detail suatu produk, termasuk varian produk, jenis pencatatan stok, jumlah penambahan stok, serta catatan terkait perubahan stok.
+
+1. Buka menu **Kelola Produk** pada aplikasi.
+2. Pilih menu **Stok**.
+3. Pilih salah satu produk dari **List Stok**.
+4. Sistem menampilkan **Detail Stok Produk**.
+5. Pilih varian produk.
+6. Tentukan jenis opname stok.
+7. Masukkan jumlah penambahan stok.
+8. Tambahkan catatan (opsional).
+9. Simpan perubahan; sistem memperbarui data stok produk.
+
+## Stok - Filter Stok Produk
+
+1. Klik menu **Produk**.
+2. Klik menu **Stok**, maka akan menampilkan halaman stok.
+3. Pada halaman stok, klik tombol **Filter**, maka sistem akan menampilkan form filter stok.
+4. Isi form filter sesuai dengan kebutuhan, kemudian klik tombol **Apply Filter** untuk menggunakan filter.
+
+## Stok - Kelola Stok (Opname)
+
+Halaman ini digunakan untuk melakukan penyesuaian jumlah stok berdasarkan kondisi stok aktual. Anda dapat memilih produk, menentukan jenis opname stok, memasukkan jumlah perubahan stok, serta memberikan catatan sebagai informasi tambahan.
+
+1. Buka menu **Kelola Produk** pada aplikasi.
+2. Pilih menu **Stok**.
+3. Pilih fitur **Kelola Stok (Opname)**.
+4. Pilih **Produk Varian**.
+5. Tentukan **Jenis Opname Stok**.
+6. Masukkan **Jumlah Penambahan Stok**.
+7. Isi **Catatan** (opsional).
+8. Simpan data opname.
+9. Sistem memperbarui jumlah stok produk.
+
+## Stok - Kelola Stok (Transfer)
+
+Halaman ini digunakan untuk memindahkan stok barang dari satu produk ke produk tujuan lainnya. Anda dapat menentukan produk asal, produk tujuan, jumlah stok yang dipindahkan, serta menambahkan catatan terkait proses transfer.
+
+1. Buka menu **Kelola Produk** pada aplikasi.
+2. Pilih menu **Stok**.
+3. Pilih fitur **Kelola Stok (Transfer)**.
+4. Pilih **Produk Varian Asal**.
+5. Pilih **Produk Varian Tujuan**.
+6. Masukkan **Jumlah Transfer Stok**.
+7. Tambahkan **Catatan** (opsional).
+8. Simpan data transfer.
+9. Sistem mengurangi stok produk asal dan menambahkan stok produk tujuan.
+
+## Supplier - Manage Supplier
+
+Halaman ini digunakan untuk mengelola data supplier yang digunakan dalam operasional bisnis, termasuk memilih supplier untuk produk dan melihat daftar supplier yang tersedia.
+
+1. Buka menu **Kelola Produk** pada aplikasi.
+2. Pilih menu **Stok**.
+3. Pilih fitur **Kelola Stok**.
+4. Lihat daftar supplier yang tersedia.
+5. Gunakan fitur pencarian untuk mencari supplier tertentu.
+6. Pilih supplier yang diinginkan.
+7. Sistem mengisi data supplier pada form sebelumnya.
+8. Lanjutkan proses penyimpanan data.

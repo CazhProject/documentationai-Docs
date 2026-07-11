@@ -1,34 +1,160 @@
 ---
-title: Saldo Toko & Kartu CARDS
-description: Saldo toko, Cazhbox partner, dan integrasi kartu CARDS (aktivasi, isi, tarik, cek).
+title: "Saldo dan Kartu"
+description: "Panduan pengelolaan saldo toko dan Cazhbox (top up, pindah saldo, tarik saldo, riwayat transaksi) serta transaksi kartu anggota (aktivasi, isi kartu, tarik saldo kartu) di CazhPOS."
 ---
 
-## Saldo Toko
+## Saldo Toko - List Saldo Toko
 
-Menu **Saldo Toko**:
+Halaman ini digunakan untuk melihat informasi [saldo toko](/referensi/glosarium#saldo-toko) yang tersedia serta memantau riwayat transaksi saldo untuk kebutuhan operasional dan pengelolaan keuangan toko.
 
-- **List Saldo Toko** — saldo tiap toko
-- **Isi Saldo**
-- **Pindah ke Cazhbox** — pindahkan saldo toko ke [Cazhbox](/referensi/glosarium#cazhbox) partner
-- **Isi / Tarik Saldo Cazhbox Partner**
-- **Riwayat Transaksi Cazhbox**
+1. Buka menu **Saldo Toko** pada aplikasi.
+2. Sistem menampilkan halaman **List Saldo Toko**.
+3. Lihat informasi saldo toko yang tersedia saat ini.
+4. Sistem menampilkan ringkasan saldo beserta informasi pemasukan dan pengeluaran saldo.
+5. Lihat daftar riwayat transaksi saldo.
+6. Scroll untuk melihat riwayat transaksi lainnya.
+7. Sistem menampilkan detail transaksi seperti tanggal, jenis transaksi, dan nominal transaksi.
 
-## Kartu CARDS di CazhPOS
+## Saldo Toko - Isi Saldo (Top Up)
 
-Kasir dapat melayani [kartu CARDS](/referensi/glosarium#kartu-kartu-cards) milik siswa/pelanggan:
+Halaman ini digunakan untuk memilih metode pembayaran dan melakukan top up saldo toko sehingga saldo dapat digunakan untuk kebutuhan transaksi dan operasional bisnis.
 
-### Aktivasi Kartu
+1. Buka menu **Saldo Toko** pada aplikasi (dapat diakses juga melalui menu **Profile** atau sidebar aplikasi).
+2. Sistem menampilkan halaman **List Saldo Toko** beserta daftar metode pembayaran.
+3. Tekan tombol **+Top Up** pada toko yang ingin dituju.
+4. Pilih bank tujuan transfer (BRI, BNI, atau Mandiri).
+5. Sistem menampilkan detail pembayaran:
+   - Nama Bank
+   - Nomor Virtual Account
+   - Nama penerima/akun
+6. Salin nomor Virtual Account melalui fitur **Copy VA**.
+7. Lakukan pembayaran sesuai nominal top up dan ikuti instruksi pembayaran.
+8. Sistem memproses transaksi top up.
+9. Setelah pembayaran berhasil diverifikasi, saldo toko bertambah secara otomatis.
 
-Aktifkan kartu baru langsung dari CazhPOS. Orang tua juga bisa mengaktivasi lewat [CARDS Parents](/cards-parent/tentang-cards-parent).
+## Saldo Toko - Pindah Ke Cazhbox
 
-### Isi Kartu (Top-Up)
+Halaman ini digunakan untuk memindahkan saldo dari Saldo Toko ke [Cazhbox](/referensi/glosarium#cazhbox) untuk kebutuhan pengelolaan dana dan transaksi dalam ekosistem aplikasi.
 
-Isi saldo kartu di kasir — alternatif dari top-up mandiri orang tua via aplikasi atau [top-up massal oleh sekolah](/isi-saldo).
+1. Buka menu **Saldo Toko** pada aplikasi.
+2. Sistem menampilkan halaman **List Saldo Toko**.
+3. Tekan tombol **Transfer ke Cazhbox**.
+4. Sistem menampilkan halaman **Saldo Transfer**.
+5. Masukkan **Jumlah Pindah** pada field yang tersedia.
+6. Sistem memvalidasi nominal yang diinput.
+7. Tekan tombol **Konfirmasi**.
+8. Sistem memproses pemindahan saldo.
+9. Jika transaksi berhasil, saldo toko berkurang dan saldo Cazhbox bertambah sesuai nominal yang dipindahkan.
+10. Sistem menampilkan notifikasi berhasil.
 
-### Tarik Saldo Kartu
+## Saldo Toko - Isi Saldo Cazhbox Partner
 
-Tarik saldo kartu di kasir.
+Halaman ini digunakan untuk melakukan top up saldo Cazhbox Partner melalui metode transfer yang tersedia sehingga saldo dapat digunakan untuk kebutuhan transaksi dan layanan partner.
 
-### Cek Kartu
+1. Buka menu **Saldo Toko** pada aplikasi.
+2. Sistem menampilkan informasi saldo yang tersedia.
+3. Tekan tombol **+Top Up** pada saldo Cazhbox Mitra.
+4. Sistem menampilkan halaman **Transfer Saldo**.
+5. Pilih metode pembayaran atau bank yang tersedia.
+6. Sistem menampilkan informasi transfer, meliputi:
+   - Nama Bank
+   - Nomor VA
+   - Nama Pemilik Akun
+7. Salin nomor VA jika diperlukan.
+8. Lakukan transfer sesuai nominal yang diinginkan.
+9. Sistem melakukan verifikasi pembayaran.
+10. Setelah pembayaran berhasil diverifikasi, saldo Cazhbox Partner bertambah secara otomatis.
+11. Sistem menampilkan notifikasi transaksi berhasil.
 
-Menu **Lainnya → Cek Kartu** → isi nomor kartu → saldo terakhir tampil.
+## Saldo Toko - Tarik Saldo Cazhbox Partner
+
+Halaman ini digunakan untuk menarik saldo dari Cazhbox Partner ke rekening bank yang telah terdaftar untuk kebutuhan pencairan dana.
+
+1. Buka menu **Saldo Toko** pada aplikasi.
+2. Sistem menampilkan informasi saldo yang tersedia.
+3. Tekan tombol **Tarik Saldo**.
+4. Masukkan nominal saldo yang ingin ditarik.
+5. Pilih rekening tujuan yang telah terdaftar.
+6. Sistem menampilkan informasi rekening tujuan.
+7. Tekan tombol **Tarik Saldo**.
+8. Sistem melakukan validasi saldo dan data rekening.
+9. Jika valid, sistem memproses permintaan penarikan saldo.
+10. Sistem menampilkan notifikasi bahwa permintaan penarikan berhasil dibuat.
+
+### Rekening Tujuan Pencairan
+
+Menu **Rekening** pada Saldo Toko digunakan untuk menampilkan dan mengelola rekening tujuan pencairan dana (withdrawal) dari Cazhbox Partner. Rekening yang terdaftar akan digunakan sebagai tujuan transfer saat Anda melakukan penarikan saldo dari Cazhbox.
+
+1. Buka menu **Rekening** pada menu Saldo Toko.
+2. Sistem menampilkan halaman **Daftar Rekening**.
+3. Lihat daftar rekening yang terdaftar.
+4. Pilih rekening yang akan digunakan untuk menerima dana dari Cazhbox Partner.
+5. Sistem menyimpan rekening yang dipilih sebagai rekening aktif.
+6. Sistem menampilkan notifikasi bahwa rekening berhasil dipilih.
+7. Rekening siap digunakan sebagai tujuan transfer dana hasil penarikan dari Cazhbox Partner.
+
+## Saldo Toko - Riwayat Transaksi Cazhbox
+
+Halaman ini menampilkan daftar riwayat transaksi Cazhbox yang terkait dengan saldo toko. Anda dapat memantau seluruh aktivitas transaksi, termasuk pemasukan, pengeluaran, transfer saldo, serta perubahan saldo yang terjadi pada akun toko.
+
+1. Buka menu **Saldo Toko** pada aplikasi.
+2. Sistem menampilkan informasi saldo yang tersedia.
+3. Pilih menu **Riwayat Transaksi Cazhbox**.
+4. Sistem mengambil data transaksi Cazhbox yang terkait dengan toko.
+5. Sistem menampilkan daftar transaksi secara kronologis (transaksi terbaru ditampilkan terlebih dahulu).
+6. Scroll ke bawah untuk melihat riwayat transaksi lainnya.
+
+## Aktivasi Kartu
+
+Halaman ini digunakan untuk mengaktifkan [kartu anggota (CARDS)](/referensi/glosarium#kartu-kartu-cards) yang dimiliki pelanggan. Anda dapat memasukkan nomor kartu, melengkapi informasi anggota, kemudian melakukan proses aktivasi kartu.
+
+1. Buka menu **Lainnya**.
+2. Pilih menu **Aktivasi Kartu**.
+3. Sistem menampilkan halaman **Aktivasi Kartu Anggota**.
+4. Masukkan **Nomor Kartu** atau lakukan scan kartu.
+5. Tekan tombol **Cek Kartu**.
+6. Sistem menampilkan informasi kartu anggota.
+7. Isi **Nomor Telepon Anggota**.
+8. Isi **Nama Anggota** (opsional).
+9. Isi **Email Anggota** (opsional).
+10. Tekan tombol **Aktivasi**.
+11. Sistem memproses aktivasi kartu.
+12. Sistem menampilkan notifikasi bahwa kartu berhasil diaktifkan.
+
+## Isi Kartu
+
+Halaman ini digunakan untuk melakukan pengisian saldo pada kartu anggota. Anda dapat memasukkan nomor kartu, memilih dompet, menentukan nominal isi kartu, kemudian mengonfirmasi transaksi menggunakan PIN.
+
+1. Buka menu **Lainnya**.
+2. Pilih menu **Isi Kartu**.
+3. Sistem menampilkan halaman **Isi Kartu**.
+4. Masukkan **Nomor Kartu** atau lakukan scan kartu.
+5. Tekan tombol **Cek Kartu**.
+6. Sistem menampilkan informasi kartu anggota.
+7. Pilih **Dompet** yang akan digunakan.
+8. Isi **Jumlah Isi Kartu**.
+9. Sistem menghitung dan menampilkan **Biaya Isi Kartu**.
+10. Tekan tombol **Isi Kartu**.
+11. Sistem menampilkan halaman **Masukkan PIN Anda**.
+12. Masukkan **PIN**.
+13. Sistem memproses transaksi isi kartu.
+14. Sistem menampilkan notifikasi bahwa isi kartu berhasil.
+
+## Tarik Saldo Kartu
+
+Halaman ini digunakan untuk melakukan penarikan saldo dari kartu anggota. Anda dapat memasukkan nomor kartu, memilih dompet, menentukan nominal penarikan, kemudian mengonfirmasi transaksi menggunakan PIN.
+
+1. Buka menu **Lainnya**.
+2. Pilih menu **Tarik Saldo Kartu**.
+3. Sistem menampilkan halaman **Tarik Saldo Kartu**.
+4. Masukkan **Nomor Kartu** atau lakukan scan kartu.
+5. Tekan tombol **Cek Kartu**.
+6. Sistem menampilkan informasi kartu anggota.
+7. Pilih **Dompet** yang akan digunakan.
+8. Isi **Jumlah Penarikan**.
+9. Isi **Catatan Penarikan** (opsional).
+10. Tekan tombol **Tarik Saldo Kartu**.
+11. Sistem menampilkan halaman **Masukkan PIN Anda**.
+12. Masukkan **PIN**.
+13. Sistem memproses transaksi penarikan saldo.
+14. Sistem menampilkan notifikasi bahwa tarik saldo kartu berhasil.

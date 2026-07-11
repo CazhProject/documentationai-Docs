@@ -1,22 +1,130 @@
 ---
-title: Toko & Karyawan
-description: Kelola toko/cabang dan data karyawan.
+title: "Toko dan Karyawan"
+description: "Panduan mengelola daftar toko (lihat, tambah, hapus, detail) serta data karyawan (lihat, tambah, hapus, detail) di CazhPOS."
 ---
 
-## Toko
+## Toko - List Toko
 
-Dari **Beranda → Kelola Toko**:
+Halaman ini digunakan untuk melihat dan mengelola daftar toko yang terdaftar pada akun, termasuk memantau status toko dan menghapus toko yang tidak digunakan.
 
-- **List Toko** — semua toko/cabang partner
-- **Detail Toko** — klik salah satu toko untuk mengelola datanya
-- **Tambah Toko** dan **Hapus Toko**
+1. Buka menu **Kelola Toko** pada aplikasi.
+2. Sistem menampilkan daftar seluruh toko yang terdaftar pada akun.
+3. Lihat informasi setiap toko yang meliputi:
+   - Nama Toko
+   - Status Toko
+4. Pilih salah satu toko untuk melihat informasi lebih lanjut.
+5. Jika diperlukan, pilih aksi **Hapus** pada toko yang dipilih.
+6. Sistem menampilkan konfirmasi penghapusan toko.
+7. Konfirmasi penghapusan.
+8. Sistem menghapus toko dari daftar dan memperbarui data yang ditampilkan.
 
-Pengaturan lanjutan toko (jam operasional, dsb.) juga tersedia di [Partner Dashboard — Toko](/partner-dashboard/toko).
+## Toko - Hapus Toko
 
-## Karyawan
+Halaman ini digunakan untuk mengonfirmasi tindakan penghapusan toko yang dipilih. Sistem akan meminta persetujuan sebelum toko dihapus secara permanen dari daftar toko.
 
-Menu **Karyawan**:
+1. Buka menu **Kelola Toko** pada aplikasi.
+2. Sistem menampilkan daftar seluruh toko yang terdaftar pada akun.
+3. Pilih **Nama Toko** yang ingin dihapus.
+4. Tekan tombol **Hapus Toko**.
+5. Sistem menampilkan pesan konfirmasi "Yakin ingin menghapus toko ini?".
+6. Jika memilih **Konfirmasi Hapus**:
+   - Sistem menghapus data toko dari akun pengguna.
+   - Sistem memperbarui daftar toko yang tersedia.
+   - Sistem menampilkan notifikasi bahwa toko berhasil dihapus.
+7. Sistem mengarahkan kembali ke halaman **Daftar Toko**.
 
-- **List Karyawan** dan **Detail Karyawan**
-- **Tambah Karyawan** — isi form data karyawan
-- **Hapus Karyawan**
+## Toko - Tambah Toko
+
+Halaman ini digunakan untuk menambahkan data toko baru ke dalam aplikasi. Anda diwajibkan mengisi informasi toko yang akan digunakan dalam operasional transaksi dan pengelolaan bisnis.
+
+1. Buka menu **Kelola Toko** pada aplikasi.
+2. Sistem menampilkan daftar toko yang telah terdaftar.
+3. Tekan tombol **Tambah Toko (+)**.
+4. Sistem menampilkan halaman **Form Tambah Toko**.
+5. Isi data toko yang diperlukan:
+   - Unggah Media
+   - Nama Toko
+   - Kategori Toko
+   - Alamat Toko
+   - Nomor Telepon Toko
+   - Penanggung Jawab
+   - No. Telepon Penanggung Jawab
+6. Atur fitur **Pemesanan Manual** sesuai kebutuhan, termasuk **Info Catatan Struk**.
+7. Tekan tombol **Tambah Baru**.
+8. Sistem melakukan validasi data yang diinput.
+9. Jika validasi berhasil, sistem menampilkan notifikasi bahwa toko berhasil ditambahkan.
+
+## Toko - Detail
+
+Fitur untuk mengelola data detail toko. Langkahnya sebagai berikut:
+
+1. Klik menu **Beranda**.
+2. Klik menu **Kelola Toko**.
+3. Klik salah satu **Toko**, maka akan menampilkan halaman detail toko yang dipilih.
+4. Anda dapat mengelola data toko tersebut.
+
+## Karyawan - List Karyawan
+
+Halaman ini menampilkan daftar seluruh karyawan yang terdaftar pada toko. Anda dapat melihat informasi karyawan, mencari karyawan tertentu, serta memilih karyawan untuk melihat atau mengelola data lebih lanjut.
+
+1. Pilih menu **Karyawan** pada halaman dashboard.
+2. Sistem menampilkan halaman **List Karyawan**.
+3. Sistem mengambil dan menampilkan seluruh data karyawan yang terdaftar pada toko.
+4. Lihat informasi karyawan yang tersedia pada daftar.
+5. Gunakan fitur **Pencarian** untuk menemukan karyawan tertentu.
+6. Sistem menampilkan hasil pencarian sesuai kata kunci yang dimasukkan.
+7. Pilih salah satu karyawan dari daftar.
+8. Sistem membuka halaman detail karyawan yang dipilih untuk proses pengelolaan lebih lanjut.
+
+## Karyawan - Hapus Karyawan
+
+Halaman ini digunakan untuk menghapus data karyawan yang sudah tidak aktif atau tidak lagi bekerja pada toko, sehingga data karyawan tetap akurat dan terkelola dengan baik.
+
+1. Pilih menu **Karyawan** pada halaman dashboard.
+2. Sistem menampilkan halaman **List Karyawan**.
+3. Pilih salah satu data karyawan dari daftar karyawan.
+4. Sistem menampilkan halaman **Detail Karyawan**.
+5. Tekan ikon **Hapus** pada halaman detail karyawan.
+6. Sistem menampilkan pop-up konfirmasi penghapusan karyawan.
+7. Pilih **Konfirmasi Hapus** untuk melanjutkan proses penghapusan.
+8. Sistem menghapus data karyawan dari daftar karyawan.
+9. Sistem mengarahkan Anda kembali ke halaman List Karyawan dan memperbarui data yang ditampilkan.
+
+## Karyawan - Tambah Karyawan
+
+Halaman ini digunakan untuk menambahkan data karyawan baru ke dalam sistem agar karyawan dapat terdaftar dan memperoleh akses sesuai peran yang diberikan.
+
+1. Pilih menu **Karyawan** pada halaman dashboard.
+2. Sistem menampilkan halaman **List Karyawan**.
+3. Tekan tombol **Tambah Karyawan (+)**.
+4. Sistem menampilkan halaman **Tambah Karyawan Baru**.
+5. Isi data karyawan yang diperlukan, seperti:
+   - Nama Karyawan
+   - Nomor Telepon
+   - Email
+   - Tambah ke Toko
+   - Judul Pekerjaan
+6. Tekan tombol **Tambah Karyawan**.
+7. Sistem melakukan validasi data yang diinput.
+8. Jika data valid, sistem menyimpan data karyawan baru.
+9. Sistem menampilkan notifikasi berhasil dan mengarahkan Anda kembali ke halaman daftar karyawan.
+10. Data karyawan baru muncul pada **List Karyawan**.
+
+## Karyawan - Detail Karyawan
+
+Halaman ini digunakan untuk melihat dan mengelola informasi detail karyawan yang telah terdaftar dalam sistem.
+
+1. Buka halaman **List Karyawan**.
+2. Pilih salah satu data karyawan pada daftar.
+3. Sistem menampilkan halaman **Detail Karyawan**.
+4. Lihat informasi lengkap karyawan, seperti:
+   - Nama Karyawan
+   - Nomor Telepon
+   - Email
+   - Tambah ke Toko
+   - Posisi
+5. Lakukan perubahan data apabila diperlukan.
+6. Tekan tombol **Simpan** untuk menyimpan perubahan data.
+7. Sistem melakukan validasi data yang diinput.
+8. Jika validasi berhasil, sistem menyimpan perubahan dan menampilkan notifikasi sukses.
+9. Sistem mengarahkan Anda kembali ke daftar karyawan dengan data yang telah diperbarui.

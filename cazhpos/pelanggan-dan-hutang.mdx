@@ -1,18 +1,84 @@
 ---
-title: Pelanggan & Hutang
-description: Data pelanggan, pembelian, dan pembayaran hutang.
+title: "Pelanggan dan Hutang"
+description: "Panduan mengelola data pelanggan (lihat, tambah, detail) serta memantau pembayaran hutang dan pembelian pelanggan di CazhPOS."
 ---
 
-## Pelanggan
+## List Pelanggan
 
-- **List Pelanggan** dan **Tambah Pelanggan**
-- **Detail Pelanggan** — klik pelanggan untuk melihat informasi dan riwayat transaksinya
+Halaman ini digunakan untuk melihat dan mencari data pelanggan yang telah terdaftar dengan lebih cepat berdasarkan nama pelanggan, nomor HP, atau nomor kartu pelanggan.
 
-Data pelanggan juga bisa di-import/export lewat [Partner Dashboard — Pelanggan](/partner-dashboard/pelanggan).
+1. Buka menu **Pelanggan**.
+2. Sistem menampilkan halaman **List Pelanggan**.
+3. Lihat daftar pelanggan yang telah terdaftar.
+4. Gunakan fitur **Search Pelanggan** untuk mencari data pelanggan.
+5. Masukkan kata kunci berdasarkan:
+   - Nama Pelanggan
+   - Nomor Kartu
+6. Sistem menampilkan hasil pencarian sesuai kata kunci yang dimasukkan.
+7. Pilih pelanggan yang diinginkan untuk melihat informasi lebih lanjut.
 
-## Hutang
+## Tambah Pelanggan
 
-Transaksi [hutang/kasbon](/referensi/glosarium#hutang-kasbon-pelanggan) pelanggan tercatat per pelanggan:
+Halaman ini digunakan untuk menambahkan data pelanggan baru ke dalam sistem untuk keperluan transaksi, membership, dan pengelolaan data pelanggan.
 
-- **List Pembayaran Hutang** — riwayat pelunasan (juga tersedia sebagai [laporan](/cazhpos/laporan))
-- Jika pelanggan adalah siswa, orang tuanya menerima **notifikasi hutang** di [CARDS Parents](/cards-parent/tentang-cards-parent)
+1. Tekan tombol **+Tambah** pada halaman List Pelanggan.
+2. Sistem menampilkan **Form Tambah Pelanggan**.
+3. Isi data pelanggan:
+   - Nama
+   - No HP
+   - Email
+   - Alamat
+   - Tanggal Lahir
+   - No Kartu Membership (opsional)
+4. Tekan tombol **Tambah Baru**.
+5. Sistem melakukan validasi data yang diinput.
+6. Sistem menyimpan data pelanggan baru.
+7. Sistem menampilkan notifikasi "Pelanggan berhasil ditambahkan".
+8. Data pelanggan baru muncul pada daftar pelanggan.
+
+## Detail Pelanggan
+
+Halaman ini menampilkan informasi lengkap mengenai data pelanggan serta riwayat transaksi yang pernah dilakukan. Anda dapat melihat profil pelanggan, daftar transaksi pelanggan, hingga detail transaksi secara lebih rinci.
+
+Melalui menu Pelanggan:
+
+1. Klik menu **Pelanggan**.
+2. Klik salah satu **Pelanggan**, maka akan menampilkan halaman detail.
+3. Pada halaman detail akan ditampilkan informasi pelanggan dan transaksi pelanggan.
+
+Melalui menu Pembelian Pelanggan (Laporan):
+
+1. Buka menu **Pembelian Pelanggan**.
+2. Pilih salah satu pelanggan.
+3. Sistem menampilkan **Detail Pelanggan**.
+4. Lihat **Data Pelanggan**.
+5. Pilih **List Transaksi Pelanggan**.
+6. Sistem menampilkan riwayat transaksi pelanggan.
+7. Pilih salah satu transaksi.
+8. Sistem menampilkan **Detail Transaksi Pelanggan**.
+
+## List Pembayaran Hutang
+
+Halaman ini digunakan untuk menampilkan dan memantau daftar pembayaran hutang dalam sistem. Anda dapat melihat informasi transaksi hutang serta melakukan penyaringan data berdasarkan toko, karyawan, dan periode waktu tertentu untuk mempermudah pengecekan pembayaran. Untuk hutang siswa yang dibayarkan oleh orang tua, lihat panduan [CARDS Parent](/cards-parent/lainnya).
+
+1. Buka menu **Pembayaran Hutang**.
+2. Sistem menampilkan daftar pembayaran hutang.
+3. Pilih filter pembayaran hutang.
+4. Tentukan **Toko/Karyawan/Interval** (maksimal 31 hari).
+5. Pilih **Periode Awal** dan **Periode Akhir**.
+6. Tekan tombol **Terapkan Filter**.
+7. Sistem memproses filter.
+8. Sistem menampilkan data pembayaran hutang sesuai filter yang dipilih.
+
+## List Pembelian Pelanggan
+
+Halaman ini menampilkan daftar transaksi pembelian yang dilakukan oleh pelanggan. Anda dapat melihat riwayat pembelian serta melakukan penyaringan data berdasarkan toko, karyawan, dan periode waktu tertentu untuk mempermudah monitoring transaksi pelanggan.
+
+1. Buka menu **Pembelian Pelanggan**.
+2. Sistem menampilkan daftar transaksi pembelian pelanggan.
+3. Pilih fitur filter pembelian pelanggan.
+4. Tentukan **Toko/Interval** (maksimal 31 hari).
+5. Pilih **Periode Awal** dan **Periode Akhir**.
+6. Tekan tombol **Terapkan Filter**.
+7. Sistem memproses filter transaksi.
+8. Sistem menampilkan data pembelian pelanggan sesuai kriteria yang dipilih.
