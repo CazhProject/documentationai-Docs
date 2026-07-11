@@ -19,6 +19,12 @@ Lihat data log presensi kegiatan untuk setiap siswa, guru, dan staff.
   <Step title="Buka Log">Klik submenu **Log**. Sistem menampilkan **Data Log Presensi Kegiatan**.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel log presensi kegiatan memuat kolom: **Tanggal**, **Instansi**, **Kegiatan**, **Nama**, **No Kartu**, **Anggota** (tipe anggota), **Kelas**, **Jam Datang**, dan **Jam Pulang**.
+
+Data dapat disaring dengan filter: **Instansi**, **Tipe Anggota**, **Tanggal**, **Kegiatan**, **Tingkat**, **Kelas**, **Jenis Guru**, dan **Jenis Staff**. Data dapat diexport ke Excel (file "Log Presensi Kegiatan").
+
 ### Edit Log Presensi Kegiatan
 
 Ubah data log presensi kegiatan untuk setiap siswa, guru, dan staff.
@@ -54,6 +60,10 @@ Lihat data rekap kegiatan per siswa.
   <Step title="Lihat detail (opsional)">Klik tombol **>** pada salah satu data siswa. Sistem menampilkan rekap data kegiatan siswa tersebut.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel rekap kegiatan siswa memuat kolom: **Bulan - Tahun**, **Instansi**, **Nama**, **No Kartu**, **Kelas**, **Kegiatan**, serta jumlah **Hadir**, **Sakit**, **Izin**, dan **Alfa**. Data dapat disaring dengan filter **Instansi**, **Bulan**, **Tahun**, **Tingkat**, dan **Kelas**, serta diexport ke Excel.
+
 ## Rekap Kegiatan Guru & Staff
 
 Lihat data rekap kegiatan per guru dan staff.
@@ -73,6 +83,10 @@ Lihat dan akses pengaturan presensi kegiatan yang telah dibuat.
   <Step title="Buka Presensi Kegiatan">Pilih submenu **Presensi Kegiatan**.</Step>
   <Step title="Buka Pengaturan">Klik submenu **Pengaturan**. Sistem menampilkan list pengaturan kegiatan yang telah dibuat.</Step>
 </Steps>
+
+### Informasi yang ditampilkan
+
+Tabel pengaturan kegiatan memuat kolom: **Instansi**, **Nama Kegiatan**, **Waktu Masuk**, **Waktu Pulang**, **Jumlah Instansi**, **Link** (slug halaman presensi), **Tipe** (Terjadwal / Mengulang Hari), **Tag**, **Kamar**, **Dibuat**, **Aktif Sampai**, dan **Status**.
 
 ### Edit Pengaturan Kegiatan
 
@@ -108,6 +122,24 @@ Buat pengaturan kegiatan baru.
   <Step title="Buka form tambah">Klik tombol **Tambah Kegiatan**.</Step>
   <Step title="Isi dan simpan">Isi form **Tambah Kegiatan**, lalu klik tombol **Simpan**.</Step>
 </Steps>
+
+### Isian formulir Tambah/Edit Kegiatan
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Instansi | Ya | Dapat memilih lebih dari satu instansi (minimal 1) |
+| Nama Kegiatan | Ya | Maksimal 255 karakter |
+| Tipe kegiatan | Ya | **Terjadwal** (satu tanggal tertentu) atau **Mengulang Hari** (pilih hari-hari yang berulang) |
+| Tanggal kegiatan | Ya, jika Terjadwal | Format tanggal (untuk kegiatan tidak berulang) |
+| Hari berulang | Ya, jika Mengulang Hari | Pilih minimal satu hari |
+| Waktu Masuk (mulai & selesai) | Ya | Waktu selesai harus setelah waktu mulai |
+| Waktu Pulang (mulai & selesai) | Tidak | Harus diisi berpasangan; waktu mulai pulang harus setelah waktu masuk selesai |
+| Status | Ya | Aktif / Tidak Aktif |
+| Tipe Anggota | Ya | Siswa, Guru, dan/atau Staff (minimal satu) |
+| Tingkat / Kelas / Jurusan | Tidak | Hanya berlaku jika tipe anggota mencakup Siswa |
+| Tag | Tidak | Membatasi kegiatan hanya untuk anggota dengan tag tertentu |
+| Kamar | Tidak | Membatasi kegiatan berdasarkan kamar |
+| Suara (voice over) | Ya | Jenis suara notifikasi presensi |
 
 <Callout kind="info">
 Pada form Tambah Kegiatan, field instansi dapat diisi lebih dari satu [instansi](/referensi/glosarium#instansi), dan terdapat field **tag** yang dapat digunakan jika ingin membuat kegiatan hanya dengan data tertentu.

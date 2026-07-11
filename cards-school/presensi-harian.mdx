@@ -9,6 +9,8 @@ Menu Presensi Harian pada modul Akademik digunakan admin sekolah untuk mengelola
 Kehadiran siswa dapat dipantau orang tua melalui aplikasi CARDS Parent — lihat [Akademik di CARDS Parent](/cards-parent/akademik).
 </Callout>
 
+Status presensi harian yang dikenali sistem: **Hadir**, **Izin**, **Sakit**, **Alfa**, dan **Terlambat**.
+
 ## Link Presensi Harian
 
 Halaman presensi harian dapat diakses melalui link dan menampilkan daftar anggota yang telah melakukan presensi serta QR presensi.
@@ -35,6 +37,12 @@ Lihat data log presensi harian untuk setiap siswa, guru, dan staff.
   <Step title="Buka Log">Klik submenu **Log**. Sistem menampilkan **Data Log Presensi Harian**.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel log presensi harian memuat kolom: **Tanggal**, **Instansi**, **Nama**, **No Kartu**, **Anggota** (tipe anggota), **Jam Datang**, **Jam Pulang**, dan **Shift**.
+
+Data dapat disaring dengan filter: **Instansi**, **Tipe Anggota** (Siswa / Guru / Staff), **Tanggal Mulai**, **Tanggal Akhir**, **Tingkat**, **Kelas**, **Jenis Guru**, dan **Jenis Staff**. Data dapat diexport ke Excel (file "Log Presensi Harian").
+
 ### Edit Log Presensi Harian
 
 Ubah data log presensi harian untuk setiap siswa, guru, dan staff.
@@ -45,6 +53,15 @@ Ubah data log presensi harian untuk setiap siswa, guru, dan staff.
   <Step title="Isi form">Isi form edit log presensi harian.</Step>
   <Step title="Simpan">Klik **Simpan**. Sistem menyimpan data.</Step>
 </Steps>
+
+### Isian formulir edit log
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Jam Datang | Tidak | Waktu presensi datang; dapat dikosongkan |
+| Jam Pulang | Tidak | Waktu presensi pulang; dapat dikosongkan |
+| Keterangan | Tidak | Status/keterangan presensi |
+| Catatan | Tidak | Catatan tambahan |
 
 <Callout kind="alert">
 Mengubah log presensi secara manual akan memengaruhi data kehadiran anggota terkait. Pastikan perubahan sudah benar sebelum menyimpan.
@@ -85,6 +102,12 @@ Lihat data rekap presensi harian setiap siswa.
     - Detail data rekap → menambah manual data rekap.
   </Step>
 </Steps>
+
+### Informasi yang ditampilkan
+
+Tabel rekap siswa memuat kolom: **Bulan - Tahun**, **Instansi**, **Nama**, **No Kartu**, **Kelas**, serta jumlah **Hadir**, **Izin**, **Sakit**, **Alfa**, dan **Terlambat** pada periode terpilih.
+
+Data dapat disaring dengan filter: **Instansi**, **Bulan**, **Tahun** (tahun berjalan hingga 3 tahun ke belakang), **Tingkat**, dan **Kelas**. Jika bulan/tahun tidak dipilih, sistem menampilkan rekap bulan dan tahun berjalan.
 
 ### Detail Rekap Siswa
 

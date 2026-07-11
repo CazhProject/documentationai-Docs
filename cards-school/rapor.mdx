@@ -15,6 +15,12 @@ Lihat daftar grup rapor siswa berdasarkan kelas.
   <Step title="Lihat grup rapor">Sistem menampilkan **Grup Rapor**.</Step>
 </Steps>
 
+### Informasi yang ditampilkan
+
+Tabel grup rapor memuat kolom: **Tanggal Buat**, **Oleh** (pembuat), **Instansi**, **Angkatan**, **Tahun Ajaran**, **Semester**, **Tingkat**, **Kelas**, **Jurusan**, dan **Jumlah Upload**.
+
+Data dapat disaring dengan filter: **Instansi**, **Angkatan (Tahun Masuk)**, **Tahun Ajaran Pendidikan**, **Tingkat**, **Kelas**, dan **Jurusan**.
+
 ## Detail Grup Rapor
 
 Lihat siswa-siswa yang tergabung dalam sebuah grup rapor.
@@ -24,6 +30,14 @@ Lihat siswa-siswa yang tergabung dalam sebuah grup rapor.
   <Step title="Buka Rapor">Klik submenu **Rapor**. Sistem menampilkan **Grup Rapor**.</Step>
   <Step title="Buka detail">Klik aksi **Detail**. Sistem menampilkan list siswa yang tergabung dalam grup rapor tersebut.</Step>
 </Steps>
+
+### Informasi yang ditampilkan
+
+Tabel detail grup rapor memuat kolom: **Nama** siswa, **File Upload** (file rapor), **Tampil Saat Ada Tagihan?**, dan **Catatan** (alasan bila rapor tidak ditampilkan).
+
+<Callout kind="info">
+File rapor yang diupload per siswa harus berformat **PDF** dengan ukuran maksimal sekitar 6 MB per file. Kolom catatan hanya dapat diisi ketika opsi "Tampil Saat Ada Tagihan" dinonaktifkan.
+</Callout>
 
 ## Edit Grup Rapor
 
@@ -35,6 +49,10 @@ Ubah grup rapor siswa berdasarkan tahun ajaran dan semester.
   <Step title="Buka form edit">Klik aksi **Edit**. Sistem menampilkan formulir.</Step>
   <Step title="Simpan">Input formulir, lalu klik tombol **Simpan Perubahan**.</Step>
 </Steps>
+
+<Callout kind="info">
+Pada form edit, hanya **Tahun Ajaran** dan **Semester** yang dapat diubah (keduanya wajib diisi). Instansi, tingkat, kelas, dan jurusan grup tidak dapat diubah setelah grup dibuat.
+</Callout>
 
 ## Hapus Grup Rapor
 
@@ -61,6 +79,18 @@ Buat grup rapor siswa baru berdasarkan data yang diperlukan.
   <Step title="Buka form tambah">Klik tombol **Tambah Grup Rapor**.</Step>
   <Step title="Isi dan simpan">Isi formulir **Tambah Grup Rapor**, lalu klik tombol **Simpan**.</Step>
 </Steps>
+
+### Isian formulir
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Instansi | Ya | Instansi tempat grup rapor dibuat |
+| Angkatan (Tahun Masuk) | Ya | Tahun ajaran masuk siswa |
+| Tahun Ajaran | Ya | Tahun ajaran periode rapor |
+| Semester | Ya | Semester periode rapor |
+| Tingkat | Ya | Tingkat kelas |
+| Kelas | Ya | Kelas |
+| Jurusan | Ya | Jurusan |
 
 ## Hapus Siswa dari Grup Rapor
 
