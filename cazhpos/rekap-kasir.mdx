@@ -12,6 +12,14 @@ Pantau akumulasi omzet penjualan, rincian transaksi tunai (termasuk modal awal, 
 1. Tekan tombol **Rekap** di halaman Dashboard.
 2. Sistem menampilkan halaman **Rekap**.
 
+### Informasi yang ditampilkan
+
+Data rekap kasir terdiri dari lima kelompok: **penjualan**, **transaksi tunai**, **transaksi non-tunai**, **hutang**, dan **biaya lainnya**.
+
+- **Jumlah Non Tunai** dihitung otomatis dari: transaksi debit + tarik saldo kartu + top up Cazhbox + total e-wallet + penarikan kartu.
+- **Kas menurut sistem** dihitung dari: kas awal + penjualan tunai + redeem Cazhbox + pembayaran hutang masuk − transaksi dibatalkan (void) − total pengeluaran.
+- **Selisih** = jumlah tunai yang diinput kasir − kas menurut sistem.
+
 ## Atur Uang Kas Awal
 
 Masukkan nominal uang modal awal kasir sebelum memulai sesi penjualan atau giliran kerja, agar jumlah uang fisik di laci kasir selaras dengan pencatatan otomatis sistem saat penutupan rekap kas.
@@ -33,6 +41,10 @@ Tutup kasir dan validasi total pendapatan di akhir giliran kerja (shift): cocokk
   <Step title="Proses">Tekan tombol **Proses** untuk mengakhiri shift dan membukukan laporan rekap kasir.</Step>
 </Steps>
 
+<Callout kind="info">
+Kolom **Jumlah Tunai** wajib diisi sebelum rekap dapat diproses; kolom **Catatan** bersifat opsional. Kolom Jumlah Non Tunai dihitung otomatis oleh sistem dan tidak diinput manual.
+</Callout>
+
 ## Riwayat Rekap
 
 Lihat daftar riwayat rekap kas yang telah dilakukan beserta ringkasannya.
@@ -52,6 +64,10 @@ Lihat rincian hasil rekap kas: informasi penjualan, transaksi tunai, transaksi n
   <Step title="Tinjau informasi">Lihat informasi periode rekap, kasir, dan catatan, serta ringkasan penjualan yang terdiri dari **Total Penjualan** dan **Qty Penjualan**.</Step>
   <Step title="Tinjau rincian transaksi">Lihat rincian transaksi tunai dan transaksi non-tunai.</Step>
 </Steps>
+
+<Callout kind="info">
+Setiap riwayat rekap menampilkan tanggal mulai dan akhir periode, nama kasir, catatan, kas menurut sistem, serta **selisih** antara uang fisik yang diinput dan perhitungan sistem.
+</Callout>
 
 ### Cetak Riwayat Rekap
 

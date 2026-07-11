@@ -1,43 +1,116 @@
 ---
 title: Kesiswaan
-description: Pelanggaran, prestasi, perizinan, progres, kesehatan, perundungan, kalender akademik, dan tahfidz.
+description: Pelanggaran, prestasi, perizinan, progres, kesehatan, perundungan, kunjungan, kalender akademik, dan tahfidz.
 ---
 
 Menu Kesiswaan memuat catatan non-akademik siswa — dipakai siswa untuk memantau catatannya dan guru untuk mencatat. Lihat [Glosarium — Kesiswaan](/referensi/glosarium#kesiswaan).
 
 <Callout kind="info">
-  Data yang sama dikelola admin/guru di CARDS School dan dipantau orang tua di [CARDS Parents](/cards-parent/tentang-cards-parent).
+  Data yang sama dikelola admin/guru di CARDS School dan dipantau orang tua di [CARDS Parents](/cards-parent/tentang-cards-parent). Foto yang diunggah di menu Kesiswaan mendukung format **PNG, JPG, MPEG, HEIF, HEVC**, dari kamera atau galeri.
 </Callout>
 
 ## Pelanggaran
 
 Informasi jenis pelanggaran, jumlah poin, dan detail sanksi. Guru dapat mencatat pelanggaran untuk siswa dalam instansi yang sama.
 
+**Informasi yang ditampilkan**: siswa melihat total poin pelanggarannya; tiap catatan berisi tanggal, tipe pelanggaran, nama pelanggaran, poin (merah), sanksi, catatan, dan foto (jika ada).
+
+**Isian formulir** (hanya guru/staf; tanggal maksimal hari ini):
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Nama Siswa | Ya | Pencarian siswa; tidak bisa diubah saat edit. |
+| Tanggal Pelanggaran | Ya | Maksimal hari ini. |
+| Tipe Pelanggaran | Ya | Dropdown dari daftar tipe yang diatur sekolah. |
+| Nama Pelanggaran | Ya | 3–100 karakter. |
+| Poin Pelanggaran | Ya | Angka > 0; mengikuti rentang min–max tipe jika diatur. |
+| Sanksi Pelanggaran | Ya | Teks. |
+| Deskripsi | Ya | Minimal 5 karakter. |
+| Foto | Tidak | 1 foto, maksimal 10 MB. |
+
 ## Prestasi
 
 Pencapaian siswa: jenis prestasi, tingkat penghargaan, dan poin positif. Guru dapat menambahkan prestasi siswa.
+
+**Isian formulir** (hanya guru/staf): Nama Siswa (wajib), Tanggal Prestasi (wajib, maksimal hari ini), Nama Prestasi (wajib, 3–100 karakter), Poin Prestasi (wajib, angka > 0), Apresiasi (wajib), Deskripsi (wajib), Foto (opsional, 1 foto maksimal 10 MB). Siswa melihat total poin prestasinya di atas daftar.
 
 ## Perizinan
 
 Riwayat pengajuan izin: jenis izin, tanggal, status persetujuan, dan keterangan. Guru dapat membuatkan izin untuk guru lain atau siswa dalam satu instansi.
 
+**Status pengajuan**: **Dipertimbangkan** (kuning), **Disetujui** (hijau), **Ditolak** (merah), **Dibatalkan** (abu-abu).
+
+**Isian formulir**:
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Pengajuan untuk | Ya | Guru atau Siswa. |
+| Nama Siswa | Ya* | Hanya jika pengajuan untuk Siswa. |
+| Nama Izin | Ya | Teks bebas (keperluan). |
+| Tipe Izin | Ya | **Sakit** atau **Lainnya**. |
+| Durasi Izin | Ya | **Satu Hari** atau **Lebih Dari Satu Hari**. |
+| Tanggal & waktu | Ya | Satu hari: tanggal + jam mulai/selesai. Lebih dari satu hari: tanggal mulai + selesai. Minimal hari ini; waktu/tanggal selesai harus setelah mulai. |
+| Foto | Ya | 1 foto, maksimal 2 MB (mis. surat dokter). |
+| Catatan | Tidak | Teks multiline. |
+
+<Callout kind="info">
+  Izin yang periodenya belum lewat dan belum dibatalkan bisa **dibatalkan** (alasan opsional) atau **diubah jadwalnya** dari halaman detail.
+</Callout>
+
 ## Progres Kegiatan
 
 Perkembangan kegiatan yang dijalani siswa (misalnya hafalan hadis dan surah): materi yang disetorkan dan nilai/poin. Guru membuat progres kegiatan.
+
+**Isian formulir** (hanya guru/staf): Nama Siswa (wajib), Nama Progres (wajib, 3–100 karakter), Deskripsi (opsional). Riwayat progres diisi terpisah: Tanggal Progres (wajib, maksimal hari ini), Persentase (wajib, angka), Deskripsi (wajib, minimal 5 karakter). Daftar menampilkan persentase progres terakhir per catatan.
 
 ## Kesehatan
 
 Riwayat keluhan kesehatan, tindakan yang diberikan, dan catatan petugas kesehatan. Guru dapat membuat catatan kesehatan siswa.
 
+**Isian formulir** (hanya guru/staf, tanpa upload foto): Nama Siswa (wajib), Tanggal (wajib, maksimal hari ini), Indikasi Sakit (wajib, 3–100 karakter), Tindakan (wajib, 3–100 karakter), Catatan (wajib, minimal 5 karakter).
+
 ## Perundungan
 
 Siswa dapat **melaporkan perundungan** — yang dialami sendiri maupun orang lain: pelaku, kronologi, dan bukti pendukung. Guru juga dapat mencatat perundungan yang diterima siswa.
+
+**Status laporan**: **Pengajuan** (kuning) → **Proses** → **Selesai** (hijau). Guru mengubah status (Proses/Selesai) dengan catatan opsional.
+
+**Isian formulir**:
+
+| Field | Wajib | Keterangan |
+| --- | --- | --- |
+| Jenis Perundungan | Ya | **Fisik**, **Verbal**, atau **Online**. |
+| Korban Perundungan | Ya* | Khusus siswa: **Diri Sendiri** atau **Orang Lain**. |
+| Nama Korban | Ya* | Hanya jika korban orang lain; pencarian siswa. |
+| Tanggal Kejadian | Ya | Maksimal hari ini. |
+| Lokasi Kejadian | Ya | 3–100 karakter, huruf dan spasi. |
+| Nama Pelaku | Ya | Pencarian siswa. |
+| Deskripsi Kejadian | Ya | Minimal 5 karakter. |
+| Tindakan yang diambil | Ya | 3–100 karakter. |
+| Saksi | Tidak | Jika diisi, 3–100 karakter. |
+| Bukti Laporan | Tidak | Maksimal **5 foto**, masing-masing **10 MB**. |
+
+<Callout kind="info">
+  Laporan hanya bisa **diedit oleh pelapornya sendiri** dan hanya selama status masih **Pengajuan**. Halaman detail menampilkan linimasa riwayat proses laporan.
+</Callout>
+
+## Kunjungan
+
+Pengajuan kunjungan keluarga ke siswa (mis. di sekolah berasrama). Status: **Dipertimbangkan** (kuning), **Diterima** (hijau), **Ditolak** (merah) — guru memutuskan Diterima/Ditolak dengan catatan opsional; tombol aksi hanya tampil selama status masih Dipertimbangkan.
+
+**Isian formulir**: Nama Siswa (wajib), Nama Pengunjung (wajib, 3–100 karakter), NIK Pengunjung (wajib, tepat 16 digit angka), Nomor Telp Pengunjung (wajib, nomor valid maksimal 15 digit), Hubungan Keluarga (wajib, huruf dan spasi). Detail menampilkan pembuat pengajuan, pemroses, dan linimasa riwayat.
 
 ## Kalender Akademik
 
 Siswa dan guru melihat kalender akademik satu tahun yang dibuat sekolah — per bulan atau semua event sekaligus. Dikelola admin di [CARDS School](/cards-school/kalender-akademik).
 
+<Callout kind="info">
+  Daftar event bisa dicari, dan detail event (instansi, tanggal, deskripsi) menyediakan tombol **Tambahkan ke Kalender** untuk menyimpan event non-libur ke kalender ponsel. Jika sekolah belum mengatur kalender, tampil pesan "Kalender Akademik belum di setting oleh lembaga".
+</Callout>
+
 ## Tahfidz
 
-- **Siswa**: melihat progres [tahfidz](/referensi/glosarium#tahfidz) yang dicatat guru.
+- **Siswa**: melihat progres [tahfidz](/referensi/glosarium#tahfidz) yang dicatat guru — kartu program menampilkan nama program, jenis (Surah/Juz), target, dan persentase pencapaian.
 - **Guru**: membuat progres tahfidz per siswa — tampil juga di Cards Edu siswa dan CARDS Parents.
+
+**Isian formulir program** (guru): Instansi (wajib), Tipe program **Satuan** (satu siswa, wajib pilih siswa) atau **Masal** (per level/kelas/jurusan/tag — jika tanpa kriteria, program dibuat untuk seluruh siswa instansi dengan konfirmasi), Nama Program (wajib), Jenis Tahfidz **Surah** atau **Juz** (wajib), Target (wajib, minimal 1 pilihan), Deskripsi (opsional). Riwayat setoran per siswa diisi dengan Tanggal Kegiatan, Catatan, Surah, dan Ayat (semua wajib).

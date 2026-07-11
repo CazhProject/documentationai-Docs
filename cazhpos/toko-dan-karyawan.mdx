@@ -28,6 +28,33 @@ Tambahkan data toko baru yang akan digunakan dalam operasional transaksi dan pen
   <Step title="Simpan">Tekan tombol **Tambah Baru**. Sistem memvalidasi data; jika berhasil, notifikasi bahwa toko berhasil ditambahkan tampil.</Step>
 </Steps>
 
+#### Isian formulir toko
+
+| Field | Wajib | Ketentuan |
+| --- | --- | --- |
+| Unggah Media (banner toko) | Tidak | Gambar toko. |
+| Nama Toko | Ya | — |
+| Kategori Toko | Ya | — |
+| Alamat Toko | Ya | — |
+| Nomor Telepon Toko | Ya | Nomor telepon valid. |
+| Penanggung Jawab | Ya | — |
+| No. Telepon Penanggung Jawab | Ya | Nomor telepon valid. |
+| Status | — | Aktif/Tidak Aktif. |
+
+#### Pengaturan toko yang tersedia
+
+Selain data identitas, halaman detail toko menyediakan pengaturan berikut:
+
+- **Pemesanan Manual** — mengizinkan transaksi tanpa memilih produk.
+- **Tampilkan Harga Beli** — menampilkan/menyembunyikan harga beli (HPP) di form produk.
+- **Gambar Kepala Struk** dan **Catatan Struk** (footer struk, dapat lebih dari satu baris).
+- **Pajak Toko** — aktif/nonaktif, beserta **Nama Pajak** dan **Persentase Pajak** (maksimal 2 digit).
+- **Pembulatan** — tanpa pembulatan, ke atas (UP), atau ke bawah (DOWN), beserta nilai pembulatan.
+- **Izinkan Stok Minus** — mengizinkan penjualan saat stok habis (dapat mengikuti pengaturan partner).
+- **Input Kartu Manual** dan **Transaksi Kartu Tanpa Limit** (limit harian kartu).
+- **Jam Operasional** toko.
+- **Toko Retail** — penanda jenis toko retail.
+
 ### Detail Toko
 
 Kelola data detail toko yang sudah terdaftar.
@@ -73,6 +100,20 @@ Tambahkan data karyawan baru agar karyawan terdaftar dan memperoleh akses sesuai
   <Step title="Isi data karyawan">Lengkapi data yang diperlukan: Nama Karyawan, Nomor Telepon, Email, Tambah ke Toko, dan Judul Pekerjaan.</Step>
   <Step title="Simpan">Tekan tombol **Tambah Karyawan**. Sistem memvalidasi data; jika valid, data karyawan baru tersimpan, notifikasi berhasil tampil, dan Anda diarahkan kembali ke daftar karyawan dengan data baru muncul pada **List Karyawan**.</Step>
 </Steps>
+
+#### Isian formulir karyawan
+
+| Field | Wajib | Ketentuan |
+| --- | --- | --- |
+| Nama Karyawan | Ya | Maksimal 100 karakter. |
+| Nomor Telepon | Ya | Nomor telepon valid, maksimal 13 digit. |
+| Email | Ya | Format email valid. |
+| Tambah ke Toko | Ya | Untuk akun Manager, terisi otomatis dengan tokonya sendiri dan tidak dapat diubah. |
+| Judul Pekerjaan (Peran) | Ya | Kasir, Manager, atau Investor. |
+
+<Callout kind="info">
+Tersedia tiga peran karyawan: **Kasir** (Cashier), **Manager**, dan **Investor**. Peran **Manager** hanya dapat dipilih oleh pemilik akun (Owner). Hak akses aplikasi ditentukan oleh peran ini — tidak ada pengaturan izin per fitur. Karyawan masuk ke aplikasi menggunakan nomor telepon dan PIN.
+</Callout>
 
 ### Detail Karyawan
 

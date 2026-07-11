@@ -17,6 +17,10 @@ Cari data tagihan anggota berdasarkan mitra dan nomor kartu anggota. Anda dapat 
   <Step title="Cek tagihan">Tekan tombol **Cek Tagihan**. Sistem menampilkan halaman **Detail Tagihan**.</Step>
 </Steps>
 
+<Callout kind="info">
+Nomor kartu harus terdiri dari **16 digit**. Selain scan barcode/QR, kartu juga dapat dipindai melalui **NFC/RFID**. Setiap tagihan memiliki salah satu status: **Terbayar (PAID)**, **Terbayar Sebagian (PARTIALLY PAID)**, atau **Belum Bayar (UNPAID)**.
+</Callout>
+
 ### Detail Tagihan
 
 Tampilkan seluruh tagihan anggota berdasarkan status pembayaran: cari tagihan, filter status, pilih satu atau beberapa tagihan untuk dibayarkan, serta lihat daftar tagihan yang telah dibayar.
@@ -37,6 +41,10 @@ Tinjau kembali informasi tagihan sebelum pembayaran dilakukan: lihat detail tagi
   <Step title="Pilih metode pembayaran">Pilih menu **Metode Pembayaran**. Sistem menampilkan daftar metode pembayaran; pilih salah satu, lalu tekan tombol **Konfirmasi**. Sistem kembali ke halaman Konfirmasi Pembayaran dengan metode yang dipilih.</Step>
   <Step title="Bayar">Tekan tombol **Bayar**. Sistem memproses pembayaran sesuai metode yang dipilih. Anda dapat menekan tombol **Batal** untuk membatalkan proses pembayaran.</Step>
 </Steps>
+
+<Callout kind="info">
+Nominal pembayaran dibatasi maksimal sebesar **sisa tagihan yang belum dibayar** (total tagihan dikurangi jumlah yang sudah dibayar), dan dapat dikenakan **biaya transaksi tagihan online** yang ditambahkan ke total pembayaran. Pembayaran beberapa tagihan sekaligus diproses sebagai satu transaksi gabungan.
+</Callout>
 
 ### Metode Pembayaran
 
@@ -68,6 +76,10 @@ Tampilkan informasi pembayaran setelah metode pembayaran dipilih: lihat detail p
 
 ## Paket
 
+<Callout kind="info">
+Setiap paket berlangganan memiliki: nama, harga (dan harga diskon bila berlaku), masa aktif dalam hari (atau **Unlimited**), serta batas **jumlah toko**, **jumlah kasir**, **jumlah produk**, dan **jumlah varian**. Halaman paket menampilkan pemakaian saat ini terhadap batas paket (indikator berubah oranye saat pemakaian mencapai 80%). Status paket: **Aktif**, **Hampir Kedaluwarsa** (sisa masa aktif ≤ 7 hari), atau **Kedaluwarsa**.
+</Callout>
+
 ### Perpanjang Paket
 
 Perpanjang masa aktif [paket berlangganan](/referensi/glosarium#paket--billing) dengan memilih jumlah paket yang diinginkan dan menyelesaikan pembayaran melalui metode yang tersedia.
@@ -78,6 +90,16 @@ Perpanjang masa aktif [paket berlangganan](/referensi/glosarium#paket--billing) 
   <Step title="Pilih metode dan proses">Pilih **Metode Pembayaran** yang tersedia, lalu tekan tombol **Perpanjang Paket**. Sistem memproses transaksi dan membuat tagihan pembayaran.</Step>
   <Step title="Selesai">Setelah pembayaran berhasil, sistem memperpanjang masa aktif paket dan mengirimkan informasi tagihan ke email pengguna.</Step>
 </Steps>
+
+#### Metode pembayaran paket
+
+| Metode | Keterangan |
+| --- | --- |
+| Saldo Cazhbox Partner | Dipotong langsung dari saldo, konfirmasi dengan PIN; paket langsung aktif. |
+| Transfer Bank | Membuat invoice pembayaran. |
+| Minimarket (Alfamart) | Membuat invoice pembayaran. |
+| E-Wallet (OVO) | Membuat invoice pembayaran. |
+| Kartu Kredit (Visa/MasterCard/JCB) | Membuat invoice pembayaran. |
 
 ### Ganti Paket (Billing)
 

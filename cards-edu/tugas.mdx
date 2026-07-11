@@ -5,12 +5,31 @@ description: Siswa mengerjakan tugas, guru membuat tugas.
 
 Menu Tugas dipakai siswa untuk mengerjakan tugas dan guru untuk membuat tugas. Tugas yang dibuat di [CARDS School](/cards-school/memulai/login) atau oleh guru akan tampil di Cards Edu.
 
+## Informasi yang Ditampilkan
+
+- **Daftar tugas (siswa)**: dua tab — **Tugas Siswa** dan **Tugas Selesai** — dengan filter mata pelajaran dan urutan (tugas terbaru atau tenggat waktu). Tiap kartu menampilkan **nama mapel, judul, cuplikan deskripsi, tenggat (Deadline), dan nilai** jika sudah dinilai. Guru juga melihat badge kelas.
+- **Detail tugas (siswa)**: tab **Data Tugas** (judul, informasi, referensi, form pengumpulan) dan tab **Leaderboard** — peringkat nilai satu kelas dengan ikon trofi untuk peringkat 1–3, bisa dicari per nama.
+- **Detail tugas (guru)**: tab Data Tugas dan **Data Siswa** — daftar pengumpulan yang bisa dicari per nama dan diurutkan nilai tertinggi/terendah.
+
+### Status Tugas
+
+| Status | Arti |
+| --- | --- |
+| **Ditugaskan** | Tugas belum dikerjakan/dikumpulkan. |
+| **Terkumpul** | Jawaban sudah dikirim, menunggu penilaian. |
+| **Dinilai** | Guru sudah memberi nilai. |
+| **Selesai** | Tenggat waktu sudah lewat. |
+
 ## Siswa — Mengerjakan Tugas
 
 Setelah langkah ini, jawaban tugas Anda terkirim ke guru.
 
 1. Tekan tugas pada daftar tugas.
 2. Upload file jawaban dalam bentuk **Word, PDF, atau JPG**.
+
+<Callout kind="info">
+  Ada dua jenis tugas: **tugas kumpul file** (wajib melampirkan file, teks jawaban opsional) dan **tugas jawaban teks** (wajib mengisi jawaban). Untuk kumpul file: maksimal **1 file** berukuran **20 MB**, format yang didukung: **doc, docx, pdf, xls, xlsx, ppt, pptx, zip, dan gambar**. Jawaban masih bisa **diedit selama status Terkumpul dan tenggat belum lewat**.
+</Callout>
 
 ## Guru — Membuat Tugas
 
@@ -27,3 +46,11 @@ Setelah langkah ini, tugas terkirim ke para siswa.
     Tekan **Simpan** — tugas terkirim ke para siswa.
   </Step>
 </Steps>
+
+## Guru — Menilai Tugas
+
+Dari tab **Data Siswa**, guru membuka pengumpulan siswa (nama, status, kelas, tanggal kumpul, file/jawaban) lalu memberi nilai.
+
+<Callout kind="info">
+  Nilai berupa angka **0–100**. Setelah dinilai, status pengumpulan berubah menjadi **Dinilai** dan nilai tampil di kartu tugas siswa serta leaderboard.
+</Callout>
