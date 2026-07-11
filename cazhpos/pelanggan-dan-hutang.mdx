@@ -25,9 +25,28 @@ Tambahkan data pelanggan baru ke dalam sistem untuk keperluan transaksi, members
   <Step title="Simpan">Tekan tombol **Tambah Baru**. Sistem memvalidasi data, menyimpan data pelanggan baru, menampilkan notifikasi "Pelanggan berhasil ditambahkan", dan menampilkan data baru pada daftar pelanggan.</Step>
 </Steps>
 
+### Isian formulir pelanggan
+
+| Field | Wajib | Ketentuan |
+| --- | --- | --- |
+| Nama | Ya | — |
+| No HP | Ya | Nomor telepon valid. |
+| Email | Ya | Format email valid. |
+| Alamat | Ya | — |
+| Tanggal Lahir | Tidak | — |
+| Kartu Membership | Tidak | Bila diaktifkan, **No Kartu wajib 16 digit**. |
+
 ## Detail Pelanggan
 
 Lihat informasi lengkap data pelanggan serta riwayat transaksi yang pernah dilakukan: profil pelanggan, daftar transaksi, hingga detail transaksi secara lebih rinci.
+
+### Informasi yang ditampilkan
+
+Halaman detail pelanggan menampilkan ringkasan: **Sisa Hutang**, **Total Pembelian**, **Total Transaksi**, dan **Perolehan Poin** loyalitas, di samping data profil dan daftar transaksi pelanggan.
+
+<Callout kind="info">
+Menghapus pelanggan memerlukan konfirmasi **PIN kasir**.
+</Callout>
 
 ### Melalui menu Pelanggan
 
@@ -57,6 +76,13 @@ Tampilkan dan pantau daftar pembayaran hutang dalam sistem: informasi transaksi 
 <Callout kind="info">
 Interval filter dibatasi maksimal 31 hari per pencarian.
 </Callout>
+
+### Bayar Hutang Pelanggan
+
+Dari detail pelanggan maupun riwayat transaksi (tab **Hutang**), kasir dapat memproses pelunasan hutang:
+
+- Tombol **Bayar Hutang** tersedia pada transaksi hutang yang belum lunas (status: **Lunas**, **Terbayar Sebagian**, atau **Belum Lunas**).
+- Tersedia fitur **Bayar Semua Hutang** (pembayaran massal) yang hanya berlaku untuk **hutang milik pelanggan yang sama** dan **tidak mendukung pembayaran cicil** (harus lunas penuh).
 
 ## Lihat List Pembelian Pelanggan
 
