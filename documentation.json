@@ -198,7 +198,7 @@
             "group": "Panduan Fitur",
             "icon": "star",
             "pages": [
-              { "title": "QR — Presensi & Bayar", "path": "cards-edu/qr", "icon": "qr-code" },
+              { "title": "QR: Presensi & Bayar", "path": "cards-edu/qr", "icon": "qr-code" },
               { "title": "Jadwal Pelajaran", "path": "cards-edu/jadwal-pelajaran", "icon": "calendar" },
               { "title": "Rekap Presensi", "path": "cards-edu/rekap-presensi", "icon": "calendar-check" },
               { "title": "Tugas", "path": "cards-edu/tugas", "icon": "clipboard-list" },
