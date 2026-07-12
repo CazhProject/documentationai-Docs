@@ -1,9 +1,9 @@
 ---
-title: "Anggota — Staff"
+title: "Anggota: Staff"
 description: "Panduan pengelolaan data staff di CARDS School: tambah dan import staff, pindah shift, ubah jenis dan status, pindah instansi, unduh kartu dan surat, detail staff (data, kartu, tagihan, dokumen, kesehatan), serta cetak data diri."
 ---
 
-Modul Staff membantu admin sekolah mengelola seluruh data staff — menambah, mengimpor, mengubah shift/jenis/status, hingga memindahkan instansi. Seluruh fitur diakses melalui menu **Anggota** → submenu **Staff**, yang menampilkan **Halaman Daftar Staff**.
+Modul Staff membantu admin sekolah mengelola seluruh data staff: menambah, mengimpor, mengubah shift/jenis/status, hingga memindahkan instansi. Seluruh fitur diakses melalui menu **Anggota** → submenu **Staff**, yang menampilkan **Halaman Daftar Staff**.
 
 Pada halaman daftar Staff, admin dapat:
 
@@ -14,7 +14,7 @@ Pada halaman daftar Staff, admin dapat:
 
 ## Informasi yang ditampilkan
 
-Tabel daftar staff menampilkan kolom: **Nama**, **Nomor Kartu**, **Staff** (jenis staff), **Instansi**, dan **Status**. Filter yang tersedia: **Instansi**, **Jenis** (daftar jenis staff), dan **Status** (Aktif / Tidak Aktif — status Lulus tidak berlaku untuk staff).
+Tabel daftar staff menampilkan kolom: **Nama**, **Nomor Kartu**, **Staff** (jenis staff), **Instansi**, dan **Status**. Filter yang tersedia: **Instansi**, **Jenis** (daftar jenis staff), dan **Status** (Aktif / Tidak Aktif; status Lulus tidak berlaku untuk staff).
 
 **Export** menghasilkan file Excel (`Staff.xlsx`) dengan kolom: ID, Nomor Kartu, Nomor Induk, Kode QR, Nama Lengkap, Tempat Lahir, Tanggal Lahir, Jenis Kelamin, Alamat, No Telp, Instansi, Keterangan (jenis staff), Tanggal Mulai Tugas, Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional, Pendidikan, NUPTK, dan Status.
 
@@ -24,20 +24,20 @@ Aksi massal via checkbox: **Ubah Jenis Staff**, **Ubah Status**, **Pindah Instan
 
 | Field | Wajib | Keterangan |
 | --- | --- | --- |
-| Instansi | Ya | — |
-| Nama Lengkap | Ya | — |
+| Instansi | Ya | - |
+| Nama Lengkap | Ya | - |
 | Jenis Kelamin | Ya | Laki - laki / Perempuan. |
 | Email | Ya | Harus unik antar anggota. |
 | No HP | Ya | Angka, divalidasi format nomor telepon. |
 | No Induk | Ya | Nomor induk anggota. |
 | Nomor Kartu | Ya | Angka. |
 | Jenis Staff | Ya | Dari daftar jenis staff instansi. |
-| Tempat/Tanggal Lahir, Alamat | Tidak | — |
+| Tempat/Tanggal Lahir, Alamat | Tidak | - |
 | No Identitas (NIK) | Tidak | Angka 16 digit. |
 | UID Kartu | Tidak | Harus unik. |
-| Tanggal Mulai Tugas | Tidak | — |
-| Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional | Tidak | — |
-| Pendidikan, NUPTK | Tidak | — |
+| Tanggal Mulai Tugas | Tidak | - |
+| Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional | Tidak | - |
+| Pendidikan, NUPTK | Tidak | - |
 | Foto | Tidak | jpg/png/jpeg/heic/heif, maksimal 10 MB. |
 
 <Callout kind="info">Import staff menggunakan template Excel (`template-member-v8.xls`) dengan kolom antara lain: nama_lengkap (wajib), jenis_kelamin (wajib: L/P), email (wajib, unik), nomor_induk_member (wajib), nomor_kartu (wajib), tanggal_mulai_tugas (d/m/Y), pangkat/golongan, jabatan, serta kolom opsional identitas lainnya.</Callout>
@@ -76,7 +76,7 @@ Mengganti penggolongan (jenis) staff, secara massal maupun satuan. Jenis staff a
 
 ## Ubah Status
 
-Mengubah status keanggotaan staff antara Aktif dan Tidak Aktif, secara massal maupun satuan — misalnya menonaktifkan staff yang berhenti bekerja. Data staff tetap tersimpan dan status dapat diubah kembali kapan saja melalui aksi yang sama.
+Mengubah status keanggotaan staff antara Aktif dan Tidak Aktif, secara massal maupun satuan, misalnya menonaktifkan staff yang berhenti bekerja. Data staff tetap tersimpan dan status dapat diubah kembali kapan saja melalui aksi yang sama.
 
 **Ubah secara massal:**
 
@@ -169,7 +169,7 @@ Buka tab **Kesehatan** pada detail staff. Admin dapat:
 
 ## Cetak Data Diri
 
-Mencetak data diri setiap anggota — berlaku untuk Siswa, Guru, dan Staff.
+Mencetak data diri setiap anggota; berlaku untuk Siswa, Guru, dan Staff.
 
 <Steps>
   <Step title="Buka daftar anggota">Login ke website, klik menu **Anggota**, lalu klik submenu **Siswa**, **Guru**, atau **Staff**. Sistem akan menampilkan **Halaman Daftar Anggota** yang dipilih.</Step>
