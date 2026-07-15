@@ -1,35 +1,30 @@
 ---
-title: "Keuangan: Donasi"
-description: "Panduan mengelola program donasi di CARDS School: daftar donasi, tambah, edit, hapus, serta detail donasi umum, penggalangan dana, dan donasi khusus."
+title: 'Keuangan: Donasi'
+description: >-
+  Panduan mengelola program donasi di CARDS School: daftar donasi, tambah, edit,
+  hapus, serta detail donasi umum, penggalangan dana, dan donasi khusus.
 ---
-
 Menu Donasi digunakan admin sekolah untuk mengelola program donasi instansi: membuat, mengubah, menghapus, dan memantau donatur. Terdapat tiga jenis program donasi:
 
-| Jenis | Keterangan | Tab |
-| --- | --- | --- |
-| **Donasi Umum** | Donasi tanpa target dana. | **Donasi Umum** |
-| **Donasi Penggalangan Dana** | Donasi dengan target dana. | **Penggalangan Dana** |
-| **Donasi Khusus** (Program Khusus) | Donasi berbasis kuota dan nominal. | **Donasi Khusus** |
+| Jenis                              | Keterangan                         | Tab                   |
+| ---------------------------------- | ---------------------------------- | --------------------- |
+| **Donasi Umum**                    | Donasi tanpa target dana.          | **Donasi Umum**       |
+| **Donasi Penggalangan Dana**       | Donasi dengan target dana.         | **Penggalangan Dana** |
+| **Donasi Khusus** (Program Khusus) | Donasi berbasis kuota dan nominal. | **Donasi Khusus**     |
 
 ## Daftar Donasi
 
 Melihat dan mengelola daftar program donasi per jenis.
 
-<Steps>
-  <Step title="Buka Donasi">Login ke website, klik menu **Keuangan**, lalu klik submenu **Donasi**.</Step>
-  <Step title="Pilih tab program">Klik tab sesuai program donasi (lihat tabel di atas). Sistem akan menampilkan halaman Daftar Donasi sesuai dengan program donasi yang dipilih.</Step>
-  <Step title="Kelola daftar">Tampilkan daftar donasi secara spesifik menggunakan pencarian, export daftar donasi, tambah program donasi, perbarui program donasi, hapus program donasi, dan tampilkan setiap detail donasi.</Step>
-</Steps>
-
 ### Informasi yang ditampilkan
 
 Kolom daftar donasi menyesuaikan jenis program:
 
-| Tab | Kolom |
-| --- | --- |
-| Umum | Instansi, Program, Cakupan, Terkumpul, Mulai, Selesai |
-| Penggalangan Dana | Instansi, Program, Cakupan, Dana Target, Terkumpul, Mulai, Selesai |
-| Khusus | Instansi, Program, Cakupan, Dana Target, Terkumpul, Kuota, Nominal, Mulai, Selesai |
+| Tab               | Kolom                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------- |
+| Umum              | Instansi, Program, Cakupan, Terkumpul, Mulai, Selesai                              |
+| Penggalangan Dana | Instansi, Program, Cakupan, Dana Target, Terkumpul, Mulai, Selesai                 |
+| Khusus            | Instansi, Program, Cakupan, Dana Target, Terkumpul, Kuota, Nominal, Mulai, Selesai |
 
 Daftar diurutkan berdasarkan tanggal selesai terbaru. Export Excel menghasilkan file **Donasi - Umum**, **Donasi - Penggalangan Dana**, atau **Donasi - Program Khusus** sesuai tab aktif.
 
@@ -37,86 +32,47 @@ Daftar diurutkan berdasarkan tanggal selesai terbaru. Export Excel menghasilkan 
 
 Membuat program donasi baru yang dapat menerima dana dari donatur internal instansi, eksternal, atau keduanya selama periode yang ditentukan.
 
-<Steps>
-  <Step title="Buka Donasi">Login ke website, klik menu **Keuangan**, lalu klik submenu **Donasi**. Sistem akan menampilkan halaman Daftar Donasi tab Umum.</Step>
-  <Step title="Buka formulir">Klik tombol **Tambah Program Donasi**. Sistem akan menampilkan formulir tambah donasi.</Step>
-  <Step title="Isi formulir">Pilih jangkauan donasi (internal instansi, eksternal, maupun keduanya), pilih program donasi (Umum, Penggalangan Dana, atau Khusus; lihat tabel di atas), lalu lengkapi seluruh formulir donasi.</Step>
-  <Step title="Simpan">Klik **Simpan**; sistem akan menampilkan donasi sesuai dengan jenis program, periode, dan jangkauan donasi.</Step>
-</Steps>
-
 ### Isian formulir
 
-| Isian | Ketentuan |
-| --- | --- |
-| Instansi | Wajib. |
-| Judul Program | Wajib (contoh: "Pembangunan Masjid"). |
-| Jenis Program | Wajib: Umum, Penggalangan Dana, atau Program Khusus. |
-| Cakupan Donasi | Wajib, dapat memilih lebih dari satu: **Internal** dan/atau **Eksternal**. |
-| Dana Target | Khusus jenis Penggalangan Dana; minimal Rp 10.000. |
-| Kuota | Khusus jenis Program Khusus; wajib, angka. |
-| Nominal | Khusus jenis Program Khusus; wajib, minimal Rp 10.000. Total target = nominal × kuota. |
-| Periode (Mulai & Selesai) | Wajib; tanggal selesai harus setelah tanggal mulai. |
-| Deskripsi | Wajib. |
-| Thumbnail | Opsional, gambar jpg/png/jpeg/heic/heif, maksimal 10 MB. |
+| Isian                     | Ketentuan                                                                              |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Instansi                  | Wajib.                                                                                 |
+| Judul Program             | Wajib (contoh: "Pembangunan Masjid").                                                  |
+| Jenis Program             | Wajib: Umum, Penggalangan Dana, atau Program Khusus.                                   |
+| Cakupan Donasi            | Wajib, dapat memilih lebih dari satu: **Internal** dan/atau **Eksternal**.             |
+| Dana Target               | Khusus jenis Penggalangan Dana; minimal Rp 10.000.                                     |
+| Kuota                     | Khusus jenis Program Khusus; wajib, angka.                                             |
+| Nominal                   | Khusus jenis Program Khusus; wajib, minimal Rp 10.000. Total target = nominal × kuota. |
+| Periode (Mulai & Selesai) | Wajib; tanggal selesai harus setelah tanggal mulai.                                    |
+| Deskripsi                 | Wajib.                                                                                 |
+| Thumbnail                 | Opsional, gambar jpg/png/jpeg/heic/heif, maksimal 10 MB.                               |
 
 ## Edit Donasi
 
 Memperbarui informasi program donasi yang sudah dibuat, misalnya judul, periode, target, atau deskripsi. Perubahan menggantikan data program lama.
 
-<Steps>
-  <Step title="Buka Donasi">Login ke website, klik menu **Keuangan**, lalu klik submenu **Donasi**. Sistem akan menampilkan halaman Daftar Donasi tab Umum.</Step>
-  <Step title="Pilih donasi">Pilih tab program donasi yang akan diedit, lalu pilih salah satu data donasi; gunakan fitur pencarian untuk menemukan donasi secara spesifik.</Step>
-  <Step title="Buka form edit">Klik ikon **Edit** pada baris data donasi yang dipilih. Sistem akan menampilkan halaman Edit Donasi untuk mengubah atau memperbarui data donasi.</Step>
-  <Step title="Simpan">Klik **Simpan**; sistem akan menyimpan perubahan.</Step>
-</Steps>
-
 ## Hapus Donasi
 
 Menghapus program donasi sehingga tidak lagi tampil di daftar donasi. Umumnya digunakan untuk program yang salah dibuat atau batal dijalankan; berhati-hatilah menghapus program yang sudah memiliki dana terkumpul.
 
-<Steps>
-  <Step title="Buka Donasi">Login ke website, klik menu **Keuangan**, lalu klik submenu **Donasi**. Sistem akan menampilkan halaman Daftar Donasi tab Umum.</Step>
-  <Step title="Pilih donasi">Pilih tab program donasi yang akan dihapus, lalu pilih salah satu data donasi; gunakan fitur pencarian untuk menemukan donasi secara spesifik.</Step>
-  <Step title="Hapus">Klik ikon **Hapus** pada baris data donasi yang dipilih. Sistem akan menampilkan popup Konfirmasi Hapus.</Step>
-  <Step title="Konfirmasi">Klik **Hapus**; sistem akan menghapus data donasi.</Step>
-</Steps>
-
-<Callout kind="alert">Program donasi yang dihapus tidak dapat dikembalikan. Pastikan data yang dipilih sudah benar sebelum mengonfirmasi.</Callout>
+Program donasi yang dihapus tidak dapat dikembalikan. Pastikan data yang dipilih sudah benar sebelum mengonfirmasi.
 
 ## Detail Donasi Umum
 
 Memonitor data donatur pada donasi umum.
 
-<Steps>
-  <Step title="Buka tab Umum">Login ke website, klik menu **Keuangan**, lalu klik submenu **Donasi**. Sistem akan menampilkan halaman Daftar Donasi tab **Umum**.</Step>
-  <Step title="Pilih donasi">Pilih salah satu data donasi umum; gunakan fitur pencarian untuk menemukan donasi secara spesifik. Klik ikon **Detail** pada baris data donasi yang dipilih.</Step>
-  <Step title="Kelola detail">Sistem akan menampilkan halaman detail donasi umum. Admin dapat melihat informasi donasi, melihat total dana yang telah terkumpul, melihat daftar donatur, export daftar donatur, serta melihat dan mencetak bukti pembayaran dari setiap donatur.</Step>
-</Steps>
-
 ### Informasi yang ditampilkan
 
 Daftar donatur menampilkan kolom: **Nama Donatur**, **Email**, **No HP**, **Alamat**, **Jumlah Donasi**, **Tanggal**, dan **Catatan**, diurutkan dari pembayaran terbaru. Export Excel menghasilkan file **Daftar Donatur**.
 
-<Callout kind="info">
-Daftar donatur hanya menampilkan donasi yang sudah berstatus **Lunas (terbayar)**; struk donatur juga hanya dapat dibuka untuk pembayaran yang sudah lunas.
+<Callout kind="info" collapsed="false">
+  Daftar donatur hanya menampilkan donasi yang sudah berstatus **Lunas (terbayar)**; struk donatur juga hanya dapat dibuka untuk pembayaran yang sudah lunas.
 </Callout>
 
 ## Detail Donasi Penggalangan Dana
 
 Memonitor data donatur pada donasi penggalangan dana.
 
-<Steps>
-  <Step title="Buka tab Penggalangan Dana">Login ke website, klik menu **Keuangan**, lalu klik submenu **Donasi**. Sistem akan menampilkan halaman Daftar Donasi Umum; klik tab **Penggalangan Dana**.</Step>
-  <Step title="Pilih donasi">Pilih salah satu data donasi; gunakan fitur pencarian untuk menemukan donasi secara spesifik. Klik ikon **Detail** pada baris data donasi yang dipilih.</Step>
-  <Step title="Kelola detail">Sistem akan menampilkan halaman detail donasi penggalangan dana. Admin dapat melihat informasi donasi, melihat target dan total dana yang telah terkumpul, melihat daftar donatur, export daftar donatur, serta melihat dan mencetak bukti pembayaran dari setiap donatur.</Step>
-</Steps>
-
 ## Detail Donasi Khusus
 
 Memonitor data donatur pada donasi khusus.
-
-<Steps>
-  <Step title="Buka tab Khusus">Login ke website, klik menu **Keuangan**, lalu klik submenu **Donasi**. Sistem akan menampilkan halaman Daftar Donasi Umum; klik tab **Khusus**.</Step>
-  <Step title="Pilih donasi">Pilih salah satu data donasi; gunakan fitur pencarian untuk menemukan donasi secara spesifik. Klik ikon **Detail** pada baris data donasi yang dipilih.</Step>
-  <Step title="Kelola detail">Sistem akan menampilkan halaman detail donasi khusus. Admin dapat melihat informasi donasi, melihat kuota, target, dan total dana yang telah terkumpul, melihat daftar donatur, export daftar donatur, serta melihat dan mencetak bukti pembayaran dari setiap donatur.</Step>
-</Steps>

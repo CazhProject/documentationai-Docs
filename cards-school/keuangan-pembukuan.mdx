@@ -1,58 +1,48 @@
 ---
-title: "Keuangan: Pembukuan"
-description: "Panduan pembukuan keuangan di CARDS School: jurnal, riwayat jurnal, laporan posisi keuangan, laporan laba rugi, bagi hasil, dan migrasi akun."
+title: 'Keuangan: Pembukuan'
+description: >-
+  Panduan pembukuan keuangan di CARDS School: jurnal, riwayat jurnal, laporan
+  posisi keuangan, laporan laba rugi, bagi hasil, dan migrasi akun.
 ---
-
 Menu Pembukuan digunakan admin sekolah untuk mencatat jurnal keuangan instansi, melihat laporan keuangan (posisi keuangan dan laba rugi), mengatur bagi hasil, serta memigrasikan saldo dari sistem keuangan sebelumnya. Seluruh fitur diakses melalui menu **Keuangan** → submenu **Pembukuan**.
 
 ## Jurnal
 
 Mencatat transaksi keuangan instansi sebagai entri jurnal pembukuan: pemasukan, pengeluaran, hutang-piutang, modal, hingga penyesuaian. Setiap entri memindahkan nilai dari satu akun ke akun lain dan menjadi dasar perhitungan laporan keuangan.
 
-<Steps>
-  <Step title="Buka Jurnal">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, lalu klik submenu **Jurnal**. Sistem akan menampilkan halaman Jurnal.</Step>
-  <Step title="Isi form jurnal">Isi semua form jurnal: pilih **Kantor**, **Nama Jurnal**, **Akun Debit**, **Akun Kredit**, **Jumlah**, **Tanggal Entri**, **Catatan**, dan **Lampiran**.</Step>
-  <Step title="Simpan">Klik **Simpan** untuk menyimpan data pembukuan. Setelah berhasil disimpan, data akan tersimpan di riwayat jurnal.</Step>
-</Steps>
-
 ### Isian formulir
 
-| Isian | Keterangan |
-| --- | --- |
-| Kantor | Kantor/instansi tempat jurnal dicatat. |
-| Jenis Transaksi | Menentukan label akun asal/tujuan (lihat tabel di bawah). |
+| Isian                   | Keterangan                                                      |
+| ----------------------- | --------------------------------------------------------------- |
+| Kantor                  | Kantor/instansi tempat jurnal dicatat.                          |
+| Jenis Transaksi         | Menentukan label akun asal/tujuan (lihat tabel di bawah).       |
 | Akun Asal & Akun Tujuan | Dipilih dari daftar akun; pilihan menyesuaikan jenis transaksi. |
-| Jumlah | Nominal jurnal. |
-| Tanggal Entri | Default hari ini (zona waktu Asia/Jakarta). |
-| Catatan | Keterangan tambahan. |
-| Lampiran | Upload file bukti transaksi. |
+| Jumlah                  | Nominal jurnal.                                                 |
+| Tanggal Entri           | Default hari ini (zona waktu Asia/Jakarta).                     |
+| Catatan                 | Keterangan tambahan.                                            |
+| Lampiran                | Upload file bukti transaksi.                                    |
 
 Jenis transaksi jurnal yang tersedia:
 
-| Jenis Transaksi | Label akun asal → tujuan |
-| --- | --- |
-| Pemasukan | Diambil Dari → Simpan Ke |
-| Pengeluaran | Diambil Dari → Simpan Ke |
-| Hutang | Hutang Dari → Simpan Ke |
-| Bayar Hutang | Dibayar Menggunakan → Pembayaran Untuk |
-| Piutang | Diberikan Dari → Untuk |
-| Dibayar Piutang | Dibayar Dari → Simpan Ke |
-| Tambah Modal | Penambahan Untuk → Modal Berupa |
-| Tarik Modal | Penarikan Berupa → Dari |
-| Penyesuaian | Saldo Yang Berkurang → Saldo Yang Bertambah |
+| Jenis Transaksi | Label akun asal → tujuan                    |
+| --------------- | ------------------------------------------- |
+| Pemasukan       | Diambil Dari → Simpan Ke                    |
+| Pengeluaran     | Diambil Dari → Simpan Ke                    |
+| Hutang          | Hutang Dari → Simpan Ke                     |
+| Bayar Hutang    | Dibayar Menggunakan → Pembayaran Untuk      |
+| Piutang         | Diberikan Dari → Untuk                      |
+| Dibayar Piutang | Dibayar Dari → Simpan Ke                    |
+| Tambah Modal    | Penambahan Untuk → Modal Berupa             |
+| Tarik Modal     | Penarikan Berupa → Dari                     |
+| Penyesuaian     | Saldo Yang Berkurang → Saldo Yang Bertambah |
 
-<Callout kind="info">
-Bagan akun sistem terbagi lima kategori: **Aset** (antara lain 101 Kas, 102 Tabungan Pada Bank, 103 Saldo CazhBox, 105 Piutang Usaha, 108 Aset Tetap & Inventaris, 111 Kas Tunai Tabungan), **Liabilitas** (201 Hutang Usaha, 202 Hutang Bank, 203 Hutang Pajak, 205 Simpanan Anggota), **Ekuitas** (301 Modal, 302 Hibah, 303 Prive, 304 Cadangan, 305 Saldo Laba/Rugi), **Pendapatan** (420 Pendapatan Produk/Jasa, 430 Pendapatan Lainnya, 440 Penerimaan Pembayaran Tagihan, 450 Pendapatan Pendaftaran Anggota, 460 Pendapatan Transaksi Tabungan), dan **Beban** (630 Tenaga Kerja, 640 Akomodasi & Transportasi, 650 Operasional, 660 Non Operasional, 670 Perlengkapan & ATK, 680 Sewa, 690 Penyusutan & Amortisasi, 611 Pajak, 612 Lain-lain).
+<Callout kind="info" collapsed="false">
+  Bagan akun sistem terbagi lima kategori: **Aset** (antara lain 101 Kas, 102 Tabungan Pada Bank, 103 Saldo CazhBox, 105 Piutang Usaha, 108 Aset Tetap & Inventaris, 111 Kas Tunai Tabungan), **Liabilitas** (201 Hutang Usaha, 202 Hutang Bank, 203 Hutang Pajak, 205 Simpanan Anggota), **Ekuitas** (301 Modal, 302 Hibah, 303 Prive, 304 Cadangan, 305 Saldo Laba/Rugi), **Pendapatan** (420 Pendapatan Produk/Jasa, 430 Pendapatan Lainnya, 440 Penerimaan Pembayaran Tagihan, 450 Pendapatan Pendaftaran Anggota, 460 Pendapatan Transaksi Tabungan), dan **Beban** (630 Tenaga Kerja, 640 Akomodasi & Transportasi, 650 Operasional, 660 Non Operasional, 670 Perlengkapan & ATK, 680 Sewa, 690 Penyusutan & Amortisasi, 611 Pajak, 612 Lain-lain).
 </Callout>
 
 ## Riwayat Jurnal
 
 Melihat data jurnal pembukuan yang sudah pernah dibuat.
-
-<Steps>
-  <Step title="Buka Riwayat Jurnal">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, lalu klik submenu **Riwayat Jurnal**.</Step>
-  <Step title="Lihat riwayat">Sistem akan menampilkan halaman Riwayat Jurnal.</Step>
-</Steps>
 
 ### Informasi yang ditampilkan
 
@@ -62,65 +52,33 @@ Tabel Riwayat Jurnal menampilkan kolom: **Tanggal Entri**, **Instansi**, **Opera
 
 Melihat laporan posisi keuangan pada setiap kantor.
 
-<Steps>
-  <Step title="Buka Laporan Posisi Keuangan">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, lalu klik submenu **Laporan Posisi Keuangan**.</Step>
-  <Step title="Lihat laporan">Sistem akan menampilkan halaman Laporan Posisi Keuangan, dengan posisi keuangan pada posisi aktiva dan pasiva.</Step>
-</Steps>
-
-<Callout kind="info">
-Laporan difilter berdasarkan **Kantor**, **Tahun** (wajib), dan **Bulan** (wajib); default tahun dan bulan berjalan. Laporan terdiri dari bagian **Aset**, **Liabilitas**, **Ekuitas**, dan total **Liabilitas + Ekuitas**. Export Excel menghasilkan file **Laporan Posisi Keuangan.xlsx**.
+<Callout kind="info" collapsed="false">
+  Laporan difilter berdasarkan **Kantor**, **Tahun** (wajib), dan **Bulan** (wajib); default tahun dan bulan berjalan. Laporan terdiri dari bagian **Aset**, **Liabilitas**, **Ekuitas**, dan total **Liabilitas + Ekuitas**. Export Excel menghasilkan file **Laporan Posisi Keuangan.xlsx**.
 </Callout>
 
 ## Laporan Laba Rugi
 
 Melihat laporan laba rugi pada setiap kantor.
 
-<Steps>
-  <Step title="Buka Laporan Laba Rugi">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, lalu klik submenu **Laporan Laba Rugi**.</Step>
-  <Step title="Lihat laporan">Sistem akan menampilkan halaman Laporan Laba Rugi, dengan laporan keuangan pada setiap kantor.</Step>
-</Steps>
-
-<Callout kind="info">
-Laporan difilter berdasarkan **Kantor**, **Tahun**, dan **Bulan**, dan terdiri dari bagian **Pendapatan** dan **Beban** beserta totalnya. Export Excel menghasilkan file **Laporan Laba Rugi.xlsx**.
+<Callout kind="info" collapsed="false">
+  Laporan difilter berdasarkan **Kantor**, **Tahun**, dan **Bulan**, dan terdiri dari bagian **Pendapatan** dan **Beban** beserta totalnya. Export Excel menghasilkan file **Laporan Laba Rugi.xlsx**.
 </Callout>
 
 ## List Pengaturan Bagi Hasil
 
 Melihat daftar pengaturan bagi hasil yang telah dibuat.
 
-<Steps>
-  <Step title="Buka Pengaturan Bagi Hasil">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, klik submenu **Bagi Hasil**, lalu klik submenu **Pengaturan**.</Step>
-  <Step title="Lihat daftar">Sistem akan menampilkan halaman List Bagi Hasil.</Step>
-</Steps>
-
 ## Tambah Pengaturan Bagi Hasil
 
 Menentukan siapa penerima bagi hasil keuangan kantor beserta persentasenya. Pengaturan ini menjadi dasar perhitungan pada Laporan Bagi Hasil.
-
-<Steps>
-  <Step title="Buka Pengaturan Bagi Hasil">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, klik submenu **Bagi Hasil**, lalu klik submenu **Pengaturan**.</Step>
-  <Step title="Buka form tambah">Klik tombol **Tambah**. Sistem akan menampilkan halaman Tambah Bagi Hasil.</Step>
-  <Step title="Isi form">Isi semua form tambah bagi hasil yang terdiri dari: Nama Penerima, Persentase, Kantor, dan Sumber.</Step>
-</Steps>
 
 ## Edit Pengaturan Bagi Hasil
 
 Memperbarui penerima, persentase, kantor, atau sumber pada pengaturan bagi hasil yang sudah ada. Perhitungan pada Laporan Bagi Hasil mengikuti pengaturan ini.
 
-<Steps>
-  <Step title="Buka Pengaturan Bagi Hasil">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, klik submenu **Bagi Hasil**, lalu klik submenu **Pengaturan**.</Step>
-  <Step title="Buka form edit">Klik tombol **Edit**. Sistem akan menampilkan halaman Edit Bagi Hasil.</Step>
-  <Step title="Isi form">Isi semua form edit bagi hasil yang terdiri dari: Nama Penerima, Persentase, Kantor, dan Sumber.</Step>
-</Steps>
-
 ## Laporan Bagi Hasil
 
 Melihat laporan data bagi hasil.
-
-<Steps>
-  <Step title="Buka Laporan Bagi Hasil">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, klik submenu **Bagi Hasil**, lalu klik submenu **Laporan**.</Step>
-  <Step title="Lihat laporan">Sistem akan menampilkan Laporan Bagi Hasil.</Step>
-</Steps>
 
 ### Informasi yang ditampilkan
 
@@ -130,13 +88,8 @@ Laporan Bagi Hasil difilter berdasarkan **Kantor**, **Tahun**, dan **Bulan**, da
 
 Memindahkan saldo dari sistem keuangan sebelumnya ke sistem CARDS School: mengisi saldo awal akun-akun pembukuan agar laporan keuangan melanjutkan angka dari sistem lama. Biasanya dilakukan sekali di awal penggunaan fitur pembukuan.
 
-<Steps>
-  <Step title="Buka Migrasi Akun">Login ke website, klik menu **Keuangan**, klik submenu **Pembukuan**, lalu klik submenu **Migrasi Akun**.</Step>
-  <Step title="Isi form migrasi">Sistem akan menampilkan form untuk Migrasi Akun; isi semua form untuk migrasi akun.</Step>
-</Steps>
-
-<Callout kind="info">
-Migrasi akun hanya menampilkan akun internal sistem (akun eksternal seperti Saldo CazhBox dan Saldo Laba/Rugi dihitung otomatis), dan penyimpanan saldo awal memerlukan verifikasi **PIN**.
+<Callout kind="info" collapsed="false">
+  Migrasi akun hanya menampilkan akun internal sistem (akun eksternal seperti Saldo CazhBox dan Saldo Laba/Rugi dihitung otomatis), dan penyimpanan saldo awal memerlukan verifikasi **PIN**.
 </Callout>
 
-<Callout kind="alert">Migrasi akun memindahkan saldo dari sistem keuangan sebelumnya. Pastikan seluruh data yang diisi sudah benar sebelum menjalankan migrasi.</Callout>
+Migrasi akun memindahkan saldo dari sistem keuangan sebelumnya. Pastikan seluruh data yang diisi sudah benar sebelum menjalankan migrasi.
