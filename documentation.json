@@ -29,6 +29,11 @@
             "icon": "rocket",
             "pages": [
               {
+                "title": "Logout",
+                "path": "logout",
+                "icon": "log-out-icon"
+              },
+              {
                 "title": "Mulai dari Sini",
                 "path": "cards-school/mulai-dari-sini",
                 "icon": "flag"
