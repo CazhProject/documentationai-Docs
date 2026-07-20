@@ -289,12 +289,128 @@ Halaman **List Jenis Tagihan** digunakan untuk melihat daftar jenis tagihan yang
   <Step title="Lihat daftar data" title-type="p">
     Sistem akan menampilkan seluruh data jenis tagihan yang telah dibuat.
 
-    |   |   |   |
-    | - | - | - |
-    |   |   |   |
-    |   |   |   |
+    | Informasi          | Keterangan                                          |
+    | ------------------ | --------------------------------------------------- |
+    | Nama Jenis Tagihan | Nama kategori tagihan yang digunakan pada sistem.   |
+    | Status             | Status jenis tagihan (Aktif atau Tidak Aktif).      |
+    | Dibuat Pada        | Tanggal dan waktu data dibuat.                      |
+    | Aksi               | Tombol **Edit** dan **Hapus** untuk mengelola data. |
+  </Step>
+
+  <Step title="Filter data" title-type="p">
+    Pilih filter yang tersedia untuk menampilkan data sesuai kriteria yang diinginkan.
+
+    Sistem akan memperbarui daftar data berdasarkan filter yang dipilih.
+  </Step>
+
+  <Step title="Cari data" title-type="p">
+    Masukkan nama jenis tagihan pada kolom **Cari**.
+
+    Sistem akan menampilkan data yang sesuai dengan kata kunci.
   </Step>
 </Steps>
+
+### Edit Jenis Tagihan
+
+Halaman **Edit Jenis Tagihan** digunakan untuk mengubah informasi dan pengaturan jenis tagihan yang telah dibuat.
+
+<Callout kind="info" collapsed="false">
+  Pastikan Anda sudah login sebagai **Admin** dan memiliki hak akses ke menu **Pengaturan → Tagihan → Jenis Tagihan**.
+</Callout>
+
+<Steps>
+  <Step title="Buka halaman Jenis Tagihan" title-type="p">
+    Pada sidebar, klik **Pengaturan**, kemudian pilih **Tagihan** dan buka menu **Jenis Tagihan**.
+  </Step>
+
+  <Step title="Pilih data yang akan diubah" title-type="p">
+    Pada daftar **Jenis Tagihan**, klik tombol **Edit** pada data yang ingin diubah.
+
+    Sistem akan menampilkan form **Edit Jenis Tagihan**.
+  </Step>
+
+  <Step title="Ubah data" title-type="p">
+    Perbarui informasi sesuai kebutuhan.
+
+    | Isian              | Keterangan                                  |
+    | ------------------ | ------------------------------------------- |
+    | Nama Jenis Tagihan | Ubah nama jenis tagihan.                    |
+    | Status             | Ubah status menjadi Aktif atau Tidak Aktif. |
+  </Step>
+
+  <Step title="Simpan perubahan" title-type="p">
+    Klik tombol **Simpan**.
+
+    Sistem akan memperbarui data dan menampilkan perubahan pada halaman **Jenis Tagihan**.
+  </Step>
+</Steps>
+
+### Hapus Jenis Tagihan
+
+Halaman **Hapus Jenis Tagihan** digunakan untuk menghapus jenis tagihan yang sudah tidak digunakan dari sistem. Jenis tagihan merupakan data master kategori tagihan yang digunakan saat membuat tagihan, sehingga pastikan data tersebut sudah tidak diperlukan sebelum dihapus.
+
+<Callout kind="info" collapsed="false">
+  Pastikan Anda sudah login sebagai **Admin** dan memiliki hak akses ke menu **Pengaturan → Tagihan → Jenis Tagihan**.
+</Callout>
+
+<Steps>
+  <Step title="Buka halaman Jenis Tagihan" title-type="p">
+    Pada sidebar, klik **Pengaturan**, kemudian pilih **Tagihan** dan buka menu **Jenis Tagihan**.
+  </Step>
+
+  <Step title="Pilih data yang akan dihapus" title-type="p">
+    Pada daftar **Jenis Tagihan**, klik tombol **Hapus** pada data yang ingin dihapus.
+
+    Sistem akan menampilkan dialog konfirmasi penghapusan.
+  </Step>
+
+  <Step title="Konfirmasi penghapusan" title-type="p">
+    Klik tombol **Hapus** untuk melanjutkan proses atau klik **Batal** untuk membatalkannya.
+
+    Sistem akan menghapus data dari daftar apabila proses berhasil.
+  </Step>
+</Steps>
+
+<Callout kind="alert" collapsed="false">
+  Penghapusan **Jenis Tagihan** bersifat permanen. Data yang telah dihapus tidak lagi tampil pada daftar dan tidak dapat dipilih saat membuat tagihan baru. Pastikan jenis tagihan sudah tidak digunakan sebelum menghapusnya.
+</Callout>
+
+### Tambah Jenis Tagihan
+
+Halaman **Tambah Jenis Tagihan** digunakan untuk menambahkan jenis tagihan baru yang dapat digunakan dalam pengelolaan tagihan pada sistem.
+
+<Callout kind="info" collapsed="false">
+  Pastikan Anda sudah login sebagai **Admin** dan memiliki hak akses ke menu **Pengaturan → Tagihan → Jenis Tagihan**.
+</Callout>
+
+<Steps>
+  <Step title="Buka halaman Jenis Tagihan" title-type="p">
+    Pada sidebar, klik **Pengaturan**, kemudian pilih **Tagihan** dan buka menu **Jenis Tagihan**.
+  </Step>
+
+  <Step title="Buka form tambah" title-type="p">
+    Pada halaman **Jenis Tagihan**, klik tombol **Tambah Jenis Tagihan**.
+
+    Sistem akan menampilkan form **Tambah Jenis Tagihan**.
+  </Step>
+
+  <Step title="Isi data" title-type="p">
+    Lengkapi informasi yang diperlukan pada form.
+
+    | Isian              | Keterangan                                              |
+    | ------------------ | ------------------------------------------------------- |
+    | Nama Jenis Tagihan | Masukkan nama jenis tagihan yang akan dibuat.           |
+    | Status             | Tentukan status jenis tagihan (Aktif atau Tidak Aktif). |
+  </Step>
+
+  <Step title="Simpan data" title-type="p">
+    Setelah seluruh data terisi, klik tombol **Simpan**.
+
+    Sistem akan menyimpan data dan menampilkan jenis tagihan baru pada halaman **Jenis Tagihan**.
+  </Step>
+</Steps>
+
+Lihat dan kelola daftar [jenis tagihan](/referensi/glosarium#jenis-tagihan) yang tersedia dalam sistem.
 
 ### Edit Jenis Tagihan
 
