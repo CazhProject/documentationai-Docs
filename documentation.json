@@ -29,9 +29,9 @@
             "icon": "rocket",
             "pages": [
               {
-                "title": "Logout",
-                "path": "logout",
-                "icon": "log-out-icon"
+                "title": "Landing Page ",
+                "path": "landing-page",
+                "icon": "album-icon"
               },
               {
                 "title": "Mulai dari Sini",
