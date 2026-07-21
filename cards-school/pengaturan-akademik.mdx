@@ -1,105 +1,142 @@
 ---
-title: "Pengaturan: Akademik"
-description: "Panduan pengaturan akademik di CARDS School: tahun ajaran, tingkat, kelas, jurusan, mata pelajaran, jadwal pelajaran dan jam pelajaran, tag, kamar, kategori event, kalender akademik, serta voice over custom."
+title: 'Pengaturan: Akademik'
+description: >-
+  Panduan pengaturan akademik di CARDS School: tahun ajaran, tingkat, kelas,
+  jurusan, mata pelajaran, jadwal pelajaran dan jam pelajaran, tag, kamar,
+  kategori event, kalender akademik, serta voice over custom.
 ---
-
 Menu Akademik pada modul Pengaturan digunakan admin sekolah untuk mengelola data master akademik yang menjadi dasar fitur-fitur lain, seperti [tahun ajaran](/referensi/glosarium#tahun-ajaran), tingkat, kelas, [jurusan](/referensi/glosarium#jurusan), dan [mata pelajaran](/referensi/glosarium#mata-pelajaran).
 
-<Callout kind="info">
-Sebagian besar submenu pengaturan akademik memiliki pola yang sama: buka **Pengaturan** → **Akademik** → pilih submenu, lalu kelola data dengan aksi **Tambah**, **Edit**, dan **Hapus**.
+<Callout kind="info" collapsed="false">
+  Sebagian besar submenu pengaturan akademik memiliki pola yang sama: buka **Pengaturan** → **Akademik** → pilih submenu, lalu kelola data dengan aksi **Tambah**, **Edit**, dan **Hapus**.
 </Callout>
 
 ## Data Master Akademik
 
 Submenu berikut dikelola dengan langkah yang sama.
 
-| Submenu | Fungsi |
-| :--- | :--- |
-| **Tahun Ajaran** | Mengelola tahun ajaran aplikasi. |
-| **Tingkat** | Mengelola tingkat aplikasi. |
-| **Kelas** | Mengelola kelas aplikasi. |
-| **Jurusan** | Mengelola jurusan aplikasi. |
-| **Mata Pelajaran** | Mengelola mata pelajaran aplikasi. |
-| **Tag** | Mengelola tag aplikasi. |
-| **Kamar** | Mengelola kamar aplikasi. |
-| **Kategori Event** | Mengelola kategori event aplikasi. |
+| Submenu               | Fungsi                                                                                                  |
+| :-------------------- | :------------------------------------------------------------------------------------------------------ |
+| **Tahun Ajaran**      | Mengelola tahun ajaran aplikasi.                                                                        |
+| **Tingkat**           | Mengelola tingkat aplikasi.                                                                             |
+| **Kelas**             | Mengelola kelas aplikasi.                                                                               |
+| **Jurusan**           | Mengelola jurusan aplikasi.                                                                             |
+| **Mata Pelajaran**    | Mengelola mata pelajaran aplikasi.                                                                      |
+| **Tag**               | Mengelola tag aplikasi.                                                                                 |
+| **Kamar**             | Mengelola kamar aplikasi.                                                                               |
+| **Kategori Event**    | Mengelola kategori event aplikasi.                                                                      |
 | **Kalender Akademik** | Mengelola kalender akademik aplikasi (lihat juga [Kalender Akademik](/cards-school/kalender-akademik)). |
 
-<Steps>
-  <Step title="Buka menu Pengaturan">Login ke website, kemudian klik menu **Pengaturan**.</Step>
-  <Step title="Buka Akademik">Klik submenu **Akademik**.</Step>
-  <Step title="Pilih submenu">Klik submenu yang ingin dikelola (misalnya **Tahun Ajaran**, **Tingkat**, **Kelas**, **Jurusan**, **Mata Pelajaran**, **Tag**, **Kamar**, **Kategori Event**, atau **Kalender Akademik**). Sistem menampilkan halaman submenu tersebut.</Step>
-  <Step title="Kelola data">Pada halaman tersebut admin dapat mengelola **Tambah**, **Edit**, dan **Hapus** data.</Step>
-</Steps>
-
-<Callout kind="alert">
-Data master (misalnya kelas atau mata pelajaran) menjadi dasar fitur lain seperti presensi, jadwal, dan rapor. Data yang dihapus tidak lagi tampil di daftar dan tidak dapat dipilih pada fitur yang menggunakannya. Pastikan data memang sudah tidak digunakan sebelum menghapus.
+<Callout kind="alert" collapsed="false">
+  Data master (misalnya kelas atau mata pelajaran) menjadi dasar fitur lain seperti presensi, jadwal, dan rapor. Data yang dihapus tidak lagi tampil di daftar dan tidak dapat dipilih pada fitur yang menggunakannya. Pastikan data memang sudah tidak digunakan sebelum menghapus.
 </Callout>
 
 ### Isian formulir
 
 Semua data master bersifat per instansi dan memiliki status **Aktif**/**Tidak Aktif**. Isian tiap submenu:
 
-| Submenu | Isian |
-| :--- | :--- |
-| Tahun Ajaran, Semester, Tingkat, Kelas, Jurusan | Instansi (wajib), Nama (wajib, maks. 255 karakter, unik per instansi), Status. |
-| Mata Pelajaran | Instansi, Nama, Kode, Status. |
-| Kamar | Instansi, Nama, PIC (dipilih dari anggota non-siswa), Lokasi, Status. |
-| Tag | Instansi, Nama, Kode, Jenis Anggota (Semua / Siswa / Guru & Staff), Status. |
-| Kalender Akademik | Instansi, Hari Awal Pekan, Nama Pekan, Gambar Header (jpg/png/jpeg/heic/heif, maks. 10 MB), pilihan Sabtu libur. |
+| Submenu                                         | Isian                                                                                                            |
+| :---------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
+| Tahun Ajaran, Semester, Tingkat, Kelas, Jurusan | Instansi (wajib), Nama (wajib, maks. 255 karakter, unik per instansi), Status.                                   |
+| Mata Pelajaran                                  | Instansi, Nama, Kode, Status.                                                                                    |
+| Kamar                                           | Instansi, Nama, PIC (dipilih dari anggota non-siswa), Lokasi, Status.                                            |
+| Tag                                             | Instansi, Nama, Kode, Jenis Anggota (Semua / Siswa / Guru & Staff), Status.                                      |
+| Kalender Akademik                               | Instansi, Hari Awal Pekan, Nama Pekan, Gambar Header (jpg/png/jpeg/heic/heif, maks. 10 MB), pilihan Sabtu libur. |
 
-<Callout kind="info">
-Aturan sistem: hanya boleh ada **satu Tahun Ajaran aktif** per instansi; mengaktifkan satu tahun ajaran otomatis menonaktifkan tahun ajaran lainnya pada instansi yang sama.
+<Callout kind="info" collapsed="false">
+  Aturan sistem: hanya boleh ada **satu Tahun Ajaran aktif** per instansi; mengaktifkan satu tahun ajaran otomatis menonaktifkan tahun ajaran lainnya pada instansi yang sama.
 </Callout>
+
+## Tahun Ajaran
+
+Menu **Tahun Ajaran** digunakan untuk mengelola data tahun ajaran yang digunakan pada sistem. Admin dapat melihat daftar tahun ajaran, menambahkan tahun ajaran baru, serta mengubah data tahun ajaran yang telah dibuat.
+
+### List Tahun Ajaran
+
+Halaman **List Tahun Ajaran** digunakan untuk menampilkan seluruh data tahun ajaran yang telah dibuat pada instansi. Melalui halaman ini, Admin dapat melihat informasi tahun ajaran, mencari data, melakukan penyaringan data, serta mengakses aksi untuk menambah atau mengubah data tahun ajaran.
+
+### Tambah Tahun Ajaran
+
+Halaman **Tambah Tahun Ajaran** digunakan untuk menambahkan data tahun ajaran baru ke dalam sistem. Admin dapat mengisi informasi yang diperlukan sesuai ketentuan sehingga tahun ajaran dapat digunakan pada proses akademik.
+
+### Edit Tahun Ajaran
+
+Halaman **Edit Tahun Ajaran** digunakan untuk memperbarui informasi tahun ajaran yang telah tersedia. Perubahan yang disimpan akan langsung memperbarui data tahun ajaran pada sistem.
+
+### Hapus Tahun Ajaran
+
+Fitur **Hapus Tahun Ajaran** digunakan untuk menghapus data tahun ajaran yang sudah tidak digunakan. Sebelum menghapus data, pastikan tahun ajaran tersebut tidak lagi digunakan pada proses akademik agar tidak memengaruhi data yang berkaitan.
+
+## Tingkat
+
+Menu **Tingkat** digunakan untuk mengelola data tingkat pendidikan pada setiap instansi. Data tingkat digunakan sebagai dasar pengelompokan kelas dan berbagai fitur akademik lainnya.
+
+### List Tingkat
+
+Halaman **List Tingkat** digunakan untuk menampilkan seluruh data tingkat yang telah dibuat pada instansi. Admin dapat melihat informasi tingkat, mencari data, melakukan penyaringan data, serta mengakses aksi untuk menambah, mengubah, atau menghapus data tingkat.
+
+### Tambah Tingkat
+
+Halaman **Tambah Tingkat** digunakan untuk menambahkan data tingkat baru ke dalam sistem agar dapat digunakan dalam pengelompokan kelas dan proses akademik.
+
+### Edit Tingkat
+
+Halaman **Edit Tingkat** digunakan untuk memperbarui informasi tingkat yang telah tersedia pada sistem.
+
+### Hapus Tingkat
+
+Fitur **Hapus Tingkat** digunakan untuk menghapus data tingkat yang sudah tidak digunakan. Data yang telah dihapus tidak dapat dipilih pada fitur lain yang menggunakan data tingkat.
+
+## Kelas
+
+Menu **Kelas** digunakan untuk mengelola data kelas yang digunakan dalam kegiatan akademik. Data kelas digunakan pada berbagai fitur, seperti jadwal pelajaran, presensi, dan pengelolaan siswa.
+
+## Jurusan
+
+Menu **Jurusan** digunakan untuk mengelola data jurusan pada setiap instansi. Data jurusan digunakan untuk mengelompokkan kelas dan siswa sesuai program studi yang diterapkan.
+
+## Mata Pelajaran
+
+Menu **Mata Pelajaran** digunakan untuk mengelola data mata pelajaran yang digunakan dalam kegiatan pembelajaran. Data mata pelajaran digunakan pada penyusunan jadwal pelajaran dan fitur akademik lainnya.
 
 ## Jadwal Pelajaran
 
-Kelola jadwal pelajaran aplikasi.
+Menu **Jadwal Pelajaran** digunakan untuk mengelola jadwal pembelajaran pada setiap kelas berdasarkan tahun ajaran, semester, tingkat, jurusan, dan mata pelajaran. Admin dapat membuat, mengubah, menghapus, maupun mengimpor jadwal pelajaran.
 
-<Steps>
-  <Step title="Buka menu Pengaturan">Login ke website, kemudian klik menu **Pengaturan**.</Step>
-  <Step title="Buka Jadwal Pelajaran">Klik submenu **Akademik**, lalu klik submenu **Jadwal Pelajaran**. Sistem menampilkan halaman Jadwal Pelajaran.</Step>
-  <Step title="Kelola data">Pada halaman Jadwal Pelajaran admin dapat mengelola **Tambah**, **Edit**, dan **Hapus** data.</Step>
-</Steps>
-
-<Callout kind="alert">
-Jadwal pelajaran yang dihapus tidak lagi tampil di daftar dan tidak dapat digunakan, misalnya sebagai dasar presensi mata pelajaran. Pastikan jadwal memang sudah tidak dipakai sebelum menghapus.
+<Callout kind="alert" collapsed="false">
+  Jadwal pelajaran yang dihapus tidak lagi tampil di daftar dan tidak dapat digunakan, misalnya sebagai dasar presensi mata pelajaran. Pastikan jadwal memang sudah tidak dipakai sebelum menghapus.
 </Callout>
 
 ### Isian formulir
 
-| Isian | Ketentuan |
-| --- | --- |
-| Instansi | Wajib. |
-| Tahun Ajaran & Semester | Wajib; hanya tahun ajaran dan semester **aktif** yang dapat dipilih. |
-| Tingkat, Kelas, Jurusan | Menentukan kelas sasaran; mendukung **multi-kelas** dan pemilihan berdasarkan **Tag** siswa. |
+| Isian                          | Ketentuan                                                                                                                                               |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Instansi                       | Wajib.                                                                                                                                                  |
+| Tahun Ajaran & Semester        | Wajib; hanya tahun ajaran dan semester **aktif** yang dapat dipilih.                                                                                    |
+| Tingkat, Kelas, Jurusan        | Menentukan kelas sasaran; mendukung **multi-kelas** dan pemilihan berdasarkan **Tag** siswa.                                                            |
 | Jadwal per hari (Senin–Minggu) | Tiap hari dapat diaktifkan/dinonaktifkan dan berisi daftar jam: waktu mulai, waktu selesai, mata pelajaran (atau **Jam Istirahat**), dan guru pengampu. |
 
-<Callout kind="info">
-Jadwal pelajaran yang sudah ada dapat diduplikasi sebagai dasar jadwal baru.
+<Callout kind="info" collapsed="false">
+  Jadwal pelajaran yang sudah ada dapat diduplikasi sebagai dasar jadwal baru.
 </Callout>
 
 ### Pengaturan Jam Pelajaran
 
-Kelola dan sempurnakan pengaturan jam pelajaran yang digunakan dalam penyusunan jadwal pelajaran.
+Menu **Pengaturan Jam Pelajaran** digunakan untuk mengatur struktur jam pelajaran yang menjadi dasar penyusunan jadwal pelajaran. Sistem akan menghasilkan struktur jadwal secara otomatis berdasarkan pengaturan yang telah dibuat.
 
-<Steps>
-  <Step title="Buka Jadwal Pelajaran">Login ke website, klik menu **Pengaturan**, klik submenu **Akademik**, lalu klik submenu **Jadwal Pelajaran**. Sistem menampilkan halaman Jadwal Pelajaran.</Step>
-  <Step title="Tambah jadwal">Klik **Tambah Jadwal Pelajaran**.</Step>
-  <Step title="Buat jadwal">Input data jadwal, klik tombol **Buat Jadwal**.</Step>
-  <Step title="Struktur otomatis">Sistem otomatis meng-generate struktur jadwal pelajaran.</Step>
-</Steps>
+## Kamar
+
+Menu **Kamar** digunakan untuk mengelola data kamar yang digunakan pada instansi berasrama. Data kamar digunakan dalam pengelompokan anggota sesuai kamar yang ditempati.
+
+## Tag
+
+Menu **Tag** digunakan untuk mengelola tag yang digunakan sebagai pengelompokan data sesuai kebutuhan pada berbagai fitur di dalam sistem.
 
 ## Voice Over Custom
 
-Tambahkan voice over custom yang dapat digunakan untuk presensi.
+Menu **Voice Over Custom** digunakan untuk mengelola voice over yang dapat digunakan pada fitur presensi. Voice over yang telah ditambahkan dapat digunakan pada **Presensi Harian** maupun **Presensi Kegiatan**.
 
-<Steps>
-  <Step title="Buka menu Pengaturan">Login ke website, kemudian klik menu **Pengaturan**.</Step>
-  <Step title="Buka Voice Over Custom">Klik submenu **Akademik**, lalu pilih menu **Voice Over Custom**. Sistem menampilkan halaman Daftar Voice Over Custom yang telah ditambahkan.</Step>
-  <Step title="Tambah voice over">Klik tombol **Tambah Voice Over**, isi formulir yang tersedia sesuai dengan kebutuhan Anda, lalu klik tombol **Simpan** untuk menambahkan voice over custom baru.</Step>
-</Steps>
-
-<Callout kind="info">
-Voice over dapat digunakan untuk [presensi harian](/cards-school/presensi-harian) dan [presensi kegiatan](/cards-school/presensi-kegiatan).
+<Callout kind="info" collapsed="false">
+  Voice over dapat digunakan untuk [presensi harian](/cards-school/presensi-harian) dan [presensi kegiatan](/cards-school/presensi-kegiatan).
 </Callout>
+
