@@ -350,6 +350,14 @@
             "group": "Detail Staff",
             "pages": [
               {
+                "title": "Kesehatan",
+                "path": "kesehatan"
+              },
+              {
+                "title": "Dokumen",
+                "path": "dokumen"
+              },
+              {
                 "title": "Tagihan",
                 "path": "tagihan"
               },
