@@ -347,26 +347,30 @@
             ]
           },
           {
-            "group": "Detail Staff",
+            "group": "Detail",
             "pages": [
               {
-                "title": "Kesehatan",
+                "title": "Detail Anggota Cetak Data Diri",
+                "path": "detail-anggota-cetak-data-diri"
+              },
+              {
+                "title": "Staff Detail Kesehatan",
                 "path": "kesehatan"
               },
               {
-                "title": "Dokumen",
+                "title": "Staff Detail Dokumen",
                 "path": "dokumen"
               },
               {
-                "title": "Tagihan",
+                "title": "Staff Detail Tagihan",
                 "path": "tagihan"
               },
               {
-                "title": "Kartu",
+                "title": "Staff Detail Kartu",
                 "path": "kartu"
               },
               {
-                "title": "Improvement Data Diri",
+                "title": "Staff Detail Improvement Data Diri",
                 "path": "improvement-data-diri"
               }
             ]
