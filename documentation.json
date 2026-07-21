@@ -345,6 +345,15 @@
                 "path": "cards-school/pengaturan-lainnya"
               }
             ]
+          },
+          {
+            "group": "Detail Staff",
+            "pages": [
+              {
+                "title": "Improvement Data Diri",
+                "path": "improvement-data-diri"
+              }
+            ]
           }
         ]
       },
