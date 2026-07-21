@@ -350,6 +350,10 @@
             "group": "Detail Staff",
             "pages": [
               {
+                "title": "Tagihan",
+                "path": "tagihan"
+              },
+              {
                 "title": "Kartu",
                 "path": "kartu"
               },
