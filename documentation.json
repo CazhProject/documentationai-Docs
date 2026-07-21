@@ -350,6 +350,10 @@
             "group": "Detail Staff",
             "pages": [
               {
+                "title": "Kartu",
+                "path": "kartu"
+              },
+              {
                 "title": "Improvement Data Diri",
                 "path": "improvement-data-diri"
               }
