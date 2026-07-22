@@ -29,14 +29,14 @@
             "icon": "rocket",
             "pages": [
               {
-                "title": "Landing Page ",
-                "path": "landing-page",
-                "icon": "album-icon"
-              },
-              {
                 "title": "Mulai dari Sini",
                 "path": "cards-school/mulai-dari-sini",
                 "icon": "flag"
+              },
+              {
+                "title": "Landing Page ",
+                "path": "landing-page",
+                "icon": "album-icon"
               },
               {
                 "title": "Login",
