@@ -29,6 +29,10 @@
             "icon": "rocket",
             "pages": [
               {
+                "title": "Logout",
+                "path": "logoutt"
+              },
+              {
                 "title": "Landing Page ",
                 "path": "landing-page",
                 "icon": "album-icon"
