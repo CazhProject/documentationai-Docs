@@ -347,40 +347,6 @@ Fitur **Pindah Alumni** berfungsi untuk memindahkan satu atau beberapa data sisw
 
 Mendaftarkan siswa baru ke instansi: satuan melalui formulir, atau massal melalui import file Excel. Siswa yang berhasil ditambahkan langsung tampil di daftar Siswa dan dapat dikelola seperti anggota lain.
 
-### Isian formulir Tambah Siswa
-
-**Data Diri:**
-
-| Field                         | Wajib | Keterangan                                     |
-| ----------------------------- | ----- | ---------------------------------------------- |
-| Instansi                      | Ya    | Instansi tempat siswa terdaftar.               |
-| Nama Lengkap                  | Ya    | -                                              |
-| Jenis Kelamin                 | Ya    | Laki - laki / Perempuan.                       |
-| Email                         | Ya    | Harus unik antar anggota.                      |
-| No HP                         | Ya    | Angka, divalidasi format nomor telepon.        |
-| No Induk                      | Ya    | Nomor induk anggota.                           |
-| Nomor Kartu                   | Ya    | Angka; dapat divalidasi dengan tombol **Cek**. |
-| Tahun Ajaran                  | Ya    | -                                              |
-| Tingkat                       | Ya    | -                                              |
-| Kelas                         | Ya    | -                                              |
-| NISN                          | Tidak | -                                              |
-| Tempat Lahir, Tanggal Lahir   | Tidak | Format tanggal Y-m-d.                          |
-| Alamat Lengkap                | Tidak | -                                              |
-| Asal Sekolah, NPSN, Nomor KIP | Tidak | NPSN dan KIP maksimal 20 karakter.             |
-| No Identitas (NIK)            | Tidak | Angka 16 digit.                                |
-| Jurusan, Kamar                | Tidak | -                                              |
-| UID Kartu                     | Tidak | Harus unik.                                    |
-| Tag                           | Tidak | Pilihan ganda dari tag di instansi.            |
-| Foto                          | Tidak | jpg/png/jpeg/heic/heif, maksimal 10 MB.        |
-
-**Data Orang Tua** (semua opsional): Nama Ayah, NIK Ayah, Pekerjaan Ayah (pilihan dari daftar pekerjaan), No HP Ayah, serta field yang sama untuk Ibu.
-
-### Kolom template import
-
-Import siswa menggunakan template Excel (`template-member-v9.xls`, format .xls maksimal 4 MB; baris judul di baris ke-3, data mulai baris ke-4) dengan kolom: `nama_lengkap` (wajib), `tempat_lahir`, `tanggal_lahir` (d/m/Y), `jenis_kelamin` (wajib: L/P), `alamat_lengkap`, `email` (wajib, unik), `nomor_handphone` (angka 11–15 digit), `nomor_induk_member` (wajib), `nik` (16 digit), `nomor_kartu` (wajib, angka), `uid_kartu` (unik), `tag` (dipisah koma, kode tag harus terdaftar), `rfid`, `nisn`, `nama_ayah`, `nama_ibu`, dan `kamar` (harus cocok nama kamar aktif di instansi). Selain import data anggota, tersedia jenis import **Foto Anggota** (foto jpeg/png/jpg/heic/heif maksimal 2 MB per file).
-
-Halaman **Log Import** menampilkan kolom: Tanggal Import, Instansi, Tahun Ajaran, Tingkat, Kelas, Jurusan, Jenis Import, Total Data, dan Status (PENDING / SUCCESS / FAILED), dengan filter rentang tanggal dan penempatan.
-
 ### Tambah Siswa
 
 Link Video: [https://drive.google.com/file/d/1dzLDF2Z9ZZFNriXjUy6dheVB57ieRxHL/view?usp=sharing](https://drive.google.com/file/d/1dzLDF2Z9ZZFNriXjUy6dheVB57ieRxHL/view?usp=sharing)
@@ -426,7 +392,7 @@ Edit data diri dapat digunakan untuk:
   </Step>
 </Steps>
 
-### Improvement Import
+### &#x20;Import Siswa
 
 Link Video: [https://drive.google.com/file/d/1dzLDF2Z9ZZFNriXjUy6dheVB57ieRxHL/view?usp=sharing](https://drive.google.com/file/d/1dzLDF2Z9ZZFNriXjUy6dheVB57ieRxHL/view?usp=sharing)
 
