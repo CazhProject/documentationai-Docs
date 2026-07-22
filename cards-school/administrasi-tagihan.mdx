@@ -1,123 +1,80 @@
 ---
-title: "Administrasi: Tagihan"
-description: "Panduan mengelola tagihan di CARDS School: data tagihan, pembuatan tagihan satuan dan massal, import, laporan pembayaran, rekap pembayaran, hingga tunggakan."
+title: 'Administrasi: Tagihan'
+description: >-
+  Panduan mengelola tagihan di CARDS School: data tagihan, pembuatan tagihan
+  satuan dan massal, import, laporan pembayaran, rekap pembayaran, hingga
+  tunggakan.
 ---
-
 Menu Tagihan digunakan admin sekolah untuk membuat dan memonitor seluruh tagihan anggota (siswa, guru, dan staf), memantau pembayaran, serta menindaklanjuti tunggakan.
 
-<Callout kind="info">Untuk pembayaran tagihan oleh Admin, lihat [Keuangan: Transaksi](/cards-school/keuangan-transaksi). Orang tua juga dapat membayar tagihan langsung dari aplikasi; lihat panduan [CARDS Parent](/cards-parent/keuangan).</Callout>
+Untuk pembayaran tagihan oleh Admin, lihat [Keuangan: Transaksi](/cards-school/keuangan-transaksi). Orang tua juga dapat membayar tagihan langsung dari aplikasi; lihat panduan [CARDS Parent](/cards-parent/keuangan).
 
 ## Daftar Data Tagihan
 
 Memonitor data tagihan seluruh anggota.
 
-<Steps>
-  <Step title="Buka Data Tagihan">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Data Tagihan**. Sistem akan menampilkan halaman Data Tagihan.</Step>
-  <Step title="Kelola data">Memonitor data tagihan seluruh anggota, melihat ringkasan nominal tagihan terbayar dan belum terbayar, serta export data tagihan.</Step>
-</Steps>
-
 ### Informasi yang ditampilkan
 
 Tabel Data Tagihan menampilkan kolom: **Status**, **Nama**, **Ref ID**, **Jenis Tagihan**, **Catatan**, **Jumlah Tagihan**, **Terbayar**, dan **Sisa Tagihan** (kolom Nomor Kartu tersembunyi secara default). Data dapat difilter berdasarkan **Instansi**, **Jenis Tagihan**, **Tingkat**, **Kelas**, **Status**, serta rentang **Dari Tanggal** dan **Sampai Tanggal**; jumlah baris per halaman dapat dipilih 10/50/100/500/1000/2000. Status tagihan terdiri dari:
 
-| Status | Keterangan |
-| --- | --- |
-| **Lunas** | Tagihan telah dibayar penuh. |
-| **Terbayar Sebagian** | Tagihan baru dibayar sebagian. |
-| **Belum Terbayar** | Belum ada pembayaran. |
+| Status                  | Keterangan                                    |
+| ----------------------- | --------------------------------------------- |
+| **Lunas**               | Tagihan telah dibayar penuh.                  |
+| **Terbayar Sebagian**   | Tagihan baru dibayar sebagian.                |
+| **Belum Terbayar**      | Belum ada pembayaran.                         |
 | **Menunggu Pembayaran** | Invoice sudah dibuat dan menunggu pembayaran. |
 
 ## Edit Data Tagihan
 
 Memperbarui data tagihan anggota, misalnya mengoreksi nominal tagihan yang salah dibuat atau melengkapi catatan. Perubahan nominal memengaruhi jumlah yang harus dibayar anggota, jadi pastikan nilainya benar sebelum menyimpan.
 
-<Steps>
-  <Step title="Buka Data Tagihan">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Data Tagihan**. Sistem akan menampilkan halaman Data Tagihan.</Step>
-  <Step title="Pilih tagihan">Pilih salah satu data tagihan; gunakan fitur pencarian atau filter untuk menemukan data tagihan secara spesifik.</Step>
-  <Step title="Buka detail">Klik pada **Nama** atau klik ikon **Edit** pada baris data tagihan yang dipilih. Sistem akan menampilkan halaman detail tagihan yang dipilih.</Step>
-  <Step title="Edit data">Pada halaman detail data tagihan, Admin dapat edit total tagihan, edit catatan, melihat riwayat pembayaran tagihan, dan edit nominal total terbayar untuk metode pembayaran tunai.</Step>
-</Steps>
-
-<Callout kind="info">
-Aturan sistem: jika tagihan berstatus **Belum Terbayar**, hanya nominal tagihan yang dapat diubah. Untuk tagihan yang sudah memiliki pembayaran, perubahan dilakukan melalui alur penyesuaian (adjustment) per pembayaran beserta catatannya.
+<Callout kind="info" collapsed="false">
+  Aturan sistem: jika tagihan berstatus **Belum Terbayar**, hanya nominal tagihan yang dapat diubah. Untuk tagihan yang sudah memiliki pembayaran, perubahan dilakukan melalui alur penyesuaian (adjustment) per pembayaran beserta catatannya.
 </Callout>
 
 ## Hapus Data Tagihan
 
 Membatalkan tagihan yang belum terbayar, misalnya tagihan yang salah dibuat atau tidak jadi ditagihkan, secara satuan maupun massal. Tagihan yang dihapus tidak lagi tampil di daftar tagihan anggota dan tidak lagi dapat dibayar.
 
-<Steps>
-  <Step title="Buka Data Tagihan">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Data Tagihan**. Sistem akan menampilkan halaman Data Tagihan.</Step>
-  <Step title="Hapus satuan atau massal">**Satuan**: pilih salah satu data tagihan (gunakan pencarian atau filter), lalu klik ikon **Hapus** pada baris data tagihan yang dipilih. **Massal**: pilih beberapa data tagihan melalui checkbox, lalu klik **Hapus**.</Step>
-  <Step title="Konfirmasi">Sistem akan menampilkan popup konfirmasi hapus data tagihan.</Step>
-</Steps>
-
-<Callout kind="alert">Hanya tagihan berstatus belum terbayar yang dapat dihapus, dan penghapusan bersifat permanen.</Callout>
+Hanya tagihan berstatus belum terbayar yang dapat dihapus, dan penghapusan bersifat permanen.
 
 ## Buat Tagihan Satuan
 
 Membuat tagihan baru untuk satu anggota tertentu. Tagihan yang dibuat tampil di Data Tagihan dan pada tab Tagihan anggota bersangkutan, serta dapat dibayar melalui menu Keuangan → Transaksi atau aplikasi orang tua.
 
-<Steps>
-  <Step title="Buka Buat/Import Tagihan">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Buat/Import Tagihan**. Sistem akan menampilkan halaman Formulir Buat Tagihan Satuan.</Step>
-  <Step title="Lengkapi formulir">Cari data anggota berdasarkan Nama atau Nomor Kartu, buat tagihan berdasarkan Jenis Tagihan, isi nominal Jumlah Tagihan sesuai kebutuhan, dan pilih jenis Statis VA maupun Dinamis VA.</Step>
-</Steps>
-
 ### Isian formulir
 
-| Isian | Ketentuan |
-| --- | --- |
-| Instansi | Wajib. |
+| Isian                      | Ketentuan                           |
+| -------------------------- | ----------------------------------- |
+| Instansi                   | Wajib.                              |
 | Anggota (Nama/Nomor Kartu) | Wajib; dipilih dari daftar anggota. |
-| Jenis Tagihan | Wajib. |
-| Jumlah Tagihan | Wajib, angka. |
-| Catatan | Opsional. |
+| Jenis Tagihan              | Wajib.                              |
+| Jumlah Tagihan             | Wajib, angka.                       |
+| Catatan                    | Opsional.                           |
 
 ## Buat Tagihan Massal
 
 Membuat tagihan yang sama untuk banyak anggota sekaligus berdasarkan jenis anggota atau tag; praktis untuk tagihan rutin seperti SPP. Setiap anggota terpilih menerima tagihannya masing-masing.
 
-<Steps>
-  <Step title="Buka Buat/Import Tagihan">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Buat/Import Tagihan**.</Step>
-  <Step title="Buka tab Massal">Klik tab **Massal**. Sistem akan menampilkan halaman Formulir Buat Tagihan Massal.</Step>
-  <Step title="Lengkapi formulir">Pilih penerima tagihan berdasarkan Jenis Anggota (siswa, guru, dan staf) atau secara spesifik berdasarkan Tag, buat tagihan berdasarkan Jenis Tagihan, isi nominal Jumlah Tagihan sesuai kebutuhan, dan pilih jenis Statis VA maupun Dinamis VA.</Step>
-</Steps>
-
-<Callout kind="info">
-Pada mode massal, penerima dapat dipersempit: untuk **Siswa** berdasarkan Tingkat, Kelas, dan Jurusan; untuk **Guru** berdasarkan jenis guru; untuk **Staf** berdasarkan jenis staf; serta berdasarkan **Tag** (dapat memilih lebih dari satu).
+<Callout kind="info" collapsed="false">
+  Pada mode massal, penerima dapat dipersempit: untuk **Siswa** berdasarkan Tingkat, Kelas, dan Jurusan; untuk **Guru** berdasarkan jenis guru; untuk **Staf** berdasarkan jenis staf; serta berdasarkan **Tag** (dapat memilih lebih dari satu).
 </Callout>
 
 ## Import Data Tagihan
 
 Membuat tagihan melalui import file; cocok ketika nominal tagihan berbeda-beda per anggota, karena nominal diisi per baris pada file template.
 
-<Steps>
-  <Step title="Buka Buat/Import Tagihan">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Buat/Import Tagihan**.</Step>
-  <Step title="Buka tab Import">Klik tab **Import**. Sistem akan menampilkan halaman Formulir Import Tagihan.</Step>
-  <Step title="Lengkapi formulir">Unduh template import tagihan, input nominal tagihan untuk masing-masing anggota penerima tagihan pada file template, lalu unggah file import tagihan.</Step>
-</Steps>
-
-<Callout kind="info">
-Aturan import: file wajib berformat **.xls** dengan ukuran maksimal **4 MB (4096 KB)**. Template yang diunduh sudah terisi anggota **aktif** sesuai filter (instansi, jenis anggota, tag). Kolom template: **Nama** (opsional), **Nomor Kartu** (wajib, divalidasi terhadap instansi), **Jumlah** (wajib, angka, minimal 1), dan **Catatan** (opsional). Untuk jenis anggota Guru/Staf, jenis guru/staf wajib dipilih sebelum import; setiap import tercatat pada halaman **Log Import**, dan anggota menerima notifikasi tagihan baru.
+<Callout kind="info" collapsed="false">
+  Aturan import: file wajib berformat **.xls** dengan ukuran maksimal **4 MB (4096 KB)**. Template yang diunduh sudah terisi anggota **aktif** sesuai filter (instansi, jenis anggota, tag). Kolom template: **Nama** (opsional), **Nomor Kartu** (wajib, divalidasi terhadap instansi), **Jumlah** (wajib, angka, minimal 1), dan **Catatan** (opsional). Untuk jenis anggota Guru/Staf, jenis guru/staf wajib dipilih sebelum import; setiap import tercatat pada halaman **Log Import**, dan anggota menerima notifikasi tagihan baru.
 </Callout>
 
 ## Laporan Pembayaran Tagihan
 
 Memonitor laporan pembayaran tagihan seluruh anggota.
 
-<Steps>
-  <Step title="Buka Laporan Pembayaran">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Laporan Pembayaran**. Sistem akan menampilkan halaman Laporan Pembayaran.</Step>
-  <Step title="Kelola laporan">Memonitor laporan pembayaran seluruh anggota, mencetak struk bukti pembayaran, dan melihat ringkasan total penerimaan tagihan (tunai dan non-tunai).</Step>
-</Steps>
-
 ## Daftar Rekap Pembayaran Tagihan
 
 Memonitor rekap pembayaran setiap jenis tagihan.
-
-<Steps>
-  <Step title="Buka Rekap Pembayaran">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Rekap Pembayaran**. Sistem akan menampilkan halaman Daftar Rekap Pembayaran.</Step>
-  <Step title="Monitor rekap">Pada halaman tersebut, Admin dapat memonitor daftar rekap pembayaran dan total penerimaan setiap jenis tagihan.</Step>
-</Steps>
 
 ### Informasi yang ditampilkan
 
@@ -127,27 +84,36 @@ Rekap dikelompokkan per **jenis tagihan** dan **instansi**, menampilkan total pe
 
 Melihat detail rekap pembayaran untuk satu jenis tagihan.
 
-<Steps>
-  <Step title="Buka Rekap Pembayaran">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Rekap Pembayaran**. Sistem akan menampilkan halaman Daftar Rekap Pembayaran.</Step>
-  <Step title="Pilih rekap">Pilih salah satu data rekap pembayaran; gunakan fitur pencarian atau filter untuk menemukan jenis tagihan secara spesifik. Klik ikon **Detail** pada baris rekap pembayaran yang dipilih.</Step>
-  <Step title="Kelola detail">Sistem akan menampilkan halaman Detail Rekap Pembayaran untuk jenis tagihan tersebut. Admin dapat melihat ringkasan total penerimaan, melihat daftar pembayaran, melihat dan mencetak bukti pembayaran setiap daftar pembayaran tagihan, export daftar pembayaran, serta filter daftar pembayaran berdasarkan metode pembayaran.</Step>
-</Steps>
-
 ## Tunggakan Tagihan
 
 Memonitor tunggakan tagihan seluruh anggota.
 
-<Steps>
-  <Step title="Buka Tunggakan">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Tunggakan**. Sistem akan menampilkan halaman Daftar Tunggakan.</Step>
-  <Step title="Kelola daftar">Memonitor daftar tunggakan seluruh anggota, menampilkan daftar tunggakan secara spesifik menggunakan filter maupun pencarian, dan melakukan export daftar tunggakan.</Step>
-</Steps>
-
 ## Detail Tunggakan Tagihan
 
-Menindaklanjuti tunggakan per anggota.
+Menindaklanjuti tunggakan per anggota.\
+\
+Pengingat Tagihan
+-----------------
 
-<Steps>
-  <Step title="Buka Tunggakan">Login ke website, klik menu **Administrasi**, klik submenu **Tagihan**, lalu klik **Tunggakan**. Sistem akan menampilkan halaman Daftar Tunggakan.</Step>
-  <Step title="Pilih tunggakan">Pilih salah satu data tunggakan; gunakan fitur pencarian atau filter untuk menemukan anggota secara spesifik. Klik ikon **Detail** pada baris data tunggakan yang dipilih.</Step>
-  <Step title="Tindak lanjuti">Sistem akan menampilkan halaman Detail Tunggakan untuk anggota tersebut. Admin dapat melihat daftar tagihan, membuat invoice tunggakan, membayar tagihan menggunakan [Kartu](/referensi/glosarium#kartu), atau membayar tagihan menggunakan Tunai.</Step>
-</Steps>
+**Edit Pengingat Tagihan&#x20;**&#x6D;emungkinkan admin mengubah pengaturan pengingat tagihan yang telah dibuat sesuai kebutuhan. Langkah-langkah sebagai berikut :
+
+1. Login ke website, kemudian klik menu Pengaturan.
+2. Kemudian klik submenu Tagihan.
+3. Klik/Pilih submenu Pengingat Tagihan.
+4. Menampilkan Halaman Pengingat Tagihan.
+5. Sistem menampilkan list data Pengingat Tagihan.
+6. Klik button action Edit pada salah satu data.
+
+Ubah data sesuai yang diinginkan, lalu klik button Simpan.\
+\
+Legalitas Bukti Pembayaran
+--------------------------
+
+**Legalitas Bukti Pembayaran** memungkinkan admin mengatur informasi legalitas yang akan ditampilkan pada bukti pembayaran sebagai informasi resmi transaksi. Langkah-langkah sebagai berikut :
+
+1. Login ke website, kemudian klik menu Pengaturan.
+2. Kemudian klik submenu Tagihan.
+3. Klik/Pilih submenu Legalitas Bukti Pembayaran.
+4. Menampilkan popup Legalitas Bukti Bayar.
+5. Input data Legalitas Bukti Bayar yang diinginkan, lalu klik button Simpan.
+
