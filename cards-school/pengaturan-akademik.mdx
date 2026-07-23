@@ -31,13 +31,25 @@ Submenu berikut dikelola dengan langkah yang sama.
   Data master (misalnya kelas atau mata pelajaran) menjadi dasar fitur lain seperti presensi, jadwal, dan rapor. Data yang dihapus tidak lagi tampil di daftar dan tidak dapat dipilih pada fitur yang menggunakannya. Pastikan data memang sudah tidak digunakan sebelum menghapus.
 </Callout>
 
-## Tahun Ajaran
+### Isian formulir
 
-Menu **Tahun Ajaran** digunakan untuk mengelola data tahun ajaran yang digunakan pada sistem. Admin dapat melihat daftar tahun ajaran, menambahkan tahun ajaran baru, serta mengubah data tahun ajaran yang telah dibuat.
+Semua data master bersifat per instansi dan memiliki status **Aktif**/**Tidak Aktif**. Isian tiap submenu:
+
+| Submenu                                         | Isian                                                                                                            |
+| :---------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
+| Tahun Ajaran, Semester, Tingkat, Kelas, Jurusan | Instansi (wajib), Nama (wajib, maks. 255 karakter, unik per instansi), Status.                                   |
+| Mata Pelajaran                                  | Instansi, Nama, Kode, Status.                                                                                    |
+| Kamar                                           | Instansi, Nama, PIC (dipilih dari anggota non-siswa), Lokasi, Status.                                            |
+| Tag                                             | Instansi, Nama, Kode, Jenis Anggota (Semua / Siswa / Guru & Staff), Status.                                      |
+| Kalender Akademik                               | Instansi, Hari Awal Pekan, Nama Pekan, Gambar Header (jpg/png/jpeg/heic/heif, maks. 10 MB), pilihan Sabtu libur. |
 
 <Callout kind="info" collapsed="false">
   Aturan sistem: hanya boleh ada **satu Tahun Ajaran aktif** per instansi; mengaktifkan satu tahun ajaran otomatis menonaktifkan tahun ajaran lainnya pada instansi yang sama.
 </Callout>
+
+## Tahun Ajaran
+
+Menu **Tahun Ajaran** digunakan untuk mengelola data tahun ajaran yang digunakan pada sistem. Admin dapat melihat daftar tahun ajaran, menambahkan tahun ajaran baru, serta mengubah data tahun ajaran yang telah dibuat.
 
 <Callout kind="info" collapsed="false">
   Pastikan Anda sudah login sebagai Admin dan memiliki hak akses ke menu **Pengaturan → Akademik → Tahun Ajaran**.
@@ -631,40 +643,142 @@ Fitur **Hapus Mata Pelajaran** digunakan untuk menghapus data mata pelajaran yan
 
 ## Jadwal Pelajaran
 
-Menu **Jadwal Pelajaran** digunakan untuk mengelola jadwal pembelajaran pada setiap kelas berdasarkan tahun ajaran, semester, tingkat, jurusan, dan mata pelajaran. Admin dapat membuat, mengubah, menghapus, maupun mengimpor jadwal pelajaran.
+Menu **Jadwal Pelajaran** digunakan untuk mengelola jadwal pelajaran pada setiap kelas. Admin dapat melihat daftar jadwal pelajaran, menambahkan jadwal baru, mengubah jadwal, menghapus jadwal, serta mengimpor jadwal pelajaran ke dalam sistem.
+
+<Callout kind="info" collapsed="false">
+  Pastikan Anda sudah login sebagai **Admin** dan memiliki hak akses ke menu **Pengaturan → Akademik → Jadwal Pelajaran**.
+</Callout>
 
 ### List Jadwal Pelajaran
 
-Halaman **List Jadwal Pelajaran** digunakan untuk menampilkan seluruh data jadwal pelajaran yang telah dibuat pada instansi. Admin dapat melihat informasi jadwal, mencari data, melakukan penyaringan data, serta mengakses aksi untuk menambah, mengubah, menghapus, atau mengimpor jadwal pelajaran.
+Halaman **Jadwal Pelajaran** digunakan untuk melihat daftar jadwal pelajaran yang telah dibuat pada sistem. Admin dapat mencari, memfilter, serta mengakses fitur tambah, edit, salin, dan hapus jadwal pelajaran.
+
+<Steps>
+  <Step title="Buka menu Jadwal Pelajaran" title-type="p">
+    Pada sidebar, klik **Pengaturan → Akademik → Jadwal Pelajaran**.
+  </Step>
+
+  <Step title="Lihat daftar Jadwal Pelajaran" title-type="p">
+    Sistem menampilkan seluruh data jadwal pelajaran yang telah dibuat.
+  </Step>
+
+  <Step title="Filter data Jadwal Pelajaran" title-type="p">
+    Klik tombol **Filter**, kemudian pilih filter seperti **Instansi, Tahun Ajaran, Tingkat, Kelas, Jurusan, Tag, Semester,** atau **Status**.
+  </Step>
+
+  <Step title="Cari data Jadwal Pelajaran" title-type="p">
+    Masukkan kata kunci pada kolom **Cari**.
+
+    Sistem akan menampilkan data yang sesuai.
+  </Step>
+</Steps>
 
 ### Tambah Jadwal Pelajaran
 
 Halaman **Tambah Jadwal Pelajaran** digunakan untuk membuat jadwal pelajaran baru berdasarkan tahun ajaran, semester, tingkat, kelas, jurusan, dan mata pelajaran. Jadwal yang dibuat akan digunakan sebagai acuan pelaksanaan kegiatan belajar mengajar.
 
+<Steps>
+  <Step title="Buka menu Jadwal Pelajaran" title-type="p">
+    Pada sidebar, klik **Pengaturan → Akademik → Jadwal Pelajaran**.
+  </Step>
+
+  <Step title="Buka form Tambah Jadwal Pelajaran" title-type="p">
+    Klik tombol **Tambah Jadwal Pelajaran**.
+  </Step>
+
+  <Step title="Isi informasi jadwal" title-type="p">
+    Lengkapi data berikut:
+
+    | Isian              | Keterangan                                                              |
+    | ------------------ | ----------------------------------------------------------------------- |
+    | Instansi           | Pilih instansi.                                                         |
+    | Tingkat            | Pilih tingkat.                                                          |
+    | Multi Kelas        | Aktifkan apabila jadwal berlaku untuk lebih dari satu kelas.            |
+    | Kelas              | Pilih satu atau beberapa kelas.                                         |
+    | Jurusan (Opsional) | Pilih jurusan apabila diperlukan.                                       |
+    | Tag (Opsional)     | Pilih tag apabila jadwal hanya berlaku untuk siswa dengan tag tertentu. |
+  </Step>
+
+  <Step title="Lanjutkan pembuatan jadwal" title-type="p">
+    Klik tombol **Lanjutkan**.
+
+    Sistem akan menampilkan halaman pengaturan jadwal pelajaran.
+  </Step>
+
+  <Step title="Atur jadwal pelajaran" title-type="p">
+    Tambahkan jadwal pada setiap hari dengan mengisi **Jam Mulai**, **Jam Selesai**, **Mata Pelajaran**, dan **Guru**.
+  </Step>
+
+  <Step title="Simpan data" title-type="p">
+    Setelah seluruh jadwal selesai diatur, simpan data untuk membuat jadwal pelajaran.
+  </Step>
+</Steps>
+
 ### Edit Jadwal Pelajaran
 
 Halaman **Edit Jadwal Pelajaran** digunakan untuk memperbarui informasi jadwal pelajaran yang telah tersedia pada sistem. Perubahan yang disimpan akan langsung memperbarui jadwal pelajaran yang digunakan.
+
+<Steps>
+  <Step title="Buka menu Jadwal Pelajaran" title-type="p">
+    Pada sidebar, klik **Pengaturan → Akademik → Jadwal Pelajaran**.
+  </Step>
+
+  <Step title="Buka halaman Edit" title-type="p">
+    Klik menu **Edit** pada data yang akan diubah.
+  </Step>
+
+  <Step title="Perbarui informasi jadwal" title-type="p">
+    Ubah informasi jadwal maupun detail mata pelajaran sesuai kebutuhan.
+  </Step>
+
+  <Step title="Simpan perubahan" title-type="p">
+    Klik **Simpan** untuk memperbarui data jadwal pelajaran.
+  </Step>
+</Steps>
 
 ### Hapus Jadwal Pelajaran
 
 Fitur **Hapus Jadwal Pelajaran** digunakan untuk menghapus data jadwal pelajaran yang sudah tidak digunakan. Pastikan jadwal pelajaran tidak lagi digunakan sebagai acuan kegiatan pembelajaran sebelum melakukan penghapusan.
 
-### Import Jadwal Pelajaran
+<Steps>
+  <Step title="Buka menu Jadwal Pelajaran" title-type="p">
+    Pada sidebar, klik **Pengaturan → Akademik → Jadwal Pelajaran**.
+  </Step>
 
-Fitur **Import Jadwal Pelajaran** digunakan untuk menambahkan data jadwal pelajaran secara massal menggunakan template yang telah disediakan oleh sistem. Fitur ini memudahkan Admin dalam mengelola jadwal pelajaran dalam jumlah besar tanpa harus memasukkan data satu per satu.
+  <Step title="Pilih data Jadwal Pelajaran" title-type="p">
+    Klik menu **Hapus** pada data yang akan dihapus.
+  </Step>
+
+  <Step title="Konfirmasi penghapusan" title-type="p">
+    Klik **Hapus** untuk menghapus data atau **Batal** untuk membatalkan proses.
+  </Step>
+</Steps>
 
 <Callout kind="alert" collapsed="false">
   Jadwal pelajaran yang dihapus tidak lagi tampil di daftar dan tidak dapat digunakan, misalnya sebagai dasar presensi mata pelajaran. Pastikan jadwal memang sudah tidak dipakai sebelum menghapus.
 </Callout>
 
-### Isian formulir
+### Import Jadwal Pelajaran
 
-| Isian                          | Ketentuan                                                                                                                                               |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Instansi                       | Wajib.                                                                                                                                                  |
-| Tahun Ajaran & Semester        | Wajib; hanya tahun ajaran dan semester **aktif** yang dapat dipilih.                                                                                    |
-| Tingkat, Kelas, Jurusan        | Menentukan kelas sasaran; mendukung **multi-kelas** dan pemilihan berdasarkan **Tag** siswa.                                                            |
-| Jadwal per hari (Senin–Minggu) | Tiap hari dapat diaktifkan/dinonaktifkan dan berisi daftar jam: waktu mulai, waktu selesai, mata pelajaran (atau **Jam Istirahat**), dan guru pengampu. |
+Fitur **Import Jadwal Pelajaran** digunakan untuk menambahkan data jadwal pelajaran secara massal menggunakan template yang telah disediakan oleh sistem. Fitur ini memudahkan Admin dalam mengelola jadwal pelajaran dalam jumlah besar tanpa harus memasukkan data satu per satu.
+
+<Steps>
+  <Step title="Buka halaman Edit Jadwal Pelajaran" title-type="p">
+    Pilih salah satu data jadwal pelajaran, kemudian buka halaman **Edit**.
+  </Step>
+
+  <Step title="Klik tombol Import" title-type="p">
+    Klik tombol **Import** pada bagian jadwal pelajaran.
+  </Step>
+
+  <Step title="Unggah file" title-type="p">
+    Pilih file jadwal pelajaran sesuai format yang ditentukan.
+  </Step>
+
+  <Step title="Proses import" title-type="p">
+    Sistem akan memproses data dan menambahkan jadwal pelajaran ke dalam sistem.
+  </Step>
+</Steps>
 
 <Callout kind="info" collapsed="false">
   Jadwal pelajaran yang sudah ada dapat diduplikasi sebagai dasar jadwal baru.
@@ -672,7 +786,58 @@ Fitur **Import Jadwal Pelajaran** digunakan untuk menambahkan data jadwal pelaja
 
 ### Pengaturan Jam Pelajaran
 
-Menu **Pengaturan Jam Pelajaran** digunakan untuk mengatur struktur jam pelajaran yang menjadi dasar penyusunan jadwal pelajaran. Sistem akan menghasilkan struktur jadwal secara otomatis berdasarkan pengaturan yang telah dibuat.
+Fitur **Pengaturan Jam Pelajaran** digunakan untuk membuat struktur jadwal pelajaran secara otomatis berdasarkan durasi jam pelajaran dan jam operasional sekolah. Sistem akan menghasilkan struktur jadwal dari **Senin hingga Sabtu** yang dapat digunakan saat menyusun jadwal pelajaran.
+
+<Steps>
+  <Step title="Buka halaman Edit Jadwal Pelajaran" title-type="p">
+    Pilih salah satu data jadwal pelajaran, kemudian buka halaman **Edit**.
+  </Step>
+
+  <Step title="Aktifkan pengaturan otomatis" title-type="p">
+    Aktifkan opsi **Atur jam pelajaran secara otomatis**.
+  </Step>
+
+  <Step title="Isi pengaturan jam pelajaran" title-type="p">
+    Lengkapi informasi berikut:
+
+    - Durasi satu jam pelajaran.
+    - Waktu mulai jam pelajaran pertama.
+    - Waktu selesai jam pelajaran terakhir.
+    - Tambahkan jam istirahat apabila diperlukan.
+  </Step>
+
+  <Step title="Buat struktur jadwal" title-type="p">
+    Klik tombol **Buat Struktur Jadwal**.
+
+    Sistem akan menghasilkan struktur jadwal pelajaran secara otomatis dari hari **Senin** hingga **Sabtu**.
+  </Step>
+
+  <Step title="Sesuaikan jadwal pelajaran" title-type="p">
+    Tambahkan mata pelajaran dan guru pada setiap jam pelajaran yang telah dibuat, atau lakukan penyesuaian apabila diperlukan.
+  </Step>
+</Steps>
+
+### Lihat Jadwal Pelajaran
+
+Fitur **Lihat Jadwal Pelajaran** digunakan untuk menampilkan jadwal pelajaran dalam tampilan mingguan sehingga lebih mudah ditinjau maupun dicetak.
+
+<Steps>
+  <Step title="Buka halaman Edit Jadwal Pelajaran" title-type="p">
+    Pilih salah satu data jadwal pelajaran, kemudian buka halaman **Edit**.
+  </Step>
+
+  <Step title="Klik tombol Lihat Jadwal" title-type="p">
+    Klik tombol **Lihat Jadwal** pada bagian atas halaman.
+  </Step>
+
+  <Step title="Lihat jadwal mingguan" title-type="p">
+    Sistem menampilkan jadwal pelajaran dalam format mingguan berdasarkan hari dan jam pelajaran.
+  </Step>
+
+  <Step title="Cetak jadwal" title-type="p">
+    Klik tombol **Cetak** apabila ingin mencetak jadwal pelajaran.
+  </Step>
+</Steps>
 
 ## Kamar
 
