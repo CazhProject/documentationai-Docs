@@ -269,6 +269,10 @@
                 "path": "cards-school/tugas"
               },
               {
+                "title": "Log Device Attendance",
+                "path": "log-device-attendance"
+              },
+              {
                 "title": "Kalender Akademik",
                 "path": "cards-school/kalender-akademik"
               },
