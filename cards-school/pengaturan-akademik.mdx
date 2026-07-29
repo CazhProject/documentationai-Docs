@@ -31,16 +31,26 @@ Submenu berikut dikelola dengan langkah yang sama.
   Data master (misalnya kelas atau mata pelajaran) menjadi dasar fitur lain seperti presensi, jadwal, dan rapor. Data yang dihapus tidak lagi tampil di daftar dan tidak dapat dipilih pada fitur yang menggunakannya. Pastikan data memang sudah tidak digunakan sebelum menghapus.
 </Callout>
 
+Semua data master bersifat per instansi dan memiliki status **Aktif**/**Tidak Aktif**. Isian tiap submenu:
+
+| Submenu                                         | Isian                                                                                                            |
+| :---------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
+| Tahun Ajaran, Semester, Tingkat, Kelas, Jurusan | Instansi (wajib), Nama (wajib, maks. 255 karakter, unik per instansi), Status.                                   |
+| Mata Pelajaran                                  | Instansi, Nama, Kode, Status.                                                                                    |
+| Kamar                                           | Instansi, Nama, PIC (dipilih dari anggota non-siswa), Lokasi, Status.                                            |
+| Tag                                             | Instansi, Nama, Kode, Jenis Anggota (Semua / Siswa / Guru & Staff), Status.                                      |
+| Kalender Akademik                               | Instansi, Hari Awal Pekan, Nama Pekan, Gambar Header (jpg/png/jpeg/heic/heif, maks. 10 MB), pilihan Sabtu libur. |
+
+<Callout kind="info" collapsed="false">
+  Aturan sistem: hanya boleh ada **satu Tahun Ajaran aktif** per instansi; mengaktifkan satu tahun ajaran otomatis menonaktifkan tahun ajaran lainnya pada instansi yang sama.
+</Callout>
+
 ## Tahun Ajaran
 
 Menu **Tahun Ajaran** digunakan untuk mengelola data tahun ajaran yang digunakan pada sistem. Admin dapat melihat daftar tahun ajaran, menambahkan tahun ajaran baru, serta mengubah data tahun ajaran yang telah dibuat.
 
 <Callout kind="info" collapsed="false">
   Pastikan Anda sudah login sebagai Admin dan memiliki hak akses ke menu **Pengaturan → Akademik → Tahun Ajaran**.
-</Callout>
-
-<Callout kind="info" collapsed="false">
-  Aturan sistem: hanya boleh ada **satu Tahun Ajaran aktif** per instansi; mengaktifkan satu tahun ajaran otomatis menonaktifkan tahun ajaran lainnya pada instansi yang sama.
 </Callout>
 
 ### List Tahun Ajaran
@@ -717,47 +727,6 @@ Halaman **Tambah Jadwal Pelajaran** digunakan untuk membuat jadwal pelajaran bar
     Tambahkan jadwal pada setiap hari dengan mengisi **Jam Mulai**, **Jam Selesai**, **Mata Pelajaran**, dan **Guru**.
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784894725529-v2mka16iilh-pasted-image-1784894733056.png?fm=auto&auto=compress%2Cformat" width="2559" height="1270" alt="" />
-
-    **Pengaturan Jam Pelajaran**
-
-    <Callout kind="info" collapsed="false">
-      Fitur **Pengaturan Jam Pelajaran** digunakan untuk membuat struktur jadwal pelajaran secara otomatis berdasarkan durasi jam pelajaran dan jam operasional sekolah. Sistem akan menghasilkan struktur jadwal dari **Senin hingga Sabtu** yang dapat digunakan saat menyusun jadwal pelajaran.
-    </Callout>
-
-    [https://drive.google.com/file/d/1NAVqXo0SYiJAlT9zp3fRZKsWH0wLncua/view?usp=drive\_link](https://drive.google.com/file/d/1NAVqXo0SYiJAlT9zp3fRZKsWH0wLncua/view?usp=drive_link)
-
-    <Steps>
-      <Step title="Aktifkan pengaturan otomatis" icon="calendar-clock-icon" title-type="p">
-        Aktifkan opsi **Atur jam pelajaran secara otomatis**.
-
-        <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784895062785-wf9e9z2fikh-pasted-image-1784895070658.png?fm=auto&auto=compress%2Cformat" width="2559" height="1271" alt="" />
-      </Step>
-
-      <Step title="Isi pengaturan jam pelajaran" icon="settings2-icon" title-type="p">
-        Lengkapi informasi berikut:
-
-        <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784895086534-gza8qwkcrf7-pasted-image-1784895084626.png?fm=auto&auto=compress%2Cformat" width="2559" height="1271" alt="" />
-
-        - Durasi satu jam pelajaran.
-        - Waktu mulai jam pelajaran pertama.
-        - Waktu selesai jam pelajaran terakhir.
-        - Tambahkan jam istirahat apabila diperlukan.
-      </Step>
-
-      <Step title="Buat struktur jadwal" icon="lucide-school2" title-type="p">
-        Klik tombol **Buat Struktur Jadwal**.
-
-        Sistem akan menghasilkan struktur jadwal pelajaran secara otomatis dari hari **Senin** hingga **Sabtu**.
-
-        <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784895096612-9x2lvi5bie-pasted-image-1784895104445.png?fm=auto&auto=compress%2Cformat" width="2559" height="1271" alt="" />
-      </Step>
-
-      <Step title="Sesuaikan jadwal pelajaran" icon="alarm-clock-icon" title-type="p">
-        Tambahkan mata pelajaran dan guru pada setiap jam pelajaran yang telah dibuat, atau lakukan penyesuaian apabila diperlukan.
-
-        <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784895169858-w07ja5oi0b-pasted-image-1784895167818.png?fm=auto&auto=compress%2Cformat" width="2559" height="1271" alt="" />
-      </Step>
-    </Steps>
   </Step>
 
   <Step title="Simpan data" title-type="p">
@@ -862,6 +831,57 @@ Fitur **Import Jadwal Pelajaran** digunakan untuk menambahkan data jadwal pelaja
 <Callout kind="info" collapsed="false">
   Jadwal pelajaran yang sudah ada dapat diduplikasi sebagai dasar jadwal baru.
 </Callout>
+
+### Pengaturan Jam Pelajaran
+
+Fitur **Pengaturan Jam Pelajaran** digunakan untuk membuat struktur jadwal pelajaran secara otomatis berdasarkan durasi jam pelajaran dan jam operasional sekolah. Sistem akan menghasilkan struktur jadwal dari **Senin hingga Sabtu** yang dapat digunakan saat menyusun jadwal pelajaran.
+
+[https://drive.google.com/file/d/1NAVqXo0SYiJAlT9zp3fRZKsWH0wLncua/view?usp=drive\_link](https://drive.google.com/file/d/1NAVqXo0SYiJAlT9zp3fRZKsWH0wLncua/view?usp=drive_link)
+
+<Steps>
+  <Step title="Buka halaman Edit Jadwal Pelajaran" title-type="p">
+    Pilih salah satu data jadwal pelajaran, kemudian buka halaman **Edit**.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784894571547-vloy9qibp4-pasted-image-1784894577953.png?fm=auto&auto=compress%2Cformat" width="2559" height="1271" alt="" />
+  </Step>
+
+  <Step title="Aktifkan pengaturan otomatis" title-type="p">
+    Aktifkan opsi **Atur jam pelajaran secara otomatis**.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784895062785-wf9e9z2fikh-pasted-image-1784895070658.png?fm=auto&auto=compress%2Cformat" width="2559" height="1271" alt="" />
+  </Step>
+
+  <Step title="Isi pengaturan jam pelajaran" title-type="p">
+    Lengkapi informasi berikut:
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784895086534-gza8qwkcrf7-pasted-image-1784895084626.png?fm=auto&auto=compress%2Cformat" width="2559" height="1271" alt="" />
+
+    - Durasi satu jam pelajaran.
+    - Waktu mulai jam pelajaran pertama.
+    - Waktu selesai jam pelajaran terakhir.
+    - Tambahkan jam istirahat apabila diperlukan.
+  </Step>
+
+  <Step title="Buat struktur jadwal" title-type="p">
+    Klik tombol **Buat Struktur Jadwal**.
+
+    Sistem akan menghasilkan struktur jadwal pelajaran secara otomatis dari hari **Senin** hingga **Sabtu**.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784895096612-9x2lvi5bie-pasted-image-1784895104445.png?fm=auto&auto=compress%2Cformat" width="2559" height="1271" alt="" />
+  </Step>
+
+  <Step title="Sesuaikan jadwal pelajaran" title-type="p">
+    Tambahkan mata pelajaran dan guru pada setiap jam pelajaran yang telah dibuat, atau lakukan penyesuaian apabila diperlukan.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784895169858-w07ja5oi0b-pasted-image-1784895167818.png?fm=auto&auto=compress%2Cformat" width="2559" height="1271" alt="" />
+  </Step>
+
+  <Step title="Simpan Perubahan" title-type="p">
+    Klik **Simpan** untuk memperbarui data jadwal pelajaran.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1784895181859-4zosmzw1equ-pasted-image-1784895189508.png?fm=auto&auto=compress%2Cformat" width="2559" height="1267" alt="" />
+  </Step>
+</Steps>
 
 ### Lihat Jadwal Pelajaran
 
@@ -1252,4 +1272,10 @@ Fitur **Hapus Voice Over Custom** digunakan untuk menghapus data voice over yang
 <Callout kind="info" collapsed="false">
   Voice over dapat digunakan untuk [presensi harian](/cards-school/presensi-harian) dan [presensi kegiatan](/cards-school/presensi-kegiatan).
 </Callout>
+
+## Device Attendance
+
+### Data Device
+
+### Data Sync Wajah
 

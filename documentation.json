@@ -342,6 +342,14 @@
             "icon": "settings",
             "pages": [
               {
+                "title": "Pengaturan Administrasi",
+                "path": "pengaturan-administrasi"
+              },
+              {
+                "title": "Pengaturan Inventaris",
+                "path": "pengaturan-inventaris"
+              },
+              {
                 "title": "Pengaturan Akademik",
                 "path": "cards-school/pengaturan-akademik"
               },
