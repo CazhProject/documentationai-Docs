@@ -340,6 +340,18 @@
             "group": "Profil",
             "pages": [
               {
+                "title": "Bantuan",
+                "path": "bantuan"
+              },
+              {
+                "title": "Cari Anggota",
+                "path": "cari-anggota"
+              },
+              {
+                "title": "Notifikasi",
+                "path": "notifikasi"
+              },
+              {
                 "title": "Profil Pengguna",
                 "path": "profil-pengguna"
               }
