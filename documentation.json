@@ -135,6 +135,10 @@
             "icon": "folder",
             "pages": [
               {
+                "title": "WhatsApp",
+                "path": "whatsapp"
+              },
+              {
                 "title": "Tagihan",
                 "path": "cards-school/administrasi-tagihan"
               },
