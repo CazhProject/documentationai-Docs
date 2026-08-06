@@ -1,8 +1,11 @@
 ---
-title: "Anggota: Staff"
-description: "Panduan pengelolaan data staff di CARDS School: tambah dan import staff, pindah shift, ubah jenis dan status, pindah instansi, unduh kartu dan surat, detail staff (data, kartu, tagihan, dokumen, kesehatan), serta cetak data diri."
+title: 'Anggota: Staff'
+description: >-
+  Panduan pengelolaan data staff di CARDS School: tambah dan import staff,
+  pindah shift, ubah jenis dan status, pindah instansi, unduh kartu dan surat,
+  detail staff (data, kartu, tagihan, dokumen, kesehatan), serta cetak data
+  diri.
 ---
-
 Modul Staff membantu admin sekolah mengelola seluruh data staff: menambah, mengimpor, mengubah shift/jenis/status, hingga memindahkan instansi. Seluruh fitur diakses melalui menu **Anggota** → submenu **Staff**, yang menampilkan **Halaman Daftar Staff**.
 
 Pada halaman daftar Staff, admin dapat:
@@ -12,6 +15,10 @@ Pada halaman daftar Staff, admin dapat:
 - Export data staff: seluruh data yang ada pada halaman, atau berdasarkan data yang dipilih melalui checkbox.
 - Melihat dan mengubah detail data staff.
 
+Link Video Tutorian : [https://drive.google.com/file/d/14Tp4vXjqyyqhfxeHp4kTb6O\_BcqAOvnL/view?usp=sharing](https://drive.google.com/file/d/14Tp4vXjqyyqhfxeHp4kTb6O_BcqAOvnL/view?usp=sharing)
+
+1.
+
 ## Informasi yang ditampilkan
 
 Tabel daftar staff menampilkan kolom: **Nama**, **Nomor Kartu**, **Staff** (jenis staff), **Instansi**, dan **Status**. Filter yang tersedia: **Instansi**, **Jenis** (daftar jenis staff), dan **Status** (Aktif / Tidak Aktif; status Lulus tidak berlaku untuk staff).
@@ -20,27 +27,29 @@ Tabel daftar staff menampilkan kolom: **Nama**, **Nomor Kartu**, **Staff** (jeni
 
 Aksi massal via checkbox: **Ubah Jenis Staff**, **Ubah Status**, **Pindah Instansi**, **Download Kartu**, **Pindah Shift**, dan **Download Surat**. Toolbar menyediakan **Import Staff**, **Export**, dan **Tambah Staff**.
 
+
+
 ### Isian formulir Tambah Staff
 
-| Field | Wajib | Keterangan |
-| --- | --- | --- |
-| Instansi | Ya | - |
-| Nama Lengkap | Ya | - |
-| Jenis Kelamin | Ya | Laki - laki / Perempuan. |
-| Email | Ya | Harus unik antar anggota. |
-| No HP | Ya | Angka, divalidasi format nomor telepon. |
-| No Induk | Ya | Nomor induk anggota. |
-| Nomor Kartu | Ya | Angka. |
-| Jenis Staff | Ya | Dari daftar jenis staff instansi. |
-| Tempat/Tanggal Lahir, Alamat | Tidak | - |
-| No Identitas (NIK) | Tidak | Angka 16 digit. |
-| UID Kartu | Tidak | Harus unik. |
-| Tanggal Mulai Tugas | Tidak | - |
-| Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional | Tidak | - |
-| Pendidikan, NUPTK | Tidak | - |
-| Foto | Tidak | jpg/png/jpeg/heic/heif, maksimal 10 MB. |
+| Field                                                    | Wajib | Keterangan                              |
+| -------------------------------------------------------- | ----- | --------------------------------------- |
+| Instansi                                                 | Ya    | -                                       |
+| Nama Lengkap                                             | Ya    | -                                       |
+| Jenis Kelamin                                            | Ya    | Laki - laki / Perempuan.                |
+| Email                                                    | Ya    | Harus unik antar anggota.               |
+| No HP                                                    | Ya    | Angka, divalidasi format nomor telepon. |
+| No Induk                                                 | Ya    | Nomor induk anggota.                    |
+| Nomor Kartu                                              | Ya    | Angka.                                  |
+| Jenis Staff                                              | Ya    | Dari daftar jenis staff instansi.       |
+| Tempat/Tanggal Lahir, Alamat                             | Tidak | -                                       |
+| No Identitas (NIK)                                       | Tidak | Angka 16 digit.                         |
+| UID Kartu                                                | Tidak | Harus unik.                             |
+| Tanggal Mulai Tugas                                      | Tidak | -                                       |
+| Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional | Tidak | -                                       |
+| Pendidikan, NUPTK                                        | Tidak | -                                       |
+| Foto                                                     | Tidak | jpg/png/jpeg/heic/heif, maksimal 10 MB. |
 
-<Callout kind="info">Import staff menggunakan template Excel (`template-member-v8.xls`) dengan kolom antara lain: nama_lengkap (wajib), jenis_kelamin (wajib: L/P), email (wajib, unik), nomor_induk_member (wajib), nomor_kartu (wajib), tanggal_mulai_tugas (d/m/Y), pangkat/golongan, jabatan, serta kolom opsional identitas lainnya.</Callout>
+Import staff menggunakan template Excel (`template-member-v8.xls`) dengan kolom antara lain: nama\_lengkap (wajib), jenis\_kelamin (wajib: L/P), email (wajib, unik), nomor\_induk\_member (wajib), nomor\_kartu (wajib), tanggal\_mulai\_tugas (d/m/Y), pangkat/golongan, jabatan, serta kolom opsional identitas lainnya.
 
 ## Pindah Shift
 
@@ -90,7 +99,7 @@ Mengubah status keanggotaan staff antara Aktif dan Tidak Aktif, secara massal ma
 2. Sistem akan menampilkan halaman detail staff yang dipilih.
 3. Pada tab **Data Diri**, ubah status staff melalui field **Status**.
 
-<Callout kind="info">Nilai status staff yang dikenal sistem: **ACTIVE** (Aktif) dan **INACTIVE** (Tidak Aktif).</Callout>
+Nilai status staff yang dikenal sistem: **ACTIVE** (Aktif) dan **INACTIVE** (Tidak Aktif).
 
 ## Pindah Instansi
 
@@ -112,27 +121,15 @@ Memindahkan pengelolaan data staff dari instansi saat ini ke instansi lain dalam
 
 Mengunduh [kartu](/referensi/glosarium#kartu) sementara staff terpilih.
 
-<Steps>
-  <Step title="Buka halaman Daftar Staff">Login ke website, klik menu **Anggota**, lalu klik submenu **Staff**. Sistem akan menampilkan **Halaman Daftar Staff**.</Step>
-  <Step title="Pilih staff">Pilih satu atau beberapa staff menggunakan checkbox, klik **Unduh Kartu**. Sistem akan menampilkan popup untuk mengunduh kartu.</Step>
-  <Step title="Unduh">Klik **Unduh**; sistem akan menyimpan file pada perangkat pengguna.</Step>
-</Steps>
-
 ## Unduh Surat
 
 Mengunduh surat panduan penggunaan aplikasi mobile untuk staff terpilih.
-
-<Steps>
-  <Step title="Buka halaman Daftar Staff">Login ke website, klik menu **Anggota**, lalu klik submenu **Staff**. Sistem akan menampilkan **Halaman Daftar Staff**.</Step>
-  <Step title="Pilih staff">Pilih satu atau beberapa staff menggunakan checkbox, klik **Unduh Surat**. Sistem akan menampilkan popup untuk mengunduh surat.</Step>
-  <Step title="Unduh">Klik **Unduh**; sistem akan menyimpan file pada perangkat pengguna.</Step>
-</Steps>
 
 ## Detail Staff
 
 Untuk mengakses detail staff: menu **Anggota** → submenu **Staff** → pilih salah satu staff (gunakan fitur pencarian atau filter). Sistem akan menampilkan halaman detail staff yang dipilih, lalu klik tab yang diperlukan.
 
-<Callout kind="info">Tab yang tampil untuk staff: **Data Diri**, **Kartu**, **Tagihan**, dan **Dokumen**.</Callout>
+Tab yang tampil untuk staff: **Data Diri**, **Kartu**, **Tagihan**, dan **Dokumen**.
 
 ### Data Staff
 
@@ -171,14 +168,9 @@ Buka tab **Kesehatan** pada detail staff. Admin dapat:
 
 Mencetak data diri setiap anggota; berlaku untuk Siswa, Guru, dan Staff.
 
-<Steps>
-  <Step title="Buka daftar anggota">Login ke website, klik menu **Anggota**, lalu klik submenu **Siswa**, **Guru**, atau **Staff**. Sistem akan menampilkan **Halaman Daftar Anggota** yang dipilih.</Step>
-  <Step title="Pilih anggota">Pilih salah satu anggota; gunakan fitur pencarian atau filter untuk menemukan data anggota secara spesifik. Sistem akan menampilkan halaman detail anggota yang dipilih.</Step>
-  <Step title="Cetak">Klik tombol **Cetak Data Diri**.</Step>
-</Steps>
-
 Pada halaman tersebut, Admin dapat:
 
 - Melihat data diri anggota yang dipilih.
 - Menyimpan dokumen data diri anggota.
 - Mencetak data diri langsung melalui printer yang terhubung.
+
