@@ -294,6 +294,10 @@
                   {
                     "title": "Rekap Kuis",
                     "path": "rekap-kuis"
+                  },
+                  {
+                    "title": "Halaman Peserta Kuis",
+                    "path": "halaman-peserta-kuis"
                   }
                 ]
               }
