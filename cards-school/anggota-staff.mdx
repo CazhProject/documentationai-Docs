@@ -27,15 +27,43 @@ Link Video Tutorian : [https://drive.google.com/file/d/14Tp4vXjqyyqhfxeHp4kTb6O\
 
 <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786087534802-bmire5het1h-Screenshot--171-.png?fm=auto&auto=compress%2Cformat" width="1366" height="627" alt="" />
 
-3. Mencari & Memilih Profil Guru
+3. Menambahkan Staff Secara Manual
 
-- Gunakan kolom pencarian **Cari** di sebelah kanan atas tabel.
-- Ketik nama guru yang ingin dituju (contoh: _Guru Rara_).
-- Klik pada nama guru tersebut untuk membuka halaman **Profil Guru**.
+- Pada halaman utama Staff, klik tombol **+ Tambah Staff** yang berwarna biru di kanan atas.
+- Isi formulir **Data Staff** yang wajib dan opsional:
+  - **Instansi**\*: Pilih instansi tempat staff bertugas (misal: _Yayasan New School_).
+  - **Nama Lengkap**\*: Masukkan nama lengkap staff.
+  - **Jenis Kelamin**\*: Pilih _Laki-laki_ atau _Perempuan_.
+  - **Nomor Telepon**\* & **Nomor Registrasi**\*: Lengkapi dengan nomor aktif/registrasi.
+  - **Jenis Staff**\*: Tentukan jenis peran (misal: _Guru Honorer_, _Staff IT_, dll.).
+  - **Nomor Kartu**\*: Masukkan nomor kartu atau tekan **Cek Kartu** untuk verifikasi.
+  - Lengkapi bidang lainnya jika ada (Tempat/Tanggal Lahir, Alamat, Email, NIK, Jabatan, dll.).
+- Klik tombol **Simpan** di pojok kanan bawah.
 
-<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786087849595-nu5drlv10ip-Screenshot--162-.png?fm=auto&auto=compress%2Cformat" width="1366" height="628" alt="" />
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786088150281-qsaqjo8ptmq-Screenshot--176-.png?fm=auto&auto=compress%2Cformat" width="1366" height="637" alt="" />
 
+4. Menambahkan Staff Secara Masal (Import Staff)
 
+- Pada halaman utama Staff, klik tombol **Import Staff** di sebelah kiri tombol _Tambah Staff_.
+- Pada halaman Import Data:
+  - Pilih **Instansi**, **Jenis Staff**, dan **Jenis Import**.
+  - Unduh format/contoh dokumen terlebih dahulu dengan menekan tombol **Download** pada bagian **Template Staff**.
+  - Isi template Excel tersebut sesuai format yang disediakan.
+  - Unggah kembali file Excel yang telah diisi pada kolom _File_.
+- Klik tombol **Simpan** untuk memproses data. _(Catatan: Anda juga bisa melihat riwayat pengunggahan lewat tombol&#x20;_**_Riwayat Import_**_&#x20;di kanan atas)._
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786087731806-f2s4f3r97ea-Screenshot--172-.png?fm=auto&auto=compress%2Cformat" width="1366" height="638" alt="" />
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786088352801-sj2wteoalxs-Screenshot--173-.png?fm=auto&auto=compress%2Cformat" width="1366" height="635" alt="" />
+
+5. Mencari & Mengubah (Edit) Data Staff
+
+- Gunakan kolom pencarian **Cari** di atas tabel Data Staff untuk menemukan nama staff yang dituju (misal: ketik _wawan_).
+- Klik tombol **Edit** (ikon kertas dan pensil) di kolom paling kanan pada baris nama staff tersebut.
+- Lakukan pembaruan atau penyesuaian data pada formulir profil staff.
+- Klik **Simpan** untuk memperbarui perubahan.
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786087783572-ye9dvfy1wpm-Screenshot--178-.png?fm=auto&auto=compress%2Cformat" width="1366" height="768" alt="" />
 
 ## Informasi yang ditampilkan
 
@@ -44,8 +72,6 @@ Tabel daftar staff menampilkan kolom: **Nama**, **Nomor Kartu**, **Staff** (jeni
 **Export** menghasilkan file Excel (`Staff.xlsx`) dengan kolom: ID, Nomor Kartu, Nomor Induk, Kode QR, Nama Lengkap, Tempat Lahir, Tanggal Lahir, Jenis Kelamin, Alamat, No Telp, Instansi, Keterangan (jenis staff), Tanggal Mulai Tugas, Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional, Pendidikan, NUPTK, dan Status.
 
 Aksi massal via checkbox: **Ubah Jenis Staff**, **Ubah Status**, **Pindah Instansi**, **Download Kartu**, **Pindah Shift**, dan **Download Surat**. Toolbar menyediakan **Import Staff**, **Export**, dan **Tambah Staff**.
-
-
 
 ### Isian formulir Tambah Staff
 
@@ -69,6 +95,74 @@ Aksi massal via checkbox: **Ubah Jenis Staff**, **Ubah Status**, **Pindah Instan
 
 Import staff menggunakan template Excel (`template-member-v8.xls`) dengan kolom antara lain: nama\_lengkap (wajib), jenis\_kelamin (wajib: L/P), email (wajib, unik), nomor\_induk\_member (wajib), nomor\_kartu (wajib), tanggal\_mulai\_tugas (d/m/Y), pangkat/golongan, jabatan, serta kolom opsional identitas lainnya.
 
+Link Video Tutorial : [https://drive.google.com/file/d/1hLfBdghJzNXLdWlyJOdy1WK6kmjN9Jmn/view?usp=sharing](https://drive.google.com/file/d/1hLfBdghJzNXLdWlyJOdy1WK6kmjN9Jmn/view?usp=sharing)
+
+1. Login Ke Website
+2. Navigasi ke Menu Staff
+   - Pada menu navigasi di sebelah kiri, klik menu **ANGGOTA**.
+   - Pilih submenu **Staff**.
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786089642059-ltqbvyc2xu-Screenshot--269-.png?fm=auto&auto=compress%2Cformat" width="1366" height="626" alt="" />
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786089679197-loi6dwedot-Screenshot--270-.png?fm=auto&auto=compress%2Cformat" width="1366" height="627" alt="" />
+
+3. Memilih Profil Staff
+
+- Pada tabel **Data Staff**, cari nama staff yang ingin diubah (contoh: _Mingyu_).
+- Anda juga dapat menggunakan kolom **Cari** atau **Filter** di pojok kanan atas tabel untuk mempercepat pencarian.
+- Klik nama staff tersebut untuk masuk ke halaman **Profil Staff**.
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786089747254-q1hhdfkh2-Screenshot--271-.png?fm=auto&auto=compress%2Cformat" width="1366" height="636" alt="" />
+
+4. Mengubah Data Profil Staff
+
+- Di halaman **Profil Staff**, pastikan Anda berada pada tab **Data Staff**.
+- Isikan atau perbarui informasi profil sesuai kebutuhan, seperti:
+  - **Instansi & Nama Lengkap**
+  - **Tempat & Tanggal Lahir**
+  - **Jenis Kelamin & Alamat**
+  - **Nomor Telepon & Email**
+  - **NIK & NUPTK**
+  - **Pangkat, Jabatan, & Pendidikan Terakhir**
+  - **Jenis Staff & Status**
+- Jika ingin mencetak ringkasan biodata, Anda dapat menekan tombol **Cetak Biodata** di bagian atas.
+- Setelah seluruh data diperbarui dengan benar, gulir layar ke bawah.
+- Klik tombol biru **Simpan** di pojok kanan bawah area formulir untuk menyimpannya
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786089946763-sodwd5nqd59-Screenshot--272-.png?fm=auto&auto=compress%2Cformat" alt="" />
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786089914307-upt061oh57-Screenshot--273-.png?fm=auto&auto=compress%2Cformat" width="1366" height="635" alt="" />
+
+## **Eksport Data Staff**
+
+Link Video Tutorial : [https://drive.google.com/file/d/1p0QgxLtNs85aP6BYU19YZV3xDCuATldm/view?usp=sharing](https://drive.google.com/file/d/1p0QgxLtNs85aP6BYU19YZV3xDCuATldm/view?usp=sharing)
+
+1. Login Ke Website
+2. Navigasi ke Menu Staff
+
+- Pada menu utama di sebelah kiri, pilih menu **ANGGOTA**.
+- Pilih submenu **Staff**
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786090123967-hlvm16ju909-Screenshot--179-.png?fm=auto&auto=compress%2Cformat" width="1366" height="636" alt="" />
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786090190505-mz44wzthmc-Screenshot--180-.png?fm=auto&auto=compress%2Cformat" width="1366" height="627" alt="" />
+
+3. Memilih Data Staff
+
+- Pada tabel Data Staff, beri tanda centang (✓) pada kotak di sebelah kiri nama staff yang ingin diunduh.
+- _Atau_ Anda dapat mencentang kotak di header paling atas untuk memilih semua staff sekaligus.
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786090251844-1qa4jc6fxxa-Screenshot--181-.png?fm=auto&auto=compress%2Cformat" width="1366" height="633" alt="" />
+
+4. Mengunduh Data (Ekspor Excel)
+
+- Setelah data staff terpilih, klik tombol hijau **Excel** yang berada di atas tabel bagian kanan.
+- Sistem akan memproses dan mengunduh berkas file Spreadsheet (`.xlsx`) ke komputer Anda secara otomatis.
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786090327085-hpiy7juevkv-Screenshot--182-.png?fm=auto&auto=compress%2Cformat" width="1366" height="634" alt="" />
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786090357209-deyhrj7xk4t-Screenshot--183-.png?fm=auto&auto=compress%2Cformat" width="1366" height="675" alt="" />
+
 ## Pindah Shift
 
 Mengganti shift presensi yang berlaku untuk staff, secara massal maupun satuan. Shift menentukan jadwal presensi yang menjadi acuan kehadiran staff; shift baru menggantikan shift lama pada data staff yang dipilih.
@@ -84,6 +178,15 @@ Mengganti shift presensi yang berlaku untuk staff, secara massal maupun satuan. 
 1. Pilih salah satu staff; gunakan fitur pencarian atau filter untuk menemukan data staff secara spesifik.
 2. Sistem akan menampilkan halaman detail staff yang dipilih.
 3. Pada tab **Data Diri**, ubah shift staff melalui field **Shift Presensi**.
+
+Link Video Tutorial : [https://drive.google.com/file/d/1v\_KUUhxlvgWq-onXLcndEdHt6RTdZYwr/view?usp=sharing](https://drive.google.com/file/d/1v_KUUhxlvgWq-onXLcndEdHt6RTdZYwr/view?usp=sharing)
+
+1. Login ke website
+2. Navigasi ke Halaman Staff
+   - Pada menu navigasi utama di sebelah kiri, klik menu **ANGGOTA**.
+   - Pilih submenu **Staff**.
+
+
 
 ## Ubah Jenis
 
