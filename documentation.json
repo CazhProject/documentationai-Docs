@@ -54,6 +54,22 @@
                 "icon": "play-circle"
               },
               {
+                "title": "Profil",
+                "path": "profil"
+              },
+              {
+                "title": "Cari Anggota",
+                "path": "cari-anggota"
+              },
+              {
+                "title": "Notifikasi",
+                "path": "notifikasi"
+              },
+              {
+                "title": "Bantuan",
+                "path": "bantuan"
+              },
+              {
                 "title": "Logout",
                 "path": "logoutt",
                 "icon": "log-out-icon"
