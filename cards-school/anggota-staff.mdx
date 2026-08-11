@@ -65,6 +65,36 @@ Link Video Tutorian : [https://drive.google.com/file/d/14Tp4vXjqyyqhfxeHp4kTb6O\
 
 <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1786087783572-ye9dvfy1wpm-Screenshot--178-.png?fm=auto&auto=compress%2Cformat" width="1366" height="768" alt="" />
 
+## Informasi yang ditampilkan
+
+Tabel daftar staff menampilkan kolom: **Nama**, **Nomor Kartu**, **Staff** (jenis staff), **Instansi**, dan **Status**. Filter yang tersedia: **Instansi**, **Jenis** (daftar jenis staff), dan **Status** (Aktif / Tidak Aktif; status Lulus tidak berlaku untuk staff).
+
+**Export** menghasilkan file Excel (`Staff.xlsx`) dengan kolom: ID, Nomor Kartu, Nomor Induk, Kode QR, Nama Lengkap, Tempat Lahir, Tanggal Lahir, Jenis Kelamin, Alamat, No Telp, Instansi, Keterangan (jenis staff), Tanggal Mulai Tugas, Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional, Pendidikan, NUPTK, dan Status.
+
+Aksi massal via checkbox: **Ubah Jenis Staff**, **Ubah Status**, **Pindah Instansi**, **Download Kartu**, **Pindah Shift**, dan **Download Surat**. Toolbar menyediakan **Import Staff**, **Export**, dan **Tambah Staff**.
+
+### Isian formulir Tambah Staff
+
+| Field                                                    | Wajib | Keterangan                              |
+| -------------------------------------------------------- | ----- | --------------------------------------- |
+| Instansi                                                 | Ya    | -                                       |
+| Nama Lengkap                                             | Ya    | -                                       |
+| Jenis Kelamin                                            | Ya    | Laki - laki / Perempuan.                |
+| Email                                                    | Ya    | Harus unik antar anggota.               |
+| No HP                                                    | Ya    | Angka, divalidasi format nomor telepon. |
+| No Induk                                                 | Ya    | Nomor induk anggota.                    |
+| Nomor Kartu                                              | Ya    | Angka.                                  |
+| Jenis Staff                                              | Ya    | Dari daftar jenis staff instansi.       |
+| Tempat/Tanggal Lahir, Alamat                             | Tidak | -                                       |
+| No Identitas (NIK)                                       | Tidak | Angka 16 digit.                         |
+| UID Kartu                                                | Tidak | Harus unik.                             |
+| Tanggal Mulai Tugas                                      | Tidak | -                                       |
+| Pangkat/Golongan, Jabatan Struktural, Jabatan Fungsional | Tidak | -                                       |
+| Pendidikan, NUPTK                                        | Tidak | -                                       |
+| Foto                                                     | Tidak | jpg/png/jpeg/heic/heif, maksimal 10 MB. |
+
+Import staff menggunakan template Excel (`template-member-v8.xls`) dengan kolom antara lain: nama\_lengkap (wajib), jenis\_kelamin (wajib: L/P), email (wajib, unik), nomor\_induk\_member (wajib), nomor\_kartu (wajib), tanggal\_mulai\_tugas (d/m/Y), pangkat/golongan, jabatan, serta kolom opsional identitas lainnya.
+
 Link Video Tutorial : [https://drive.google.com/file/d/1hLfBdghJzNXLdWlyJOdy1WK6kmjN9Jmn/view?usp=sharing](https://drive.google.com/file/d/1hLfBdghJzNXLdWlyJOdy1WK6kmjN9Jmn/view?usp=sharing)
 
 1. Login Ke Website
@@ -137,18 +167,6 @@ Link Video Tutorial : [https://drive.google.com/file/d/1p0QgxLtNs85aP6BYU19YZV3
 
 Mengganti shift presensi yang berlaku untuk staff, secara massal maupun satuan. Shift menentukan jadwal presensi yang menjadi acuan kehadiran staff; shift baru menggantikan shift lama pada data staff yang dipilih.
 
-**Ubah shift secara massal:**
-
-1. Buka **Halaman Daftar Staff** (menu **Anggota** → submenu **Staff**).
-2. Pilih satu atau beberapa staff menggunakan checkbox, klik **Pindah Shift**.
-3. Sistem akan menampilkan popup untuk memilih shift baru.
-
-**Ubah shift secara satuan:**
-
-1. Pilih salah satu staff; gunakan fitur pencarian atau filter untuk menemukan data staff secara spesifik.
-2. Sistem akan menampilkan halaman detail staff yang dipilih.
-3. Pada tab **Data Diri**, ubah shift staff melalui field **Shift Presensi**.
-
 Link Video Tutorial : [https://drive.google.com/file/d/1v\_KUUhxlvgWq-onXLcndEdHt6RTdZYwr/view?usp=sharing](https://drive.google.com/file/d/1v_KUUhxlvgWq-onXLcndEdHt6RTdZYwr/view?usp=sharing)
 
 1. Login ke website
@@ -187,19 +205,7 @@ Link Video Tutorial : [https://drive.google.com/file/d/1v\_KUUhxlvgWq-onXLcndEd
 
 ## Ubah Jenis
 
-Mengganti penggolongan (jenis) staff, secara massal maupun satuan. Jenis staff adalah kategori yang dibuat pada pengaturan instansi; perubahan hanya mengganti penggolongan pada data staff yang dipilih, data diri lainnya tidak berubah.
-
-**Ubah secara massal:**
-
-1. Buka **Halaman Daftar Staff** (menu **Anggota** → submenu **Staff**).
-2. Pilih satu atau beberapa staff menggunakan checkbox, klik **Ubah Jenis Staff**.
-3. Sistem akan menampilkan popup untuk memilih jenis staff baru.
-
-**Ubah secara satuan:**
-
-1. Pilih salah satu staff; gunakan fitur pencarian atau filter untuk menemukan data staff secara spesifik.
-2. Sistem akan menampilkan halaman detail staff yang dipilih.
-3. Pada tab **Data Diri**, ubah jenis staff melalui field **Jenis Staff**.
+Mengganti penggolongan (jenis) staff, secara massal maupun satuan. Jenis staff adalah kategori yang dibuat pada pengaturan instansi; perubahan hanya mengganti penggolongan pada data staff yang dipilih, data diri lainnya tidak berubah..
 
 Link Video Tutorial : [https://drive.google.com/file/d/1CTXKMsuVdyXp4FHdzHAg4AJ7bB9\_95qM/view?usp=sharing](https://drive.google.com/file/d/1CTXKMsuVdyXp4FHdzHAg4AJ7bB9_95qM/view?usp=sharing)
 
@@ -254,20 +260,6 @@ Link Video Tutorial : [https://drive.google.com/file/d/1CTXKMsuVdyXp4FHdzHAg4AJ
 
 Mengubah status keanggotaan staff antara Aktif dan Tidak Aktif, secara massal maupun satuan, misalnya menonaktifkan staff yang berhenti bekerja. Data staff tetap tersimpan dan status dapat diubah kembali kapan saja melalui aksi yang sama.
 
-**Ubah secara massal:**
-
-1. Buka **Halaman Daftar Staff** (menu **Anggota** → submenu **Staff**).
-2. Pilih satu atau beberapa staff menggunakan checkbox, klik **Ubah Status**.
-3. Sistem akan menampilkan popup untuk memilih status staff baru.
-
-**Ubah secara satuan:**
-
-1. Pilih salah satu staff; gunakan fitur pencarian atau filter untuk menemukan data staff secara spesifik.
-2. Sistem akan menampilkan halaman detail staff yang dipilih.
-3. Pada tab **Data Diri**, ubah status staff melalui field **Status**.
-
-Nilai status staff yang dikenal sistem: **ACTIVE** (Aktif) dan **INACTIVE** (Tidak Aktif).
-
 Link Video Tutorial : [https://drive.google.com/file/d/19eVMvAafSY65OVKaLyAQp5ZfzGopBrbj/view?usp=sharing](https://drive.google.com/file/d/19eVMvAafSY65OVKaLyAQp5ZfzGopBrbj/view?usp=sharing)
 
 1. Login Ke Website
@@ -321,18 +313,6 @@ Link Video Tutorial : [https://drive.google.com/file/d/19eVMvAafSY65OVKaLyAQp5Z
 ## Pindah Instansi
 
 Memindahkan pengelolaan data staff dari instansi saat ini ke instansi lain dalam lembaga, secara massal maupun satuan. Setelah dipindah, staff tampil dan dikelola melalui daftar staff instansi tujuan.
-
-**Pindah secara massal:**
-
-1. Buka **Halaman Daftar Staff** (menu **Anggota** → submenu **Staff**).
-2. Pilih satu atau beberapa staff menggunakan checkbox, klik **Pindah Instansi**.
-3. Sistem akan menampilkan popup untuk memindahkan instansi staff.
-
-**Pindah secara satuan:**
-
-1. Pilih salah satu staff; gunakan fitur pencarian atau filter untuk menemukan data staff secara spesifik.
-2. Sistem akan menampilkan halaman detail staff yang dipilih.
-3. Pada tab **Data Diri**, pindahkan instansi staff melalui field **Instansi**.
 
 Link Video Tutorial : [https://drive.google.com/file/d/1\_fQBgOCe47V5KrvKz6hgNavexpiCqlEZ/view?usp=sharing](https://drive.google.com/file/d/1_fQBgOCe47V5KrvKz6hgNavexpiCqlEZ/view?usp=sharing)
 
