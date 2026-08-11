@@ -133,6 +133,18 @@
             "icon": "user-plus",
             "pages": [
               {
+                "title": "Landingpage",
+                "path": "landingpage-user"
+              },
+              {
+                "title": "Formulir Pendaftaran",
+                "path": "formulir-pendaftaran"
+              },
+              {
+                "title": "Cek Pendaftaran",
+                "path": "cek-pendaftaran"
+              },
+              {
                 "title": "Pengaturan Web SPMB",
                 "path": "cards-school/spmb-pengaturan-web"
               },
