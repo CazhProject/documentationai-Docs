@@ -33,9 +33,27 @@ Tabel tagihan anggota menampilkan kolom: **Status**, **Deskripsi** (jenis tagiha
 | **Belum Terbayar**      | Belum ada pembayaran.                         |
 | **Menunggu Pembayaran** | Invoice sudah dibuat dan menunggu pembayaran. |
 
-## Bayar Tagihan Satuan
+## Bayar Tagihan&#x20;
 
-Membayar satu tagihan anggota, penuh maupun cicilan.
+**Link Video :&#x20;**[**https://drive.google.com/file/d/1sCwyOq0zgCFL3mbzzv\_IpRjmPJGZ\_ZrW/view?usp=sharing**](https://drive.google.com/file/d/1sCwyOq0zgCFL3mbzzv_IpRjmPJGZ_ZrW/view?usp=sharing)
+
+1. Login ke Website lalu akses menu Keuangan
+2. Akses sub menu Transaksi
+3. Halaman akan menampilkan data transaksi
+4. Klik salah satu icon di pojok kanan setiap data transaksi
+5. Halaman akan menampilkan data tagihan
+6. Gunakan filter status untuk menyaring data yang ingin ditampilkan berdasarkan status nya&#x20;
+7. Klik aksi lalu pilih buat invoice untuk membuat invoice 1 data tagihan
+8. Masukan nominal yang ingin di invoice, lalu pilih metode pembayaran yang akan dilakukan lalu klik cetak invoice, maka status data tagihan tersebut akan berubah menjadi sudah di invoice
+9. Klik aksi lalu pilih bayar kartu untuk membayar tagihan 1 data tagihan
+10. Halaman akan dialihkan ke invoice, masukan jumlah yang ingin dibayar
+11. Klik bayar dengan memasukan pin kartu dan pembayaran pun berhasil&#x20;
+12. Klik aksi lalu pilih bayar tunai untuk membayar tagihan 1 data tagihan
+13. Halaman akan dialihkan ke invoice, masukan jumlah yang ingin dibayar
+14. Klik bayar dan pembayaran pun berhasil&#x20;
+15. Klik aksi lalu pilih detail tagihan untuk melihat 1 data tagihan
+16. Pilih 2 atau lebih data tagihan, select lalu pilih bayar sekaligus
+17. Halaman akan dialihkan ke halaman pembayaran, lalu pilih metode pembayaran yang akan dilakukan lalu klik bayar, maka status data tagihan tersebut akan berubah menjadi lunas
 
 | Metode                   | Keterangan                                                                                         |
 | ------------------------ | -------------------------------------------------------------------------------------------------- |
@@ -47,14 +65,5 @@ Membayar satu tagihan anggota, penuh maupun cicilan.
   Aturan sistem: pembayaran tunai hanya tersedia jika pengaturan pembayaran tunai tagihan diaktifkan pada instansi. Untuk pembayaran Kartu, nominal minimal Rp 1, catatan pembayaran opsional (maksimal 255 karakter), saldo wallet kartu harus mencukupi nominal ditambah biaya admin, dan prosesnya melalui dua langkah (input lalu konfirmasi PIN). Kanal Virtual Account yang tersedia antara lain BNI, BRI, Mandiri, dan BSI.
 </Callout>
 
-## Bayar Tagihan Massal
+##
 
-Membayar beberapa tagihan anggota sekaligus.
-
-Pembayaran massal hanya dapat dilakukan dengan nominal penuh (lunas), tidak dapat dicicil. Maksimal **50 tagihan** dapat dibayar sekaligus dalam satu proses. Pada pembayaran massal via Kartu, saldo wallet harus mencukupi total sisa tagihan ditambah biaya admin.
-
-## Detail Pembayaran Tagihan
-
-Memonitor detail pembayaran suatu tagihan.
-
-Jika status tagihan **Terbayar Sebagian** atau **Lunas**, sistem menampilkan daftar pembayaran yang telah dilakukan; bukti pembayaran dapat dilihat dengan klik pada nomor **Ref ID** pada transaksi pembayaran yang diinginkan. Jika status tagihan **Belum Terbayar**, sistem hanya menampilkan informasi tagihan tanpa daftar pembayaran karena belum terdapat transaksi pembayaran yang tercatat.
