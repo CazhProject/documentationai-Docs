@@ -397,32 +397,7 @@
           },
           {
             "group": "Detail",
-            "pages": [
-              {
-                "title": "Detail Anggota Cetak Data Diri",
-                "path": "detail-anggota-cetak-data-diri"
-              },
-              {
-                "title": "Staff Detail Kesehatan",
-                "path": "kesehatan"
-              },
-              {
-                "title": "Staff Detail Dokumen",
-                "path": "dokumen"
-              },
-              {
-                "title": "Staff Detail Tagihan",
-                "path": "tagihan"
-              },
-              {
-                "title": "Staff Detail Kartu",
-                "path": "kartu"
-              },
-              {
-                "title": "Staff Detail Improvement Data Diri",
-                "path": "improvement-data-diri"
-              }
-            ]
+            "pages": []
           }
         ]
       },
