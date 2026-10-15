@@ -1,11 +1,12 @@
 ---
 title: Kesiswaan
-description: Pelanggaran, prestasi, perizinan, progres, kesehatan, perundungan, kunjungan, kalender akademik, dan tahfidz.
+description: >-
+  Pelanggaran, prestasi, perizinan, progres, kesehatan, perundungan, kunjungan,
+  kalender akademik, dan tahfidz.
 ---
-
 Menu Kesiswaan memuat catatan non-akademik siswa, dipakai siswa untuk memantau catatannya dan guru untuk mencatat. Lihat [Glosarium: Kesiswaan](/referensi/glosarium#kesiswaan).
 
-<Callout kind="info">
+<Callout kind="info" collapsed="false">
   Data yang sama dikelola admin/guru di CARDS School dan dipantau orang tua di [CARDS Parents](/cards-parent/tentang-cards-parent). Foto yang diunggah di menu Kesiswaan mendukung format **PNG, JPG, MPEG, HEIF, HEVC**, dari kamera atau galeri.
 </Callout>
 
@@ -17,16 +18,16 @@ Informasi jenis pelanggaran, jumlah poin, dan detail sanksi. Guru dapat mencatat
 
 **Isian formulir** (hanya guru/staf; tanggal maksimal hari ini):
 
-| Field | Wajib | Keterangan |
-| --- | --- | --- |
-| Nama Siswa | Ya | Pencarian siswa; tidak bisa diubah saat edit. |
-| Tanggal Pelanggaran | Ya | Maksimal hari ini. |
-| Tipe Pelanggaran | Ya | Dropdown dari daftar tipe yang diatur sekolah. |
-| Nama Pelanggaran | Ya | 3–100 karakter. |
-| Poin Pelanggaran | Ya | Angka > 0; mengikuti rentang min–max tipe jika diatur. |
-| Sanksi Pelanggaran | Ya | Teks. |
-| Deskripsi | Ya | Minimal 5 karakter. |
-| Foto | Tidak | 1 foto, maksimal 10 MB. |
+| Field               | Wajib | Keterangan                                             |
+| ------------------- | ----- | ------------------------------------------------------ |
+| Nama Siswa          | Ya    | Pencarian siswa; tidak bisa diubah saat edit.          |
+| Tanggal Pelanggaran | Ya    | Maksimal hari ini.                                     |
+| Tipe Pelanggaran    | Ya    | Dropdown dari daftar tipe yang diatur sekolah.         |
+| Nama Pelanggaran    | Ya    | 3–100 karakter.                                        |
+| Poin Pelanggaran    | Ya    | Angka > 0; mengikuti rentang min–max tipe jika diatur. |
+| Sanksi Pelanggaran  | Ya    | Teks.                                                  |
+| Deskripsi           | Ya    | Minimal 5 karakter.                                    |
+| Foto                | Tidak | 1 foto, maksimal 10 MB.                                |
 
 ## Prestasi
 
@@ -42,18 +43,18 @@ Riwayat pengajuan izin: jenis izin, tanggal, status persetujuan, dan keterangan.
 
 **Isian formulir**:
 
-| Field | Wajib | Keterangan |
-| --- | --- | --- |
-| Pengajuan untuk | Ya | Guru atau Siswa. |
-| Nama Siswa | Ya* | Hanya jika pengajuan untuk Siswa. |
-| Nama Izin | Ya | Teks bebas (keperluan). |
-| Tipe Izin | Ya | **Sakit** atau **Lainnya**. |
-| Durasi Izin | Ya | **Satu Hari** atau **Lebih Dari Satu Hari**. |
-| Tanggal & waktu | Ya | Satu hari: tanggal + jam mulai/selesai. Lebih dari satu hari: tanggal mulai + selesai. Minimal hari ini; waktu/tanggal selesai harus setelah mulai. |
-| Foto | Ya | 1 foto, maksimal 2 MB (mis. surat dokter). |
-| Catatan | Tidak | Teks multiline. |
+| Field           | Wajib | Keterangan                                                                                                                                          |
+| --------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pengajuan untuk | Ya    | Guru atau Siswa.                                                                                                                                    |
+| Nama Siswa      | Ya\*  | Hanya jika pengajuan untuk Siswa.                                                                                                                   |
+| Nama Izin       | Ya    | Teks bebas (keperluan).                                                                                                                             |
+| Tipe Izin       | Ya    | **Sakit** atau **Lainnya**.                                                                                                                         |
+| Durasi Izin     | Ya    | **Satu Hari** atau **Lebih Dari Satu Hari**.                                                                                                        |
+| Tanggal & waktu | Ya    | Satu hari: tanggal + jam mulai/selesai. Lebih dari satu hari: tanggal mulai + selesai. Minimal hari ini; waktu/tanggal selesai harus setelah mulai. |
+| Foto            | Ya    | 1 foto, maksimal 2 MB (mis. surat dokter).                                                                                                          |
+| Catatan         | Tidak | Teks multiline.                                                                                                                                     |
 
-<Callout kind="info">
+<Callout kind="info" collapsed="false">
   Izin yang periodenya belum lewat dan belum dibatalkan bisa **dibatalkan** (alasan opsional) atau **diubah jadwalnya** dari halaman detail.
 </Callout>
 
@@ -77,20 +78,20 @@ Siswa dapat **melaporkan perundungan**, baik yang dialami sendiri maupun orang l
 
 **Isian formulir**:
 
-| Field | Wajib | Keterangan |
-| --- | --- | --- |
-| Jenis Perundungan | Ya | **Fisik**, **Verbal**, atau **Online**. |
-| Korban Perundungan | Ya* | Khusus siswa: **Diri Sendiri** atau **Orang Lain**. |
-| Nama Korban | Ya* | Hanya jika korban orang lain; pencarian siswa. |
-| Tanggal Kejadian | Ya | Maksimal hari ini. |
-| Lokasi Kejadian | Ya | 3–100 karakter, huruf dan spasi. |
-| Nama Pelaku | Ya | Pencarian siswa. |
-| Deskripsi Kejadian | Ya | Minimal 5 karakter. |
-| Tindakan yang diambil | Ya | 3–100 karakter. |
-| Saksi | Tidak | Jika diisi, 3–100 karakter. |
-| Bukti Laporan | Tidak | Maksimal **5 foto**, masing-masing **10 MB**. |
+| Field                 | Wajib | Keterangan                                          |
+| --------------------- | ----- | --------------------------------------------------- |
+| Jenis Perundungan     | Ya    | **Fisik**, **Verbal**, atau **Online**.             |
+| Korban Perundungan    | Ya\*  | Khusus siswa: **Diri Sendiri** atau **Orang Lain**. |
+| Nama Korban           | Ya\*  | Hanya jika korban orang lain; pencarian siswa.      |
+| Tanggal Kejadian      | Ya    | Maksimal hari ini.                                  |
+| Lokasi Kejadian       | Ya    | 3–100 karakter, huruf dan spasi.                    |
+| Nama Pelaku           | Ya    | Pencarian siswa.                                    |
+| Deskripsi Kejadian    | Ya    | Minimal 5 karakter.                                 |
+| Tindakan yang diambil | Ya    | 3–100 karakter.                                     |
+| Saksi                 | Tidak | Jika diisi, 3–100 karakter.                         |
+| Bukti Laporan         | Tidak | Maksimal **5 foto**, masing-masing **10 MB**.       |
 
-<Callout kind="info">
+<Callout kind="info" collapsed="false">
   Laporan hanya bisa **diedit oleh pelapornya sendiri** dan hanya selama status masih **Pengajuan**. Halaman detail menampilkan linimasa riwayat proses laporan.
 </Callout>
 
@@ -104,7 +105,7 @@ Pengajuan kunjungan keluarga ke siswa (mis. di sekolah berasrama). Status: **Dip
 
 Siswa dan guru melihat kalender akademik satu tahun yang dibuat sekolah, per bulan atau semua event sekaligus. Dikelola admin di [CARDS School](/cards-school/kalender-akademik).
 
-<Callout kind="info">
+<Callout kind="info" collapsed="false">
   Daftar event bisa dicari, dan detail event (instansi, tanggal, deskripsi) menyediakan tombol **Tambahkan ke Kalender** untuk menyimpan event non-libur ke kalender ponsel. Jika sekolah belum mengatur kalender, tampil pesan "Kalender Akademik belum di setting oleh lembaga".
 </Callout>
 
@@ -112,5 +113,153 @@ Siswa dan guru melihat kalender akademik satu tahun yang dibuat sekolah, per bul
 
 - **Siswa**: melihat progres [tahfidz](/referensi/glosarium#tahfidz) yang dicatat guru. Kartu program menampilkan nama program, jenis (Surah/Juz), target, dan persentase pencapaian.
 - **Guru**: membuat progres tahfidz per siswa. Progres ini tampil juga di Cards Edu siswa dan CARDS Parents.
+
+## Tahfidz Siswa
+
+Panduan melihat perkembangan program Tahfidz siswa melalui aplikasi CARDS Edu.
+
+## Tahfidz Guru
+
+Panduan bagi guru untuk mengelola program Tahfidz dan mencatat riwayat setoran hafalan siswa melalui aplikasi CARDS Edu.
+
+### Video Tutorial
+
+Untuk melihat panduan penggunaan fitur Tahfidz secara visual, silakan akses video tutorial melalui tautan berikut: [https://drive.google.com/drive/folders/18Mo3FEzb5EPDUi1oSucjhr8kPezbUzY9?usp=sharing](https://drive.google.com/drive/folders/18Mo3FEzb5EPDUi1oSucjhr8kPezbUzY9?usp=sharing)
+
+Tabel Pemetaan Jenis Target, Batas Tahfidz, dan Langkah Pengisian Form Riwayat.
+
+| Jenis Target | Batas             | Langkah di Form Riwayat      |
+| ------------ | ----------------- | ---------------------------- |
+| Juz          | Juz               | Juz                          |
+| Juz          | Halaman (default) | Juz → Halaman                |
+| Juz          | Ayat              | Juz → Halaman → Surah → Ayat |
+| Surah        | Surah             | Surah                        |
+| Surah        | Ayat              | Surah → Ayat                 |
+
+## Target Juz — Batas Juz
+
+Link video: [https://drive.google.com/file/d/1I11tjVv869BTmQfiDpOemYzjZtGiL0ri/view?usp=drive\_link](https://drive.google.com/file/d/1I11tjVv869BTmQfiDpOemYzjZtGiL0ri/view?usp=drive_link)
+
+**Isian formulir**:
+
+| Field                | Wajib | Keterangan                                                       |
+| -------------------- | ----- | ---------------------------------------------------------------- |
+| Instansi             | Ya    | Instansi tempat program Tahfidz dibuat.                          |
+| Tipe                 | Ya    | Pilih tipe program, misalnya Satuan atau Masal.                  |
+| Nama Program Tahfidz | Ya    | Nama program Tahfidz yang dibuat.                                |
+| Jenis Tahfidz        | Ya    | Pilih Juz.                                                       |
+| Target Tahfidz       | Ya    | Pilih minimal satu target Juz.                                   |
+| Batas Tahfidz        | Ya    | Pilih Juz sebagai batas pencatatan progres.                      |
+| Deskripsi Program    | Tidak | Keterangan tambahan mengenai program Tahfidz.                    |
+| Tanggal Kegiatan     | Ya    | Tanggal pelaksanaan setoran hafalan.                             |
+| Catatan              | Ya    | Catatan perkembangan atau hasil setoran hafalan siswa.           |
+| Juz                  | Ya    | Pilih minimal satu Juz yang telah dihafal atau disetorkan siswa. |
+
+Guru dapat membuat program Tahfidz dengan target Juz dan mencatat riwayat setoran hafalan siswa. Berikut langkah-langkahnya:
+
+<Steps>
+  <Step title="Membuka Menu Kesiswaan" title-type="p">
+    Login ke aplikasi CARDS Edu menggunakan akun guru. Pada halaman utama, klik menu **Kesiswaan**.\
+
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792030739897-bmd7tvicqdk-juz-juz1.png?fm=auto&auto=compress%2Cformat&v=1792030763593" width="224" height="502" alt="" style="width: 224px; height: auto; cursor: pointer;" />
+  </Step>
+
+  <Step title="Memilih Menu Tahfidz" title-type="p">
+    Pada daftar menu Kesiswaan, pilih **Tahfidz** untuk membuka halaman List Tahfidz.\
+
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792034190300-w1lbmjd0s9h-pasted-image-1792034183730.png?fm=auto&auto=compress%2Cformat" width="224" height="502" alt="" style="width: 224px; height: auto; cursor: pointer;" />
+  </Step>
+
+  <Step title="Menambahkan Program Tahfidz" title-type="p">
+    Pada halaman List Tahfidz, klik tombol **Tambah Tahfidz** di bagian bawah halaman.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792031829565-w7kc607rqca-juz-juz3.png?fm=auto&auto=compress%2Cformat" width="228" height="511" alt="" />
+  </Step>
+
+  <Step title="Mengisi Form Tambah Tahfidz" title-type="p">
+    Isi formulir program dengan langkah berikut:
+
+    1. Pilih siswa yang akan mengikuti program.
+    2. Isi **Nama Program Tahfidz**.
+    3. Pilih **Jenis Tahfidz: Juz**.
+    4. Tentukan **Target Tahfidz**, misalnya Juz 1 dan Juz 2.
+    5. Pilih **Batas Tahfidz: Juz**.
+    6. Isi Deskripsi jika diperlukan.
+    7. Klik **Simpan** untuk menyimpan program.\
+
+       <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792033223388-ysifkm6z9lf-juz-juz4.png?fm=auto&auto=compress%2Cformat" width="215" height="481" alt="" />
+
+  </Step>
+
+  <Step title="Membuka Detail Program Tahfidz" title-type="p">
+    Setelah program berhasil dibuat, pilih program pada halaman List Tahfidz untuk membuka halaman Detail Tahfidz.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792033333936-zrsgwe4erwi-juz-juz5.png?fm=auto&auto=compress%2Cformat" width="229" height="513" alt="" />
+  </Step>
+
+  <Step title="Membuka Detail Progres Siswa" title-type="p">
+    Pada halaman Detail Tahfidz, pilih siswa yang ingin dicatat progres hafalannya untuk membuka halaman Detail Progres Tahfidz.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792033418897-uquxeaooata-juz-juz6.png?fm=auto&auto=compress%2Cformat" width="229" height="513" alt="" />
+  </Step>
+
+  <Step title="Menambahkan Riwayat Progres" title-type="p">
+    Pada halaman Detail Progres Tahfidz, klik **Tambah Riwayat Progres**, kemudian:
+
+    1. Isi **Tanggal Kegiatan**.
+    2. Isi **Catatan** perkembangan hafalan siswa.
+    3. Pada bagian Batas Tahfidz, pilih **Juz** yang telah disetorkan.
+    4. Klik **Tambah Riwayat Progres** untuk menyimpan catatan setoran.\
+
+       <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792033680891-1f30zq80d28i-juz-juz7.png?fm=auto&auto=compress%2Cformat" width="210" height="470" alt="juz juz7" style="width: 210px; height: auto; cursor: pointer;" />
+       <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792033728264-gfdj82qx8rp-juz-juz8.png?fm=auto&auto=compress%2Cformat" width="211" height="472" alt="juz juz8" style="width: 211px; height: auto; cursor: pointer;" />
+  </Step>
+
+  <Step title="Memeriksa Hasil Riwayat Progres" title-type="p">
+    Setelah riwayat berhasil ditambahkan, periksa bagian Riwayat Progres. Pastikan Juz, tanggal kegiatan, nama guru, catatan, dan persentase pencapaian ditampilkan sesuai data yang dicatat.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792033844690-2pceg4wjw4q-juz-juz9.png?fm=auto&auto=compress%2Cformat&v=1792033847698" width="228" height="510" alt="" style="width: 228px; height: auto; cursor: pointer;" />
+  </Step>
+</Steps>
+
+### Target Juz — Batas Halaman
+
+Link video: [https://drive.google.com/file/d/1HqzHAWLFxFMstraOIOqhTdR2Y8cNMp06/view?usp=drive\_link](https://drive.google.com/file/d/1HqzHAWLFxFMstraOIOqhTdR2Y8cNMp06/view?usp=drive_link)
+
+**Isian formulir**:
+
+| Field                | Wajib | Keterangan                                                                          |
+| -------------------- | ----- | ----------------------------------------------------------------------------------- |
+| Instansi             | Ya    | Instansi tempat program Tahfidz dibuat.                                             |
+| Tipe                 | Ya    | Pilih tipe program Tahfidz.                                                         |
+| Nama Program Tahfidz | Ya    | Nama program Tahfidz yang dibuat.                                                   |
+| Jenis Tahfidz        | Ya    | Pilih Juz.                                                                          |
+| Target Tahfidz       | Ya    | Pilih minimal satu target Juz yang ingin dicapai, misalnya Juz 1, Juz 2, dan Juz 3. |
+| Batas Tahfidz        | Ya    | Pilih Halaman sebagai batas pencatatan progres hafalan.                             |
+| Deskripsi            | Tidak | Keterangan tambahan mengenai program Tahfidz.                                       |
+| Tanggal Kegiatan     | Ya    | Tanggal pelaksanaan setoran hafalan.                                                |
+| Catatan              | Ya    | Catatan hasil setoran atau perkembangan hafalan siswa.                              |
+| Juz                  | Ya    | Pilih minimal satu Juz yang telah dihafal atau disetorkan.                          |
+| Halaman              | Ya    | Pilih minimal satu halaman yang telah dihafal pada Juz yang dipilih.                |
+
+<Steps>
+  <Step title="" title-type="p">
+
+  </Step>
+</Steps>
+
+### Target Juz — Batas Ayat
+
+Link video: [https://drive.google.com/file/d/1I11tjVv869BTmQfiDpOemYzjZtGiL0ri/view?usp=drive\_link](https://drive.google.com/file/d/1I11tjVv869BTmQfiDpOemYzjZtGiL0ri/view?usp=drive_link)
+
+### Target Surah — Batas Surah
+
+Link video: [https://drive.google.com/file/d/1I11tjVv869BTmQfiDpOemYzjZtGiL0ri/view?usp=drive\_link](https://drive.google.com/file/d/1I11tjVv869BTmQfiDpOemYzjZtGiL0ri/view?usp=drive_link)
+
+### Target Surah — Batas Ayat
+
+Link video: [https://drive.google.com/file/d/1I11tjVv869BTmQfiDpOemYzjZtGiL0ri/view?usp=drive\_link](https://drive.google.com/file/d/1I11tjVv869BTmQfiDpOemYzjZtGiL0ri/view?usp=drive_link)
 
 **Isian formulir program** (guru): Instansi (wajib), Tipe program **Satuan** (satu siswa, wajib pilih siswa) atau **Masal** (per level/kelas/jurusan/tag; jika tanpa kriteria, program dibuat untuk seluruh siswa instansi dengan konfirmasi), Nama Program (wajib), Jenis Tahfidz **Surah** atau **Juz** (wajib), Target (wajib, minimal 1 pilihan), Deskripsi (opsional). Riwayat setoran per siswa diisi dengan Tanggal Kegiatan, Catatan, Surah, dan Ayat (semua wajib).
