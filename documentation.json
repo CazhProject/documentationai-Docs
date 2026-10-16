@@ -374,6 +374,15 @@
             "icon": "settings",
             "pages": [
               {
+                "group": "Pengaturan Kesiswaan",
+                "pages": [
+                  {
+                    "title": "Batas Tahfidz",
+                    "path": "batas-tahfidz"
+                  }
+                ]
+              },
+              {
                 "title": "Pengaturan Administrasi",
                 "path": "pengaturan-administrasi"
               },
