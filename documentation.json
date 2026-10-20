@@ -458,7 +458,7 @@
               {
                 "title": "Pengkinian Data",
                 "path": "pengkinian-data",
-                "icon": "fa-solid:arrows-rotate"
+                "icon": "tabler:refresh"
               },
               {
                 "title": "Cek absensi anak",
