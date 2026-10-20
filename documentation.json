@@ -456,6 +456,11 @@
                 "icon": "graduation-cap"
               },
               {
+                "title": "Pengkinian Data",
+                "path": "pengkinian-data",
+                "icon": "fa-solid:arrows-rotate"
+              },
+              {
                 "title": "Cek absensi anak",
                 "path": "cards-parent/cek-absensi",
                 "icon": "user-check"
