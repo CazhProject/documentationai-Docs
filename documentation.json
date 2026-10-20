@@ -509,6 +509,11 @@
             "icon": "star",
             "pages": [
               {
+                "title": "Keuangan",
+                "path": "keuangan",
+                "icon": "tabler-filled:app-window"
+              },
+              {
                 "title": "QR: Presensi & Bayar",
                 "path": "cards-edu/qr",
                 "icon": "qr-code"
