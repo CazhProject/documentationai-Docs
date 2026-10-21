@@ -49,6 +49,11 @@
                 "icon": "layout-dashboard"
               },
               {
+                "title": "Pengenalan Cards",
+                "path": "pengenalan-ekosistem-cards",
+                "icon": "fa-regular:hand"
+              },
+              {
                 "title": "Video Training",
                 "path": "cards-school/training",
                 "icon": "play-circle"
