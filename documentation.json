@@ -341,6 +341,10 @@
             "icon": "heart-handshake",
             "pages": [
               {
+                "title": "Penjemputam",
+                "path": "penjemputam"
+              },
+              {
                 "title": "Prestasi",
                 "path": "cards-school/kesiswaan-prestasi"
               },
