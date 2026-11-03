@@ -678,6 +678,17 @@
                 "icon": "tabler:connection"
               }
             ]
+          },
+          {
+            "group": "Jajan di kantin",
+            "pages": [
+              {
+                "title": "Jajan",
+                "path": "jajan",
+                "icon": "fa-solid:money-bill-1-wave"
+              }
+            ],
+            "icon": "fa-solid:money-bill-1-wave"
           }
         ]
       },
