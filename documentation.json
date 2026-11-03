@@ -740,6 +740,27 @@
             "content-width": "wide"
           }
         ]
+      },
+      {
+        "tab": "Cazh Tap",
+        "icon": "fa-solid:tape",
+        "groups": [
+          {
+            "group": "Memuai",
+            "pages": [
+              {
+                "title": "Mulai dari Sini",
+                "path": "mulai-dari-sini",
+                "icon": "flag"
+              },
+              {
+                "title": "Menyalakan unit",
+                "path": "menyalakan-unit",
+                "icon": "fa-solid:power-off"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
