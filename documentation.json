@@ -671,6 +671,11 @@
                 "title": "Menyalakan unit",
                 "path": "menyalakan-unit",
                 "icon": "fa-solid:power-off"
+              },
+              {
+                "title": "Menghubungkan unit",
+                "path": "menghubungkan-unit",
+                "icon": "tabler:connection"
               }
             ]
           }
