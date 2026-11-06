@@ -680,15 +680,25 @@
             ]
           },
           {
-            "group": "Jajan di kantin",
+            "group": "Jajan",
             "pages": [
               {
-                "title": "Jajan",
+                "title": "Jajan di kanting",
                 "path": "jajan",
                 "icon": "fa-solid:money-bill-1-wave"
               }
             ],
             "icon": "fa-solid:money-bill-1-wave"
+          },
+          {
+            "group": "Absen",
+            "pages": [
+              {
+                "title": "Absen sekolah",
+                "path": "absen-sekolah",
+                "icon": "fa-solid:house-crack"
+              }
+            ]
           }
         ]
       },
