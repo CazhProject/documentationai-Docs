@@ -445,6 +445,11 @@
             "icon": "book",
             "pages": [
               {
+                "title": "Bantuan",
+                "path": "Bantuan",
+                "icon": "tabler:alert-circle"
+              },
+              {
                 "title": "Kartu",
                 "path": "cards-parent/kartu",
                 "icon": "credit-card"
