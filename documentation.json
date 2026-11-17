@@ -488,6 +488,11 @@
                 "title": "Toko Online & Lainnya",
                 "path": "cards-parent/lainnya",
                 "icon": "shopping-bag"
+              },
+              {
+                "title": "Pembelian",
+                "path": "cards-parent/pembelian",
+                "icon": "tabler:basket"
               }
             ]
           }
