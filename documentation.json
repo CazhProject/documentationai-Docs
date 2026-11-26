@@ -551,6 +551,11 @@
                 "icon": "qr-code"
               },
               {
+                "title": "Scan QR Presensi di Area Sekolah",
+                "path": "cards-edu/scan-qr-presensi-lokasi",
+                "icon": "fa-solid:location-dot"
+              },
+              {
                 "title": "Jadwal Pelajaran",
                 "path": "cards-edu/jadwal-pelajaran",
                 "icon": "calendar"
