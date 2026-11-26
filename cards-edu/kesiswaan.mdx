@@ -18,7 +18,7 @@ Siswa dapat melihat informasi pelanggaran yang tercatat, termasuk jenis pelangga
 
 **Video Panduan: [https://drive.google.com/file/d/1q8vPabA89HlMoVrtJluUKPJ3xqkizbsd/view?usp=drive\_link](https://drive.google.com/file/d/1q8vPabA89HlMoVrtJluUKPJ3xqkizbsd/view?usp=drive_link)**
 
-Setelah langkah ini, Anda dapat melihat jumlah poin pelanggaran yang terkumpul, daftar pelanggaran siswa, dan detail pelanggaran yang tercatat.
+Setelah langkah ini, Anda dapat melihat **Poin Saat Ini**, **Riwayat Poin** siswa, dan detail pelanggaran yang tercatat.
 
 <Steps>
   <Step title="Membuka Menu Kesiswaan" title-type="p">
@@ -34,7 +34,7 @@ Setelah langkah ini, Anda dapat melihat jumlah poin pelanggaran yang terkumpul, 
   </Step>
 
   <Step title="Melihat Daftar Pelanggaran" title-type="p">
-    Pada halaman Pelanggaran, Anda dapat melihat jumlah poin pelanggaran yang terkumpul dan daftar pelanggaran siswa. Anda juga dapat memilih bulan dan tahun untuk melihat data berdasarkan periode tertentu.
+    Pada halaman Pelanggaran, Anda dapat melihat **Poin Saat Ini** dan **Riwayat Poin** siswa. Anda juga dapat memilih bulan dan tahun untuk melihat riwayat berdasarkan periode tertentu. Poin Saat Ini tidak ikut berubah saat bulan dipilih.
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794190880132-4tj1dymhr8e-pasted-image-1794190875143.png?fm=auto&auto=compress%2Cformat" width="230" height="515" alt="" style="width: 230px; height: auto; cursor: pointer;" />
   </Step>
@@ -46,7 +46,7 @@ Setelah langkah ini, Anda dapat melihat jumlah poin pelanggaran yang terkumpul, 
   </Step>
 </Steps>
 
-**Informasi yang ditampilkan:&#x20;**&#x73;iswa melihat total poin pelanggarannya; tiap catatan berisi tanggal, tipe pelanggaran, nama pelanggaran, poin (merah), sanksi, catatan, dan foto (jika ada).
+**Informasi yang ditampilkan:&#x20;**&#x73;iswa melihat **Poin Saat Ini**; tiap catatan berisi tanggal, tipe pelanggaran, nama pelanggaran, poin (merah), sanksi, catatan, dan foto (jika ada).
 
 ### Pelanggaran Guru
 
@@ -101,6 +101,60 @@ Setelah langkah ini, Anda dapat mencatat dan mengelola data pelanggaran siswa me
 | Deskripsi           | Ya    | Minimal 5 karakter.                                    |
 | Foto                | Tidak | 1 foto, maksimal 10 MB.                                |
 
+### Pengurangan Poin
+
+Sekolah bisa mengurangi poin pelanggaran siswa tanpa menghapus pelanggarannya, misalnya setelah siswa menjalani sanksi. **Poin Saat Ini** = poin pelanggaran pada periode berjalan dikurangi pengurangan yang masih Aktif. Pengaturan dan cara admin mengurangi poin ada di [Kesiswaan: Pengurangan Poin](/cards-school/kesiswaan-pengurangan-poin).
+
+#### Siswa: Melihat Poin Saat Ini dan Riwayat Poin
+
+Di halaman **Pelanggaran**, bagian atas menampilkan **Poin Saat Ini** beserta rinciannya (1). Di bawahnya ada **Riwayat Poin**: pelanggaran (+poin) dan pengurangan (-poin) dalam satu daftar, urut dari tanggal terbaru (2). Poin Saat Ini tidak ikut berubah saat memilih bulan.
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795680566985-lw54d8na50e-pengurangan-m6-siswa-poin.png?fm=auto&auto=compress%2Cformat" width="320" height="669" alt="Poin Saat Ini dan Riwayat Poin siswa" />
+
+Pengurangan yang dibatalkan sekolah tetap tampil dengan tanda **Dibatalkan** dan alasannya (1), dan Poin Saat Ini kembali seperti sebelum dikurangi.
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795680572722-7wta2f0q5c-pengurangan-m7-siswa-batal.png?fm=auto&auto=compress%2Cformat" width="320" height="669" alt="Pengurangan dibatalkan di Riwayat Poin" />
+
+Siswa menerima notifikasi **Poin Pelanggaran Dikurangi** saat poinnya dikurangi dan **Pengurangan Poin Dibatalkan** saat pengurangan dibatalkan. Ketuk notifikasinya untuk membuka halaman Pelanggaran.
+
+#### Guru: Mengurangi Poin Siswa
+
+Guru yang punya akses tambah pelanggaran bisa mengurangi poin siswa. Guru tanpa akses itu tidak melihat tombol **Kurangi Poin**.
+
+<Steps>
+  <Step title="Buka Kurangi Poin" title-type="p">
+    Buka **Kesiswaan** -> **Pelanggaran**, lalu ketuk **Kurangi Poin** di bawah layar. Cari dan pilih siswa. **Poin Saat Ini** siswa (1) muncul. Isi **Tanggal Pengurangan** (default hari ini), **Jumlah Poin**, dan **Alasan**, lalu ketuk **Simpan**. Jumlah poin tidak boleh melebihi Poin Saat Ini. Kalau melebihi, muncul pesan **"Jumlah poin melebihi Poin Saat Ini siswa (\{n} poin)."** (2).
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795680545384-rezfeaaf00i-pengurangan-m1-guru-form.png?fm=auto&auto=compress%2Cformat" width="320" height="669" alt="Form Kurangi Poin" />
+  </Step>
+
+  <Step title="Siswa Tanpa Poin" title-type="p">
+    Siswa yang Poin Saat Ininya 0 tidak bisa dikurangi. Muncul keterangan **"Siswa tidak memiliki poin untuk dikurangi."** (1) dan **Simpan** tidak bisa diketuk.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795680550053-khulj12q0na-pengurangan-m2-guru-nol.png?fm=auto&auto=compress%2Cformat" width="320" height="669" alt="Siswa tanpa poin" />
+  </Step>
+
+  <Step title="Cek Tab Pengurangan Poin" title-type="p">
+    Muncul pesan **"Poin pelanggaran berhasil dikurangi."** dan halaman pindah ke tab **Pengurangan Poin** (1). Tab ini berisi nama siswa, tanggal, jumlah poin, alasan, pembuat, dan status.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795680554813-sjcr8e1fw-pengurangan-m3-guru-tab.png?fm=auto&auto=compress%2Cformat" width="320" height="669" alt="Tab Pengurangan Poin" />
+  </Step>
+
+  <Step title="Membatalkan Pengurangan" title-type="p">
+    Tombol **Batalkan** (2 pada gambar sebelumnya) hanya muncul di pengurangan **Aktif** buatan guru itu sendiri. Ketuk **Batalkan**, isi **Alasan Pembatalan** (1), lalu ketuk **Batalkan Pengurangan** (2).
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795680558660-2jzzc318z9w-pengurangan-m4-guru-batal.png?fm=auto&auto=compress%2Cformat" width="320" height="669" alt="Batalkan pengurangan" />
+
+    Muncul pesan **"Pengurangan poin berhasil dibatalkan."** Statusnya menjadi **Dibatalkan** beserta alasannya (1). Pengurangan buatan admin atau guru lain hanya bisa dibatalkan admin di Dashboard School.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795680563305-4etfaxpy81c-pengurangan-m5-guru-dibatalkan.png?fm=auto&auto=compress%2Cformat" width="320" height="669" alt="Pengurangan dibatalkan" />
+  </Step>
+</Steps>
+
+<Callout kind="info" collapsed="false">
+  Pengurangan tidak bisa diedit atau dihapus, hanya dibatalkan. Wali kelas yang dibatasi **Batasi Data Wali Kelas** hanya bisa mencari dan mengurangi poin siswa di kelasnya.
+</Callout>
+
 ## Prestasi
 
 ### Prestasi Siswa
@@ -134,8 +188,6 @@ Setelah langkah ini, Anda dapat melihat daftar prestasi dan total poin prestasi 
     Pilih salah satu data prestasi untuk melihat informasi lebih lengkap, seperti tanggal, poin prestasi, deskripsi pencapaian, dan apresiasi yang diberikan.
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794198316547-w0elj8qs08p-pasted-image-1794198301876.png?fm=auto&auto=compress%2Cformat" width="231" height="517" alt="" style="width: 231px; height: auto; cursor: pointer;" />
-
-
   </Step>
 </Steps>
 
@@ -288,8 +340,6 @@ Riwayat pengajuan izin: jenis izin, tanggal, status persetujuan, dan keterangan.
     lengkapi data siswa, jenis dan waktu izin, serta lampiran foto sebagai bukti pendukung. catatan tambahan dapat diisi jika diperlukan
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794370452168-6fi9i1katu9-WhatsApp-Image-2026-11-11-at-11-13-37.jpg?fm=auto&auto=compress%2Cformat" width="345" height="767" alt="WhatsApp Image 2026 11 11 at 11.13.37" style="width: 345px; height: auto; cursor: pointer;" />
-
-
   </Step>
 
   <Step title="Mengajukan Perizinan" title-type="p">
@@ -302,8 +352,6 @@ Riwayat pengajuan izin: jenis izin, tanggal, status persetujuan, dan keterangan.
     Pilih pengajuan yang telah dibuat untuk melihat informasi izin dan status persetujuannya
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794370351628-o2ny5zc3r1-WhatsApp-Image-2026-11-11-at-11-11-29.jpg?fm=auto&auto=compress%2Cformat" width="320" height="711" alt="WhatsApp Image 2026 11 11 at 11.11.29" style="width: 320px; height: auto; cursor: pointer;" />
-
-
   </Step>
 
   <Step title="Lihat Detail Pengajuan" title-type="p">
@@ -330,16 +378,12 @@ Link Video: [https://drive.google.com/file/d/1HsdkUjpwC5tFYboHJoCoFz6CFG1UALXF/v
     Pilih pengajuan izin yang ingin diubah dari daftar perizinan
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794378985486-9qprgvkz8n8-WhatsApp-Image-2026-11-11-at-13-35-03--1-.jpg?fm=auto&auto=compress%2Cformat" width="245" height="544" alt="WhatsApp Image 2026 11 11 at 13.35.03 (1)" style="width: 245px; height: auto; cursor: pointer;" />
-
-
   </Step>
 
   <Step title="Membuka Menu ubah perizinan" title-type="p">
     pada halaman detail perizinan, tekan tombol Ubah Jadwal Izin untuk membuka pengaturan jadwal
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794378966268-mlkskwvvouh-WhatsApp-Image-2026-11-11-at-13-35-03--2-.jpg?fm=auto&auto=compress%2Cformat" width="320" height="711" alt="WhatsApp Image 2026 11 11 at 13.35.03 (2)" style="width: 320px; height: auto; cursor: pointer;" />
-
-
   </Step>
 
   <Step title="Konfirmasi Perubahan Jadwal" title-type="p">
@@ -402,8 +446,6 @@ Link Video: [https://drive.google.com/file/d/1j9TYPO3sgZHA41oOq07WUBSS2hZucCWC/v
     masukkan alasan pembatalan pada kolom yang tersedia, bagian ini bersifat opsional
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794379847458-2r072pghidm-WhatsApp-Image-2026-11-11-at-13-48-58--1-.jpg?fm=auto&auto=compress%2Cformat" width="356" height="791" alt="WhatsApp Image 2026 11 11 at 13.48.58 (1)" style="width: 356px; height: auto; cursor: pointer;" />
-
-
   </Step>
 
   <Step title="mengirim pembatalan" title-type="p">
@@ -416,8 +458,6 @@ Link Video: [https://drive.google.com/file/d/1j9TYPO3sgZHA41oOq07WUBSS2hZucCWC/v
     jika berhasil, status pengajuan akan berubah menjadi dibatalkan dan riwayat pembatalan akan tercatat pada halaman detail perizinan
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794379858614-90nm8koow8h-WhatsApp-Image-2026-11-11-at-13-48-59.jpg?fm=auto&auto=compress%2Cformat" width="293" height="651" alt="WhatsApp Image 2026 11 11 at 13.48.59" style="width: 293px; height: auto; cursor: pointer;" />
-
-
   </Step>
 </Steps>
 
@@ -627,8 +667,6 @@ Link Video: [https://drive.google.com/file/d/1pnsM1m0NFlPu7Aed3Opk1Jlh-HSJ8ILp/
   Laporan hanya bisa **diedit oleh pelapornya sendiri** dan hanya selama status masih **Pengajuan**. Halaman detail menampilkan linimasa riwayat proses laporan.
 </Callout>
 
-
-
 <Steps>
   <Step title="Membuka menu perundungan" title-type="p">
     buka aplikasi cards edu, kemudian pilih menu Kesiswaan pada halaman beranda
@@ -664,8 +702,6 @@ Link Video: [https://drive.google.com/file/d/1pnsM1m0NFlPu7Aed3Opk1Jlh-HSJ8ILp/
     setelah seluruh data yang wajib diisi sudah lengkap, tekan tombol "kirim laporan" untuk mengirim laporan perundungan
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792467509459-l1wu5x1qtz-pasted-image-1792467506560.png?fm=auto&auto=compress%2Cformat" width="1543" height="657" alt="" style="width: 1543px; height: auto; cursor: pointer;" />
-
-
   </Step>
 
   <Step title="melihat laporan yang berhasil ditambahkan" title-type="p">
@@ -766,36 +802,31 @@ Siswa dan guru melihat kalender akademik satu tahun yang dibuat sekolah, per bul
 
 <Steps>
   <Step title="Membuka Menu Akademik" title-type="p">
-    Pada halaman Beranda aplikasi [CARDS Edu](https://dashboard.documentation.ai/cards-parent/tentang-cards-parent), pilih menu **Akademik** untuk menampilkan daftar fitur pembelajaran dan kegiatan sekolah yang tersedia.\
-
+    Pada halaman Beranda aplikasi [CARDS Edu](https://dashboard.documentation.ai/cards-parent/tentang-cards-parent), pilih menu **Akademik** untuk menampilkan daftar fitur pembelajaran dan kegiatan sekolah yang tersedia.\\
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794194736161-7svk42e16wt-pasted-image-1794194733361.png?fm=auto&auto=compress%2Cformat" width="265" height="589" alt="" style="width: 265px; height: auto; cursor: pointer;" />
   </Step>
 
   <Step title="Memilih Fitur Kalender Akademik" title-type="p">
-    Pada menu Akademik, pilih submenu **Kalender Akademik** (selain pilihan Tugas) untuk membuka halaman jadwal kegiatan instansi.\
-
+    Pada menu Akademik, pilih submenu **Kalender Akademik** (selain pilihan Tugas) untuk membuka halaman jadwal kegiatan instansi.\\
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794194762418-4a8xrdvgtax-pasted-image-1794194761118.png?fm=auto&auto=compress%2Cformat" width="294" height="653" alt="" style="width: 294px; height: auto; cursor: pointer;" />
   </Step>
 
   <Step title="Melihat Kalender Akademik Instansi" title-type="p">
-    Pada halaman tersebut, Anda dapat melihat kalender akademik satu tahun dari instansi terkait, yang menampilkan informasi baik secara tampilan kalender per bulan maupun melalui daftar event (_list event_).\
-
+    Pada halaman tersebut, Anda dapat melihat kalender akademik satu tahun dari instansi terkait, yang menampilkan informasi baik secara tampilan kalender per bulan maupun melalui daftar event (_list event_).\\
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794194804789-uj6ddup8mv-pasted-image-1794194791908.png?fm=auto&auto=compress%2Cformat" width="256" height="569" alt="" style="width: 256px; height: auto; cursor: pointer;" />
   </Step>
 
   <Step title="Menggunakan Fitur Pencarian Event" title-type="p">
-    Gunakan kolom pencarian yang tersedia pada halaman Kalender Akademik untuk memudahkan Anda mencari event atau kegiatan tertentu secara cepat.\
-
+    Gunakan kolom pencarian yang tersedia pada halaman Kalender Akademik untuk memudahkan Anda mencari event atau kegiatan tertentu secara cepat.\\
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794194827075-7pu5dlotk0o-pasted-image-1794194825877.png?fm=auto&auto=compress%2Cformat" width="214" height="568" alt="" style="width: 214px; height: auto; cursor: pointer;" />
   </Step>
 
   <Step title="Melihat Detail & Menyimpan Event" title-type="p">
-    Pilih salah satu event untuk melihat informasi detailnya (seperti instansi, tanggal, dan deskripsi). Khusus untuk event non-libur, Anda dapat menekan tombol **Tambahkan ke Kalender** untuk menyimpannya langsung ke kalender ponsel Anda.\
-
+    Pilih salah satu event untuk melihat informasi detailnya (seperti instansi, tanggal, dan deskripsi). Khusus untuk event non-libur, Anda dapat menekan tombol **Tambahkan ke Kalender** untuk menyimpannya langsung ke kalender ponsel Anda.\\
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1794194851765-6pczcqoc5af-pasted-image-1794194850316.png?fm=auto&auto=compress%2Cformat" width="245" height="544" alt="" style="width: 245px; height: auto; cursor: pointer;" />
   </Step>
@@ -908,15 +939,13 @@ Guru dapat membuat program Tahfidz dengan target Juz dan mencatat riwayat setora
 
 <Steps>
   <Step title="Membuka Menu Kesiswaan" title-type="p">
-    Login ke aplikasi CARDS Edu menggunakan akun guru. Pada halaman utama, klik menu **Kesiswaan**.\
-
+    Login ke aplikasi CARDS Edu menggunakan akun guru. Pada halaman utama, klik menu **Kesiswaan**.\\
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792030739897-bmd7tvicqdk-juz-juz1.png?fm=auto&auto=compress%2Cformat&v=1792030763593" width="224" height="502" alt="" style="width: 224px; height: auto; cursor: pointer;" />
   </Step>
 
   <Step title="Memilih Menu Tahfidz" title-type="p">
-    Pada daftar menu Kesiswaan, pilih **Tahfidz** untuk membuka halaman List Tahfidz.\
-
+    Pada daftar menu Kesiswaan, pilih **Tahfidz** untuk membuka halaman List Tahfidz.\\
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792034190300-w1lbmjd0s9h-pasted-image-1792034183730.png?fm=auto&auto=compress%2Cformat" width="224" height="502" alt="" style="width: 224px; height: auto; cursor: pointer;" />
   </Step>
@@ -931,8 +960,6 @@ Guru dapat membuat program Tahfidz dengan target Juz dan mencatat riwayat setora
     Isi formulir dengan memilih siswa, mengisi Nama Program Tahfidz, memilih Jenis Tahfidz: Juz, menentukan Target Tahfidz, memilih Batas Tahfidz: Juz, lalu mengisi Deskripsi jika diperlukan. Klik Simpan untuk menyimpan program.
 
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792033223388-ysifkm6z9lf-juz-juz4.png?fm=auto&auto=compress%2Cformat" width="215" height="481" alt="" />
-
-
   </Step>
 
   <Step title="Membuka Detail Program Tahfidz" title-type="p">
@@ -1247,4 +1274,3 @@ Guru dapat membuat program Tahfidz dengan target Juz dan mencatat riwayat setora
     <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1792119718414-hennwxl92bb-7c372b85-a33e-4ffe-b1ed-46b929bb7e0d.jpg?fm=auto&auto=compress%2Cformat" width="234" height="524" alt="7c372b85 a33e 4ffe b1ed 46b929bb7e0d" style="width: 234px; height: auto; cursor: pointer;" />
   </Step>
 </Steps>
-
