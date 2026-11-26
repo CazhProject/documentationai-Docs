@@ -267,6 +267,19 @@
                 "path": "cards-school/presensi-harian"
               },
               {
+                "group": "Kunci Lokasi Presensi",
+                "pages": [
+                  {
+                    "title": "Pengaturan Kunci Lokasi",
+                    "path": "cards-school/pengaturan-kunci-lokasi"
+                  },
+                  {
+                    "title": "Memakai Link Presensi",
+                    "path": "cards-school/memakai-link-presensi"
+                  }
+                ]
+              },
+              {
                 "title": "Presensi Kegiatan",
                 "path": "cards-school/presensi-kegiatan"
               },

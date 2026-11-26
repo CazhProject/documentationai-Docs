@@ -1,0 +1,122 @@
+---
+title: Pengaturan Kunci Lokasi
+description: >-
+  Cara admin sekolah mengunci link presensi harian dan presensi kegiatan supaya
+  hanya dapat dipakai di area sekolah.
+---
+**Batasi Lokasi Link Presensi** membuat link presensi hanya dapat dipakai saat perangkat petugas berada di area sekolah. Petugas piket tidak bisa lagi membuka link presensi dari rumah.
+
+Siswa, guru, dan staff tetap presensi dengan kartu seperti biasa. Yang dikunci adalah halaman link presensinya, bukan kartunya.
+
+<Callout kind="info" collapsed="false">
+  Panduan untuk guru piket dan petugas presensi ada di halaman [Memakai Link Presensi](/cards-school/memakai-link-presensi).
+</Callout>
+
+## Menyalakan Kunci Lokasi
+
+<Steps>
+  <Step title="Buka Pengaturan Presensi Harian" title-type="p">
+    Pada sidebar, klik **Akademik → Presensi Harian → Pengaturan**. Pada daftar instansi, klik ikon mata di baris instansi yang ingin diatur.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795662815427-ww0x8f98pdl-kuncilokasi-a1-menu.png?fm=auto&auto=compress%2Cformat" width="1440" height="900" alt="Daftar pengaturan presensi" />
+  </Step>
+
+  <Step title="Nyalakan Batasi Lokasi Link Presensi" title-type="p">
+    Pada halaman **Detail Pengaturan**, nyalakan **Batasi Lokasi Link Presensi**. Default-nya Tidak Aktif.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795662819483-x06177upai-kuncilokasi-a2-toggle.png?fm=auto&auto=compress%2Cformat" width="1440" height="900" alt="Toggle Batasi Lokasi Link Presensi" />
+  </Step>
+
+  <Step title="Cari Lokasi Sekolah" title-type="p">
+    Bagian **Lokasi Instansi** akan muncul. Ketik nama atau alamat sekolah di kolom **Cari alamat, lalu tekan Enter**, tekan Enter, lalu pilih alamat yang benar dari daftar.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795662824221-spu6ybmbiel-kuncilokasi-a3-cari.png?fm=auto&auto=compress%2Cformat" width="1440" height="900" alt="Hasil pencarian alamat" />
+  </Step>
+
+  <Step title="Periksa Titik dan Isi Radius" title-type="p">
+    Pastikan pin dan lingkaran biru sudah berada di sekolah, lalu isi **Radius**.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795662828193-o215m46jwfg-kuncilokasi-a4-lokasi.png?fm=auto&auto=compress%2Cformat" width="1440" height="900" alt="Bagian Lokasi Instansi" />
+
+    | No | Bagian                                                             | Fungsinya                                                                                                                                              |
+    | -- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+    | 1  | **Cari alamat, lalu tekan Enter** / **Pakai Lokasi Saya Sekarang** | Cari titik lewat alamat, atau pakai lokasi perangkat yang sedang Anda pakai. **Pakai Lokasi Saya Sekarang** cocok kalau Anda sedang berada di sekolah. |
+    | 2  | Peta                                                               | Klik atau geser pin untuk memindahkan titik. Lingkaran biru adalah area yang diizinkan.                                                                |
+    | 3  | **Latitude** / **Longitude**                                       | Terisi sendiri dari titik di peta. Bisa juga diisi langsung kalau Anda sudah tahu koordinatnya.                                                        |
+    | 4  | **Radius**                                                         | Jarak dari titik ke tepi lingkaran, dalam meter. Default 200, maksimal 10000. 200 m kira-kira 2 kali panjang lapangan sepak bola.                      |
+  </Step>
+
+  <Step title="Simpan" title-type="p">
+    Gulir ke bawah, lalu klik **Simpan**. Muncul pesan **Pengaturan presensi berhasil disimpan**.
+
+    <Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795662842591-1x1e0jzmpf3-kuncilokasi-a6-simpan.png?fm=auto&auto=compress%2Cformat" width="1440" height="900" alt="Pengaturan berhasil disimpan" />
+  </Step>
+</Steps>
+
+<Callout kind="info" collapsed="false">
+  **Saran memilih radius.** Sebelum mengaktifkan, buka link presensi dari perangkat yang dipakai di meja presensi. Komputer meja dan laptop biasanya tidak punya GPS, jadi lokasinya ditebak dari jaringan internet dan bisa meleset cukup jauh. Kalau petugas di dalam sekolah tetap ditolak, perbesar radius sedikit demi sedikit.
+</Callout>
+
+### Kalau Simpan Tidak Berhasil
+
+Periksa pesan merah di bawah kolom.
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795662832746-uj52ldwv6x-kuncilokasi-a5-validasi.png?fm=auto&auto=compress%2Cformat" width="1440" height="900" alt="Pesan radius maksimal" />
+
+| Pesan                                                | Artinya                                                                                                                              |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Titik koordinat wajib diisi.**                     | Titik sekolah belum dipilih.                                                                                                         |
+| **Radius wajib diisi.**                              | Radius kosong atau 0.                                                                                                                |
+| **Radius maksimal 10000 meter.**                     | Radius lebih dari 10000.                                                                                                             |
+| **Jam Mulai pulang harus setelah Jam Selesai masuk** | Bukan soal lokasi. Jam pulang di halaman yang sama belum benar, dan seluruh pengaturan tidak bisa disimpan sampai jamnya diperbaiki. |
+
+Kalau Sistem Shift aktif tetapi jadwal shift belum disusun, saat Simpan muncul jendela **Belum ada jadwal shift**. Klik **Tetap Aktifkan** untuk melanjutkan menyimpan.
+
+## Kunci Lokasi di Presensi Kegiatan
+
+Setiap kegiatan punya pilihan **Batas Lokasi** di form **Tambah Kegiatan** dan form edit kegiatan. Buka **Akademik → Presensi Kegiatan → Pengaturan**.
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795662846635-272rrdaewhq-kuncilokasi-a7-kegiatan.png?fm=auto&auto=compress%2Cformat" width="1440" height="900" alt="Field Batas Lokasi" />
+
+| Pilihan                             | Artinya                                                                                                                                                                                                                                     |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Ikuti Lokasi Instansi** (default) | Memakai titik dan radius instansi dari Pengaturan Presensi Harian. Hanya berlaku kalau **Batasi Lokasi Link Presensi** di instansi itu Aktif. Kegiatan untuk beberapa instansi lolos kalau perangkat berada di area salah satu instansinya. |
+| **Ganti Lokasi**                    | Kegiatan memakai titik dan radius sendiri, misalnya kegiatan di luar sekolah. Pilihan ini selalu berlaku, walaupun kunci lokasi instansi Tidak Aktif.                                                                                       |
+| **Tanpa Batas Lokasi**              | Lokasi tidak diperiksa.                                                                                                                                                                                                                     |
+
+Saat memilih **Ganti Lokasi** (1), isi titik dan radius kegiatan (2) dengan cara yang sama seperti pada pengaturan instansi.
+
+<Image src="https://blob-cdn.documentation.ai/org-9f0069f2-e3f7-48a0-be6a-ee3f46a1d606/doc-0793c7e9-51db-4bf5-85cf-91406e00f125/1795662851043-bnc07qi40tl-kuncilokasi-a8-ganti-lokasi.png?fm=auto&auto=compress%2Cformat" width="1440" height="900" alt="Ganti Lokasi kegiatan" />
+
+## Yang Terjadi Setelah Dikunci
+
+- Lokasi perangkat petugas diperiksa saat login, saat halaman presensi dibuka lagi (layar dinyalakan, tab dibuka, atau halaman dimuat ulang), dan setiap 15 menit.
+- Kalau perangkat di luar area, login ditolak atau sesi presensi diputus. Presensi yang sudah tercatat tetap tersimpan.
+- Kalau izin lokasi di browser ditolak atau GPS mati, link presensi tidak bisa dipakai.
+- Tap kartu, input manual nomor kartu, RFID, dan scan tidak diperiksa lokasinya, jadi kecepatan presensi tidak berubah.
+- Untuk Presensi Kegiatan, lokasi diperiksa saat petugas menekan **Mulai Presensi** atau **Ganti Kegiatan**, lalu berkala.
+- Scan QR presensi di Cards Edu ikut diperiksa lokasinya.
+- Jarak perangkat dari titik sekolah dicatat di setiap presensi dan tampil di bawah jam masuk dan jam pulang pada Log dan Rekap Presensi. Export Log punya kolom **Jarak Masuk** dan **Jarak Pulang**.
+
+<Callout kind="info" collapsed="false">
+  Kalau satu akun memegang beberapa instansi dan hanya sebagian yang dikunci, petugas yang login dari luar area bisa diarahkan ke instansi yang tidak dikunci. Kunci semua instansi yang memakai link presensi, atau minta petugas memastikan nama instansi di kiri atas sebelum mencatat presensi.
+</Callout>
+
+## Batasan
+
+- **Berlaku per instansi.** Kalau lembaga punya beberapa instansi, atur masing-masing.
+- **Hak akses:** mengubah pengaturan ini butuh hak akses **Pengaturan Presensi Harian - Edit**. Tanpa izin itu, halaman hanya bisa dilihat.
+- **Presensi Mata Pelajaran tidak terpengaruh.**
+- **Mesin presensi dan input manual di Dashboard School tidak diperiksa lokasinya.** Jarak juga tidak tampil untuk data tersebut, data yang diedit, dan data hasil Selesaikan Presensi.
+- **Support Access tidak diperiksa lokasinya**, supaya tim Cazh tetap bisa membantu dari jauh.
+
+## Pertanyaan Umum
+
+**Petugas sudah di sekolah tetapi tetap ditolak.**
+Biasanya karena lokasi perangkat meleset, terutama di komputer meja atau laptop. Buka Detail Pengaturan dari perangkat itu dan klik **Pakai Lokasi Saya Sekarang** untuk melihat titik yang terbaca. Kalau titiknya jauh dari sekolah, perbesar radius.
+
+**Ingin mematikan kunci lokasi.**
+Matikan **Batasi Lokasi Link Presensi**, lalu klik **Simpan**. Presensi kembali berjalan tanpa pemeriksaan lokasi.
+
+**Kegiatan di luar sekolah, misalnya kemah.**
+Pada kegiatan itu, pilih **Ganti Lokasi** dan isi titik lokasi kegiatan, atau pilih **Tanpa Batas Lokasi**.
