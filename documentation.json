@@ -366,6 +366,10 @@
                 "path": "cards-school/kesiswaan-pelanggaran"
               },
               {
+                "title": "Pengurangan Poin",
+                "path": "cards-school/kesiswaan-pengurangan-poin"
+              },
+              {
                 "title": "Perizinan",
                 "path": "cards-school/kesiswaan-perizinan"
               },
